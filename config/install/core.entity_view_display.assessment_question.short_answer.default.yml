@@ -1,0 +1,30 @@
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - anu_lms_assessments.assessment_question_type.short_answer
+    - field.field.assessment_question.short_answer.field_correct_answer
+id: assessment_question.short_answer.default
+targetEntityType: assessment_question
+bundle: short_answer
+mode: default
+content:
+  field_correct_answer:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -3
+    region: content
+  question:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -4
+    region: content
+hidden:
+  langcode: true
+  name: true

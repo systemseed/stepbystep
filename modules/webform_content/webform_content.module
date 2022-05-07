@@ -1,0 +1,118 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Webform content module.
+ */
+
+use Drupal\node\NodeInterface;
+use Drupal\Component\Utility\Random;
+use Drupal\webform\Utility\WebformYaml;
+
+/**
+ * Implements hook_ENTITY_TYPE_presave().
+ */
+function webform_content_node_presave(NodeInterface $node) {
+  if ($node->getType() !== 'webform') {
+    return;
+  }
+  $isTranslation = FALSE;
+
+  $webformLabel = 'Questionnaire for node: ' . $node->label();
+  if ($node->get('webform')->isEmpty()) {
+    $random = new Random();
+    $webformId = 'webform_content_' . $random->word(14);
+    $webformStorage = \Drupal::entityTypeManager()->getStorage('webform');
+    $webform = $webformStorage->create([
+      'id' => $webformId,
+      'title' => $webformLabel,
+      'category' => 'Webform content',
+      'settings' => [
+        // The form should only be available in its own node.
+        'page' => FALSE,
+        // No implementation for the progress bar.
+        'wizard_progress_bar' => FALSE,
+      ],
+    ]);
+    $node->webform->target_id = $webformId;
+  }
+  else {
+    $webform = $node->get('webform')->first()->entity;
+    $webform->set('title', $webformLabel);
+    if (!$node->isDefaultTranslation()) {
+      $isTranslation = TRUE;
+    }
+  }
+
+  $paragraphs = $node->get('webform_content')->referencedEntities();
+  $paragraphsConverter = \Drupal::service('webform_content.paragraphs_converter');
+  $elements = $paragraphsConverter->getWebformElements($paragraphs, $node->get('langcode')->value);
+
+  // Webform does not provide and API to add translations.
+  if ($isTranslation) {
+    $translatedWebform = \Drupal::languageManager()->getLanguageConfigOverride($node->get('langcode')->value, 'webform.webform.' . $webform->id());
+    $translatedWebform->set('elements', WebformYaml::encode($elements));
+    $translatedWebform->set('title', $webformLabel);
+    $translatedWebform->save();
+    return;
+  }
+
+  $webform->setElements($elements);
+
+  $paragraphs = $node->get('webform_content_configuration')->referencedEntities();
+  $settings = $paragraphsConverter->getWebformSettings($paragraphs);
+  $webform->setSettings($settings);
+
+  // Add a handler to trigger events.
+  $webform->set('handlers', [
+    'questionnaire_handler' => [
+      'id' => 'webform_content',
+      'label' => 'Questionnaire handler',
+      'notes' => '',
+      'handler_id' => 'questionnaire_handler',
+      'status' => TRUE,
+      'conditions' => [],
+      'weight' => 20,
+      'settings' => [
+        'webform_content_node' => $node->uuid(),
+      ],
+    ],
+  ]);
+
+  $webform->save();
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_delete().
+ *
+ * Case for node.
+ *
+ * Deleting a node with a webform also deletes the webform.
+ */
+function webform_content_node_delete(NodeInterface $node) {
+  if ($node->getType() !== 'webform' || $node->get('webform')->isEmpty()) {
+    return;
+  }
+  $webformStorage = \Drupal::entityTypeManager()->getStorage('webform');
+  $webform = $webformStorage->load($node->webform->target_id);
+  $webformStorage->delete([$webform]);
+}
+
+/**
+ * Implements hook_config_ignore_settings_alter().
+ *
+ * Ignore all webforms created with this module.
+ */
+function webform_content_config_ignore_settings_alter(array &$settings) {
+  $settings[] = 'webform.webform.webform_content_*';
+}
+
+/**
+ * Callback for the webform_content_icon field.
+ */
+function webform_content_icon_allowed_values() {
+  return [
+    'check_circle' => t('Check mark inside a circle'),
+    'error' => t('Exclamation mark inside a circle'),
+  ];
+}

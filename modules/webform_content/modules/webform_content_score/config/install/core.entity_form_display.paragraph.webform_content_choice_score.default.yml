@@ -1,0 +1,39 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.webform_content_choice_score.webform_content_description
+    - field.field.paragraph.webform_content_choice_score.webform_content_score
+    - field.field.paragraph.webform_content_choice_score.webform_content_text
+    - paragraphs.paragraphs_type.webform_content_choice_score
+id: paragraph.webform_content_choice_score.default
+targetEntityType: paragraph
+bundle: webform_content_choice_score
+mode: default
+content:
+  webform_content_description:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  webform_content_score:
+    weight: 1
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  webform_content_text:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

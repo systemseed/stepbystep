@@ -1,0 +1,52 @@
+uuid: 33fe1d76-ad69-4eb9-904f-92ab924d313f
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.registration_consent_page
+    - field.field.config_pages.registration_consent_page.field_registration_consent_butto
+    - field.field.config_pages.registration_consent_page.field_registration_consent_descr
+    - field.field.config_pages.registration_consent_page.field_registration_consent_headl
+    - field.field.config_pages.registration_consent_page.field_registration_terms
+  module:
+    - link
+    - text
+id: config_pages.registration_consent_page.default
+targetEntityType: config_pages
+bundle: registration_consent_page
+mode: default
+content:
+  field_registration_consent_butto:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_registration_consent_descr:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_registration_consent_headl:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_registration_terms:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  label: true

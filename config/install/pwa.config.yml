@@ -1,0 +1,18 @@
+site_name: 'Step by Step'
+short_name: 'Step by Step'
+description: 'WHO’s digital mental health intervention, Step-by-Step, that is available for global use'
+start_url: /
+lang: en
+theme_color: '#00599a'
+background_color: '#ffffff'
+display: fullscreen
+default_image: '0'
+urls_to_cache: ''
+urls_to_exclude: "admin/.*\r\nuser/.*\r\ntoolbox.*\r\nactivity/.*\r\n\\.mp3\r\n\\.acc\r\n\\.wav"
+offline_page: /offline
+cache_version: '1'
+cross_origin: false
+skip_waiting: true
+image: /sites/default/files/pwa/app-icon.png
+image_small: /sites/default/files/pwa/app-icon.pngcopy.png
+image_very_small: /sites/default/files/pwa/app-icon.pngcopy2.png

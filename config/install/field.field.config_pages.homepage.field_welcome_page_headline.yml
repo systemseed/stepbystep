@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.homepage
+    - field.storage.config_pages.field_welcome_page_headline
+id: config_pages.homepage.field_welcome_page_headline
+field_name: field_welcome_page_headline
+entity_type: config_pages
+bundle: homepage
+label: Headline
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: "Welcome to\r\nStep-by-Step"
+default_value_callback: ''
+settings: {  }
+field_type: string_long

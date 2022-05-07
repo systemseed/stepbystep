@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - sbs_navigation
+    - system
+  theme:
+    - material_sbs
+id: backbutton
+theme: material_sbs
+region: content_above
+weight: 0
+provider: null
+plugin: sbs_navigation_back_button
+settings:
+  id: sbs_navigation_back_button
+  label: 'Back button'
+  label_display: '0'
+  provider: sbs_navigation
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/user/register*\r\n/user/login*\r\n/user/password*\r\n/user/registration-consent\r\n/user/registration-choice\r\n/user/verify/*\r\n"

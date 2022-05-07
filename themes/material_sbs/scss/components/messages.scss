@@ -1,0 +1,93 @@
+$color-bg-messages-status: #00796B;
+$color-bg-messages-warning: #FFBB00;
+$color-bg-messages-error: #9F2621;
+$color-text-messages-status: #fff;
+$color-text-messages-warning: #000;
+$color-text-messages-error: #fff;
+$color-link-messages-status: #fff;
+$color-link-messages-warning: #000;
+$color-link-messages-error: #fff;
+
+.messages {
+  margin-bottom: $spacing;
+
+  &__group {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  &__list {
+    padding: 0;
+    list-style: none;
+  }
+
+  &__content {
+    // Fix for case when message contains long one-time login link
+    // which may break layout on thin mobile screens
+    a {
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+      word-break: break-word;
+    }
+  }
+
+  li {
+    margin-bottom: 8px;
+  }
+
+  &--colored {
+    &.messages--status {
+      background: $color-bg-messages-status;
+      color: $color-text-messages-status;
+
+      a {
+        color: $color-link-messages-status;
+
+        &:hover {
+          color: darken($color-link-messages-status, 5);
+        }
+      }
+
+      .icon {
+        color: $color-text-messages-status;
+        fill: $color-text-messages-status;
+      }
+    }
+
+    &.messages--warning {
+      background: $color-bg-messages-warning;
+      color: $color-text-messages-warning;
+
+      a {
+        color: $color-link-messages-warning;
+
+        &:hover {
+          color: darken($color-link-messages-warning, 5);
+        }
+      }
+
+      .icon {
+        color: $color-text-messages-warning;
+        fill: $color-text-messages-warning;
+      }
+    }
+
+    &.messages--error {
+      background: $color-bg-messages-error;
+      color: $color-text-messages-error;
+
+      a {
+        color: $color-link-messages-error;
+
+        &:hover {
+          color: darken($color-link-messages-error, 5);
+        }
+      }
+
+      .icon {
+        color: $color-text-messages-error;
+        fill: $color-text-messages-error;
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.score_level_pages
+    - field.field.node.webform.body
+    - field.field.node.webform.questionnaire_score_levels
+    - field.field.node.webform.webform
+    - field.field.node.webform.webform_content
+    - field.field.node.webform.webform_content_configuration
+    - node.type.webform
+  module:
+    - entity_reference_revisions
+    - user
+id: node.webform.score_level_pages
+targetEntityType: node
+bundle: webform
+mode: score_level_pages
+content:
+  questionnaire_score_levels:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  langcode: true
+  links: true
+  webform: true
+  webform_content: true
+  webform_content_configuration: true

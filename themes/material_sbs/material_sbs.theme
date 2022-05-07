@@ -1,0 +1,323 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in material_sbs theme.
+ */
+
+use Drupal\Core\StringTranslation\TranslatableMarkup;
+use Drupal\node\NodeInterface;
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_preprocess_page() for page.html.twig.
+ */
+function material_sbs_preprocess_page(array &$variables) {
+  // Enable full-width layout for all notes.
+  // We need it for ANU nodes & activities.
+  $node = \Drupal::request()->attributes->get('node');
+  if (!empty($node) && $node instanceof NodeInterface) {
+    if ($node->bundle() != 'webform') {
+      $variables['page_layout'] = TRUE;
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_region().
+ */
+function material_sbs_preprocess_region(array &$variables) {
+  $module_handler = Drupal::moduleHandler();
+  $current_user = Drupal::currentUser();
+  $region_name = $variables['region'];
+
+  // Make sure we don't affect any other region apart from navbar and drawer.
+  if (!in_array($region_name, ['navbar', 'drawer'])) {
+    return;
+  }
+
+  // Add site name to the variables.
+  $site_config = \Drupal::config('system.site');
+  $variables['site_name'] = $site_config->get('name');
+
+  // Handle language switcher links.
+  if ($region_name == 'navbar') {
+    /** @var \Drupal\Core\Path\PathMatcherInterface $pathMatcher */
+    $pathMatcher = Drupal::service('path.matcher');
+    /** @var \Drupal\Core\Language\LanguageManagerInterface $languageManager */
+    $languageManager = Drupal::service('language_manager');
+    $route_name = $pathMatcher->isFrontPage() ? '<front>' : '<current>';
+    $links = $languageManager->getLanguageSwitchLinks('language_interface', Url::fromRoute($route_name));
+    if (!empty($links->links)) {
+      $variables['language_switcher'] = [
+        '#theme' => 'links__language_block',
+        '#links' => $links->links,
+        '#set_active_class' => TRUE,
+      ];
+
+      $language = $languageManager->getCurrentLanguage();
+      $variables['language_name'] = $languageManager->getLanguageName($language->getId());
+    }
+
+    hide_menu_on_registration_flow($variables);
+  }
+
+  // Navigation is cached per each individual user.
+  $variables['#cache']['contexts'] = ['user'];
+
+  // Handle menu links for authenticated user.
+  $variables['user_menu'] = [];
+  if ($current_user->isAuthenticated()) {
+
+    // Link to edit the profile.
+    $route = Url::fromRoute('entity.user.edit_form', ['user' => $current_user->id()]);
+    if (!empty($route) && $route->access()) {
+      $variables['user_menu'][] = [
+        'url' => $route->toString(),
+        'title' => t('Profile settings'),
+        'icon_name' => 'account_circle',
+      ];
+    }
+
+    // Link to log out.
+    $route = Url::fromRoute('user.logout');
+    if (!empty($route) && $route->access()) {
+      $variables['user_menu'][] = [
+        'url' => $route->toString(),
+        'title' => t('Log out'),
+        'icon_name' => 'logout',
+      ];
+    }
+  }
+  else {
+    $route = Url::fromRoute('user.login');
+    if (!empty($route) && $route->access()) {
+      $variables['user_menu'][] = [
+        'url' => $route->toString(),
+        'title' => t('Log in'),
+        'icon_name' => 'logout',
+      ];
+    }
+  }
+
+  // Define admin menu.
+  $variables['admin_menu'] = [];
+  /** @var \Drupal\node\NodeInterface $node */
+  $node = Drupal::request()->attributes->get('node');
+  if (!empty($node) && $node instanceof NodeInterface) {
+
+    // Node edit link.
+    $route = $node->toUrl('edit-form');
+    if (!empty($route) && $route->access()) {
+      $variables['admin_menu'][] = [
+        'url' => $route->toString(),
+        'title' => t('Edit page'),
+      ];
+    }
+
+    // Node translate link.
+    $route = $node->toUrl('drupal:content-translation-overview');
+    if (!empty($route) && $route->access()) {
+      $variables['admin_menu'][] = [
+        'url' => $route->toString(),
+        'title' => t('Translate page'),
+      ];
+    }
+
+    // ANU LMS Specific links.
+    if ($module_handler->moduleExists('anu_lms')) {
+
+      // Handle additional links for Lesson and Quiz content types.
+      if (in_array($node->bundle(), ['module_lesson', 'module_assessment'])) {
+
+        // Link to edit course page from lesson or quiz page.
+        /** @var \Drupal\anu_lms\Lesson $lesson */
+        $lesson = Drupal::service('anu_lms.lesson');
+        $course = $lesson->getLessonCourse($node);
+        if (!empty($course)) {
+          $route = $course->toUrl('edit-form');
+          if (!empty($route) && $route->access()) {
+            $variables['admin_menu'][] = [
+              'url' => $route->toString(),
+              'title' => t('Edit session'),
+            ];
+          }
+        }
+
+        // Get route name of the page with quiz or question responses.
+        if ($module_handler->moduleExists('anu_lms_assessments')) {
+          $route_name = $node->bundle() == 'module_lesson' ? 'anu_lms_assessments.question.results' : 'anu_lms_assessments.assessment.results';
+          $route = Url::fromRoute($route_name, ['node' => $node->id()]);
+          if (!empty($route) && $route->access()) {
+            $variables['admin_menu'][] = [
+              'url' => $route->toString(),
+              'title' => t('View responses'),
+            ];
+          }
+        }
+
+      }
+    }
+
+    // Show link to manage content.
+    $route_name = 'view.ss_content.page_1';
+    $title = t('Manage content');
+    add_to_admin_menu($route_name, $title, $variables);
+
+    // Show link to manage translations.
+    $route_name = 'view.ss_content_translations.page_1';
+    $title = t('Manage translations');
+    add_to_admin_menu($route_name, $title, $variables);
+
+    // Show link to manage people.
+    $route_name = 'view.user_admin_people.page_1';
+    $title = t('Manage users');
+    add_to_admin_menu($route_name, $title, $variables);
+
+    // Show link to manage content.
+    $route_name = 'view.content.page_1';
+    $title = t('Manage content');
+    add_to_admin_menu($route_name, $title, $variables);
+
+    // Show link to the coordinator dashboard.
+    $route_name = 'view.unassigned_users.page_1';
+    $title = t('Coordinator dashboard');
+    add_to_admin_menu($route_name, $title, $variables);
+
+    // Show link to the E-helper dashboard.
+    $route_name = 'view.assigned_to_ehelper.page_1';
+    $title = t('E-helper dashboard');
+    add_to_admin_menu($route_name, $title, $variables);
+
+    // Show link to manage storylines.
+    $title = t('Manage characters');
+    $route_name = 'anu_lms_storyline.overview';
+    add_to_admin_menu($route_name, $title, $variables);
+
+    // Show link to manage questionnaires.
+    $title = t('Manage questionnaires');
+    $route_name = 'view.questionnaires.page_1';
+    add_to_admin_menu($route_name, $title, $variables);
+
+    // Show link to language switcher setings.
+    $title = t('Edit language switcher');
+    $route_name = 'config_pages.ss_translation_settings';
+    add_to_admin_menu($route_name, $title, $variables);
+
+    // Show link to translatate user interface.
+    $title = t('Translate UI');
+    $route_name = 'locale.translate_page';
+    add_to_admin_menu($route_name, $title, $variables);
+
+    // Show link to manage static pages.
+    $title = t('Edit static pages');
+    $route_name = 'system.admin_config_content';
+    add_to_admin_menu($route_name, $title, $variables);
+
+    $preconnect_google_fonts = [
+      '#tag' => 'link',
+      '#attributes' => [
+        'rel' => 'preconnect',
+        'href' => 'https://fonts.gstatic.com',
+        'crossorigin' => 1,
+      ],
+    ];
+
+    $preload_font_public_sans = [
+      '#tag' => 'link',
+      '#attributes' => [
+        'rel' => 'preload',
+        'href' => 'https://fonts.googleapis.com/css?family=Public+Sans:300,400,500,700&display=swap',
+        'as' => 'style',
+      ],
+    ];
+
+    $preload_font_material_icons = [
+      '#tag' => 'link',
+      '#attributes' => [
+        'rel' => 'preload',
+        'href' => 'https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp&display=block',
+        'as' => 'style',
+      ],
+    ];
+
+    $variables['page']['#attached']['html_head'][] = [
+      $preconnect_google_fonts, 'preconnect_google_fonts',
+    ];
+    $variables['page']['#attached']['html_head'][] = [
+      $preload_font_public_sans, 'preload_font_public_sans',
+    ];
+    $variables['page']['#attached']['html_head'][] = [
+      $preload_font_material_icons, 'preload_font_material_icons',
+    ];
+  }
+}
+
+/**
+ * Adds a route to the admin menu.
+ *
+ * @param string $route_name
+ *   The route name.
+ * @param \Drupal\Core\StringTranslation\TranslatableMarkup $title
+ *   The link title.
+ * @param array $variables
+ *   The theme variables.
+ */
+function add_to_admin_menu(string $route_name, TranslatableMarkup $title, array &$variables, $route_params = []) {
+  $route = Url::fromRoute($route_name, $route_params);
+  if (!empty($route) && $route->access()) {
+    $variables['admin_menu'][] = [
+      'url' => $route->toString(),
+      'title' => $title,
+    ];
+  }
+}
+
+/**
+ * Hides the sidebar menu on some paths.
+ *
+ * @param array $variables
+ *   The template variables.
+ */
+function hide_menu_on_registration_flow(array &$variables) {
+  $no_menu_paths = [
+    '/home',
+    '/',
+    '/user/*',
+    '/score-level-page/*',
+    '/welcome-questionnaires',
+    '/welcome-questionnaires/*',
+  ];
+  $no_menu_paths = implode(PHP_EOL, $no_menu_paths);
+  $user_edit_paths = ['/user/*/edit', '/user/*/storyline'];
+  $user_edit_paths = implode(PHP_EOL, $user_edit_paths);
+  $current_path = Drupal::service('path.current')->getPath();
+  $current_alias = Drupal::service('path_alias.manager')
+    ->getAliasByPath($current_path);
+  $path_matcher = Drupal::service('path.matcher');
+  if ($path_matcher->matchPath($current_alias, $no_menu_paths) and !$path_matcher->matchPath($current_alias, $user_edit_paths)) {
+    $variables['hide_menu'] = TRUE;
+  }
+
+  // Hide menu for activities content type.
+  /** @var \Drupal\node\NodeInterface $node */
+  $node = Drupal::request()->attributes->get('node');
+  if (!empty($node) && $node instanceof NodeInterface) {
+    $nodes_without_menu = ['activity_checklist', 'activity_audio', 'webform'];
+    if (in_array($node->bundle(), $nodes_without_menu)) {
+      $variables['hide_menu'] = TRUE;
+    }
+  }
+
+  // Hide menu for not authenticated users.
+  if (\Drupal::currentUser()->isAnonymous()) {
+    $variables['hide_menu'] = TRUE;
+  }
+}
+
+/**
+ * Implements hook_preprocess_form_element().
+ */
+function material_sbs_preprocess_form_element(array &$variables) {
+  $variables['label']['#attributes']['class'][] = 'sbs-label';
+}

@@ -1,0 +1,250 @@
+@charset "UTF-8";
+
+// Looks like there is overlap between Material and @chatscope variable names
+// and just importing all variables will make chat look strange.
+//@import "../../contrib/material_base/scss/base/variables";
+
+// Loading @chatscope theme variables.
+// See https://github.com/chatscope/chat-ui-kit-styles/blob/master/themes/default/_variables.scss
+@import "@chatscope/chat-ui-kit-styles/themes/default/variables";
+@import "@chatscope/chat-ui-kit-styles/themes/default/main";
+
+// Base
+@import "../../contrib/material_base/scss/base/variables";
+@import "../../contrib/material_base/scss/base/mixins";
+
+$message-separator-color: #000;
+
+$message-content-font-family: 'Public Sans', sans-serif;
+
+$message-content-no-message-color: #616262;
+
+$message-input-wrapper-bg-color: #f5f6f7;
+$message-input-color: #575757;
+$message-input-bg-color: #fff;
+
+$message-content-incoming-color: #14140d;
+$message-content-incoming-bg-color: #e6f3fa;
+$message-group-message-content-incoming-color: $message-content-incoming-color;
+$message-group-message-content-incoming-bg-color: $message-content-incoming-bg-color;
+
+$message-content-outgoing-color: #fff;
+$message-content-outgoing-bg-color: #005a9a;
+$message-group-message-content-outgoing-color: $message-content-outgoing-color;
+$message-group-message-content-outgoing-bg-color: $message-content-outgoing-bg-color;
+
+$message-footer-sent-time-color: #fff;
+
+$message-input-content-editor-wrapper-bg-color: #fff;
+$message-input-content-editor-container-bg-color: #fff;
+$message-input-content-editor-bg-color: #fff;
+$chat-container-message-input-bg-color: #f5f6f7;
+
+
+.sbs-chat {
+  body.page-messages & {
+    position: fixed;
+    top: 66px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-y: auto;
+
+    @include media-breakpoint-up($md) {
+      width: $md;
+      margin: 0 auto;
+    }
+  }
+}
+
+.cs-message {
+  font-family: $message-content-font-family;
+
+  &-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    .cs-message-list__scroll-wrapper {
+      height: auto;
+    }
+  }
+
+  &__no-message-wrapper {
+    height: calc(100vh - 200px);
+    padding-top: 3.5em;
+    padding-right: 3.65em;
+    padding-left: 3.65em;
+
+    p {
+      margin: 0;
+      color: $message-content-no-message-color;
+      font-family: $message-content-font-family;
+      font-size: 1em;
+      line-height: 1.5;
+      text-align: center;
+      letter-spacing: 0;
+
+      &:first-child {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  &-input {
+    .cs-chat-container & {
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+      border-top: 0;
+      color: $message-input-color;
+      background-color: $message-input-wrapper-bg-color;
+    }
+
+    &__content-editor {
+      color: $message-input-color;
+      background-color: $message-input-bg-color;
+      font-family: $message-content-font-family;
+      letter-spacing: 0;
+
+      &[data-placeholder]:empty:before {
+        color: rgba($message-input-color, 0.7);
+      }
+
+      &-wrapper {
+        background-color: $message-input-bg-color;
+      }
+    }
+
+    .ps__thumb-y {
+      background-color: $message-input-bg-color;
+    }
+  }
+
+  &-group {
+    .cs-message-list__scroll-wrapper > & {
+      max-width: 100%;
+    }
+
+    &--outgoing {
+      .cs-message-group__messages {
+        .cs-message {
+          .cs-message__content,
+          .cs-message__content-wrapper {
+            display: flex;
+            flex-direction: row;
+            border-radius: 1em 1em 0 1em;
+            color: $message-content-outgoing-color;
+            background-color: $message-content-outgoing-bg-color;
+          }
+
+          &:first-child,
+          &:last-child,
+          &:only-child {
+            .cs-message__content,
+            .cs-message__content-wrapper {
+              border-radius: 1em 1em 0 1em;
+            }
+          }
+        }
+      }
+    }
+
+    &--incoming {
+      .cs-message-group__messages {
+        .cs-message {
+          .cs-message__content,
+          .cs-message__content-wrapper {
+            display: flex;
+            flex-direction: row;
+            border-radius: 1em 1em 1em 0;
+            background-color: $message-content-incoming-bg-color;
+          }
+
+          &:first-child,
+          &:last-child,
+          &:only-child {
+            .cs-message__content,
+            .cs-message__content-wrapper {
+              border-radius: 1em 1em 1em 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__content {
+    padding: 0.4em 0.8em 0.4em;
+    font-family: $message-content-font-family;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: flex-end;
+    padding-right: 0.5em;
+    margin: 0 0 0.4em;
+
+    .cs-message-group--incoming & {
+      padding-right: 1em;
+    }
+
+    .cs-message__sent-time {
+      padding-left: 0;
+      color: $message-footer-sent-time-color;
+      font-size: 9px;
+      line-height: 1;
+
+      .cs-message-group--incoming & {
+        color: $message-content-incoming-color;
+      }
+    }
+  }
+
+  &-separator {
+    display: block;
+    color: $message-separator-color;
+    font-family: $message-content-font-family;
+    font-size: 10px;
+    font-weight: bold;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  &-group__content {
+    width: 100%;
+  }
+}
+
+// Admin UI overrides.
+.details-wrapper {
+  .cs-chat-container {
+    height: 60vh;
+  }
+  .cs-message {
+    &-list {
+      max-height: 100vh * 0.6;
+    }
+
+    &__no-message-wrapper {
+      height: calc(50vh - 60px);
+    }
+  }
+}
+
+#sbs-tab-messages {
+  padding: 0;
+  margin: 0;
+
+  .claro-details__wrapper {
+    margin: 0;
+  }
+}
+
+
+
+

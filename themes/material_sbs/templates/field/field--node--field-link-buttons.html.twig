@@ -1,0 +1,8 @@
+<div class="link-buttons">
+    {% for item in items %}
+        {{ include('@material_sbs/field/_button.html.twig') }}
+        {% if not loop.last %}
+            <div class="link-buttons__separator">{{ 'or'|trans }}</div>
+        {% endif %}
+    {% endfor %}
+</div>

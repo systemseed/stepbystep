@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - anu_lms_assessments
+id: assessment_result.assessment_result
+target_entity_type_id: assessment_result
+target_bundle: assessment_result
+default_langcode: site_default
+language_alterable: false

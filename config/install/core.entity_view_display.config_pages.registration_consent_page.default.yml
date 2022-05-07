@@ -1,0 +1,52 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.registration_consent_page
+    - field.field.config_pages.registration_consent_page.field_registration_consent_butto
+    - field.field.config_pages.registration_consent_page.field_registration_consent_descr
+    - field.field.config_pages.registration_consent_page.field_registration_consent_headl
+    - field.field.config_pages.registration_consent_page.field_registration_terms
+  module:
+    - link
+    - text
+id: config_pages.registration_consent_page.default
+targetEntityType: config_pages
+bundle: registration_consent_page
+mode: default
+content:
+  field_registration_consent_butto:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_registration_consent_descr:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_registration_consent_headl:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_registration_terms:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

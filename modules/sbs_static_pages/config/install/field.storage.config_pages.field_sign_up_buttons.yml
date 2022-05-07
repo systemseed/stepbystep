@@ -1,0 +1,19 @@
+uuid: 027433dd-45d1-4474-ad97-6f39fae8b326
+langcode: en
+status: true
+dependencies:
+  module:
+    - config_pages
+    - link
+id: config_pages.field_sign_up_buttons
+field_name: field_sign_up_buttons
+entity_type: config_pages
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 2
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

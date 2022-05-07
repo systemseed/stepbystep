@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies: {  }
+id: sbs_questionnaires_welcome_back
+label: 'Questionnaires Welcome Back Page'
+token: false
+context:
+  show_warning: false
+  group:
+    language: true
+  fallback:
+    language: ''
+menu:
+  path: /admin/content/questionnaires/welcome-back-page
+  weight: 20
+  description: 'Configure the welcome back page for questionnaires on Step by Step'

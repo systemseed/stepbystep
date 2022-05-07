@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_selection
+third_party_settings:
+  paragraphs_selection:
+    fields:
+      -
+        id: node.webform.questionnaire_score_levels
+        weight: 73
+id: webform_content_score_level
+label: 'Score level'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

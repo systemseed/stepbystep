@@ -1,0 +1,12 @@
+langcode: en
+status: true
+dependencies: {  }
+id: log
+label: Logger
+plugin: log
+settings: {  }
+skip_queue: null
+incoming_push_path: null
+reports_push_path: null
+retention_duration_incoming: null
+retention_duration_outgoing: null

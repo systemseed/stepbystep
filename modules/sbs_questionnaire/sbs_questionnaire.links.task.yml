@@ -1,0 +1,23 @@
+sbs_questionnaire.order:
+  route_name: config_pages.sbs_questionnaires
+  base_route: view.questionnaires.page_1
+  title: 'Initial questionnaires order'
+  weight: 10
+
+sbs_questionnaire.first_welcome:
+  route_name: config_pages.sbs_questionnaires_first_welcome
+  base_route: view.questionnaires.page_1
+  title: 'First Welcome Page'
+  weight: 20
+
+sbs_questionnaire.welcome_back:
+  route_name: config_pages.sbs_questionnaires_welcome_back
+  base_route: view.questionnaires.page_1
+  title: 'Welcome Back Page'
+  weight: 30
+
+sbs_questionnaire.ehelper:
+  route_name: config_pages.request_ehelper
+  base_route: view.questionnaires.page_1
+  title: 'Request E-helper'
+  weight: 40

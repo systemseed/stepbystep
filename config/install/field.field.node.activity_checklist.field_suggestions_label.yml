@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_suggestions_label
+    - node.type.activity_checklist
+id: node.activity_checklist.field_suggestions_label
+field_name: field_suggestions_label
+entity_type: node
+bundle: activity_checklist
+label: 'Label for suggestion items'
+description: 'If not specified, "Our suggestions" will be used as a label.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

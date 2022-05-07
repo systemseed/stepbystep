@@ -1,0 +1,42 @@
+.sbs-text-field__input.mdc-text-field__input {
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: $color-box-background !important;
+}
+
+.mdc-text-field--focused {
+  @include focus_colour($color-navigation-highlight)
+}
+
+.js-form-item .description {
+  padding-left: 5px;
+  color: $color-button-disabled;
+}
+
+.mdc-text-field {
+  position: relative;
+
+  button.shwpd {
+    position: absolute;
+    top: calc(50% - 8px);
+    margin: 0;
+    right: $spacing;
+  }
+}
+
+/*.mdc-text-field  {
+  padding-top: 10px;
+  &.eye-close, &.eye-open {
+    background-size: 100%;
+  }
+}*/
+
+.page-node-type-webform {
+  .sbs_textfield_label {
+    font-weight: bold;
+    font-size: 1.3em;
+  }
+  .mdc-text-field {
+    margin-top: 0.5em;
+  }
+}

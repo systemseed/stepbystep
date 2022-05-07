@@ -1,0 +1,33 @@
+display:
+  default:
+    display_title: الرئيسي
+    display_options:
+      exposed_form:
+        options:
+          submit_button: تطبيق
+          reset_button_label: 'إعادة الضبط'
+          exposed_sorts_label: 'الترتيب حسب'
+          sort_asc_label: تصاعدي
+          sort_desc_label: تنازلي
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- الكل -'
+            offset_label: الإزاحة
+      fields:
+        id:
+          separator: ', '
+        aid:
+          separator: ', '
+        user_id:
+          label: المستخدم
+          separator: ', '
+        created:
+          separator: ', '
+        dropbutton:
+          admin_label: روابط
+          label: روابط
+      arguments:
+        aid:
+          exception:
+            title: الكل

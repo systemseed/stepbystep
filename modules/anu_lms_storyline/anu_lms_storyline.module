@@ -1,0 +1,69 @@
+<?php
+
+/**
+ * @file
+ * Hooks for storylines.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_entity_type_alter().
+ *
+ * Add ability have a different form mode for storylines.
+ */
+function anu_lms_storyline_entity_type_alter(array &$entity_types) {
+  $entity_types['taxonomy_term']
+    ->setFormClass('storyline', 'Drupal\\taxonomy\\TermForm');
+}
+
+/**
+ * Implements hook_entity_operation_alter().
+ *
+ * Add the link to the form to sort courses.
+ */
+function anu_lms_storyline_entity_operation_alter(array &$operations, EntityInterface $entity) {
+  if ($entity->getEntityTypeId() != 'taxonomy_term') {
+    return;
+  }
+
+  if ($entity->bundle() != 'course_category') {
+    return;
+  }
+
+  if (!$entity->field_is_storyline) {
+    return;
+  }
+  if (!\Drupal::currentUser()->hasPermission('edit terms in course_category')) {
+    return;
+  }
+  $operations['sort_storyline'] = [
+    'title' => t('Sort courses'),
+    'url' => Url::fromRoute('view.sort_courses.sort_page', ['taxonomy_term' => $entity->id()]),
+    'weight' => 100,
+  ];
+}
+
+/**
+ * Implements hook_field_widget_WIDGET_TYPE_form_alter().
+ *
+ * Case for options_select.
+ *
+ * Add a prefix to storylines
+ */
+function anu_lms_storyline_field_widget_chosen_select_form_alter(&$element, FormStateInterface $form_state, $context) {
+  if ($context['items']->getName() !== 'field_course_category') {
+    return;
+  }
+
+  $element['#title'] = t('Category or storyline');
+
+  foreach ($element['#options'] as $id => $option) {
+    $termQuery = \Drupal::entityQuery('taxonomy_term');
+    if (is_int($id) && $termQuery->condition('tid', $id)->condition('field_is_storyline', TRUE)->execute()) {
+      $element['#options'][$id] = t('Storyline: @storyline_name', ['@storyline_name' => $option]);
+    }
+  }
+}

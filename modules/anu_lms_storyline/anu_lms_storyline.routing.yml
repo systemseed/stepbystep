@@ -1,0 +1,42 @@
+anu_lms_storyline.overview:
+  path: '/admin/structure/taxonomy/manage/storyline/overview'
+  defaults:
+    taxonomy_vocabulary: 'course_category'
+    _title: 'Manage storylines'
+    _form: 'Drupal\anu_lms_storyline\Form\OverviewStorylines'
+  requirements:
+    _entity_access: 'taxonomy_vocabulary.access taxonomy overview'
+  options:
+    _admin_route: true
+entity.taxonomy_term.add_storyline_form:
+  path: '/admin/structure/taxonomy/manage/storyline/add'
+  defaults:
+    taxonomy_vocabulary: 'course_category'
+    _controller: '\Drupal\anu_lms_storyline\Controller\StorylineController::addForm'
+    _title: 'Add storyline'
+  requirements:
+    _entity_create_access: 'taxonomy_term:course_category'
+entity.storyline.edit_form:
+  path: '/taxonomy/storyline/{taxonomy_term}/edit'
+  defaults:
+    _entity_form: 'taxonomy_term.storyline'
+    _title: 'Edit storyline'
+  options:
+    _admin_route: TRUE
+  requirements:
+    _entity_access: 'taxonomy_term.update'
+    taxonomy_term: \d+
+anu_lms_storyline.view_storylines:
+  path: '/view-storylines'
+  defaults:
+    taxonomy_vocabulary: 'course_category'
+    _controller: '\Drupal\anu_lms_storyline\Controller\StorylineController::viewStorylines'
+  requirements:
+    _user_is_logged_in: 'TRUE'
+anu_lms_storyline.select_storyline:
+  path: '/select-storyline'
+  methods: [ POST ]
+  defaults:
+    _controller: '\Drupal\anu_lms_storyline\Controller\StorylineController::selectStoryline'
+  requirements:
+    _user_is_logged_in: 'TRUE'

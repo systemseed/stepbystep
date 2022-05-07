@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - config_pages
+    - options
+id: config_pages.field_ehelper_score_levels
+field_name: field_ehelper_score_levels
+entity_type: config_pages
+type: list_integer
+settings:
+  allowed_values: {  }
+  allowed_values_function: sbs_ehelpers_score_level_options
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

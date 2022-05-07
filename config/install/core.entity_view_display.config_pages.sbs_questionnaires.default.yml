@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.sbs_questionnaires
+    - field.field.config_pages.sbs_questionnaires.field_questionnaires
+id: config_pages.sbs_questionnaires.default
+targetEntityType: config_pages
+bundle: sbs_questionnaires
+mode: default
+content:
+  field_questionnaires:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

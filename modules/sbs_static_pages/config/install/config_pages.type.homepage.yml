@@ -1,0 +1,17 @@
+uuid: 5eba7aa7-4260-4e2f-924c-9c32de7325c8
+langcode: en
+status: true
+dependencies: {  }
+id: homepage
+label: 'Welcome Page'
+context:
+  show_warning: true
+  group:
+    language: false
+  fallback:
+    language: ''
+menu:
+  path: /admin/config/content/welcome_page
+  weight: -6
+  description: 'The welcome page for new or returning users'
+token: false

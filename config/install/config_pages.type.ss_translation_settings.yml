@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies: {  }
+id: ss_translation_settings
+label: 'Translation settings'
+token: false
+context:
+  show_warning: true
+  group:
+    language: false
+  fallback:
+    language: ''
+menu:
+  path: /admin/config/regional/ss-translation-settings
+  weight: 0
+  description: ''

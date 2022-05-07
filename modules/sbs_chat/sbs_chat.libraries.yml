@@ -1,0 +1,5 @@
+chat:
+  js:
+    js/dist/chat.min.js: { minified: true, weight: -16 }
+  dependencies:
+    - sbs_application/vendors

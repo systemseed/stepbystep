@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.activity_checklist_item.activity_checklist_item
+id: activity_checklist_item.activity_checklist_item.changed
+field_name: changed
+entity_type: activity_checklist_item
+bundle: activity_checklist_item
+label: Changed
+description: 'The time that the entity was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

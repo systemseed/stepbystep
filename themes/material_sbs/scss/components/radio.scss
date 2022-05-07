@@ -1,0 +1,9 @@
+@use "@material/radio";
+
+.webform-type-radios {
+  .mdc-radio {
+    @include radio.checked-stroke-color($theme-primary);
+    @include radio.ink-color($theme-primary);
+    @include radio.focus-indicator-color($theme-primary)
+  }
+}

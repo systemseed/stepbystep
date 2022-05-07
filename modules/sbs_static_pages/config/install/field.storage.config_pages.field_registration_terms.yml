@@ -1,0 +1,19 @@
+uuid: 6fd7380c-d7a3-48ab-a72f-8cfc5a18566a
+langcode: en
+status: true
+dependencies:
+  module:
+    - config_pages
+    - text
+id: config_pages.field_registration_terms
+field_name: field_registration_terms
+entity_type: config_pages
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

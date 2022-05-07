@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - sbs_users
+    - system
+id: e_helper
+label: E-helper
+weight: -8
+is_admin: null
+permissions:
+  - 'access user profiles'
+  - 'create note entities'
+  - 'skip sbs initial steps'
+  - 'view any note entities'
+  - 'view own participant profiles'
+  - 'view the administration theme'
+  - 'view user email addresses'

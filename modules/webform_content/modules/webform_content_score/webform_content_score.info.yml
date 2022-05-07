@@ -1,0 +1,13 @@
+name: 'Questionnaire scores'
+type: module
+description: 'Add ability to have a score for webform submissions.'
+package: Webform
+core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - 'drupal:field'
+  - 'drupal:node'
+  - 'entity_reference_revisions:entity_reference_revisions'
+  - 'paragraphs:paragraphs'
+  - 'paragraphs_selection:paragraphs_selection'
+  - 'range:range'
+  - 'webform_content:webform_content'

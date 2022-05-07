@@ -1,0 +1,24 @@
+{#
+/**
+ * @file
+ * Theme override to display a region.
+ *
+ * Available variables:
+ * - content: The content for this region, typically blocks.
+ * - attributes: HTML attributes for the region <div>.
+ * - region: The name of the region variable as defined in the theme's
+ *   .info.yml file.
+ *
+ * @see template_preprocess_region()
+ */
+#}
+
+<div{{ attributes }} data-mdc-auto-init="MDCRipple">
+  <a
+    class="button mdc-button mdc-button--unelevated {{ 'button--' ~ paragraph.field_cta_type.0.value }}"
+    href="{{ content.field_url.0['#title'] }}"
+  >
+    <span class="mdc-button__ripple"></span>
+    <span class="mdc-button__label">{{ content.field_cta_label.0 }}</span>
+  </a>
+</div>

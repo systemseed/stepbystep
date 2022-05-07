@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - rest.resource.anu_lms_progress
+  module:
+    - media
+    - rest
+id: anonymous
+label: 'Anonymous user'
+weight: -10
+is_admin: false
+permissions:
+  - 'access pwa'
+  - 'restful post anu_lms_progress'
+  - 'view media'

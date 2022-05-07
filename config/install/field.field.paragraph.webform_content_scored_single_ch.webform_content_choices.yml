@@ -1,0 +1,138 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.webform_content_choices
+    - paragraphs.paragraphs_type.webform_content_choice_score
+    - paragraphs.paragraphs_type.webform_content_scored_single_ch
+  module:
+    - entity_reference_revisions
+id: paragraph.webform_content_scored_single_ch.webform_content_choices
+field_name: webform_content_choices
+entity_type: paragraph
+bundle: webform_content_scored_single_ch
+label: Choices
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      webform_content_choice_score: webform_content_choice_score
+    negate: 0
+    target_bundles_drag_drop:
+      call_to_action:
+        weight: 38
+        enabled: false
+      checklist_item:
+        weight: 39
+        enabled: false
+      course_category:
+        weight: 40
+        enabled: false
+      course_category_from_storyline:
+        weight: 41
+        enabled: false
+      course_modules:
+        weight: 42
+        enabled: false
+      lesson_checklist:
+        weight: 43
+        enabled: false
+      lesson_divider:
+        weight: 44
+        enabled: false
+      lesson_embedded_video:
+        weight: 45
+        enabled: false
+      lesson_heading:
+        weight: 46
+        enabled: false
+      lesson_highlight:
+        weight: 47
+        enabled: false
+      lesson_highlight_marker:
+        weight: 48
+        enabled: false
+      lesson_image:
+        weight: 49
+        enabled: false
+      lesson_image_thumbnail:
+        weight: 50
+        enabled: false
+      lesson_image_wide:
+        weight: 51
+        enabled: false
+      lesson_img_list:
+        weight: 52
+        enabled: false
+      lesson_img_list_item:
+        weight: 53
+        enabled: false
+      lesson_list:
+        weight: 54
+        enabled: false
+      lesson_resource:
+        weight: 55
+        enabled: false
+      lesson_section:
+        weight: 56
+        enabled: false
+      lesson_table:
+        weight: 57
+        enabled: false
+      lesson_text:
+        weight: 58
+        enabled: false
+      question_long_answer:
+        weight: 59
+        enabled: false
+      question_multi_choice:
+        weight: 60
+        enabled: false
+      question_scale:
+        weight: 61
+        enabled: false
+      question_short_answer:
+        weight: 62
+        enabled: false
+      question_single_choice:
+        weight: 63
+        enabled: false
+      single_multi_choice_item:
+        weight: 64
+        enabled: false
+      webform_content_choice_item:
+        weight: 65
+        enabled: false
+      webform_content_choice_score:
+        weight: 66
+        enabled: true
+      webform_content_confirmation_u_m:
+        weight: 67
+        enabled: false
+      webform_content_date:
+        weight: 68
+        enabled: false
+      webform_content_display_text:
+        weight: 69
+        enabled: false
+      webform_content_options_predef:
+        weight: 70
+        enabled: false
+      webform_content_page_separator:
+        weight: 71
+        enabled: false
+      webform_content_scored_single_ch:
+        weight: 72
+        enabled: false
+      webform_content_single_choice:
+        weight: 73
+        enabled: false
+      webform_content_text:
+        weight: 74
+        enabled: false
+field_type: entity_reference_revisions

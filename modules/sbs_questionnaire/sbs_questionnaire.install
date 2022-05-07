@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * @file
+ * Update hooks for SBS questionnaire module.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function sbs_questionnaire_install() {
+  include_once __DIR__ . '/sbs_questionnaire.post_update.php';
+  sbs_questionnaire_post_update_default_config_page();
+
+  // TODO: update Domino to make Seven configs optional.
+  \Drupal::service('theme_installer')->install(['seven']);
+}
+
+/**
+ * Remove all block content.
+ */
+function sbs_questionnaire_update_8001() {
+  $blockStorage = Drupal::entityTypeManager()->getStorage('block_content');
+  $blockStorage->delete($blockStorage->loadmultiple());
+}

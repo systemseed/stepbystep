@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - rest.resource.anu_lms_progress
+    - rest.resource.chat_messages
+    - rest.resource.chat_send_messages
+    - rest.resource.sbs_activities_checklist
+  module:
+    - form_mode_control
+    - media
+    - rest
+    - system
+id: authenticated
+label: 'Authenticated user'
+weight: -9
+is_admin: false
+permissions:
+  - 'access content'
+  - 'restful get chat_messages'
+  - 'restful post anu_lms_progress'
+  - 'restful post chat_send_messages'
+  - 'restful post sbs_activities_checklist'
+  - 'use  The form mode limited linked to  user entity( user )'
+  - 'view media'

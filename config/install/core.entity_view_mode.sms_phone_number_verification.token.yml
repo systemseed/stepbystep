@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - sms
+id: sms_phone_number_verification.token
+label: Token
+targetEntityType: sms_phone_number_verification
+cache: true

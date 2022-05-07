@@ -1,0 +1,27 @@
+<h2>
+    {{ title }}
+</h2>
+
+{{ text }}
+
+{% if number %}
+    <strong>{{ number }}</strong>
+{% endif %}
+
+{{ second_text }}
+
+{% if accept %}
+<div data-mdc-auto-init="MDCRipple">
+    <a href="{{ questionnaire_url }}" class="button mdc-button mdc-button--unelevated">
+        <span class="mdc-button__ripple"></span>
+        <span class="mdc-button__label">{{ accept }}</span>
+    </a>
+</div>
+{% endif %}
+{% if cancel %}
+<div class="cancel">
+    <a href="#">
+        {{ cancel }}
+    </a>
+</div>
+{% endif %}

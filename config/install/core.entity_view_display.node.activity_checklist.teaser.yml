@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.activity_checklist.field_description
+    - field.field.node.activity_checklist.field_icon
+    - field.field.node.activity_checklist.field_suggestions
+    - field.field.node.activity_checklist.field_suggestions_label
+    - node.type.activity_checklist
+  module:
+    - user
+id: node.activity_checklist.teaser
+targetEntityType: node
+bundle: activity_checklist
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_description: true
+  field_icon: true
+  field_suggestions: true
+  field_suggestions_label: true
+  langcode: true

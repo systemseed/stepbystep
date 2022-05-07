@@ -1,0 +1,20 @@
+# Toolbox page.
+toolbox:
+  js:
+    js/dist/toolbox.min.js: { minified: true, weight: -16 }
+  dependencies:
+    - sbs_application/vendors
+
+# Page with checklist activity.
+checklist:
+  js:
+    js/dist/checklist.min.js: { minified: true, weight: -16 }
+  dependencies:
+    - sbs_application/vendors
+
+# Page with audio activity.
+audio:
+  js:
+    js/dist/audio.min.js: { minified: true, weight: -16 }
+  dependencies:
+    - sbs_application/vendors

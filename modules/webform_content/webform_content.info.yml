@@ -1,0 +1,17 @@
+name: 'Questionnaire (webform content)'
+type: module
+description: 'Alternate UI to create webforms.'
+package: Webform
+core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - 'config_ignore:config_ignore'
+  - 'drupal:field'
+  - 'drupal:link'
+  - 'drupal:node'
+  - 'drupal:text'
+  - 'entity_reference_revisions:entity_reference_revisions'
+  - 'paragraphs:paragraphs'
+  - 'paragraphs_selection:paragraphs_selection'
+  - 'webform:webform'
+  - 'webform:webform_node'
+  - 'webform_content:webform_content'

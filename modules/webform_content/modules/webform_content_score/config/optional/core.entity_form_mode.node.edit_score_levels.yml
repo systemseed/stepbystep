@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.edit_score_levels
+label: 'Edit score levels'
+targetEntityType: node
+cache: true

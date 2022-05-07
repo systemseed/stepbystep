@@ -1,0 +1,40 @@
+sbs_user_registration.mobile_registration:
+  path: '/user/register/mobile'
+  defaults:
+    _title: 'Sign up'
+    _form: 'Drupal\sbs_user_registration\Form\PhoneRegistrationForm'
+  requirements:
+    _access_user_register: 'TRUE'
+sbs_user_registration.mobile_registration_verify:
+  path: '/user/verify/{user}/{hash}'
+  defaults:
+    _title_callback: '\Drupal\sbs_user_registration\Form\PhoneRegistrationVerifyForm::getTitle'
+    _entity_form: 'user.register_mobile_verify'
+  requirements:
+    _custom_access: '\Drupal\sbs_user_registration\Form\PhoneRegistrationVerifyForm::access'
+sbs_user_registration.mobile_login:
+  path: '/user/login/mobile'
+  defaults:
+    _title: 'Log in'
+    _form: 'Drupal\sbs_user_registration\Form\PhoneLoginForm'
+  requirements:
+    #    Is a login form so we need it to be accessible to anyone
+    _access: 'TRUE'
+sbs_user_registration.password_reset_mobile:
+  path: '/user/password/mobile'
+  defaults:
+    _title: 'Reset your password'
+    _form: 'Drupal\sbs_user_registration\Form\PhoneResetPasswordForm'
+  requirements:
+    #    Is a login form so we need it to be accessible to anyone
+    _access: 'TRUE'
+sbs_user_registration.verify.login:
+  path: '/user/verify/{uid}/{timestamp}/{hash}'
+  defaults:
+    _controller: '\Drupal\sbs_user_registration\Controller\SbsUserController::resetPassLogin'
+    _title: 'Verify'
+  requirements:
+    _user_is_logged_in: 'FALSE'
+  options:
+    _maintenance_access: TRUE
+    no_cache: TRUE

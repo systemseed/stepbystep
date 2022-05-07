@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.webform_content_text
+    - paragraphs.paragraphs_type.webform_content_score_level
+id: paragraph.webform_content_score_level.webform_content_text
+field_name: webform_content_text
+entity_type: paragraph
+bundle: webform_content_score_level
+label: 'Results page title'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

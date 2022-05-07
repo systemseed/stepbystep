@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.webform_content_display_text.webform_content_body
+    - paragraphs.paragraphs_type.webform_content_display_text
+  module:
+    - text
+id: paragraph.webform_content_display_text.default
+targetEntityType: paragraph
+bundle: webform_content_display_text
+mode: default
+content:
+  webform_content_body:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

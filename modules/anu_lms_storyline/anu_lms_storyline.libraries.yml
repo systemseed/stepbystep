@@ -1,0 +1,6 @@
+# Page with storylines options.
+storylines_page:
+  js:
+    js/dist/storylines.min.js: { minified: true, weight: -16 }
+  dependencies:
+    - sbs_application/vendors

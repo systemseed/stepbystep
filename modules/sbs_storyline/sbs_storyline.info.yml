@@ -1,0 +1,7 @@
+name: SBS Storyline
+description: Customizations for ANU LMS Storylines.
+type: module
+package: SBS
+core_version_requirement: ^8 || ^9
+dependencies:
+  - anu_lms_storyline:anu_lms_storyline

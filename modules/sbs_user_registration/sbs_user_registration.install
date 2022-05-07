@@ -1,0 +1,12 @@
+<?php
+/**
+ * @file
+ * Installation hooks for Paragraphs module.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function sbs_user_registration_install() {
+  module_set_weight('sbs_user_registration', 12);
+}

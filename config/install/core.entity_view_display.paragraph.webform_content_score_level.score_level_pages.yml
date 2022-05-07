@@ -1,0 +1,65 @@
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.score_level_pages
+    - field.field.paragraph.webform_content_score_level.webform_content_body
+    - field.field.paragraph.webform_content_score_level.webform_content_icon
+    - field.field.paragraph.webform_content_score_level.webform_content_score_range
+    - field.field.paragraph.webform_content_score_level.webform_content_text
+    - field.field.paragraph.webform_content_score_level.webform_content_title
+    - paragraphs.paragraphs_type.webform_content_score_level
+  module:
+    - options
+    - range
+    - text
+id: paragraph.webform_content_score_level.score_level_pages
+targetEntityType: paragraph
+bundle: webform_content_score_level
+mode: score_level_pages
+content:
+  webform_content_body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  webform_content_icon:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  webform_content_score_range:
+    type: range_integer
+    label: above
+    settings:
+      range_separator: '-'
+      thousand_separator: ''
+      range_combine: true
+      field_prefix_suffix: false
+      from_prefix_suffix: false
+      to_prefix_suffix: false
+      combined_prefix_suffix: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  webform_content_text:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  webform_content_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

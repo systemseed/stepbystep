@@ -1,0 +1,5 @@
+roles:
+  e_helper: safe
+  coordinator: safe
+  content_editor: unsafe
+  translator: unsafe

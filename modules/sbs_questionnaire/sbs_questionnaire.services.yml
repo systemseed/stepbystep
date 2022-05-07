@@ -1,0 +1,13 @@
+services:
+  sbs_questionnaire.event_subscriber:
+    class: Drupal\sbs_questionnaire\EventSubscriber\SbsQuestionnaireSubscriber
+    arguments: ['@config_pages.loader', '@entity.repository', '@language_manager']
+    tags:
+      - { name: event_subscriber }
+  sbs_questionnaire.overrider:
+    class: Drupal\sbs_questionnaire\Config\ConfigOverride
+    tags:
+      - {name: config.factory.override, priority: 5}
+  sbs_questionnaire.service:
+    class: Drupal\sbs_questionnaire\QuestionnaireService
+    arguments: ['@config_pages.loader', '@entity_type.manager']

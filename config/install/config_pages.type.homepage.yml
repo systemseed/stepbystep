@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies: {  }
+id: homepage
+label: 'Welcome Page'
+token: false
+context:
+  show_warning: true
+  group:
+    language: true
+  fallback:
+    language: en
+menu:
+  path: /admin/config/content/welcome_page
+  weight: -6
+  description: 'The welcome page for new or returning users'

@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.request_ehelper
+    - field.storage.config_pages.field_ehelper_score_levels
+  module:
+    - options
+id: config_pages.request_ehelper.field_ehelper_score_levels
+field_name: field_ehelper_score_levels
+entity_type: config_pages
+bundle: request_ehelper
+label: 'Score levels that a user has to reach to be offered an E-helper'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

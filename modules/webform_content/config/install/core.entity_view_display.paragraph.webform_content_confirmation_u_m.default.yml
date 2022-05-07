@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.webform_content_confirmation_u_m.webform_content_confirmation_url
+    - paragraphs.paragraphs_type.webform_content_confirmation_u_m
+  module:
+    - link
+id: paragraph.webform_content_confirmation_u_m.default
+targetEntityType: paragraph
+bundle: webform_content_confirmation_u_m
+mode: default
+content:
+  webform_content_confirmation_url:
+    weight: 0
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden: {  }

@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.webform_content_required
+    - paragraphs.paragraphs_type.webform_content_options_predef
+id: paragraph.webform_content_options_predef.webform_content_required
+field_name: webform_content_required
+entity_type: paragraph
+bundle: webform_content_options_predef
+label: Required
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

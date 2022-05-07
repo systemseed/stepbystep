@@ -1,0 +1,70 @@
+.page-welcome {
+  .block__content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.page-header-container {
+  background-color: $washed-green;
+  border-bottom-right-radius: 70px;
+  flex-grow: 1;
+  display: flex;
+  padding: 24px 0;
+
+  .page-header {
+    align-self: center;
+    text-align: center;
+    width: 100%;
+
+    & > * {
+      max-width: 330px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0 16px;
+    }
+
+    h1 {
+      color: $theme-primary;
+      line-height: 40px;
+      margin-bottom: 0.5rem;
+      font-size: 32px;
+
+      p {
+        margin: 0;
+      }
+    }
+
+    .button {
+      margin-top: 1.5rem;
+      min-width: 150px;
+    }
+  }
+}
+
+.page__secondary-cta {
+  padding: 40px 16px 32px;
+  width: 100%;
+  max-width: 330px;
+  align-self: center;
+
+  .h1 {
+    line-height: 1em;
+    margin-bottom: 1rem;
+  }
+
+  .description {
+    margin: 0;
+  }
+
+  .link-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    align-items: center;
+
+    .mdc-ripple-upgraded {
+      flex-grow: 1;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.sbs_questionnaires_first_welcome
+    - field.field.config_pages.sbs_questionnaires_first_welcome.field_welcome_button
+    - field.field.config_pages.sbs_questionnaires_first_welcome.field_welcome_header
+    - field.field.config_pages.sbs_questionnaires_first_welcome.field_welcome_text
+  module:
+    - text
+id: config_pages.sbs_questionnaires_first_welcome.default
+targetEntityType: config_pages
+bundle: sbs_questionnaires_first_welcome
+mode: default
+content:
+  field_welcome_button:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_welcome_header:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_welcome_text:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

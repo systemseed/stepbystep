@@ -1,0 +1,7 @@
+name: SBS User Registration
+description: SBS customizations for the user registration form.
+type: module
+package: SBS
+core_version_requirement: ^8 || ^9
+dependencies:
+  - view_password:view_password

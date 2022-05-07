@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.module_lesson.field_module_lesson_content
+    - node.type.module_lesson
+  module:
+    - entity_reference_revisions
+    - user
+id: node.module_lesson.default
+targetEntityType: node
+bundle: module_lesson
+mode: default
+content:
+  field_module_lesson_content:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

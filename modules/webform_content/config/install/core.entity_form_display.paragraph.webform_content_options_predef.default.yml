@@ -1,0 +1,46 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.webform_content_options_predef.webform_content_empty_option
+    - field.field.paragraph.webform_content_options_predef.webform_content_option_set
+    - field.field.paragraph.webform_content_options_predef.webform_content_required
+    - field.field.paragraph.webform_content_options_predef.webform_content_title
+    - paragraphs.paragraphs_type.webform_content_options_predef
+id: paragraph.webform_content_options_predef.default
+targetEntityType: paragraph
+bundle: webform_content_options_predef
+mode: default
+content:
+  webform_content_empty_option:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  webform_content_option_set:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  webform_content_required:
+    weight: 2
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  webform_content_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

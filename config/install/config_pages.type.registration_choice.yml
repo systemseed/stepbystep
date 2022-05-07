@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies: {  }
+id: registration_choice
+label: 'Registration Choice Page'
+token: false
+context:
+  show_warning: true
+  group:
+    language: true
+  fallback:
+    language: en
+menu:
+  path: /admin/config/content/registration_choice_page
+  weight: -3
+  description: 'The page where user can select between email and phone registration.'

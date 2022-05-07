@@ -1,0 +1,37 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.webform_content_score_level.webform_content_score_range
+    - field.field.paragraph.webform_content_score_level.webform_content_title
+    - paragraphs.paragraphs_type.webform_content_score_level
+  module:
+    - range
+id: paragraph.webform_content_score_level.default
+targetEntityType: paragraph
+bundle: webform_content_score_level
+mode: default
+content:
+  webform_content_score_range:
+    weight: 0
+    label: above
+    settings:
+      thousand_separator: ''
+      range_separator: '-'
+      range_combine: true
+      field_prefix_suffix: false
+      from_prefix_suffix: false
+      to_prefix_suffix: false
+      combined_prefix_suffix: false
+    third_party_settings: {  }
+    type: range_integer
+    region: content
+  webform_content_title:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

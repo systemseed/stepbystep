@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_selection
+third_party_settings:
+  paragraphs_selection:
+    fields:
+      -
+        id: node.webform.webform_content
+        weight: -44
+id: webform_content_options_predef
+label: 'Select list from predefined options'
+icon_uuid: null
+icon_default: null
+description: 'Create select form elements from the available sets'
+behavior_plugins: {  }

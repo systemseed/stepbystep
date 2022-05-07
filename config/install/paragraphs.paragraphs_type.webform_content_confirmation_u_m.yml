@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: webform_content_confirmation_u_m
+label: 'Confirmation: redirect to URL with message'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - sms
+id: sms_report.token
+label: Token
+targetEntityType: sms_report
+cache: true

@@ -1,0 +1,8 @@
+name: SBS Activities
+description: Extends ANU LMS with activities capability.
+type: module
+package: SBS
+core_version_requirement: ^8 || ^9
+depencencies:
+  - anu_lms:anu_lms
+  - sbs_application:sbs_application

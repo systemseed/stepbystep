@@ -1,0 +1,300 @@
+<?php
+
+/**
+ * @file
+ * Overrides user creation form for coordinators.
+ */
+
+use Drupal\Core\Entity\Display\EntityFormDisplayInterface;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Session\AccountInterface;
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function sbs_user_registration_form_user_register_form_alter(&$form) {
+  $form['account']['status']['#access'] = FALSE;
+  $form['field_user_state']['#access'] = FALSE;
+  $form['account']['notify']['#default_value'] = FALSE;
+
+  // Don't hide ability to disable or enable email notification for admins who
+  // can create other users.
+  if (!\Drupal::currentUser()->hasPermission('create users')) {
+    $form['account']['notify']['#access'] = FALSE;
+  }
+
+  // Don't force admins specify roles when create new users.
+  if (!\Drupal::currentUser()->hasPermission('administer users')) {
+    $form['account']['roles']['#required'] = TRUE;
+  }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function sbs_user_registration_form_sbs_user_registration_phone_login_alter(&$form) {
+  $form['actions']['#weight'] = 10;
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function sbs_user_registration_form_alter(&$form, $form_state, $form_id) {
+  if (in_array($form_id, sbs_user_registration_get_phone_flow_forms())) {
+    array_unshift($form['#validate'], 'sbs_user_registration_phone_number_validate');
+  }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ *
+ * Edit user form with fields depending on registration method.
+ */
+function sbs_user_registration_form_user_form_alter(array &$form, FormStateInterface $form_state) {
+  $route_name = Drupal::routeMatch()->getRouteName();
+  if ($route_name != 'entity.user.edit_form') {
+    return;
+  }
+
+  $user = Drupal::currentUser();
+  $is_user_admin = $user->hasPermission('edit users with allowed roles');
+
+  $is_user_registered_by_phone = empty($form['account']['mail']['#default_value']);
+  if ($is_user_registered_by_phone) {
+    $form['account']['mail']['#access'] = FALSE;
+    // Phone number is saved in the username field.
+    $form['account']['name']['#access'] = TRUE;
+    $form['account']['name']['#title'] = t('Phone number');
+  }
+
+  $form['account']['name']['#description'] = FALSE;
+  if (!$is_user_admin) {
+    $form['account']['mail']['#disabled'] = TRUE;
+    $form['account']['mail']['#description'] = t('You are not able to change your email');
+    $form['account']['name']['#disabled'] = TRUE;
+    $form['account']['name']['#description'] = t('You are not able to change your phone number');
+    $form['field_user_state']['#access'] = FALSE;
+  }
+
+  $form['account']['current_pass']['#prefix'] = '<h2>' . t("Change password") . '</h2>';
+  $form['account']['current_pass']['#weight'] = 1;
+  $form['account']['current_pass']['#description'] = FALSE;
+  $form['account']['pass']['#weight'] = 2;
+  $form['account']['pass']['#description'] = FALSE;
+  $form['actions']['submit']['#value'] = t('Save changes');
+}
+
+/**
+ * Implements hook_validation_constraint_alter().
+ *
+ * @todo Remove when https://www.drupal.org/node/2992848 is fixed.
+ */
+function sbs_user_registration_validation_constraint_alter(array &$definitions) {
+  $definitions['UserMailRequired']['class'] = '\Drupal\sbs_user_registration\Plugin\Validation\Constraint\OverrideUserMailRequired';
+  $definitions['ProtectedUserField']['class'] = '\Drupal\sbs_user_registration\Plugin\Validation\Constraint\OverrideProtectedUserFieldConstraint';
+}
+
+/**
+ * Implements hook_menu_local_tasks_alter().
+ *
+ * Remove all tabs from user edit form.
+ */
+function sbs_user_registration_menu_local_tasks_alter(&$data, $route_name) {
+  $user = Drupal::currentUser();
+  if ($user->hasPermission('view user information')) {
+    return;
+  }
+  if ($route_name != 'entity.user.edit_form') {
+    return;
+  }
+  $data['tabs'][0]['entity.user.canonical']['#access'] = FALSE;
+  $data['tabs'][0]['entity.user.edit_form']['#link']['title'] = t('View/Edit');
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function sbs_user_registration_form_user_login_form_alter(&$form, $form_state, $form_id) {
+  $form['name']['#title'] = t('Email');
+  $form['name']['#type'] = 'email';
+  $form['name']['#size'] = 80;
+  $form['name']['#maxlength'] = 80;
+  $form['name']['#description'] = '';
+  $form['name']['#element_validate'][] = 'login_onlyemail_user_login_validate';
+  $form['pass']['#description'] = '';
+  $form['actions']['#weight'] = 10;
+
+  $reset_password_url = Url::fromRoute('user.pass');
+  $form['password_reset_link'] = [
+    '#type' => 'link',
+    '#url' => $reset_password_url,
+    '#title' => t('Reset Password'),
+    '#attributes' => [
+      'id' => ['user-reset-password-link'],
+      'class' => ['sbs-text-link'],
+    ],
+  ];
+
+  $form['bottom'] = [
+    '#type' => 'fieldset',
+    '#weight' => 1000,
+  ];
+
+  $register_prompt_string = t("Don't have an account yet?");
+  $form['bottom']['register_prompt'] = [
+    '#prefix' => "<p id='register-prompt'>",
+    '#markup' => $register_prompt_string,
+    '#suffix' => "</p>",
+    '#weight' => 11,
+  ];
+
+  $registration_url = Url::fromRoute('sbs_static_pages.registration_consent_page');
+  $form['bottom']['register_link'] = [
+    '#type' => 'link',
+    '#url' => $registration_url,
+    '#title' => t('Sign Up'),
+    '#attributes' => [
+      'id' => ['user-login-link'],
+      'class' => ['sbs-text-link'],
+    ],
+    '#weight' => 12,
+  ];
+}
+
+/**
+ * Form element validation handler for the user login form.
+ *
+ * Allows users to authenticate by email.
+ */
+function login_onlyemail_user_login_validate($form, FormStateInterface $form_state) {
+  // Use $form_state->getUserInput() in the error message to guarantee
+  // that we send exactly what the user typed in.
+  $user_input = $form_state->getUserInput();
+  $name_input = $user_input['name'];
+
+  // Try loading by email.
+  if ($user = user_load_by_mail($name_input)) {
+    // Set the username for further validation.
+    $form_state->setValue('name', $user->getAccountName());
+    return TRUE;
+  }
+
+  // Set error message.
+  $query = isset($name_input) ? ['name' => $name_input] : [];
+  $form_state->setErrorByName(
+    'name', t('Unrecognized email or password. <a href=":password">Forgot your password?</a>',
+    [
+      ':password' => URL::fromRoute('user.pass', [], ['query' => $query])->toString(),
+    ]));
+  $form_state->setRebuild();
+  return FALSE;
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function sbs_user_registration_form_user_pass_alter(&$form, $form_state, $form_id) {
+  $form['name']['#title'] = t('Email');
+  $form['name']['#description'] = t('We will send an email to verify your account');
+  $form['mail']['#access'] = FALSE;
+  $form['actions']['submit']['#value'] = t('Reset password');
+}
+
+/**
+ * Changes titles and description of password fields.
+ */
+function sbs_user_registration_after_build($form, &$form_state) {
+  $form['account']['pass']['pass1']['#title'] = t("Password");
+  $form['account']['pass']['pass1']['#description'] = t("Minimum 8 characters and 1 number");
+  $form['account']['pass']['pass2']['#title'] = t("Confirm password");
+  return $form;
+}
+
+/**
+ * Implements hook_mail_alter().
+ *
+ * Swap reset password links for verification links.
+ */
+function sbs_user_registration_mail_alter(&$message) {
+  if ($message['id'] == 'user_register_no_approval_required' && $message['key'] == 'register_no_approval_required') {
+    $message['body'][0] = str_replace('/user/reset/', '/user/verify/', $message['body'][0]);
+    return;
+  }
+}
+
+/**
+ * Implements hook_entity_type_build().
+ */
+function sbs_user_registration_entity_type_build(array &$entity_types) {
+  $entity_types['user']
+    ->setFormClass('register_mobile_verify', 'Drupal\\sbs_user_registration\\Form\\PhoneRegistrationVerifyForm');
+}
+
+/**
+ * Implements hook_entity_type_alter().
+ */
+function sbs_user_registration_entity_type_alter(array &$entity_types) {
+  $entity_types['user']
+    ->setFormClass('register', 'Drupal\\sbs_user_registration\\Form\\EmailRegisterForm');
+}
+
+/**
+ * Implements hook_entity_form_display_alter().
+ *
+ * From
+ * https://www.drupal.org/forum/support/module-development-and-code-questions/2017-05-14/how-to-specifymodify-form-view-mode#comment-13458568
+ * Use hook_entity_form_mode_alter() after Drupal 9.2.0.
+ *
+ * Swap the 'register' form mode to the 'create' form mode.
+ * This condition happens when a user with enough permission creates
+ * an account for another user.
+ */
+function sbs_user_registration_entity_form_display_alter(EntityFormDisplayInterface &$form_display, array $context) {
+  if ($context['entity_type'] === 'user' && $context['bundle'] === 'user') {
+    $user = Drupal::currentUser();
+    if ($user->hasPermission('use  The form mode create linked to  user entity( user )')) {
+      $storage = Drupal::service('entity_type.manager')
+        ->getStorage('entity_form_display');
+      $form_display = $storage->load('user.user.create');
+    }
+  }
+}
+
+/**
+ * Custom validation to add a country code for phone registration.
+ */
+function sbs_user_registration_phone_number_validate($form, &$form_state) {
+  $phone_with_country_code = $form_state->getUserInput()['phone-country-code'];
+  if (empty($phone_with_country_code)) {
+    return;
+  }
+  $form_state->setValue('name', $phone_with_country_code);
+}
+
+/**
+ * Implements hook_user_format_name_alter().
+ *
+ * Use field_user_name for display.
+ */
+function sbs_user_registration_user_format_name_alter(&$name, AccountInterface $account) {
+  if (!$account->id()) {
+    return;
+  }
+  $user = Drupal::entityTypeManager()->getStorage('user')->load($account->id());
+  if (!$user->field_user_name || $user->field_user_name->isEmpty()) {
+    return;
+  }
+  $name = $user->field_user_name->value;
+}
+
+/**
+ * The form ids for the phone flow.
+ */
+function sbs_user_registration_get_phone_flow_forms() {
+  return [
+    'sbs_user_registration_phone_login',
+    'sbs_user_registration_phone_registration',
+    'sbs_user_registration_phone_reset_password',
+  ];
+}

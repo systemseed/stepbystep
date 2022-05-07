@@ -1,0 +1,15 @@
+.page-node-type-activity-checklist,
+.page-node-type-activity-audio {
+  .region-content {
+    /* Helps to keep activity close button within the container */
+    position: relative;
+  }
+
+  .messages {
+    /* Compensate big top margin of activities page when messages are displayed  */
+    margin-bottom: -24px;
+    /* Make sure Drupal messages overlay activities close button */
+    position: relative;
+    z-index: 999;
+  }
+}

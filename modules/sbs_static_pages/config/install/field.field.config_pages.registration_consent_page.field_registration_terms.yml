@@ -1,0 +1,28 @@
+uuid: 1743d149-2cad-4b7d-841d-285cd2cac470
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.registration_consent_page
+    - field.storage.config_pages.field_registration_terms
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    minimal_html: minimal_html
+    plain_text: plain_text
+    line_breaks_only: '0'
+    table: '0'
+id: config_pages.registration_consent_page.field_registration_terms
+field_name: field_registration_terms
+entity_type: config_pages
+bundle: registration_consent_page
+label: 'Registration Terms'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

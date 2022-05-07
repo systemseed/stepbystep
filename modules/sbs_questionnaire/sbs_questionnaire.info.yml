@@ -1,0 +1,8 @@
+name: SBS questionnaire
+description: Customizations for the questionnaire module.
+type: module
+package: SBS
+core_version_requirement: ^8 || ^9
+dependencies:
+  - webform_content:webform_content
+  - config_pages:config_pages

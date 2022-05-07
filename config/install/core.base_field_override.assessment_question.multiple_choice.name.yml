@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - anu_lms_assessments.assessment_question_type.multiple_choice
+id: assessment_question.multiple_choice.name
+field_name: name
+entity_type: assessment_question
+bundle: multiple_choice
+label: Question
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

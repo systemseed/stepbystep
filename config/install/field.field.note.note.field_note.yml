@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.note.note
+    - field.storage.note.field_note
+id: note.note.field_note
+field_name: field_note
+entity_type: note
+bundle: note
+label: Note
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

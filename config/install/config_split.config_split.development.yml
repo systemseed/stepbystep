@@ -1,0 +1,17 @@
+langcode: en
+status: false
+dependencies: {  }
+id: development
+label: Development
+description: ''
+weight: 0
+stackable: false
+storage: folder
+folder: ../config/split/development
+module:
+  devel: 0
+  devel_php: 0
+  domino_sms: 0
+theme: {  }
+complete_list: {  }
+partial_list: {  }

@@ -1,0 +1,72 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.homepage
+    - field.field.config_pages.homepage.field_login_buttons
+    - field.field.config_pages.homepage.field_login_description
+    - field.field.config_pages.homepage.field_login_title
+    - field.field.config_pages.homepage.field_sign_up_button
+    - field.field.config_pages.homepage.field_welcome_page_description
+    - field.field.config_pages.homepage.field_welcome_page_headline
+  module:
+    - link
+id: config_pages.homepage.default
+targetEntityType: config_pages
+bundle: homepage
+mode: default
+content:
+  field_login_buttons:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_login_description:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_login_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_sign_up_button:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_welcome_page_description:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_welcome_page_headline:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

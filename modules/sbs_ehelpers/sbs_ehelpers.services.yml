@@ -1,0 +1,9 @@
+services:
+  sbs_ehelpers.event_subscriber:
+    class: Drupal\sbs_ehelpers\EventSubscriber\SbsEhelpersQuestionnaireSubscriber
+    arguments: ['@config_pages.loader', '@entity.repository']
+    tags:
+      - { name: event_subscriber }
+  sbs_ehelpers.questionnaire:
+    class: Drupal\sbs_ehelpers\SbsEhelpersQuestionnaire
+    arguments: ['@config_pages.loader', '@entity_type.manager', '@sbs_questionnaire.service']

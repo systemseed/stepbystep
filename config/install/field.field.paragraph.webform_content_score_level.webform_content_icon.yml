@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.webform_content_icon
+    - paragraphs.paragraphs_type.webform_content_score_level
+  module:
+    - options
+id: paragraph.webform_content_score_level.webform_content_icon
+field_name: webform_content_icon
+entity_type: paragraph
+bundle: webform_content_score_level
+label: Icon
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

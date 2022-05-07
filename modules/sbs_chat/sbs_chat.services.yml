@@ -1,0 +1,4 @@
+services:
+  sbs_chat.chat_message:
+    class: Drupal\sbs_chat\ChatMessageProvider
+    arguments: [ '@entity_type.manager', '@current_user']

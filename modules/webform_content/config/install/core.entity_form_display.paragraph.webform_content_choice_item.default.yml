@@ -1,0 +1,40 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.webform_content_choice_item.webform_content_description
+    - field.field.paragraph.webform_content_choice_item.webform_content_text
+    - field.field.paragraph.webform_content_choice_item.webform_content_value
+    - paragraphs.paragraphs_type.webform_content_choice_item
+id: paragraph.webform_content_choice_item.default
+targetEntityType: paragraph
+bundle: webform_content_choice_item
+mode: default
+content:
+  webform_content_description:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  webform_content_text:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  webform_content_value:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

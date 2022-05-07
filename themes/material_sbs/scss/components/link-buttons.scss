@@ -1,0 +1,19 @@
+.link-buttons {
+  .button {
+    background-color: rgba(0, 89, 154, 0.08) !important;
+    color: $color-primary-base !important;
+    width: 100%;
+
+    &:hover {
+      background-color: rgba(0, 89, 154, 0.06) !important;
+    }
+  }
+
+  .link-buttons__separator {
+    text-align: center;
+  }
+}
+
+.button__link {
+  text-decoration: none;
+}

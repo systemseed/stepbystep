@@ -1,0 +1,6 @@
+sbs_chat.messages:
+  title: 'Messages'
+  description: 'Chat with E-helper'
+  route_name: sbs_chat.participant_chat
+  weight: 101
+  menu_name: main

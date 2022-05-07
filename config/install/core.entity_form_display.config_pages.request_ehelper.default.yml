@@ -1,0 +1,209 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.request_ehelper
+    - field.field.config_pages.request_ehelper.field_ehelper_accept_button_text
+    - field.field.config_pages.request_ehelper.field_ehelper_popup_accept_text
+    - field.field.config_pages.request_ehelper.field_ehelper_popup_cancel_text
+    - field.field.config_pages.request_ehelper.field_ehelper_popup_text
+    - field.field.config_pages.request_ehelper.field_ehelper_popup_title
+    - field.field.config_pages.request_ehelper.field_ehelper_questionnaire
+    - field.field.config_pages.request_ehelper.field_ehelper_requested_text
+    - field.field.config_pages.request_ehelper.field_ehelper_requested_title
+    - field.field.config_pages.request_ehelper.field_ehelper_requested_tx_above
+    - field.field.config_pages.request_ehelper.field_ehelper_score_levels
+    - field.field.config_pages.request_ehelper.field_ehelper_text
+    - field.field.config_pages.request_ehelper.field_ehelper_title
+  module:
+    - field_group
+    - text
+third_party_settings:
+  field_group:
+    group_popup:
+      children:
+        - field_ehelper_popup_title
+        - field_ehelper_popup_text
+        - field_ehelper_popup_accept_text
+        - field_ehelper_popup_cancel_text
+      label: 'Request E-helper popup'
+      region: content
+      parent_name: group_tabs
+      weight: 10
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: 'Configure popup that is shown to the user for requesting an E-helper.'
+        required_fields: true
+        open: true
+    group_not_requested:
+      children:
+        - field_ehelper_title
+        - field_ehelper_text
+        - field_ehelper_accept_button_text
+      label: 'Request E-helper page (not requested)'
+      region: content
+      parent_name: group_tabs
+      weight: 11
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: 'Configure page that displays to user that haven''t requested an E-helper'
+        required_fields: true
+        open: true
+    group_ehelper_requested:
+      children:
+        - field_ehelper_requested_title
+        - field_ehelper_requested_tx_above
+        - field_ehelper_requested_text
+      label: 'Request E-helper page (already requested)'
+      region: content
+      parent_name: group_tabs
+      weight: 12
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: 'Configure page for users that already requested an E-helper'
+        required_fields: true
+        open: true
+    group_tabs:
+      children:
+        - group_questionnaire
+        - group_popup
+        - group_not_requested
+        - group_ehelper_requested
+      label: Tabs
+      region: content
+      parent_name: ''
+      weight: 2
+      format_type: tabs
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        direction: vertical
+        width_breakpoint: 640
+    group_questionnaire:
+      children:
+        - field_ehelper_questionnaire
+        - field_ehelper_score_levels
+      label: Questionnaire
+      region: content
+      parent_name: group_tabs
+      weight: 9
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: open
+        description: ''
+        required_fields: true
+id: config_pages.request_ehelper.default
+targetEntityType: config_pages
+bundle: request_ehelper
+mode: default
+content:
+  field_ehelper_accept_button_text:
+    type: string_textfield
+    weight: 13
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_ehelper_popup_accept_text:
+    type: string_textfield
+    weight: 6
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_ehelper_popup_cancel_text:
+    type: string_textfield
+    weight: 8
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_ehelper_popup_text:
+    type: text_textarea
+    weight: 5
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_ehelper_popup_title:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_ehelper_questionnaire:
+    type: options_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_ehelper_requested_text:
+    type: text_textarea
+    weight: 7
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_ehelper_requested_title:
+    type: string_textfield
+    weight: 5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_ehelper_requested_tx_above:
+    type: text_textarea
+    weight: 6
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_ehelper_score_levels:
+    type: options_buttons
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_ehelper_text:
+    type: text_textarea
+    weight: 12
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_ehelper_title:
+    type: string_textfield
+    weight: 11
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  label: true

@@ -1,0 +1,33 @@
+uuid: 62769626-2d1b-48cd-94a3-68c415b3a4b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.homepage
+    - field.storage.config_pages.field_login_buttons
+  module:
+    - link
+id: config_pages.homepage.field_login_buttons
+field_name: field_login_buttons
+entity_type: config_pages
+bundle: homepage
+label: 'Login Buttons'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    attributes: {  }
+    uri: 'internal:/user/login/mobile'
+    title: Phone
+    options: {  }
+  -
+    attributes: {  }
+    uri: 'internal:/user/login'
+    title: Email
+    options: {  }
+default_value_callback: ''
+settings:
+  link_type: 1
+  title: 2
+field_type: link

@@ -1,0 +1,12 @@
+sbs_storyline.user.storyline:
+  path: '/user/{user}/storyline'
+  defaults:
+    _controller: '\Drupal\sbs_storyline\Controller\StorylineController::viewStoryline'
+    _title: 'Profile settings'
+  requirements:
+    _custom_access: '\Drupal\sbs_storyline\Controller\StorylineController::access'
+  options:
+    parameters:
+      user:
+        type: entity:user
+        converter: paramconverter.entity

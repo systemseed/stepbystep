@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.course_category.field_enable_course_sequence
+    - field.field.taxonomy_term.course_category.field_is_storyline
+    - field.field.taxonomy_term.course_category.field_storyline_description
+    - field.field.taxonomy_term.course_category.field_storyline_image
+    - taxonomy.vocabulary.course_category
+id: taxonomy_term.course_category.default
+targetEntityType: taxonomy_term
+bundle: course_category
+mode: default
+content: {  }
+hidden:
+  description: true
+  field_enable_course_sequence: true
+  field_is_storyline: true
+  field_storyline_description: true
+  field_storyline_image: true
+  langcode: true

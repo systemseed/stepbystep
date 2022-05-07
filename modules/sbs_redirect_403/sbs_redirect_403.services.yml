@@ -1,0 +1,6 @@
+services:
+  sbs_redirect_403.subscriber:
+    class: Drupal\sbs_redirect_403\EventSubscriber\Status403Subscriber
+    arguments: ['@current_user']
+    tags:
+      - { name: event_subscriber }

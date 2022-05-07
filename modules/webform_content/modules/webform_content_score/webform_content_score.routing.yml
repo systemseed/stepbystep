@@ -1,0 +1,25 @@
+webform_content_score.edit_score_levels:
+  path: '/node/{node}/edit-score-levels'
+  defaults:
+    _entity_form: 'node.edit_score_levels'
+  requirements:
+    _entity_access: 'node.update'
+    node: '\d+'
+  options:
+    _node_operation_route: true
+webform_content_score.edit_score_level_pages:
+  path: '/node/{node}/edit-score-level-pages'
+  defaults:
+    _entity_form: 'node.score_level_pages'
+  requirements:
+    _entity_access: 'node.update'
+    node: '\d+'
+  options:
+    _node_operation_route: true
+webform_content_score.score_level_page:
+  path: '/score-level-page/{node}'
+  defaults:
+    _entity_view: 'node.score_level_pages'
+  requirements:
+    _entity_access: 'node.view'
+    node: '\d+'

@@ -1,0 +1,108 @@
+{#
+/**
+ * @file
+ * Theme override to display a region.
+ *
+ * Available variables:
+ * - content: The content for this region, typically blocks.
+ * - attributes: HTML attributes for the region <div>.
+ * - region: The name of the region variable as defined in the theme's
+ *   .info.yml file.
+ *
+ * @see template_preprocess_region()
+ */
+#}
+
+{% if drawer_style != 'permanent' %}
+  {% set attributes = attributes.setAttribute('data-mdc-auto-init', 'MDCDrawer') %}
+
+  {% if drawer_height == 'below_navbar' %}
+    {% if navbar_style == 'dense' %}
+      {% set navbar_style_adjust = 'mdc-top-app-bar--dense-fixed-adjust' %}
+    {% elseif navbar_style == 'prominent' %}
+      {% set navbar_style_adjust = 'mdc-top-app-bar--prominent-fixed-adjust' %}
+    {% else %}
+      {% set navbar_style_adjust = 'mdc-top-app-bar--fixed-adjust' %}
+    {% endif %}
+  {% endif %}
+{% endif %}
+
+{% set classes = [
+  'region',
+  'region-' ~ region|clean_class,
+  'page-drawer',
+  'drawer',
+  'mdc-drawer',
+  drawer_style != 'parmanent' ? 'mdc-drawer--' ~ drawer_style,
+  navbar_style_adjust ? navbar_style_adjust,
+] %}
+
+<nav{{ attributes.addClass(classes) }} role="navigation" aria-labelledby="block-mainnavigation-menu">
+  <div class="mdc-drawer__content">
+    {% if site_name %}
+      <div class="block-site-name">{{ site_name }}</div>
+    {% endif %}
+
+    {% if logged_in %}
+      <div class="block-user-info">{{ user.displayname }}</div>
+    {% endif %}
+
+    {{ content }}
+
+    {% if admin_menu is not empty %}
+      <div class="contextual-region drawer-menu drawer-admin-menu drawer-menu--accordion">
+        <ul class="menu menu--level-0 mb-accordion mdc-list" data-mdc-auto-init="MDCList">
+          <li class="menu-item menu-item--expanded mb-accordion__section">
+                <span class="mdc-list-item mb-accordion__section-toggle" data-mdc-auto-init="MDCRipple" tabindex="0">
+                  <span class="mdc-list-item__ripple"></span>
+                  <i class="icon material-icons mdc-icon-button__icon material-icons__account icon-small">settings</i>
+                  <span class="mdc-list-item__text">{{ 'Admin'|t }}</span>
+                  <span class="mdc-list-item__meta">
+                    {% include "@material_base/components/01_atoms/icon.twig" with {
+                      data: {
+                        value: 'arrow_drop_down',
+                      },
+                      settings: {
+                        type: 'svg-sprite',
+                      }
+                    } %}
+                  </span>
+                </span>
+            <ul class="menu menu--level-1 mb-accordion__section-panel">
+              {% for link in admin_menu %}
+                <li class="menu-item">
+                  <a href="{{ link.url }}" class="mdc-list-item  mdc-ripple-upgraded"
+                     data-mdc-auto-init="MDCRipple">
+                    <span class="mdc-button__ripple"></span>
+                    <span class="mdc-button__label">{{ link.title }}</span>
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          </li>
+        </ul>
+      </div>
+    {% endif %}
+
+    {% if user_menu is not empty %}
+      <div class="block--user-menu">
+        <div class="drawer-menu drawer-menu--accordion">
+          <ul class="menu menu--level-0 mb-accordion mdc-list">
+            {% for link in user_menu %}
+              <li class="menu-item">
+                <a href="{{ link.url }}" class="mdc-list-item  mdc-ripple-upgraded">
+                  <i class="icon material-icons mdc-icon-button__icon material-icons__account icon-small">{{ link.icon_name }}</i>
+                  <span class="mdc-list-item__ripple"></span>
+                  <span class="mdc-list-item__text">{{ link.title }}</span>
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    {% endif %}
+  </div>
+</nav>
+{% if drawer_style == 'modal' %}
+  <div class="mdc-drawer-scrim"></div>
+{% endif %}

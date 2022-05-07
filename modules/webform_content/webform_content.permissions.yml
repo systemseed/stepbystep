@@ -1,0 +1,4 @@
+administer webform_content configuration:
+  title: 'Administer webform_content configuration'
+  description: 'Optional description.'
+  restrict access: true

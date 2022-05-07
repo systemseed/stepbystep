@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.registration_choice
+    - field.storage.config_pages.field_registration_choice_headli
+id: config_pages.registration_choice.field_registration_choice_headli
+field_name: field_registration_choice_headli
+entity_type: config_pages
+bundle: registration_choice
+label: Headline
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 'Sign up'
+default_value_callback: ''
+settings: {  }
+field_type: string_long

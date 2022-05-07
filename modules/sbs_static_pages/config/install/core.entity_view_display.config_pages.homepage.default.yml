@@ -1,0 +1,73 @@
+uuid: 4756b5da-5b86-45dd-86dc-1d6628a2b575
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.homepage
+    - field.field.config_pages.homepage.field_login_buttons
+    - field.field.config_pages.homepage.field_login_description
+    - field.field.config_pages.homepage.field_login_title
+    - field.field.config_pages.homepage.field_sign_up_button
+    - field.field.config_pages.homepage.field_welcome_page_description
+    - field.field.config_pages.homepage.field_welcome_page_headline
+  module:
+    - link
+id: config_pages.homepage.default
+targetEntityType: config_pages
+bundle: homepage
+mode: default
+content:
+  field_login_buttons:
+    weight: 6
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_login_description:
+    weight: 5
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_login_title:
+    weight: 4
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_sign_up_button:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_welcome_page_description:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_welcome_page_headline:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+hidden: {  }

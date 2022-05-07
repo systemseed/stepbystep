@@ -1,0 +1,86 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the Webform content module.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function webform_content_install($is_syncing) {
+  // The module is being installed as part of a config import so the changes
+  // below have been applied already and should be in the configuration set
+  // being imported.
+  return;
+  if ($is_syncing) {
+    return;
+  }
+  // Change webform display to hide the webform selection and
+  // show the paragraph field.
+  $formDisplay = \Drupal::service('config.factory')->getEditable('core.entity_form_display.node.webform.default');
+  $formDisplay->set('hidden', ['webform' => TRUE]);
+  $content = $formDisplay->get('content');
+  unset($content['webform']);
+  $content['webform_content'] = [
+    'type' => 'paragraphs',
+    'weight' => 8,
+    'region' => 'content',
+    'settings' => [
+      'title' => 'Questionnaire element',
+      'title_plural' => 'Questionnaire elements',
+      'edit_mode' => 'closed',
+      'closed_mode' => 'summary',
+      'autocollapse' => 'none',
+      'closed_mode_threshold' => 0,
+      'add_mode' => 'modal',
+      'form_display_mode' => 'default',
+      'default_paragraph_type' => '_none',
+      'features' => [
+        'add_above' => '0',
+        'collapse_edit_all' => 'collapse_edit_all',
+        'duplicate' => 'duplicate',
+      ],
+    ],
+    'third_party_settings' => [],
+  ];
+  $content['webform_content_configuration'] = [
+    'type' => 'paragraphs',
+    'weight' => 9,
+    'region' => 'content',
+    'settings' => [
+      'title' => 'Questionnaire configuration',
+      'title_plural' => 'Questionnaire configurations',
+      'edit_mode' => 'closed',
+      'closed_mode' => 'summary',
+      'autocollapse' => 'none',
+      'closed_mode_threshold' => 0,
+      'add_mode' => 'modal',
+      'form_display_mode' => 'default',
+      'default_paragraph_type' => '_none',
+      'features' => [
+        'add_above' => '0',
+        'collapse_edit_all' => 'collapse_edit_all',
+        'duplicate' => 'duplicate',
+      ],
+    ],
+    'third_party_settings' => [],
+  ];
+  $formDisplay->set('content', $content);
+  $formDisplay->save();
+
+  $viewDisplay = \Drupal::service('config.factory')->getEditable('core.entity_view_display.node.webform.default');
+  $viewDisplay->set('hidden', [
+    'webform_content' => TRUE,
+    'webform_content_configuration' => TRUE,
+  ]);
+  $content = $viewDisplay->get('content');
+  unset($content['webform_content']);
+  unset($content['webform_content_configuration']);
+  $viewDisplay->set('content', $content);
+  $viewDisplay->save();
+
+  $contentType = \Drupal::service('config.factory')->getEditable('node.type.webform');
+  $contentType->set('name', 'Questionnaire');
+  $contentType->save();
+}

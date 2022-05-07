@@ -1,0 +1,7 @@
+name: SBS replicate
+description: Customize how to replicate sbs entities.
+type: module
+package: SBS
+core_version_requirement: ^8 || ^9
+dependencies:
+  - replicate_ui:replicate_ui

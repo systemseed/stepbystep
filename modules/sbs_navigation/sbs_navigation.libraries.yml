@@ -1,0 +1,3 @@
+back-button:
+  js:
+    js/back-button.js: {}

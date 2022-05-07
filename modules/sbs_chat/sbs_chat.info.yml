@@ -1,0 +1,7 @@
+name: SBS Chat
+description: SBS in app messaging capabilities
+type: module
+package: SBS
+core_version_requirement: ^8 || ^9
+depencencies:
+  - sbs_application:sbs_application

@@ -1,0 +1,134 @@
+body {
+  background: black;
+
+  .page {
+    background: white;
+    position: relative;
+    @include media-breakpoint-up($md) {
+      width: $md;
+      margin: 0 auto;
+    }
+
+    .layout-container {
+      margin: 0;
+      position: relative;
+      z-index: 4;
+    }
+
+    main.page-main {
+      // Standard padding for all pages.
+      padding: 16px;
+
+      .main-content__container {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+
+        .main-content__content {
+          flex-grow: 1;
+        }
+      }
+
+      .region-content {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+  &.page-messages {
+    .page {
+      main.page-main {
+        padding: 0;
+      }
+    }
+  }
+}
+
+// A little trick to keep using 100% of the page viewport height
+// without any js. It's important for mobile applications where
+// the content must be adjusted based on the device height.
+main.page-main,
+.main-content,
+.main-content__container,
+.main-content__content,
+.page-content__wrapper,
+.page-content-primary,
+.page-content,
+.region-content,
+.block-system-main-block,
+.block-system-main-block .block__content,
+#anu-application,
+#activities,
+.sbs-chat {
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+// Fixes problem when 100% height calculated wrong when browser has
+// floating address bar, e.g. Chrome on real device.
+// Note: this is not replicable in Chrome Dev tools emulator.
+// Note: every page with content sticked to the bottom of the page
+// should be added to this list.
+body.page-user-registration-consent,
+body.page-welcome,
+body.page-welcome-questionnaires,
+body.page-questionnaire-getting-know-you,
+body.page-questionnaire-how-are-you-doing,
+body.path-score-level-page,
+body.page-user-login,
+body.page-user-login-mobile,
+body.page-questionnaire-requesting-e-helper {
+  .page {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-y: auto;
+  }
+}
+
+// Disable default padding due to full-width
+// layout of the page.
+body.page-welcome,
+body.page-view-storylines,
+body.page-sessions,
+body.page-toolbox,
+body.page-node-type-module-lesson {
+  main.page-main {
+    padding: 0;
+  }
+}
+
+// Pages which should have all their content centered
+// regardless of the viewport width.
+body.page-welcome-questionnaires,
+body.page-node-type-webform {
+  .page-container {
+    max-width: $narrow-content-max-width;
+    margin: 0 auto;
+  }
+}
+
+body.page-user-login,
+body.page-user-login-mobile,
+body.page-user-password,
+body.page-user-password-mobile,
+body.page-user-register-mobile,
+body.page-user-register,
+body[class*="page-user-verify-"] {
+  .region-content {
+    max-width: $narrow-content-max-width;
+    margin: 0 auto;
+  }
+}
+
+body.user-logged-in.path-user {
+  .block-system-main-block {
+    max-width: $narrow-content-max-width;
+    margin: 0 auto;
+  }
+}

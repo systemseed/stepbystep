@@ -1,0 +1,41 @@
+{% if activities is empty %}
+{{ 'The participant did not chose a character yet'|t }}
+<hr />
+{% else %}
+{{ 'Activity name'|t }}
+<hr />
+{% for activity in activities %}
+  {% if activity.locked %}
+    <strong>{{ activity.name }}</strong>
+    <span class="activity-locked"> {{ 'Locked'|t }} </span>
+  {% else %}
+    <details open="open">
+      <summary class="activity-name">
+        {{ activity.name }}
+      </summary>
+      <div class="activity-unlocked activity-item">
+        {{ activity.name }} {{ 'unlocked on '|t }} <strong>{{ activity.unlocked_date|format_date('short_date') }}</strong>
+      </div>
+
+      {% if activity.items_groups %}
+        {% for group_date,items in activity.items_groups %}
+          <div class="activity-item">
+          {{ 'Checklist item(s) added on'|t }} <strong>{{ group_date }}</strong>
+          <hr />
+          {% for item in items %}
+            <div class="checklist-item">
+              {{ item }}
+            </div>
+            <hr />
+          {% endfor %}
+
+            </div>
+        {% endfor %}
+      {% endif %}
+    </details>
+
+  {% endif %}
+
+  <hr />
+{% endfor %}
+{% endif %}

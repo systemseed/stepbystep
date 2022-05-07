@@ -1,0 +1,46 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_assigned_ehelpers
+    - field.field.user.user.field_ehelper_popup_dismissed
+    - field.field.user.user.field_storyline_choice
+    - field.field.user.user.field_user_name
+    - field.field.user.user.field_user_state
+  module:
+    - user
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  account:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_user_name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_user_state:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  language:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_assigned_ehelpers: true
+  field_ehelper_popup_dismissed: true
+  field_storyline_choice: true
+  langcode: true
+  timezone: true

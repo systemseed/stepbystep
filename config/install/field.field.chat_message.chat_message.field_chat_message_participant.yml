@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.chat_message.chat_message
+    - field.storage.chat_message.field_chat_message_participant
+id: chat_message.chat_message.field_chat_message_participant
+field_name: field_chat_message_participant
+entity_type: chat_message
+bundle: chat_message
+label: Participant
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    filter:
+      type: _none
+    include_anonymous: false
+field_type: entity_reference

@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.course_category_from_storyline.field_load_default_storyline
+    - paragraphs.paragraphs_type.course_category_from_storyline
+id: paragraph.course_category_from_storyline.default
+targetEntityType: paragraph
+bundle: course_category_from_storyline
+mode: default
+content:
+  field_load_default_storyline:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.request_ehelper
+    - field.storage.config_pages.field_ehelper_questionnaire
+    - node.type.webform
+id: config_pages.request_ehelper.field_ehelper_questionnaire
+field_name: field_ehelper_questionnaire
+entity_type: config_pages
+bundle: request_ehelper
+label: 'Select Questionnaire for Request E-helper'
+description: 'When there is no questionnaire selected users won''t be able to request an E-helper.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      webform: webform
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,14 @@
+langcode: en
+status: false
+dependencies: {  }
+id: production
+label: Production
+description: ''
+weight: 0
+stackable: false
+storage: folder
+folder: ../config/split/production
+module: {  }
+theme: {  }
+complete_list: {  }
+partial_list: {  }

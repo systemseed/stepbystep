@@ -1,0 +1,21 @@
+uuid: 8a2dabec-ed94-4ef4-b675-7b19bdd978e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.registration_consent_page
+    - field.storage.config_pages.field_registration_consent_descr
+id: config_pages.registration_consent_page.field_registration_consent_descr
+field_name: field_registration_consent_descr
+entity_type: config_pages
+bundle: registration_consent_page
+label: Description
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 'Before you continue please review'
+default_value_callback: ''
+settings: {  }
+field_type: string_long

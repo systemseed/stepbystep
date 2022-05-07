@@ -1,0 +1,34 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.user.limited
+    - field.field.user.user.field_assigned_ehelpers
+    - field.field.user.user.field_ehelper_popup_dismissed
+    - field.field.user.user.field_storyline_choice
+    - field.field.user.user.field_user_name
+    - field.field.user.user.field_user_state
+  module:
+    - user
+id: user.user.limited
+targetEntityType: user
+bundle: user
+mode: limited
+content:
+  field_user_name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  account: true
+  field_assigned_ehelpers: true
+  field_ehelper_popup_dismissed: true
+  field_storyline_choice: true
+  field_user_state: true
+  langcode: true
+  language: true
+  timezone: true

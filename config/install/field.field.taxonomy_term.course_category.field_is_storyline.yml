@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_is_storyline
+    - taxonomy.vocabulary.course_category
+id: taxonomy_term.course_category.field_is_storyline
+field_name: field_is_storyline
+entity_type: taxonomy_term
+bundle: course_category
+label: Storyline
+description: 'This category represents a storyline of courses'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

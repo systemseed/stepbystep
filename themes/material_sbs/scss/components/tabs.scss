@@ -1,0 +1,26 @@
+.tabs {
+  margin: 0;
+
+  &__item {
+    a {
+      text-transform: none;
+      font-weight: normal;
+
+      &:after {
+        display: block;
+        position: absolute;
+        content: "";
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 2px;
+        background: rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    &--active a:after {
+      background: $color-primary !important;
+    }
+  }
+
+}

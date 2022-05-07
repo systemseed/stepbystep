@@ -1,0 +1,43 @@
+uuid: cd8eaa4f-db98-4538-823a-6e6f8a1c753a
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.registration_choice
+    - field.field.config_pages.registration_choice.field_registration_choice_descri
+    - field.field.config_pages.registration_choice.field_registration_choice_headli
+    - field.field.config_pages.registration_choice.field_sign_up_buttons
+  module:
+    - link
+id: config_pages.registration_choice.default
+targetEntityType: config_pages
+bundle: registration_choice
+mode: default
+content:
+  field_registration_choice_descri:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_registration_choice_headli:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_sign_up_buttons:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden: {  }

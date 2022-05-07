@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: session
+label: Session
+type: 'canonical_entities:node'
+pattern: 'session/[node:title]'
+selection_criteria:
+  dc6bc904-cc03-430a-987f-45d2b0c0394d:
+    id: node_type
+    negate: false
+    uuid: dc6bc904-cc03-430a-987f-45d2b0c0394d
+    context_mapping:
+      node: node
+    bundles:
+      course: course
+selection_logic: and
+weight: -5
+relationships: {  }

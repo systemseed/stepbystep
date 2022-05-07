@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - sbs_chat
+    - serialization
+    - user
+id: chat_send_messages
+plugin_id: chat_send_messages
+granularity: resource
+configuration:
+  methods:
+    - POST
+  formats:
+    - json
+  authentication:
+    - cookie

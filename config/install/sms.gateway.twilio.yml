@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - sms_simplegateway
+id: twilio
+label: Twilio
+plugin: simplegateway
+settings:
+  method: post
+  authorization: basic
+  content_type: plain
+  base_url: ''
+  user_field: user
+  user_value: ''
+  pass_field: pass
+  pass_value: ''
+  sender_field: ''
+  sender_value: ''
+  number_field: To
+  number_prefix: ''
+  message_field: Body
+  extra_params: ''
+  receive_number_field: 'Step by Step'
+  receive_message_field: ''
+  receive_gwnumber_field: ''
+skip_queue: true
+incoming_push_path: ''
+reports_push_path: ''
+retention_duration_incoming: 0
+retention_duration_outgoing: 0

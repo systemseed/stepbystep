@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_selection
+third_party_settings:
+  paragraphs_selection:
+    fields:
+      -
+        id: node.webform.webform_content
+        weight: -45
+id: webform_content_text
+label: 'Text field'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

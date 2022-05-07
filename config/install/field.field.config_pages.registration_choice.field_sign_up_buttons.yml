@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.registration_choice
+    - field.storage.config_pages.field_sign_up_buttons
+  module:
+    - link
+id: config_pages.registration_choice.field_sign_up_buttons
+field_name: field_sign_up_buttons
+entity_type: config_pages
+bundle: registration_choice
+label: 'Sign up Buttons'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    attributes: {  }
+    uri: 'internal:/user/register/mobile'
+    title: Phone
+    options: {  }
+  -
+    attributes: {  }
+    uri: 'internal:/user/register'
+    title: Email
+    options: {  }
+default_value_callback: ''
+settings:
+  title: 2
+  link_type: 1
+field_type: link

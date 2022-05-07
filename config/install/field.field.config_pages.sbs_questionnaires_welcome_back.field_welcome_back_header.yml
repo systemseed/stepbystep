@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.sbs_questionnaires_welcome_back
+    - field.storage.config_pages.field_welcome_back_header
+id: config_pages.sbs_questionnaires_welcome_back.field_welcome_back_header
+field_name: field_welcome_back_header
+entity_type: config_pages
+bundle: sbs_questionnaires_welcome_back
+label: 'Welcome back header'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

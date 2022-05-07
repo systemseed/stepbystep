@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_activity
+    - node.type.activity_audio
+    - node.type.activity_checklist
+    - paragraphs.paragraphs_type.course_modules
+id: paragraph.course_modules.field_activity
+field_name: field_activity
+entity_type: paragraph
+bundle: course_modules
+label: Activity
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      activity_audio: activity_audio
+      activity_checklist: activity_checklist
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: activity_checklist
+field_type: entity_reference

@@ -1,0 +1,48 @@
+{#
+/**
+ * @file
+ * Theme override for an 'input' #type form element.
+ *
+ * Available variables:
+ * - attributes: A list of HTML attributes for the input element.
+ * - children: Optional additional rendered elements.
+ *
+ * @see template_preprocess_input()
+ */
+#}
+
+{% set button_attributes = create_attribute() %}
+
+{% set button_classes = [
+  'mdc-button',
+  'button-submit',
+  'back-navigation-button'
+] %}
+{% if attributes.class %}
+  {% set button_classes = button_classes|merge(attributes.class) %}
+{% endif %}
+{#
+Make the button behave like the hidden submit input.
+#}
+{% if attributes['data-drupal-states'] %}
+  {% set button_attributes = button_attributes.setAttribute('data-drupal-states', attributes['data-drupal-states']) %}
+{% endif %}
+{% if attributes['name'] %}
+  {% set button_attributes = button_attributes.setAttribute('name', attributes['name']) %}
+{% endif %}
+{% if attributes['value'] %}
+  {% set button_attributes = button_attributes.setAttribute('value', attributes['value']) %}
+{% endif %}
+
+{% if disabled %}
+  {% set button_attributes = button_attributes.setAttribute('disabled', 1) %}
+{% endif %}
+
+<button{{ button_attributes.addClass(button_classes) }}>
+  <div class="mdc-button__ripple"></div>
+  <span class="mdc-button__label">
+    <span class="material-icons">arrow_back</span>
+    Back
+  </span>
+  <input{{ attributes|without(['class', 'data-drupal-states', 'name', 'value']).addClass('button-submit__input', 'visually-hidden') }} />
+</button>

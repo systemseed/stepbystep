@@ -1,0 +1,70 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.line_breaks_only
+    - filter.format.minimal_html
+    - filter.format.simple_html
+    - node.type.activity_audio
+    - node.type.activity_checklist
+    - node.type.course
+    - node.type.courses_page
+    - node.type.module_lesson
+    - node.type.webform
+    - taxonomy.vocabulary.course_category
+  module:
+    - config_pages
+    - content_translation
+    - filter
+    - locale
+    - node
+    - paragraphs
+    - sbs_users
+    - system
+id: translator
+label: Translator
+weight: -5
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'create content translations'
+  - 'delete content translations'
+  - 'edit any activity_audio content'
+  - 'edit any activity_checklist content'
+  - 'edit any course content'
+  - 'edit any courses_page content'
+  - 'edit any module_lesson content'
+  - 'edit any webform content'
+  - 'edit homepage config page entity'
+  - 'edit registration_choice config page entity'
+  - 'edit registration_consent_page config page entity'
+  - 'edit request_ehelper config page entity'
+  - 'edit sbs_questionnaires_first_welcome config page entity'
+  - 'edit sbs_questionnaires_welcome_back config page entity'
+  - 'edit ss_translation_settings config page entity'
+  - 'skip sbs initial steps'
+  - 'translate activity_checklist node'
+  - 'translate any entity'
+  - 'translate course node'
+  - 'translate course_category taxonomy_term'
+  - 'translate courses_page node'
+  - 'translate interface'
+  - 'translate module_lesson node'
+  - 'translate paragraph'
+  - 'translate webform node'
+  - 'update content translations'
+  - 'use text format line_breaks_only'
+  - 'use text format minimal_html'
+  - 'use text format simple_html'
+  - 'view config_pages entity'
+  - 'view homepage config page entity'
+  - 'view registration_choice config page entity'
+  - 'view registration_consent_page config page entity'
+  - 'view request_ehelper config page entity'
+  - 'view sbs_questionnaires config page entity'
+  - 'view sbs_questionnaires_first_welcome config page entity'
+  - 'view sbs_questionnaires_welcome_back config page entity'
+  - 'view ss_translation_settings config page entity'
+  - 'view the administration theme'
+  - 'view unpublished paragraphs'

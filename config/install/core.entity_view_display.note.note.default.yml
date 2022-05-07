@@ -1,0 +1,50 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.note.note
+    - field.field.note.note.field_note
+    - field.field.note.note.field_participant
+  module:
+    - dynamic_entity_reference
+    - user
+id: note.note.default
+targetEntityType: note
+bundle: note
+mode: default
+content:
+  created:
+    type: timestamp
+    label: inline
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_note:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_participant:
+    type: dynamic_entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  uid:
+    type: author
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  changed: true
+  langcode: true

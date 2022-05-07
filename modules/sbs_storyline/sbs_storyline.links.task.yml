@@ -1,0 +1,5 @@
+sbs_storyline.user.storyline:
+  route_name: sbs_storyline.user.storyline
+  base_route: entity.user.canonical
+  title: 'Character'
+  weight: 10

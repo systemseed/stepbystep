@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.sbs_questionnaires
+    - field.storage.config_pages.field_questionnaires
+    - node.type.webform
+id: config_pages.sbs_questionnaires.field_questionnaires
+field_name: field_questionnaires
+entity_type: config_pages
+bundle: sbs_questionnaires
+label: Questionnaires
+description: 'These will appear when a new user logs in for the first time before they can go onto the sessions'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      webform: webform
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,17 @@
+uuid: 00612c1f-3d0c-498a-aad0-4a5737d095f8
+langcode: en
+status: true
+dependencies: {  }
+id: registration_consent_page
+label: 'Registration Consent Page'
+context:
+  show_warning: true
+  group:
+    language: false
+  fallback:
+    language: ''
+menu:
+  path: /admin/config/content/registration_consent_page
+  weight: -4
+  description: 'The consent page shown before registration.'
+token: false

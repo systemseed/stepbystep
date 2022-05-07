@@ -1,0 +1,88 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.note.note
+    - field.storage.note.field_participant
+  module:
+    - dynamic_entity_reference
+id: note.note.field_participant
+field_name: field_participant
+entity_type: note
+bundle: note
+label: Participant
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  user:
+    handler: 'default:user'
+    handler_settings:
+      target_bundles: null
+      sort:
+        field: _none
+        direction: ASC
+      auto_create: false
+      filter:
+        type: _none
+      include_anonymous: false
+  activity_checklist_item:
+    handler: 'default:activity_checklist_item'
+    handler_settings: {  }
+  lesson_checklist_result:
+    handler: 'default:lesson_checklist_result'
+    handler_settings: {  }
+  config_pages:
+    handler: 'default:config_pages'
+    handler_settings: {  }
+  node:
+    handler: 'default:node'
+    handler_settings: {  }
+  menu_link_content:
+    handler: 'default:menu_link_content'
+    handler_settings: {  }
+  file:
+    handler: 'default:file'
+    handler_settings: {  }
+  media:
+    handler: 'default:media'
+    handler_settings: {  }
+  note:
+    handler: 'default:note'
+    handler_settings: {  }
+  paragraph:
+    handler: 'default:paragraph'
+    handler_settings: {  }
+  sms_phone_number_verification:
+    handler: 'default:sms_phone_number_verification'
+    handler_settings: {  }
+  assessment_question:
+    handler: 'default:assessment_question'
+    handler_settings: {  }
+  assessment_question_result:
+    handler: 'default:assessment_question_result'
+    handler_settings: {  }
+  assessment_result:
+    handler: 'default:assessment_result'
+    handler_settings: {  }
+  sms_report:
+    handler: 'default:sms_report'
+    handler_settings: {  }
+  sms:
+    handler: 'default:sms'
+    handler_settings: {  }
+  sms_result:
+    handler: 'default:sms_result'
+    handler_settings: {  }
+  taxonomy_term:
+    handler: 'default:taxonomy_term'
+    handler_settings: {  }
+  path_alias:
+    handler: 'default:path_alias'
+    handler_settings: {  }
+  webform_submission:
+    handler: 'default:webform_submission'
+    handler_settings: {  }
+field_type: dynamic_entity_reference

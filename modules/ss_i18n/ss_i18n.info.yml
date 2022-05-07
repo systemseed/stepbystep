@@ -1,0 +1,5 @@
+name: SS i18n
+description: Enhancements for Translations.
+type: module
+core_version_requirement: ^8 || ^9
+package: Systemseed

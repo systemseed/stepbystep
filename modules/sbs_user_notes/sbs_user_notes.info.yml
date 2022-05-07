@@ -1,0 +1,7 @@
+name: SBS User Notes
+description: Provides ability for e-helpers and coordinators to leave notes at participants profiles.
+type: module
+package: SBS
+core_version_requirement: ^8 || ^9
+dependencies:
+  - eck:eck

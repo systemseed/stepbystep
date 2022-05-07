@@ -1,0 +1,7 @@
+definitions:
+  config_pages__sbs_questionnaires:
+    menu_name: admin
+    parent: 'menu_link_content:711d7926-3057-4787-a7b2-f827ae06e6aa'
+    weight: 20
+    expanded: false
+    enabled: true

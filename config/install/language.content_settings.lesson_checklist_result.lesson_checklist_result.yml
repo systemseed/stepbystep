@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.lesson_checklist_result.lesson_checklist_result
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: lesson_checklist_result.lesson_checklist_result
+target_entity_type_id: lesson_checklist_result
+target_bundle: lesson_checklist_result
+default_langcode: site_default
+language_alterable: false

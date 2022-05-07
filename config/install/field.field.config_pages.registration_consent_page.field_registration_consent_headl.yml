@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.registration_consent_page
+    - field.storage.config_pages.field_registration_consent_headl
+id: config_pages.registration_consent_page.field_registration_consent_headl
+field_name: field_registration_consent_headl
+entity_type: config_pages
+bundle: registration_consent_page
+label: Headline
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 'Sign up'
+default_value_callback: ''
+settings: {  }
+field_type: string

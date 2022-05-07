@@ -1,0 +1,23 @@
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - anu_lms_assessments.assessment_question_type.single_choice
+    - core.entity_view_mode.assessment_question.embedded
+    - field.field.assessment_question.single_choice.field_options
+id: assessment_question.single_choice.embedded
+targetEntityType: assessment_question
+bundle: single_choice
+mode: embedded
+content:
+  name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_options: true
+  langcode: true

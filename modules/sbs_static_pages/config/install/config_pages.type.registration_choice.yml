@@ -1,0 +1,17 @@
+uuid: bbdd7dee-703a-4f83-a87f-31e7fb373ccc
+langcode: en
+status: true
+dependencies: {  }
+id: registration_choice
+label: 'Registration Choice Page'
+context:
+  show_warning: true
+  group:
+    language: false
+  fallback:
+    language: ''
+menu:
+  path: /admin/config/content/registration_choice_page
+  weight: -3
+  description: 'The page where user can select between email and phone registration.'
+token: false

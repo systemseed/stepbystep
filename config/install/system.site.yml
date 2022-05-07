@@ -1,0 +1,12 @@
+langcode: en
+name: 'Step by Step'
+mail: no-reply@whostepbystep.org
+slogan: ''
+page:
+  403: /user/login
+  404: ''
+  front: /welcome
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+mail_notification: ''

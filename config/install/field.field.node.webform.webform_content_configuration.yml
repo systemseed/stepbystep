@@ -1,0 +1,126 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.webform_content_configuration
+    - node.type.webform
+    - paragraphs.paragraphs_type.webform_content_confirmation_u_m
+  module:
+    - entity_reference_revisions
+id: node.webform.webform_content_configuration
+field_name: webform_content_configuration
+entity_type: node
+bundle: webform
+label: 'Questionnaire configuration'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      webform_content_confirmation_u_m: webform_content_confirmation_u_m
+    negate: 0
+    target_bundles_drag_drop:
+      call_to_action:
+        weight: 34
+        enabled: false
+      checklist_item:
+        weight: 35
+        enabled: false
+      course_category:
+        weight: 36
+        enabled: false
+      course_category_from_storyline:
+        weight: 37
+        enabled: false
+      course_modules:
+        weight: 38
+        enabled: false
+      lesson_checklist:
+        weight: 39
+        enabled: false
+      lesson_divider:
+        weight: 40
+        enabled: false
+      lesson_embedded_video:
+        weight: 41
+        enabled: false
+      lesson_heading:
+        weight: 42
+        enabled: false
+      lesson_highlight:
+        weight: 43
+        enabled: false
+      lesson_highlight_marker:
+        weight: 44
+        enabled: false
+      lesson_image:
+        weight: 45
+        enabled: false
+      lesson_image_thumbnail:
+        weight: 46
+        enabled: false
+      lesson_image_wide:
+        weight: 47
+        enabled: false
+      lesson_img_list:
+        weight: 48
+        enabled: false
+      lesson_img_list_item:
+        weight: 49
+        enabled: false
+      lesson_list:
+        weight: 50
+        enabled: false
+      lesson_resource:
+        weight: 51
+        enabled: false
+      lesson_section:
+        weight: 52
+        enabled: false
+      lesson_table:
+        weight: 53
+        enabled: false
+      lesson_text:
+        weight: 54
+        enabled: false
+      question_long_answer:
+        weight: 55
+        enabled: false
+      question_multi_choice:
+        weight: 56
+        enabled: false
+      question_scale:
+        weight: 57
+        enabled: false
+      question_short_answer:
+        weight: 58
+        enabled: false
+      question_single_choice:
+        weight: 59
+        enabled: false
+      single_multi_choice_item:
+        weight: 60
+        enabled: false
+      webform_content_choice_item:
+        weight: 61
+        enabled: false
+      webform_content_confirmation_u_m:
+        weight: 62
+        enabled: true
+      webform_content_display_text:
+        weight: 63
+        enabled: false
+      webform_content_page_separator:
+        weight: 64
+        enabled: false
+      webform_content_single_choice:
+        weight: 65
+        enabled: false
+      webform_content_text:
+        weight: 66
+        enabled: false
+field_type: entity_reference_revisions

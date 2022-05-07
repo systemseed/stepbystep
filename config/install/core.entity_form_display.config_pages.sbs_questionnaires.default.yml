@@ -1,0 +1,58 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.sbs_questionnaires
+    - field.field.config_pages.sbs_questionnaires.field_questionnaires
+  module:
+    - field_group
+    - multiple_selects
+third_party_settings:
+  field_group:
+    group_welcome_first:
+      children:
+        - field_welcome_header
+        - field_welcome_text
+        - field_welcome_button
+      label: 'Welcome for the first time page'
+      region: content
+      parent_name: ''
+      weight: 1
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+    group_welcome_back:
+      children:
+        - field_welcome_back_header
+        - field_welcome_back_text
+        - field_welcome_back_button
+      label: 'Welcome back page'
+      region: content
+      parent_name: ''
+      weight: 2
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+id: config_pages.sbs_questionnaires.default
+targetEntityType: config_pages
+bundle: sbs_questionnaires
+mode: default
+content:
+  field_questionnaires:
+    type: multiple_options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  label: true

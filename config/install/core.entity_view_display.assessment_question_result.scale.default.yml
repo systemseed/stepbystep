@@ -1,0 +1,51 @@
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - anu_lms_assessments.assessment_question_result_type.scale
+    - field.field.assessment_question_result.scale.field_question_response_scale
+  module:
+    - entity_reference_revisions
+    - user
+id: assessment_question_result.scale.default
+targetEntityType: assessment_question_result
+bundle: scale
+mode: default
+content:
+  aqid:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_question_response_scale:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -4
+    region: content
+  user_id:
+    type: author
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  arid: true
+  is_correct: true
+  langcode: true

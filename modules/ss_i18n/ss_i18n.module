@@ -1,0 +1,62 @@
+<?php
+
+/**
+ * @file
+ * Main entry point for the module.
+ */
+
+use Drupal\config_pages\Entity\ConfigPages;
+
+/**
+ * Returns list of languages that should be shown in language switcher.
+ *
+ * @return array
+ *   An array of langcodes.
+ */
+function ss_i18n_get_language_switcher_codes() {
+  $entity = ConfigPages::config('ss_translation_settings');
+  // Hide all links if settings not set.
+  if (empty($entity)) {
+    return [];
+  }
+
+  $fieldName = \Drupal::currentUser()->hasPermission('translate any entity') ?
+    'field_show_in_switcher_for_admin' :
+    'field_show_in_language_switcher';
+
+  $languages_to_show = array_column($entity->get($fieldName)->getValue(), 'target_id');
+  return $languages_to_show;
+}
+
+/**
+ * Implements hook_preprocess_links().
+ */
+function ss_i18n_preprocess_links__language_block(&$variables) {
+
+  $links = &$variables['links'];
+
+  $languages_to_show = ss_i18n_get_language_switcher_codes();
+  // Hide all links if settings not set.
+  if (empty($languages_to_show)) {
+    $links = [];
+    return;
+  }
+
+  foreach ($links as $landcode => &$link) {
+    // Leave only allowed languages in switcher.
+    if (!in_array($landcode, $languages_to_show)) {
+      unset($links[$landcode]);
+    }
+  }
+}
+
+/**
+ * Implements hook_form_alter().
+ *
+ * Show the language selector only for user with translation permissions.
+ */
+function ss_i18n_form_alter(&$form, $form_state, $form_id) {
+  if ($form_id === 'user_form' && isset($form['language']) && !\Drupal::currentUser()->hasPermission('translate any entity')) {
+    $form['language']['#access'] = FALSE;
+  }
+}

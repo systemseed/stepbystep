@@ -1,0 +1,23 @@
+services:
+
+  # Route subscriber to overwrite node display for activity
+  # content types.
+  sbs_activities.route_subscriber:
+    class: Drupal\sbs_activities\Routing\RouteSubscriber
+    tags:
+      - { name: event_subscriber }
+
+  # Handler of activities node view.
+  sbs_activities.node_view:
+    class: Drupal\sbs_activities\Controller\ActivitiesNodeViewController
+    arguments: ['@entity_type.manager', '@renderer', '@current_user', '@entity.repository', '@anu_lms.settings', '@plugin.manager.anu_lms_content_type', '@anu_lms.lesson', '@sbs_activities.checklist', '@sbs_activities.audio', '@messenger', '@request_stack']
+
+  # Service for checklist activity handler.
+  sbs_activities.checklist:
+    class: Drupal\sbs_activities\ActivityChecklist
+    arguments: ['@entity_type.manager', '@current_user']
+
+  # Service for audio activity handler.
+  sbs_activities.audio:
+    class: Drupal\sbs_activities\ActivityAudio
+    arguments: ['@entity_type.manager', '@current_user']

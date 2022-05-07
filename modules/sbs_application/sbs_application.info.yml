@@ -1,0 +1,7 @@
+name: SBS Application
+description: Provides base for all React applications for the SBS project.
+type: module
+package: SBS
+core_version_requirement: ^8 || ^9
+depencencies:
+  - anu_lms:anu_lms

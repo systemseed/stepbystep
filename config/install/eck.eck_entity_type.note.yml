@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: note
+label: Note
+uid: true
+created: true
+changed: true
+title: false

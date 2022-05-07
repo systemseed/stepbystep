@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.webform_content_next_label
+    - paragraphs.paragraphs_type.webform_content_page_separator
+id: paragraph.webform_content_page_separator.webform_content_next_label
+field_name: webform_content_next_label
+entity_type: paragraph
+bundle: webform_content_page_separator
+label: 'Next page button label'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

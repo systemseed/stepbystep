@@ -1,0 +1,66 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.sbs_user
+    - field.field.user.user.field_assigned_ehelpers
+    - field.field.user.user.field_ehelper_popup_dismissed
+    - field.field.user.user.field_storyline_choice
+    - field.field.user.user.field_user_name
+    - field.field.user.user.field_user_state
+  module:
+    - field_group
+    - options
+    - user
+third_party_settings:
+  field_group:
+    group_sidebar:
+      children:
+        - field_user_state
+      label: Sidebar
+      parent_name: ''
+      region: content
+      weight: 1
+      format_type: details_sidebar
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: true
+        description: ''
+        required_fields: false
+        weight: 0
+id: user.user.sbs_user
+targetEntityType: user
+bundle: user
+mode: sbs_user
+content:
+  field_assigned_ehelpers:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_user_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_user_state:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  field_ehelper_popup_dismissed: true
+  field_storyline: true
+  field_storyline_choice: true
+  langcode: true
+  member_for: true

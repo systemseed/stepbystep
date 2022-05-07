@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.webform_content_maxlength
+    - paragraphs.paragraphs_type.webform_content_text
+id: paragraph.webform_content_text.webform_content_maxlength
+field_name: webform_content_maxlength
+entity_type: paragraph
+bundle: webform_content_text
+label: 'Character limit'
+description: 'Maximum length for the field'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,9 @@
+services:
+  sbs_users.route_subscriber:
+    class: Drupal\sbs_users\Routing\RouteSubscriber
+    tags:
+      - { name: event_subscriber }
+
+  sbs_users.profile:
+    class: Drupal\sbs_users\Profile
+    arguments: ['@entity_type.manager', '@anu_lms.courses_page', '@anu_lms_storyline.storyline', '@anu_lms.lesson', '@sbs_activities.node_view', '@database', '@date.formatter']

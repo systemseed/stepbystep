@@ -1,0 +1,5 @@
+services:
+  sbs_storyline.route_subscriber:
+    class: Drupal\sbs_storyline\EventSubscriber\SbsStorylineRouteSubscriber
+    tags:
+      - { name: event_subscriber }

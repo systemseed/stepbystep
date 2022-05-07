@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.request_ehelper
+    - field.storage.config_pages.field_ehelper_requested_text
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    minimal_html: minimal_html
+    line_breaks_only: '0'
+    simple_html: '0'
+    table: '0'
+    plain_text: '0'
+id: config_pages.request_ehelper.field_ehelper_requested_text
+field_name: field_ehelper_requested_text
+entity_type: config_pages
+bundle: request_ehelper
+label: 'Text below phone number'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: "<p>If this number isn't correct please contact <em>(add phone number / email)</em></p>\r\n\r\n<p>If you have any further questions, ask your E-helper when they next call you.</p>\r\n"
+    format: minimal_html
+default_value_callback: ''
+settings: {  }
+field_type: text_long

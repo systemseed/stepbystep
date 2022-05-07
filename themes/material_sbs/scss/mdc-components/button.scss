@@ -1,0 +1,22 @@
+
+
+.mdc-button {
+  height: 3rem !important;
+  letter-spacing: normal !important;
+}
+
+.mdc-button--unelevated:disabled {
+  background-color: $color-button-disabled-bg !important;
+  color: $color-button-disabled !important;
+}
+
+button.mdc-button.button-submit.mdc-button--unelevated.mdc-button--raised.button.button--primary.js-form-submit.form-submit {
+  margin-top: 30px !important;
+}
+
+button.mdc-button.button-submit.mdc-button--unelevated.mdc-button--raised.button.js-form-submit.form-submit {
+  width: 100% !important;
+  margin-top: 10px !important;
+}
+
+

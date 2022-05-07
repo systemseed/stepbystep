@@ -1,0 +1,62 @@
+.page-node-type-webform {
+
+  article,
+  .node__content,
+  .node__content > div:first-child {
+    height: 100%;
+  }
+
+  .node__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .form-actions {
+    margin: auto 0 0 0;
+
+    // Sorry for the long style - it just has to override
+    // exactly the same selector which also has "!important".
+    button.mdc-button.button-submit.mdc-button--unelevated.mdc-button--raised.js-form-submit.form-submit,
+    button.mdc-button.button-submit.mdc-button--unelevated.mdc-button--raised.button.button--primary.js-form-submit.form-submit {
+      margin: 0 !important;
+    }
+  }
+
+  .page-title {
+    font-size: 14px;
+    font-weight: normal;
+    margin: $spacing * 2 0 0;
+    line-height: 18px;
+  }
+
+  .form-item {
+
+    .sbs-label:not(.mdc-text-field):not(.option) {
+      font-weight: bold;
+      font-size: 1.25em;
+      margin-bottom: 1em;
+      line-height: 28px;
+    }
+
+    .form-select {
+      height: 56px;
+      width: 100%;
+      background: $color-box-background;
+      border: 1px solid rgba(0, 0, 0, .38);
+      border-radius: 4px;
+    }
+  }
+}
+
+#edit-questionnaire-header {
+  display: flex;
+  justify-content: flex-end;
+  min-height: $spacing * 3;
+  margin-bottom: $spacing * 2;
+}

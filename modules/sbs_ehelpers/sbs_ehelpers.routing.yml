@@ -1,0 +1,49 @@
+sbs_ehelpers.assign_ehelper:
+  path: '/user/{user}/e-helper/assign'
+  defaults:
+    _title: 'Select an e-helper from the list'
+    _form: 'Drupal\sbs_ehelpers\Form\AssignEhelper'
+  requirements:
+    _permission: 'assign e-helpers'
+  options:
+    _admin_route: true
+    parameters:
+      user:
+        type: entity:user
+sbs_ehelpers.remove_ehelper:
+  path: '/user/{user}/e-helper/remove/{ehelper}'
+  defaults:
+    _controller: '\Drupal\sbs_ehelpers\Controller\SbsEhelpers::removeEhelper'
+  requirements:
+    _permission: 'assign e-helpers'
+  options:
+    _admin_route: true
+    parameters:
+      user:
+        type: entity:user
+      ehelper:
+        type: entity:user
+sbs_ehelpers.dismiss_ehelper_popup:
+  path: '/user/e-helper/dismiss-popup'
+  defaults:
+    _controller: '\Drupal\sbs_ehelpers\Controller\SbsEhelpers::dismissPopup'
+  requirements:
+    _user_is_logged_in: 'TRUE'
+  options:
+    no_cache: 'TRUE'
+sbs_ehelpers.display_popup:
+  path: '/user/e-helper/display-popup'
+  defaults:
+    _controller: '\Drupal\sbs_ehelpers\Controller\SbsEhelpers::displayPopup'
+  requirements:
+    _user_is_logged_in: 'TRUE'
+  options:
+    no_cache: 'TRUE'
+sbs_ehelpers.request:
+  path: '/e-helper/request'
+  defaults:
+    _controller: '\Drupal\sbs_ehelpers\Controller\SbsEhelpers::requestPage'
+  requirements:
+    _custom_access: '\Drupal\sbs_ehelpers\Controller\SbsEhelpers::requestPageAccess'
+  options:
+    no_cache: 'TRUE'

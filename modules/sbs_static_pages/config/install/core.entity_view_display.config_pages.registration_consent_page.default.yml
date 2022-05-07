@@ -1,0 +1,53 @@
+uuid: e20b396d-f0fe-451b-93d4-79fb35700e46
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.registration_consent_page
+    - field.field.config_pages.registration_consent_page.field_registration_consent_butto
+    - field.field.config_pages.registration_consent_page.field_registration_consent_descr
+    - field.field.config_pages.registration_consent_page.field_registration_consent_headl
+    - field.field.config_pages.registration_consent_page.field_registration_terms
+  module:
+    - link
+    - text
+id: config_pages.registration_consent_page.default
+targetEntityType: config_pages
+bundle: registration_consent_page
+mode: default
+content:
+  field_registration_consent_butto:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_registration_consent_descr:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_registration_consent_headl:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_registration_terms:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

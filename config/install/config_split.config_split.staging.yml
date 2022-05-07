@@ -1,0 +1,15 @@
+langcode: en
+status: false
+dependencies: {  }
+id: staging
+label: Staging
+description: ''
+weight: 0
+stackable: false
+storage: folder
+folder: ../config/split/staging
+module:
+  devel: 0
+theme: {  }
+complete_list: {  }
+partial_list: {  }

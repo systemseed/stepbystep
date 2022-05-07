@@ -1,0 +1,80 @@
+body.page-toolbox {
+
+  .header {
+    background: $washed-green;
+    padding: $spacing * 2;
+    color: $theme-primary;
+
+    h1 {
+      color: $theme-primary;
+      margin-bottom: $spacing * 2;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .activities {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: $spacing * 2;
+
+    .toolbox-activity {
+      cursor: pointer;
+      position: relative;
+      background: $washed-blue;
+      border-radius: 4px;
+      padding: $spacing;
+      text-decoration: none;
+      margin-bottom: $spacing * 2;
+      width: calc(50% - $spacing);
+      flex: 0 0 auto;
+      
+      &:hover {
+        background: lighten($washed-blue, 1);
+      }
+
+      .material-icons.locked {
+        color: $color-gray-dark;
+        position: absolute;
+        right: $spacing;
+        top: $spacing;
+        font-size: 24px;
+      }
+
+      .material-icons.icon {
+        color: $theme-primary;
+        margin: $spacing * 3 auto $spacing * 2;
+        font-size: 60px;
+        height: 60px;
+        width: 60px;
+        display: block;
+      }
+
+      .title {
+        border-top: 1px solid white;
+        color: $theme-primary;
+        text-align: center;
+        line-height: 20px;
+        font-size: 16px;
+        padding: $spacing * 2 0 $spacing;
+      }
+
+      &.locked {
+        background: $color-box-background;
+        cursor: default;
+
+        &:hover {
+          background: $color-box-background;
+        }
+
+        .material-icons,
+        .title {
+          color: $color-gray-dark;
+        }
+      }
+    }
+  }
+}

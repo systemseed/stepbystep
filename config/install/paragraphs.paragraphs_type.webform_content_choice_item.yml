@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_selection
+third_party_settings:
+  paragraphs_selection:
+    fields:
+      -
+        id: paragraph.webform_content_single_choice.webform_content_choices
+        weight: 64
+id: webform_content_choice_item
+label: 'Choice item'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

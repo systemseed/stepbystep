@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.request_ehelper
+    - field.storage.config_pages.field_ehelper_requested_tx_above
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    minimal_html: minimal_html
+    line_breaks_only: '0'
+    simple_html: '0'
+    table: '0'
+    plain_text: '0'
+id: config_pages.request_ehelper.field_ehelper_requested_tx_above
+field_name: field_ehelper_requested_tx_above
+entity_type: config_pages
+bundle: request_ehelper
+label: 'Text above phone number'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: "<p>This is the phone number an E-helper will contact you on</p>\r\n"
+    format: minimal_html
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies: {  }
+id: registration_consent_page
+label: 'Registration Consent Page'
+token: false
+context:
+  show_warning: true
+  group:
+    language: true
+  fallback:
+    language: en
+menu:
+  path: /admin/config/content/registration_consent_page
+  weight: -4
+  description: 'The consent page shown before registration.'

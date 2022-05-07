@@ -1,0 +1,85 @@
+<?php
+
+/**
+ * @file
+ * Main entry point for the module.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Entity\EntityInterface;
+
+/**
+ * Implements hook_library_info_alter().
+ *
+ * Replace the courses' library from anu.
+ */
+function sbs_sessions_library_info_alter(&$libraries, $extension) {
+  if ($extension === 'anu_lms') {
+
+    // Override ANU LMS courses page.
+    if (!empty($libraries['courses'])) {
+      $libraries['courses']['js'] = [
+        '/' . drupal_get_path('module', 'sbs_sessions') . '/js/dist/courses.min.js' => [
+          'minified' => TRUE,
+          'weight' => -15,
+        ],
+      ];
+    }
+
+    // Override ANU LMS lesson page.
+    if (!empty($libraries['lesson'])) {
+      $libraries['lesson']['js'] = [
+        '/' . drupal_get_path('module', 'sbs_sessions') . '/js/dist/lesson.min.js' => [
+          'minified' => TRUE,
+          'weight' => -15,
+        ],
+      ];
+      $libraries['lesson']['dependencies'] = ['sbs_application/vendors'];
+    }
+
+    // OverrideANU LMS vendors.
+    if (!empty($libraries['vendors'])) {
+      $libraries['vendors']['js'] = [
+        '/' . drupal_get_path('module', 'sbs_application') . '/js/dist/vendors.min.js' => [
+          'minified' => TRUE,
+          'weight' => -16,
+        ],
+      ];
+    }
+
+  }
+}
+
+/**
+ * Implements hook_field_widget_WIDGET_TYPE_form_alter().
+ *
+ * Case for string_textfield.
+ *
+ * Hide the previous label.
+ */
+function sbs_sessions_field_widget_link_default_form_alter(&$element, FormStateInterface $form_state, $context) {
+  if ($context['items']->getName() !== 'field_course_finish_button') {
+    return;
+  }
+  $element['uri']['#access'] = FALSE;
+  $element['title']['#title'] = t('Button text');
+  $element['#title'] = t('Finish session button');
+  if (!$element['uri']['#default_value']) {
+    $element['uri']['#default_value'] = '/sessions';
+  }
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_create().
+ *
+ * Case for node.
+ * Have a fix finish path.
+ */
+function sbs_sessions_node_presave(EntityInterface $entity) {
+  if ($entity->bundle() !== 'course' || !$entity->isNew()) {
+    return;
+  }
+  $finishButton = $entity->field_course_finish_button;
+  $finishButton->uri = 'internal:/sessions';
+  $entity->field_course_finish_button = $finishButton;
+}

@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_suggestions
+    - node.type.activity_checklist
+id: node.activity_checklist.field_suggestions
+field_name: field_suggestions
+entity_type: node
+bundle: activity_checklist
+label: Suggestions
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

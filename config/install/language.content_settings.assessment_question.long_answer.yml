@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - anu_lms_assessments.assessment_question_type.long_answer
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: assessment_question.long_answer
+target_entity_type_id: assessment_question
+target_bundle: long_answer
+default_langcode: site_default
+language_alterable: false

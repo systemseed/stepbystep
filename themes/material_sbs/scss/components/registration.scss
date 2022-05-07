@@ -1,0 +1,26 @@
+.user-login-form,
+.sbs-user-registration-phone-login {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  #edit-bottom {
+    margin: auto 0 0 0;
+    padding: 16px 0 0 0;
+    border: none;
+
+    #register-prompt {
+      margin: 0 0 16px;
+    }
+  }
+}
+
+.path-user .main-content__content {
+  input {
+    width: 100%;
+  }
+
+  div.password-confirm {
+    display: none;
+  }
+}

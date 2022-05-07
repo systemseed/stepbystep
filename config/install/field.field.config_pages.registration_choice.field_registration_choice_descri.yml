@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.registration_choice
+    - field.storage.config_pages.field_registration_choice_descri
+id: config_pages.registration_choice.field_registration_choice_descri
+field_name: field_registration_choice_descri
+entity_type: config_pages
+bundle: registration_choice
+label: Description
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 'How would you like to register?'
+default_value_callback: ''
+settings: {  }
+field_type: string_long

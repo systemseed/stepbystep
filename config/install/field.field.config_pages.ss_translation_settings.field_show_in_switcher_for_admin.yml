@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.ss_translation_settings
+    - field.storage.config_pages.field_show_in_switcher_for_admin
+id: config_pages.ss_translation_settings.field_show_in_switcher_for_admin
+field_name: field_show_in_switcher_for_admin
+entity_type: config_pages
+bundle: ss_translation_settings
+label: 'Show in switcher for Admins'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:configurable_language'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

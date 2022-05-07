@@ -1,0 +1,8 @@
+name: SBS Sessions
+description: SBS customizations of ANU LMS for sessions feature.
+type: module
+package: SBS
+core_version_requirement: ^8 || ^9
+dependencies:
+  - anu_lms:anu_lms
+  - sbs_application:sbs_application

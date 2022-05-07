@@ -1,0 +1,31 @@
+sbs_users.entity.view:
+  path: '/user/{user}/participant'
+  defaults:
+    _title: 'Participant profile'
+    _controller: '\Drupal\sbs_users\Controller\UsersController::build'
+  requirements:
+    _custom_access: '\Drupal\sbs_users\Controller\UsersController::access'
+  options:
+    _admin_route: true
+    parameters:
+      user:
+        type: entity:user
+        converter: paramconverter.entity
+sbs_users.homepage:
+  path: '/homepage/{welcomed}'
+  defaults:
+    _title: 'Homepage'
+    _controller: '\Drupal\sbs_users\Controller\HomepageController::build'
+    welcomed: false
+  requirements:
+    _permission: 'access content'
+    _user_is_logged_in: 'TRUE'
+sbs_users.welcome:
+  path: '/welcome-questionnaires/{isUserBack}'
+  defaults:
+    _title: 'Welcome'
+    _form: '\Drupal\sbs_users\Form\WelcomeForm'
+    isUserBack: false
+  requirements:
+    _permission: 'access content'
+    _user_is_logged_in: 'TRUE'

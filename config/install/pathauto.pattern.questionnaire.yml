@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: questionnaire
+label: Questionnaire
+type: 'canonical_entities:node'
+pattern: 'questionnaire/[node:title]'
+selection_criteria:
+  19a008b6-8e56-4230-8f0e-8f1e2afa2200:
+    id: node_type
+    negate: false
+    uuid: 19a008b6-8e56-4230-8f0e-8f1e2afa2200
+    context_mapping:
+      node: node
+    bundles:
+      webform: webform
+selection_logic: and
+weight: -5
+relationships: {  }

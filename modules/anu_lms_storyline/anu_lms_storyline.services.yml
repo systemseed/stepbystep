@@ -1,0 +1,13 @@
+services:
+  # Normalizers for better output by REST Entity Recursive module.
+  anu_lms_storyline.normalizer:
+    class: Drupal\anu_lms_storyline\Normalizer
+    arguments: ['@entity.repository', '@serializer']
+  anu_lms_storyline.storyline:
+    class: Drupal\anu_lms_storyline\Storyline
+    arguments: ['@entity_type.manager', '@anu_lms_storyline.normalizer']
+  anu_lms_storyline.event_subscriber:
+    class: Drupal\anu_lms_storyline\EventSubscriber\CoursesPageFromStoryline
+    arguments: ['@entity_type.manager', '@current_user', '@anu_lms.normalizer', '@anu_lms.courses_page', '@anu_lms_storyline.storyline']
+    tags:
+      - { name: event_subscriber }

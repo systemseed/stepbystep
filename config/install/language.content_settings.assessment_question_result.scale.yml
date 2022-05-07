@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - anu_lms_assessments.assessment_question_result_type.scale
+id: assessment_question_result.scale
+target_entity_type_id: assessment_question_result
+target_bundle: scale
+default_langcode: site_default
+language_alterable: false

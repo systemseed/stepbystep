@@ -1,0 +1,37 @@
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - anu_lms_assessments.assessment_question_type.scale
+    - field.field.assessment_question.scale.field_scale
+    - field.field.assessment_question.scale.field_scale_correct
+  module:
+    - range
+id: assessment_question.scale.default
+targetEntityType: assessment_question
+bundle: scale
+mode: default
+content:
+  field_scale:
+    type: range
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_scale_correct:
+    type: number
+    weight: 4
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: -4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true

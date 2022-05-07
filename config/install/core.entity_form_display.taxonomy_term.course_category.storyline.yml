@@ -1,0 +1,56 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.taxonomy_term.storyline
+    - field.field.taxonomy_term.course_category.field_enable_course_sequence
+    - field.field.taxonomy_term.course_category.field_is_storyline
+    - field.field.taxonomy_term.course_category.field_storyline_description
+    - field.field.taxonomy_term.course_category.field_storyline_image
+    - image.style.thumbnail
+    - taxonomy.vocabulary.course_category
+  module:
+    - image
+id: taxonomy_term.course_category.storyline
+targetEntityType: taxonomy_term
+bundle: course_category
+mode: storyline
+content:
+  field_storyline_description:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_storyline_image:
+    type: image_image
+    weight: 2
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  description: true
+  field_enable_course_sequence: true
+  field_is_storyline: true
+  path: true
+  status: true
+  translation: true

@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.note
+name: Note
+type: note
+description: 'Note added to a participant by E-helpers or coordinators.'

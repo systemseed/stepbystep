@@ -1,0 +1,154 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for SBS Storyline module.
+ */
+
+use Drupal\node\NodeInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_ENTITY_TYPE_presave().
+ *
+ * Set a default category for courses to be the storyline with less weight.
+ */
+function sbs_storyline_node_presave(NodeInterface $node) {
+  if ($node->getType() !== 'course') {
+    return;
+  }
+  if (!$node->get('field_course_category')->isEmpty()) {
+    return;
+  }
+  $storylines = \Drupal::entityQuery('taxonomy_term')
+    ->condition('vid', 'course_category')
+    ->condition('field_is_storyline', TRUE)
+    ->condition('status', 1)
+    ->sort('weight', 'ASC')
+    ->execute();
+
+  if (empty($storylines)) {
+    return;
+  }
+
+  $defaultStoryline = reset($storylines);
+  $node->field_course_category->target_id = $defaultStoryline;
+}
+
+/**
+ * Implements hook_entity_operation_alter().
+ *
+ * Modify the text for sorting storylines.
+ *
+ * @see anu_lms_storyline_entity_operation_alter()
+ */
+function sbs_storyline_entity_operation_alter(array &$operations, EntityInterface $entity) {
+  if ($entity->getEntityTypeId() != 'taxonomy_term') {
+    return;
+  }
+
+  if ($entity->bundle() != 'course_category') {
+    return;
+  }
+
+  if (!$entity->field_is_storyline) {
+    return;
+  }
+  if (!\Drupal::currentUser()->hasPermission('edit terms in course_category')) {
+    return;
+  }
+  $operations['sort_storyline']['title'] = t('Sort sessions');
+}
+
+/**
+ * Implements hook_theme_info().
+ */
+function sbs_storyline_theme($existing, $type, $theme, $path) {
+  return [
+    'sbs_view_storyline' => [
+      'variables' => [
+        'storyline' => NULL,
+      ],
+    ],
+  ];
+}
+
+/**
+ * Implements hook_menu_local_tasks_alter().
+ *
+ * Remove all tabs from user edit form.
+ */
+function sbs_storyline_menu_local_tasks_alter(&$data, $route_name) {
+  $user = Drupal::currentUser();
+  if ($user->hasPermission('view user information')) {
+    return;
+  }
+  if ($route_name != 'sbs_storyline.user.storyline') {
+    return;
+  }
+  $data['tabs'][0]['entity.user.canonical']['#access'] = FALSE;
+  $data['tabs'][0]['entity.user.edit_form']['#link']['title'] = t('View/Edit');
+}
+
+/**
+ * Implements hook_module_implements_alter().
+ *
+ * Disable hook in anu_lms_storyline to use the "Character" terminology.
+ */
+function sbs_storyline_module_implements_alter(&$implementations, $hook) {
+  if ($hook === 'field_widget_chosen_select_form_alter') {
+    unset($implementations['anu_lms_storyline']);
+  }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ *
+ * Case for taxonomy_term_course_category_storyline_form.
+ * Hide the "relations" fieldset as storylines/characters do not have
+ * a hierarchy.
+ *
+ * Replace the overview callback with a custom one to redirect
+ * to the character list.
+ */
+function sbs_storyline_form_taxonomy_term_course_category_storyline_form_alter(&$form, FormStateInterface $form_state) {
+  $form['relations']['#attributes']['style'] = 'display: none';
+
+  foreach ($form['actions']['overview']['#submit'] as $key => $value) {
+    if ($value === '::overview') {
+      unset($form['actions']['overview']['#submit'][$key]);
+    }
+  }
+  $form['actions']['overview']['#submit'][] = 'sbs_storyline_submit_overview';
+  $form['actions']['overview']['#value'] = t('Save and go to character list');
+}
+
+/**
+ * Submit callback to return to the proper storyline list.
+ */
+function sbs_storyline_submit_overview(array $form, FormStateInterface $form_state): void {
+  $form_state->setRedirect('anu_lms_storyline.overview');
+}
+
+/**
+ * Implements hook_field_widget_WIDGET_TYPE_form_alter().
+ *
+ * Case for options_select.
+ *
+ * Add a prefix to storylines
+ */
+function sbs_storyline_field_widget_chosen_select_form_alter(&$element, FormStateInterface $form_state, $context) {
+  if ($context['items']->getName() !== 'field_course_category') {
+    return;
+  }
+
+  $element['#title'] = t('Category or character');
+
+  foreach ($element['#options'] as $id => $option) {
+    $termQuery = \Drupal::entityQuery('taxonomy_term');
+    if (is_int($id) && $termQuery->condition('tid', $id)->condition('field_is_storyline', TRUE)->execute()) {
+      $element['#options'][$id] = t('Character: @storyline_name', ['@storyline_name' => $option]);
+    }
+  }
+}

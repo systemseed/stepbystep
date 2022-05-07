@@ -1,0 +1,23 @@
+sbs_static_pages.welcome_page:
+  path: '/welcome'
+  defaults:
+    _controller: '\Drupal\sbs_static_pages\Controller\SbsStaticPagesController::welcome'
+  requirements:
+    # Is accessible to anyone
+    _access: 'TRUE'
+sbs_static_pages.registration_consent_page:
+  path: '/user/registration-consent'
+  defaults:
+    _title: 'Sign up consent'
+    _controller: '\Drupal\sbs_static_pages\Controller\SbsStaticPagesController::registrationConsent'
+  requirements:
+    # Is accessible to anyone
+    _access: 'TRUE'
+sbs_static_pages.registration_choice_page:
+  path: '/user/registration-choice'
+  defaults:
+    _title: 'Sign up method selection'
+    _controller: '\Drupal\sbs_static_pages\Controller\SbsStaticPagesController::registrationChoice'
+  requirements:
+    # Is accessible to anyone
+    _access: 'TRUE'

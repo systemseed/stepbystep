@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - anu_lms_assessments.assessment_question_type.long_answer
+id: assessment_question.long_answer.status
+field_name: status
+entity_type: assessment_question
+bundle: long_answer
+label: Published
+description: 'A boolean indicating whether the Question is published.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

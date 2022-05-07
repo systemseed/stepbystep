@@ -1,0 +1,42 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.registration_choice
+    - field.field.config_pages.registration_choice.field_registration_choice_descri
+    - field.field.config_pages.registration_choice.field_registration_choice_headli
+    - field.field.config_pages.registration_choice.field_sign_up_buttons
+  module:
+    - link
+id: config_pages.registration_choice.default
+targetEntityType: config_pages
+bundle: registration_choice
+mode: default
+content:
+  field_registration_choice_descri:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_registration_choice_headli:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_sign_up_buttons:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

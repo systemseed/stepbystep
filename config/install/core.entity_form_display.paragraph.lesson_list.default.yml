@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.lesson_list.field_lesson_list_items
+    - field.field.paragraph.lesson_list.field_lesson_list_type
+    - paragraphs.paragraphs_type.lesson_list
+id: paragraph.lesson_list.default
+targetEntityType: paragraph
+bundle: lesson_list
+mode: default
+content:
+  field_lesson_list_items:
+    type: string_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 2
+      placeholder: ''
+    third_party_settings: {  }
+  field_lesson_list_type:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

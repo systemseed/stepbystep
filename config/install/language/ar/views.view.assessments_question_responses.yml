@@ -1,0 +1,89 @@
+display:
+  default:
+    display_title: الرئيسي
+    display_options:
+      exposed_form:
+        options:
+          submit_button: تطبيق
+          reset_button_label: 'إعادة الضبط'
+          exposed_sorts_label: 'الترتيب حسب'
+          sort_asc_label: تصاعدي
+          sort_desc_label: تنازلي
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- الكل -'
+            offset_label: الإزاحة
+      fields:
+        user_id:
+          label: المستخدم
+          separator: ', '
+        aqid__target_revision_id:
+          separator: ', '
+        is_correct:
+          separator: ', '
+        created:
+          label: الإنشاء
+          separator: ', '
+        operations:
+          label: 'روابط العمليات'
+  assessment_results_download:
+    display_options:
+      arguments:
+        aid:
+          exception:
+            title: الكل
+        arid:
+          exception:
+            title: الكل
+      fields:
+        user_id:
+          label: المستخدم
+          separator: ', '
+        aqid__target_revision_id:
+          separator: ', '
+        is_correct:
+          separator: ', '
+        created:
+          label: الإنشاء
+          separator: ', '
+  assessment_results_embed:
+    display_options:
+      arguments:
+        arid:
+          exception:
+            title: الكل
+      fields:
+        aid:
+          separator: ', '
+        arid:
+          separator: ', '
+        user_id:
+          label: المستخدم
+          separator: ', '
+        aqid__target_revision_id:
+          separator: ', '
+        is_correct:
+          separator: ', '
+        created:
+          label: الإنشاء
+          separator: ', '
+        operations:
+          label: 'روابط العمليات'
+  assessments_results_download:
+    display_options:
+      arguments:
+        aid:
+          exception:
+            title: الكل
+      fields:
+        user_id:
+          label: المستخدم
+          separator: ', '
+        aqid__target_revision_id:
+          separator: ', '
+        is_correct:
+          separator: ', '
+        created:
+          label: الإنشاء
+          separator: ', '

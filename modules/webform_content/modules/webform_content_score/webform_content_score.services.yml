@@ -1,0 +1,4 @@
+services:
+  webform_content_score.score:
+    class: Drupal\webform_content_score\Score
+    arguments: ['@entity_type.manager']

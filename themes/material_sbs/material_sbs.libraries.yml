@@ -1,0 +1,40 @@
+theme:
+  css:
+    theme:
+      dist/css/theme.css: { }
+  js:
+    dist/js/theme.js: { }
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/drupalSettings
+
+mdc:
+  css:
+    theme:
+      dist/css/mdc.css: { }
+  js:
+    https://unpkg.com/material-components-web@7.0.0/dist/material-components-web.min.js: { type: external, minified: true, weight: -1 }
+    dist/js/mdc.js: { }
+  dependencies:
+    - core/drupal
+    - core/jquery
+
+tel-input:
+  js:
+    dist/js/tel_input.js: { }
+  css:
+    component:
+      dist/css/tel_input.css: { }
+  dependencies:
+    - material_sbs/intl-tel-input
+
+fonts:
+  css:
+    component:
+      dist/css/fonts.css: { }
+
+chat:
+  css:
+    component:
+      dist/css/chat.css: { }

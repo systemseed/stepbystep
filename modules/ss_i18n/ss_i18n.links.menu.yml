@@ -1,0 +1,5 @@
+ss_i18n.translate.settings:
+  title: Systemseed i18n Settings
+  route_name: 'config_pages.ss_translation_settings'
+  parent: system.admin_config_regional
+  weight: 20

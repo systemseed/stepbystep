@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - administerusersbyrole
+    - eck
+    - form_mode_control
+    - sbs_ehelpers
+    - sbs_users
+    - system
+id: coordinator
+label: Coordinator
+weight: -7
+is_admin: null
+permissions:
+  - 'access coordinator dashboard'
+  - 'access user profiles'
+  - 'assign e-helpers'
+  - 'cancel users by role'
+  - 'create note entities'
+  - 'create users'
+  - 'edit users by role'
+  - 'role-assign users by role'
+  - 'skip sbs initial steps'
+  - 'use  The form mode create linked to  user entity( user )'
+  - 'use  The form mode default linked to  user entity( user )'
+  - 'view all participant profiles'
+  - 'view any note entities'
+  - 'view the administration theme'
+  - 'view user email addresses'
+  - 'view users by role'

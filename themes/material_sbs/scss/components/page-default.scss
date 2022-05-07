@@ -1,0 +1,34 @@
+.page-title {
+  @extend .page-title-standard;
+  margin-bottom: $spacing;
+  font-size: $font-size-h1;
+  font-weight: $font-weight-h1;
+}
+
+.description {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.region-content-above {
+  margin: 0 auto;
+  height: $content-above-height;
+  display: flex;
+  justify-content: space-between;
+}
+
+.block-local-tasks-block {
+  margin-bottom: $spacing * 2;
+}
+
+// Some pages due to their layout require slightly
+// different look of the messages - no padding and
+// no rounded corners.
+.page-welcome,
+.page-node-type-courses-page,
+.page-node-type-module-lesson {
+  .messages {
+    margin: 0;
+    border-radius: 0;
+  }
+}

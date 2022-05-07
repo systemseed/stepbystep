@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: course_category
+label: 'Session category'
+icon_uuid: null
+icon_default: null
+description: 'Sessions from the selected category will be presented on the page.'
+behavior_plugins: {  }

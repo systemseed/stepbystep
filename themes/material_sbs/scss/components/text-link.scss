@@ -1,0 +1,21 @@
+.sbs-text-link {
+  font-family: $font-family-base;
+  font-size: 16px;
+  color: $color-primary-base;
+  font-weight: $font-weight-button;
+  text-decoration: underline solid rgb(0, 89, 154);
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+button.mdc-button.sbs-button-link {
+  background: none !important;
+  color: $color-primary-base !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  height: auto !important;
+  font-size: 16px !important;
+  font-weight: $font-weight-button !important;
+  text-decoration: underline;
+}

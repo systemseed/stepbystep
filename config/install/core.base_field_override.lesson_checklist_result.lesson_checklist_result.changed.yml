@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.lesson_checklist_result.lesson_checklist_result
+id: lesson_checklist_result.lesson_checklist_result.changed
+field_name: changed
+entity_type: lesson_checklist_result
+bundle: lesson_checklist_result
+label: Changed
+description: 'The time that the entity was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

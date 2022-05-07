@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.activity_audio.field_audio
+    - field.field.node.activity_audio.field_description
+    - field.field.node.activity_audio.field_icon
+    - node.type.activity_audio
+  module:
+    - user
+id: node.activity_audio.teaser
+targetEntityType: node
+bundle: activity_audio
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_audio: true
+  field_description: true
+  field_icon: true
+  langcode: true

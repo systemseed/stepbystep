@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for SBS Static pages module.
+ */
+
+/**
+ * Implements hook_theme_info().
+ */
+function sbs_static_pages_theme($existing, $type, $theme, $path) {
+  return [
+    'sbs_welcome_page' => [
+      'variables' => [
+        'headline' => NULL,
+        'description' => NULL,
+        'sign_up_button' => NULL,
+        'login_title' => NULL,
+        'login_description' => NULL,
+        'login_buttons' => NULL,
+      ],
+    ],
+    'sbs_registration_consent_page' => [
+      'variables' => [
+        'headline' => NULL,
+        'description' => NULL,
+        'terms' => NULL,
+        'consent_button' => NULL,
+      ],
+    ],
+    'sbs_registration_choice_page' => [
+      'variables' => [
+        'headline' => NULL,
+        'description' => NULL,
+        'buttons' => NULL,
+      ],
+    ],
+  ];
+}

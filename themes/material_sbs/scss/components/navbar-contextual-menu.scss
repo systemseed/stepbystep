@@ -1,0 +1,63 @@
+.navbar {
+  .drawer-open__button {
+    [dir=ltr] & {
+      margin-right: 11px;
+    }
+    [dir=rtl] & {
+      margin-left: 11px;
+    }
+    padding: 0;
+
+    .icon {
+      line-height: 10px;
+      color: black !important;
+    }
+
+    .drawer-open__button__text {
+      text-transform: uppercase;
+      font-size: 10px;
+      text-align: center;
+      width: 40px;
+      height: 20px;
+      position: absolute;
+      bottom: 3px;
+      right: calc(50% - 20px);
+    }
+  }
+
+  .navbar__user-menus {
+    justify-content: flex-end;
+    gap: 12px;
+  }
+
+  .button {
+    height: 48px;
+    border-radius: 100px;
+    border-color: $color-border !important;
+    color: $color-text !important;
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: normal;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    .icon {
+      color: inherit;
+    }
+
+    .material-icons__account {
+      font-size: 2rem;
+      width: 2rem;
+      height: 2rem;
+    }
+
+    .mdc-button__label {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+
+    .mdc-button__ripple {
+      border-radius: inherit;
+    }
+  }
+}

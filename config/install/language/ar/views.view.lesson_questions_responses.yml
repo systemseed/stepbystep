@@ -1,0 +1,35 @@
+display:
+  default:
+    display_title: الرئيسي
+    display_options:
+      exposed_form:
+        options:
+          submit_button: تطبيق
+          exposed_sorts_label: 'الترتيب حسب'
+          sort_asc_label: تصاعدي
+          sort_desc_label: تنازلي
+      fields:
+        aqid__target_id:
+          separator: ', '
+        user_id:
+          label: ألّفه
+          separator: ', '
+        field_question_response:
+          separator: ', '
+        field_question_response_long:
+          separator: ', '
+        field_question_response_scale:
+          separator: ', '
+        field_single_multi_choice:
+          separator: ', '
+        is_correct:
+          separator: ', '
+        created:
+          separator: ', '
+      arguments:
+        aqid__target_id:
+          exception:
+            title: الكل
+        'null':
+          exception:
+            title: الكل

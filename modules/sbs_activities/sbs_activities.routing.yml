@@ -1,0 +1,7 @@
+sbs_activities.toolbox:
+  path: '/toolbox'
+  defaults:
+    _controller: '\Drupal\sbs_activities\Controller\ToolboxController::viewToolbox'
+    _title: 'Toolbox'
+  requirements:
+    _user_is_logged_in: 'TRUE'

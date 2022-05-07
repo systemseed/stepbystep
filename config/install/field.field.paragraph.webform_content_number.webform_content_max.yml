@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.webform_content_max
+    - paragraphs.paragraphs_type.webform_content_number
+id: paragraph.webform_content_number.webform_content_max
+field_name: webform_content_max
+entity_type: paragraph
+bundle: webform_content_number
+label: Maximum
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

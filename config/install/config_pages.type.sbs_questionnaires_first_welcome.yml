@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies: {  }
+id: sbs_questionnaires_first_welcome
+label: 'Questionnaires First Welcome Page'
+token: false
+context:
+  show_warning: true
+  group:
+    language: true
+  fallback:
+    language: en
+menu:
+  path: /admin/content/questionnaires/first-welcome-page
+  weight: 20
+  description: 'Configure the first welcome page for questionnaires on Step by Step'

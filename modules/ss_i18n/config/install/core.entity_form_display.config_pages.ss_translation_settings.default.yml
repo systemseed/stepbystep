@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.ss_translation_settings
+    - field.field.config_pages.ss_translation_settings.field_show_in_language_switcher
+    - field.field.config_pages.ss_translation_settings.field_show_in_switcher_for_admin
+id: config_pages.ss_translation_settings.default
+targetEntityType: config_pages
+bundle: ss_translation_settings
+mode: default
+content:
+  field_show_in_language_switcher:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_show_in_switcher_for_admin:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  label: true

@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: activity_checklist_item
+label: 'Activity checklist item'
+uid: true
+created: true
+changed: true
+title: true

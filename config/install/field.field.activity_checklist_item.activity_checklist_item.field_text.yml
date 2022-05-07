@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.activity_checklist_item.activity_checklist_item
+    - field.storage.activity_checklist_item.field_text
+id: activity_checklist_item.activity_checklist_item.field_text
+field_name: field_text
+entity_type: activity_checklist_item
+bundle: activity_checklist_item
+label: Text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

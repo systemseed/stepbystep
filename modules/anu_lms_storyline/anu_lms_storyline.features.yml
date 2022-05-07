@@ -1,0 +1,4 @@
+bundle: anu_lms
+excluded:
+  - field.field.user.user.field_storyline
+required: true

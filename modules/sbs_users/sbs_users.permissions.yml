@@ -1,0 +1,10 @@
+view all participant profiles:
+  title: View all SBS participant profiles
+  description: Allows access to all sentitive participants' personal data & medical records.
+
+view own participant profiles:
+  title: View own assigned SBS participant profiles
+  description: The permission is created for E-helpers to allow them view sensitive personal data & medical records of participants explicitly assigned to them.
+
+skip sbs initial steps:
+  title: Allows to skip initial questionnaires and storyline selection

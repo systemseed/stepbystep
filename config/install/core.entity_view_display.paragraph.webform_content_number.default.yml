@@ -1,0 +1,60 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.webform_content_number.webform_content_error
+    - field.field.paragraph.webform_content_number.webform_content_max
+    - field.field.paragraph.webform_content_number.webform_content_min
+    - field.field.paragraph.webform_content_number.webform_content_required
+    - field.field.paragraph.webform_content_number.webform_content_title
+    - paragraphs.paragraphs_type.webform_content_number
+id: paragraph.webform_content_number.default
+targetEntityType: paragraph
+bundle: webform_content_number
+mode: default
+content:
+  webform_content_error:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  webform_content_max:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  webform_content_min:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  webform_content_required:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  webform_content_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

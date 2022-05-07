@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - imageapi_optimize_binaries
+name: default_image_optimization
+label: 'Default image optimization'
+processors:
+  37ab196b-7abc-416e-a182-5cc50818d170:
+    id: jpegoptim
+    data:
+      manual_executable_path: ''
+      progressive: 1
+      quality: 90
+      size: null
+    weight: 1
+    uuid: 37ab196b-7abc-416e-a182-5cc50818d170
+  e03f4281-19a5-483c-95fa-81e945ee0e93:
+    id: pngquant
+    data:
+      manual_executable_path: ''
+      speed: 3
+      quality:
+        min: 90
+        max: 99
+    weight: 2
+    uuid: e03f4281-19a5-483c-95fa-81e945ee0e93

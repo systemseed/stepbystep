@@ -1,0 +1,115 @@
+name: Step By Step
+type: profile
+description: 'An evidence based support program for people with depression and stress.'
+core_version_requirement: '^9'
+
+distribution:
+  name: Step By Step
+  langcode: en
+
+# Required modules.
+dependencies:
+  # core
+  - drupal:breakpoint
+  - drupal:ckeditor
+  - drupal:config
+  - drupal:contextual
+  #- drupal:datetime
+  - drupal:dblog
+  - drupal:dynamic_page_cache
+  - drupal:editor
+  - drupal:field_ui
+  - drupal:filter
+  - drupal:language
+  - drupal:locale
+  - drupal:media_library
+  - drupal:menu_ui
+  - drupal:options
+  - drupal:page_cache
+  - drupal:range
+  - drupal:rest
+  - drupal:serialization
+  - drupal:telephone
+  - drupal:token
+  # contrib
+  - admin_toolbar:admin_toolbar_tools
+  - administerusersbyrole:administerusersbyrole
+  - allowed_formats:allowed_formats
+  - anu_lms:anu_lms_assessments
+  - anu_lms_storyline:anu_lms_storyline
+  - chosen:chosen_field
+  - chosen:chosen_lib
+  - config_filter:config_filter
+  - config_ignore:config_ignore
+  - config_split:config_split
+  - config_translation:config_translation
+  - config_update:config_update
+  - csv_serialization:csv_serialization
+  - ctools:ctools
+  - dynamic_entity_reference:dynamic_entity_reference
+  - eck:eck
+  - entity_reference_revisions:entity_reference_revisions
+  - features:features_ui
+  - field_group:field_group
+  - imageapi_optimize:imageapi_optimize_binaries
+  - inline_entity_form:inline_entity_form
+  - limited_field_widgets:limited_field_widgets
+  - login_destination:login_destination
+  - maxlength:maxlength
+  - menu_link_content:menu_link_content
+  - module_filter:module_filter
+  - multiple_selects:multiple_selects
+  - notify_user_default:notify_user_default
+  - otp_login:otp_login
+  - paragraphs_selection:paragraphs_selection
+  - pathauto:pathauto
+  - pfm:pfm
+  - pwa:pwa
+  - replicate:replicate_ui
+  - rest_entity_recursive:rest_paragraphs_recursive
+  - restui:restui
+  - role_delegation:role_delegation
+  - rpt:rpt
+  - sbs_activities:sbs_activities
+  - sbs_application:sbs_application
+  - sbs_ehelpers:sbs_ehelpers
+  - sbs_navigation:sbs_navigation
+  - sbs_questionnaire:sbs_questionnaire
+  - sbs_redirect_403:sbs_redirect_403
+  - sbs_user_registration:sbs_user_registration
+  - sbs_replicate:sbs_replicate
+  - sbs_sessions:sbs_sessions
+  - sbs_static_pages:sbs_static_pages
+  - sbs_storyline:sbs_storyline
+  - sbs_user_notes:sbs_user_notes
+  - sbs_users:sbs_users
+  - shs:shs_chosen
+  - simple_pass_reset:simple_pass_reset
+  - sms_simplegateway:sms_simplegateway
+  - smsframework:sms_user
+  - smtp:smtp
+  - ss_i18n:ss_i18n
+  - update_helper:update_helper
+  - view_password:view_password
+  - views_add_button:views_add_button
+  - views_data_export:views_data_export
+  - webform:webform_node
+  - webform:webform_ui
+  - webform_content:webform_content_score
+  - xls_serialization:xls_serialization
+
+# Modules that can be uninstalled without breaking the profile.
+install:
+  - drupal:content_translation
+  - drupal:views_ui
+  - form_mode_control:form_mode_control
+  - domino:domino
+  - rollbar:rollbar
+  - sbs_chat:sbs_chat
+
+themes:
+  - stable
+  - material_base
+  - material_base_mdc
+  - material_sbs
+  - admin_sbs

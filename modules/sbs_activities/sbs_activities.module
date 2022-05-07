@@ -1,0 +1,160 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for SBS activities module.
+ */
+
+use Drupal\Core\Field\WidgetBase;
+use Drupal\Core\Cache\CacheableMetadata;
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ *
+ * When creating a new checklist activity
+ * instead of showing one textfield to add suggestions
+ * repeat it two times to show a total of three.
+ */
+function sbs_activities_form_node_form_alter(&$form, FormStateInterface $form_state) {
+  $node = $form_state->getformObject()->getEntity();
+  if ($node->bundle() === 'activity_checklist' && $node->isNew()) {
+
+    $field_state = WidgetBase::getWidgetState([], 'field_suggestions', $form_state);
+    $min_items_count = 2;
+
+    if ($field_state['items_count'] < $min_items_count) {
+      for ($i = 0; $i < $min_items_count; $i++) {
+        $item = $form['field_suggestions']['widget'][$i];
+        $item['#delta']++;
+        $item['#weight']++;
+        $form['field_suggestions']['widget'][$i + 1] = $item;
+      }
+
+      $field_state['items_count'] = $min_items_count;
+      WidgetBase::setWidgetState([], 'field_suggestions', $form_state, $field_state);
+    }
+  }
+}
+
+/**
+ * Implements hook_theme().
+ *
+ * TODO: delete.
+ */
+function sbs_activities_theme($existing, $type, $theme, $path) {
+  return [
+    'toolbox_activity' => [
+      'variables' => [
+        'title' => '',
+        'icon' => '',
+        'is_locked' => FALSE,
+        'link' => '',
+      ],
+    ],
+  ];
+}
+
+/**
+ * Implements hook_anu_lms_sw_scripts_alter().
+ *
+ * Replace Anu service worker script with customised SBS version.
+ */
+function sbs_activities_anu_lms_sw_scripts_alter(&$data) {
+  $anu_script = "/" . \Drupal::service('extension.path.resolver')->getPath('module', 'anu_lms') . '/js/dist/serviceworker.min.js';
+  $sbs_script = "/" . \Drupal::service('extension.path.resolver')->getPath('module', 'sbs_activities') . '/js/dist/serviceworker.min.js';
+  foreach ($data as $index => $script) {
+    if ($script === $anu_script) {
+      unset($data[$index]);
+    }
+  }
+
+  $data[] = $sbs_script;
+}
+
+/**
+ * Helper to get activity for the current user.
+ */
+function _sbs_get_current_user_activities() {
+  /** @var \Drupal\user\UserInterface $current_user */
+  // Load activities from the current storyline (character).
+  // The order is important - note that the $activities array will have
+  // the activities in the order of their appearance for the user in their
+  // journey.
+  $current_user = \Drupal::entityTypeManager()->getStorage('user')
+    ->load(\Drupal::currentUser()->id());
+  $storyline = \Drupal::service('anu_lms_storyline.storyline')->getUserStoryline($current_user);
+  $sessions = \Drupal::service('anu_lms.courses_page')->getCoursesByCategories([$storyline]);
+  $activities = [];
+  foreach ($sessions as $session) {
+    $parts = $session->get('field_course_module')->referencedEntities();
+    foreach ($parts as $part) {
+      $activity_id = (int) $part->get('field_activity')->getString();
+      if (!empty($activity_id) && !array_key_exists($activity_id, $activities)) {
+        $activity = \Drupal::entityTypeManager()->getStorage('node')->load($activity_id);
+        if ($activity) {
+          // Additional metadata to determine activity availability.
+          $activity->session_id = $session->id();
+          $lesson_ids = array_column($part->get('field_module_lessons')->getValue(), 'target_id');
+          $activity->prev_lesson_id = end($lesson_ids);
+          $activities[$activity_id] = $activity;
+        }
+      }
+    }
+  }
+
+  return $activities;
+}
+
+/**
+ * Implements hook_anu_lms_sw_settings_alter().
+ *
+ * Custom service worker settings to cache activities.
+ */
+function sbs_activities_anu_lms_sw_settings_alter(&$settings, CacheableMetadata $cache_metadata) {
+  // Cache per user.
+  $cache_metadata->addCacheContexts(['user']);
+  $cache_metadata->addCacheTags(['user:' . \Drupal::currentUser()->id()]);
+  $settings['user_id'] = \Drupal::currentUser()->id();
+
+  $current_user = \Drupal::entityTypeManager()->getStorage('user')
+    ->load(\Drupal::currentUser()->id());
+  $storyline = \Drupal::service('anu_lms_storyline.storyline')->getUserStoryline($current_user);
+
+  $settings['urls'] = [
+    '/modules/custom/sbs_activities/js/dist/toolbox.min.js',
+    '/modules/custom/sbs_activities/js/dist/audio.min.js',
+    '/modules/custom/sbs_activities/js/dist/checklist.min.js',
+  ];
+
+  // It doesn't make sense to cache toolbox or activities before a user picked
+  // a storyline.
+  if (!$storyline) {
+    return;
+  }
+
+  $settings['urls'][] = '/toolbox';
+  $settings['activity_audios'] = [];
+
+  // Cache all activities for the current user.
+  /* @var \Drupal\node\NodeInterface[] $activities */
+  $activities = _sbs_get_current_user_activities();
+  foreach ($activities as $activity) {
+    $generated_url = $activity->toUrl()->toString(TRUE);
+    $settings['urls'][] = $generated_url->getGeneratedUrl();
+    $cache_metadata = $cache_metadata->merge($generated_url);
+
+    if ($activity->bundle() == 'activity_audio' && !$activity->get('field_audio')->isEmpty()) {
+      $settings['activity_audios'][] = [
+        'url' => $activity->get('field_audio')->entity->createFileUrl(TRUE),
+        'revision' => NULL,
+      ];
+    }
+
+    // Invalidate settings on any node change (to ensure we get new
+    // activities as soon as they are published).
+    $cache_tags = \Drupal::entityTypeManager()->getDefinition('node')
+      ->getListCacheTags();
+    $cache_metadata->addCacheTags($cache_tags);
+  }
+}

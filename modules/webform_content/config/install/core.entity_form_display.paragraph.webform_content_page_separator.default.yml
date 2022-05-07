@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.webform_content_page_separator.webform_content_next_label
+    - field.field.paragraph.webform_content_page_separator.webform_content_prev_label
+    - paragraphs.paragraphs_type.webform_content_page_separator
+id: paragraph.webform_content_page_separator.default
+targetEntityType: paragraph
+bundle: webform_content_page_separator
+mode: default
+content:
+  webform_content_next_label:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  webform_content_prev_label:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

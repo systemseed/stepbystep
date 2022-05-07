@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+// Variables
+@import "../../contrib/material_base/scss/base/variables"; // ! Check path
+@import "variables";
+@import "../../contrib/material_base/scss/base/mixins"; // ! Check path
+@import "mixins";
+// MDC library
+@import "../../contrib/material_base/scss/mdc/theme";
+@import "mdc/typography";
+@import "../../contrib/material_base/scss/mdc/top-app-bar";
+@import "mdc/components";
+
+// Base theme MDC Components
+@import "../../contrib/material_base/scss/mdc-components"; // ! Check path
+// Also it is possible to import by single component, for example:
+// @import "../../contrib/material_base/scss/mdc-components/forms"; // ! Check path
+// @import "../../contrib/material_base/scss/mdc-components/button"; // ! Check path
+
+// Theme MDC components
+@import "mdc-components";

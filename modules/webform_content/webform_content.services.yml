@@ -1,0 +1,10 @@
+services:
+  plugin.manager.webform_content_paragraph:
+    class: Drupal\webform_content\WebformContentParagraphPluginManager
+    parent: default_plugin_manager
+  plugin.manager.webform_content_settings:
+    class: Drupal\webform_content\WebformContentSettingsPluginManager
+    parent: default_plugin_manager
+  webform_content.paragraphs_converter:
+    class: Drupal\webform_content\ParagraphsConverter
+    arguments: ['@entity_type.manager', '@plugin.manager.webform_content_paragraph', '@plugin.manager.webform_content_settings']

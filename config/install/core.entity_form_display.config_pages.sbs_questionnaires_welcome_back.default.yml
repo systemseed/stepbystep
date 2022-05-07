@@ -1,0 +1,41 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.sbs_questionnaires_welcome_back
+    - field.field.config_pages.sbs_questionnaires_welcome_back.field_welcome_back_button
+    - field.field.config_pages.sbs_questionnaires_welcome_back.field_welcome_back_header
+    - field.field.config_pages.sbs_questionnaires_welcome_back.field_welcome_back_text
+  module:
+    - text
+id: config_pages.sbs_questionnaires_welcome_back.default
+targetEntityType: config_pages
+bundle: sbs_questionnaires_welcome_back
+mode: default
+content:
+  field_welcome_back_button:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_welcome_back_header:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_welcome_back_text:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  label: true

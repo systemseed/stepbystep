@@ -1,0 +1,71 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Questionnaire scores module.
+ */
+
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Url;
+use Drupal\Core\Render\Element;
+
+/**
+ * Implements hook_entity_type_build().
+ */
+function webform_content_score_entity_type_build(array &$entity_types) {
+  $editFormClass = $entity_types['node']->getFormClass('edit');
+  $entity_types['node']
+    ->setFormClass('edit_score_levels', $editFormClass)
+    ->setFormClass('score_level_pages', $editFormClass);
+}
+
+/**
+ * Implements hook_entity_operation_alter().
+ *
+ * Add the link to the form to set score levels.
+ */
+function webform_content_score_entity_operation_alter(array &$operations, EntityInterface $entity) {
+  if ($entity->getEntityTypeId() !== 'node' || $entity->bundle() !== 'webform') {
+    return;
+  }
+
+  if (!$entity->access('update')) {
+    return;
+  }
+  $operations['edit_score_levels'] = [
+    'title' => t('Set score Levels'),
+    'url' => Url::fromRoute('webform_content_score.edit_score_levels', ['node' => $entity->id()]),
+    'weight' => 50,
+  ];
+  $operations['edit_score_level_pages'] = [
+    'title' => t("Edit score's result screen"),
+    'url' => Url::fromRoute('webform_content_score.edit_score_level_pages', ['node' => $entity->id()]),
+    'weight' => 50,
+  ];
+}
+
+/**
+ * Implementes template_preprocess_node().
+ */
+function webform_content_score_preprocess_node(&$variables) {
+  if ($variables['view_mode'] !== 'score_level_pages') {
+    return;
+  }
+  $variables['content']['questionnaire_score_levels']['#cache']['max-age'] = 0;
+
+  $scoreService = \Drupal::service('webform_content_score.score');
+  $score = $scoreService->getScore($variables['node'], $variables['user']->getAccount());
+
+  if ($score === FALSE) {
+    $variables['content']['questionnaire_score_levels']['#access'] = FALSE;
+    return;
+  }
+  $scoreLevel = $scoreService->getScoreLevel($variables['node'], $score);
+  // Remove score levels that do not match the current score.
+  foreach (Element::children($variables['content']['questionnaire_score_levels']) as $scoreLevelKey) {
+    if ($variables['content']['questionnaire_score_levels'][$scoreLevelKey]['#paragraph']->id() !== $scoreLevel->id()) {
+      $variables['content']['questionnaire_score_levels'][$scoreLevelKey]['#access'] = FALSE;
+    }
+  }
+
+}

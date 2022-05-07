@@ -1,0 +1,40 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.course_modules.field_activity
+    - field.field.paragraph.course_modules.field_module_assessment
+    - field.field.paragraph.course_modules.field_module_lessons
+    - field.field.paragraph.course_modules.field_module_title
+    - paragraphs.paragraphs_type.course_modules
+id: paragraph.course_modules.default
+targetEntityType: paragraph
+bundle: course_modules
+mode: default
+content:
+  field_activity:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_module_lessons:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_module_title:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_module_assessment: true

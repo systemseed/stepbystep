@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.chat_message
+name: 'Chat message'
+type: chat_message
+description: ''

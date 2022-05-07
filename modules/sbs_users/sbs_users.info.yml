@@ -1,0 +1,12 @@
+name: SBS Users
+description: Functionality related to users.
+type: module
+package: SBS
+core_version_requirement: ^8 || ^9
+dependencies:
+  - drupal:user
+  - config_pages:config:pages
+  - sbs_ehelpers:sbs_ehelpers
+  - sbs_user_notes:sbs_user_notes
+  - anu_lms_storyline:anu_lms_storyline
+  - sbs_activities:sbs_activities

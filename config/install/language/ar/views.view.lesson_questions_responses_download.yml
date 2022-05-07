@@ -1,0 +1,38 @@
+display:
+  default:
+    display_title: الرئيسي
+    display_options:
+      exposed_form:
+        options:
+          submit_button: تطبيق
+          reset_button_label: 'إعادة الضبط'
+          exposed_sorts_label: 'الترتيب حسب'
+          sort_asc_label: تصاعدي
+          sort_desc_label: تنازلي
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- الكل -'
+            offset_label: الإزاحة
+      fields:
+        aqid__target_id:
+          separator: ', '
+        user_id:
+          label: ألّفه
+          separator: ', '
+        field_question_response:
+          separator: ', '
+        field_question_response_long:
+          separator: ', '
+        field_question_response_scale:
+          separator: ', '
+        field_single_multi_choice:
+          separator: ', '
+        is_correct:
+          separator: ', '
+        created:
+          separator: ', '
+      arguments:
+        nid:
+          exception:
+            title: الكل

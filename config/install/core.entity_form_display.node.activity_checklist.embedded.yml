@@ -1,0 +1,77 @@
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_form_mode.node.embedded
+    - field.field.node.activity_checklist.field_description
+    - field.field.node.activity_checklist.field_icon
+    - field.field.node.activity_checklist.field_suggestions
+    - field.field.node.activity_checklist.field_suggestions_label
+    - node.type.activity_checklist
+id: node.activity_checklist.embedded
+targetEntityType: node
+bundle: activity_checklist
+mode: embedded
+content:
+  field_description:
+    type: string_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings:
+      maxlength:
+        maxlength_js: null
+        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+        maxlength_js_enforce: false
+        maxlength_js_truncate_html: false
+  field_icon:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_suggestions:
+    type: string_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings:
+      limited_field_widgets:
+        limit_values: '12'
+      maxlength:
+        maxlength_js: null
+        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+        maxlength_js_enforce: false
+        maxlength_js_truncate_html: false
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_suggestions_label: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

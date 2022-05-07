@@ -1,0 +1,7 @@
+sbs_chat.participant_chat:
+  path: '/messages'
+  defaults:
+    _controller: '\Drupal\sbs_chat\Controller\ChatController::participantChat'
+    _title: 'Messages'
+  requirements:
+    _custom_access: '\Drupal\sbs_chat\Controller\ChatController::participantChatAccess'

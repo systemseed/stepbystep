@@ -1,0 +1,46 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.activity_audio.field_audio
+    - field.field.node.activity_audio.field_description
+    - field.field.node.activity_audio.field_icon
+    - node.type.activity_audio
+  module:
+    - file
+    - options
+    - user
+id: node.activity_audio.default
+targetEntityType: node
+bundle: activity_audio
+mode: default
+content:
+  field_audio:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_description:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_icon:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

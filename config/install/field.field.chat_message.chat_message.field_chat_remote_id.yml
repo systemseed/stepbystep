@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.chat_message.chat_message
+    - field.storage.chat_message.field_chat_remote_id
+id: chat_message.chat_message.field_chat_remote_id
+field_name: field_chat_remote_id
+entity_type: chat_message
+bundle: chat_message
+label: 'Remote ID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

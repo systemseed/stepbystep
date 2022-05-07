@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - sbs_ehelpers
+  theme:
+    - material_sbs
+id: ehelperrequest
+theme: material_sbs
+region: overlay
+weight: 0
+provider: null
+plugin: sbs_ehelpers_request
+settings:
+  id: sbs_ehelpers_request
+  label: 'E-helper request'
+  label_display: '0'
+  provider: sbs_ehelpers
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      courses_page: courses_page

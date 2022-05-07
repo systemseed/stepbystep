@@ -1,0 +1,30 @@
+.storyline-card {
+  display: flex;
+  align-items: center;
+  margin-top: $spacing * 2;
+  margin-bottom: $spacing * 2;
+
+  .card-image {
+    width: 90px;
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    img {
+      border-radius: 4px;
+    }
+  }
+
+  .card-content {
+    flex-grow: 1;
+    padding-left: $spacing * 2;
+
+    p {
+      font-size: 14px;
+      line-height: 1.5;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

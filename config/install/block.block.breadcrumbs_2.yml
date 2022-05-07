@@ -1,0 +1,34 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - user
+  theme:
+    - admin_sbs
+id: breadcrumbs_2
+theme: admin_sbs
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      developer: developer
+      manager: manager
+      content_editor: content_editor
+      translator: translator
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/admin/structure/config_pages/confirmPurge/*\r\n/user/*/participant\r\n/admin/ehelper/dashboard\r\n/admin/people/team\r\n/admin/people/unassigned\r\n/admin/people/assigned\r\n/admin/people/completed\r\n/admin/people/create"

@@ -1,0 +1,50 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.note.note
+    - field.field.note.note.field_note
+    - field.field.note.note.field_participant
+  module:
+    - dynamic_entity_reference
+id: note.note.default
+targetEntityType: note
+bundle: note
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_note:
+    type: string_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_participant:
+    type: dynamic_entity_reference_default
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 40
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 2
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true

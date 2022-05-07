@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_load_default_storyline
+    - paragraphs.paragraphs_type.course_category_from_storyline
+id: paragraph.course_category_from_storyline.field_load_default_storyline
+field_name: field_load_default_storyline
+entity_type: paragraph
+bundle: course_category_from_storyline
+label: 'Load default storyline'
+description: 'When the user does not have a storyline chosen, use the the first storyline from the list.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

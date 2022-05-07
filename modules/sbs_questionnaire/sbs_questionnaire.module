@@ -1,0 +1,140 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for SBS questionnaire module.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\paragraphs\Entity\Paragraph;
+
+/**
+ * Implements hook_field_widget_WIDGET_TYPE_form_alter().
+ *
+ * Case for string_textfield.
+ *
+ * Hide the previous label.
+ */
+function sbs_questionnaire_field_widget_string_textfield_form_alter(&$element, FormStateInterface $form_state, $context) {
+  if ($context['items']->getName() !== 'webform_content_prev_label') {
+    return;
+  }
+  $element['#access'] = FALSE;
+}
+
+/**
+ * Implements hook_field_widget_WIDGET_TYPE_form_alter().
+ *
+ * Case for options_select.
+ *
+ * Only allow country names as list.
+ */
+function sbs_questionnaire_field_widget_options_select_form_alter(&$element, FormStateInterface $form_state, $context) {
+  if ($context['items']->getName() !== 'webform_content_option_set') {
+    return;
+  }
+
+  $element['#options'] = array_filter($element['#options'], function ($key) {
+    return in_array($key, ['country_names'], TRUE);
+  }, ARRAY_FILTER_USE_KEY);
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ *
+ * Case for inputs.
+ *
+ * Add a suggestion for webform wizard buttons like:
+ * input__submit__edit_wizard_prev.
+ */
+function sbs_questionnaire_theme_suggestions_input_alter(array &$suggestions, array $variables) {
+  if (!isset($variables['element']['#attributes']['data-drupal-selector'])) {
+    return;
+  }
+  $suggestions[] = $variables['theme_hook_original'] . '__' . str_replace('-', '_', $variables['element']['#attributes']['data-drupal-selector']);
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_create().
+ *
+ * Case for node.
+ * Save default score levels.
+ */
+function sbs_questionnaire_node_presave(EntityInterface $entity) {
+  if ($entity->bundle() !== 'webform' || !$entity->isNew()) {
+    return;
+  }
+  $firstLevel = Paragraph::create([
+    'type' => 'webform_content_score_level',
+    'webform_content_title' => 'Not depressed',
+    'webform_content_score_range' => [
+      'from' => 0,
+      'to' => 30,
+    ],
+    'webform_content_text' => 'The answers indicate you are doing okay',
+    'webform_content_icon' => 'check_circle',
+    'webform_content_body' => [
+      'format' => 'minimal_html',
+      'value' => "<p>However, you'll find the activities in this app useful for maintaining a healthy mind.</p><p>Tap the button below to start your Step-by-Step journey.</p>",
+    ],
+    'webform_content_confirmation_url' => [
+      'uri' => 'internal:/homepage/welcomed',
+      'title' => 'Start your Step-by-Step journey',
+    ],
+  ]);
+  $firstLevel->save();
+  $secondLevel = Paragraph::create([
+    'type' => 'webform_content_score_level',
+    'webform_content_title' => 'Depressed',
+    'webform_content_score_range' => [
+      'from' => 31,
+      'to' => 60,
+    ],
+    'webform_content_text' => 'We are here to help you feel better',
+    'webform_content_icon' => 'check_circle',
+    'webform_content_body' => [
+      'format' => 'minimal_html',
+      'value' => "<p>The answers you've given indicate that this is going to be a great help for you.</p><p> Tap the button below to start your Step-by-Step journey.</p>",
+    ],
+    'webform_content_confirmation_url' => [
+      'uri' => 'internal:/homepage/welcomed',
+      'title' => 'Start your Step-by-Step journey',
+    ],
+  ]);
+  $secondLevel->save();
+  $thirdLevel = Paragraph::create([
+    'type' => 'webform_content_score_level',
+    'webform_content_title' => 'At risk',
+    'webform_content_score_range' => [
+      'from' => 61,
+      'to' => 1000,
+    ],
+    'webform_content_text' => 'You\'re at risk of harm',
+    'webform_content_icon' => 'error',
+    'webform_content_body' => [
+      'format' => 'minimal_html',
+      'value' => "<p>From what you have described in this questionnaire, we think you may be at risk and need some extra support. This is completely normal and there are many people in this position.</p><p> It is very important that you get yourself some help for these problems as soon as possible before continuing with this app.</p>",
+    ],
+    'webform_content_confirmation_url' => [
+      'uri' => 'internal:/homepage/welcomed',
+      'title' => 'Start your Step-by-Step journey',
+    ],
+  ]);
+  $thirdLevel->save();
+
+  $entity->questionnaire_score_levels = [
+    [
+      'target_id' => $firstLevel->id(),
+      'target_revision_id' => $firstLevel->getRevisionId(),
+    ],
+    [
+      'target_id' => $secondLevel->id(),
+      'target_revision_id' => $secondLevel->getRevisionId(),
+    ],
+    [
+      'target_id' => $thirdLevel->id(),
+      'target_revision_id' => $thirdLevel->getRevisionId(),
+    ],
+  ];
+}

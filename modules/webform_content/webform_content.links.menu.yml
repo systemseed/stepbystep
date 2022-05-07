@@ -1,0 +1,6 @@
+webform_content.settings_form:
+  title: Webform content
+  description: Configure Webform content.
+  parent: system.admin_config_system
+  route_name: webform_content.settings_form
+  weight: 10

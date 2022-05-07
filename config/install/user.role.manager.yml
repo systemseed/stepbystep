@@ -1,0 +1,38 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - administerusersbyrole
+    - anu_lms_assessments
+    - config_pages
+    - form_mode_control
+    - role_delegation
+    - sbs_users
+    - system
+id: manager
+label: Manager
+weight: -4
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access user profiles'
+  - 'access users overview'
+  - 'add question entities'
+  - 'administer users'
+  - 'assign content_editor role'
+  - 'assign coordinator role'
+  - 'assign e_helper role'
+  - 'assign manager role'
+  - 'assign translator role'
+  - 'delete all question revisions'
+  - 'delete question entities'
+  - 'edit question entities'
+  - 'revert all question revisions'
+  - 'skip sbs initial steps'
+  - 'use  The form mode create linked to  user entity( user )'
+  - 'use  The form mode default linked to  user entity( user )'
+  - 'view all participant profiles'
+  - 'view all question revisions'
+  - 'view anu_lms_settings config page entity'
+  - 'view the administration theme'
+  - 'view user email addresses'

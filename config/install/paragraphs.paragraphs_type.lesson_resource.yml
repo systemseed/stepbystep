@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_selection
+third_party_settings:
+  paragraphs_selection:
+    fields:
+      -
+        id: paragraph.lesson_section.field_lesson_section_content
+        weight: -40
+id: lesson_resource
+label: 'Section: Resource'
+icon_uuid: null
+icon_default: null
+description: 'Allows the course admin to add a file (usually a document, presentation or PDF) to view and download as part of the lesson.'
+behavior_plugins: {  }

@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.webform_content_option_set
+    - paragraphs.paragraphs_type.webform_content_options_predef
+id: paragraph.webform_content_options_predef.webform_content_option_set
+field_name: webform_content_option_set
+entity_type: paragraph
+bundle: webform_content_options_predef
+label: 'Set of options'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:webform_options'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

@@ -1,0 +1,6 @@
+services:
+  sbs_replicate.event_subscriber:
+    class: Drupal\sbs_replicate\EventSubscriber\SbsReplicateSubscriber
+    arguments: ['@messenger', '@replicate.replicator']
+    tags:
+      - { name: event_subscriber }

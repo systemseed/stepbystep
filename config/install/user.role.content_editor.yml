@@ -1,0 +1,127 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.line_breaks_only
+    - filter.format.minimal_html
+    - filter.format.simple_html
+    - media.type.document
+    - node.type.activity_audio
+    - node.type.activity_checklist
+    - node.type.course
+    - node.type.courses_page
+    - node.type.module_lesson
+    - node.type.webform
+    - taxonomy.vocabulary.course_category
+    - taxonomy.vocabulary.course_label
+  module:
+    - anu_lms_assessments
+    - config_pages
+    - filter
+    - form_mode_control
+    - media
+    - node
+    - paragraphs
+    - path
+    - replicate_ui
+    - sbs_users
+    - system
+    - taxonomy
+id: content_editor
+label: 'Content Editor'
+weight: -6
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access media overview'
+  - 'access taxonomy overview'
+  - 'add question entities'
+  - 'administer nodes'
+  - 'create consent_page content'
+  - 'create course content'
+  - 'create courses_page content'
+  - 'create document media'
+  - 'create media'
+  - 'create module_lesson content'
+  - 'create terms in course_category'
+  - 'create terms in course_label'
+  - 'create url aliases'
+  - 'create webform content'
+  - 'delete all question revisions'
+  - 'delete all revisions'
+  - 'delete any course content'
+  - 'delete any courses_page content'
+  - 'delete any document media'
+  - 'delete any media'
+  - 'delete any module_lesson content'
+  - 'delete any webform content'
+  - 'delete consent_page revisions'
+  - 'delete course revisions'
+  - 'delete courses_page revisions'
+  - 'delete media'
+  - 'delete module_lesson revisions'
+  - 'delete own course content'
+  - 'delete own courses_page content'
+  - 'delete own document media'
+  - 'delete own module_lesson content'
+  - 'delete own webform content'
+  - 'delete question entities'
+  - 'delete terms in course_category'
+  - 'delete terms in course_label'
+  - 'delete webform revisions'
+  - 'edit any activity_audio content'
+  - 'edit any activity_checklist content'
+  - 'edit any course content'
+  - 'edit any courses_page content'
+  - 'edit any document media'
+  - 'edit any module_lesson content'
+  - 'edit any webform content'
+  - 'edit homepage config page entity'
+  - 'edit own activity_checklist content'
+  - 'edit own course content'
+  - 'edit own courses_page content'
+  - 'edit own document media'
+  - 'edit own module_lesson content'
+  - 'edit own webform content'
+  - 'edit question entities'
+  - 'edit registration_choice config page entity'
+  - 'edit registration_consent_page config page entity'
+  - 'edit request_ehelper config page entity'
+  - 'edit sbs_questionnaires config page entity'
+  - 'edit sbs_questionnaires_first_welcome config page entity'
+  - 'edit sbs_questionnaires_welcome_back config page entity'
+  - 'edit terms in course_category'
+  - 'edit terms in course_label'
+  - 'link to any page'
+  - 'replicate entities'
+  - 'revert all question revisions'
+  - 'revert all revisions'
+  - 'revert course revisions'
+  - 'revert courses_page revisions'
+  - 'revert module_lesson revisions'
+  - 'revert webform revisions'
+  - 'skip sbs initial steps'
+  - 'update any media'
+  - 'update media'
+  - 'use  The form mode default linked to  user entity( user )'
+  - 'use text format line_breaks_only'
+  - 'use text format minimal_html'
+  - 'use text format simple_html'
+  - 'view all media revisions'
+  - 'view all question revisions'
+  - 'view all revisions'
+  - 'view course revisions'
+  - 'view courses_page revisions'
+  - 'view homepage config page entity'
+  - 'view module_lesson revisions'
+  - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view registration_choice config page entity'
+  - 'view registration_consent_page config page entity'
+  - 'view request_ehelper config page entity'
+  - 'view sbs_questionnaires config page entity'
+  - 'view sbs_questionnaires_welcome_back config page entity'
+  - 'view the administration theme'
+  - 'view unpublished paragraphs'
+  - 'view webform revisions'

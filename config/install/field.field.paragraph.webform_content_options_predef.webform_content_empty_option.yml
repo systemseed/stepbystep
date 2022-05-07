@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.webform_content_empty_option
+    - paragraphs.paragraphs_type.webform_content_options_predef
+id: paragraph.webform_content_options_predef.webform_content_empty_option
+field_name: webform_content_empty_option
+entity_type: paragraph
+bundle: webform_content_options_predef
+label: 'Empty option label'
+description: "The label to show for the initial option denoting no selection in a select element.\r\nRequired elements defaults to: - Select -\r\nOptional elements defaults to: - None -"
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

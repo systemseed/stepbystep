@@ -1,0 +1,17 @@
+name: 'Anu LMS Storyline'
+description: 'Group courses in storylines for users to choose from.'
+type: module
+core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - 'anu_lms:anu_lms'
+  - 'sbs_application:sbs_application'
+  - 'drupal:field'
+  - 'drupal:file'
+  - 'drupal:image'
+  - 'drupal:taxonomy'
+  - 'drupal:text'
+  - 'drupal:user'
+  - 'dynamic_entity_reference:dynamic_entity_reference'
+  - 'entity_reference_revisions:entity_reference_revisions'
+  - 'paragraphs:paragraphs'
+package: 'Anu LMS'

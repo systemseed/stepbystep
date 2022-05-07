@@ -1,0 +1,6 @@
+vendors:
+  js:
+    js/dist/vendors.min.js: { minified: true, weight: -16 }
+  dependencies:
+    - core/drupal
+    - anu_lms/fonts

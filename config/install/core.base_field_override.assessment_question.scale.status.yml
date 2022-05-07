@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - anu_lms_assessments.assessment_question_type.scale
+id: assessment_question.scale.status
+field_name: status
+entity_type: assessment_question
+bundle: scale
+label: Published
+description: 'A boolean indicating whether the Question is published.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

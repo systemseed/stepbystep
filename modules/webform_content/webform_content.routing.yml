@@ -1,0 +1,7 @@
+webform_content.settings_form:
+  path: '/admin/config/system/webform-content'
+  defaults:
+    _title: 'Webform content settings'
+    _form: 'Drupal\webform_content\Form\SettingsForm'
+  requirements:
+    _permission: 'administer webform_content configuration'

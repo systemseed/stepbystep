@@ -1,0 +1,20 @@
+<h2>{{ 'Your Character' | trans }}</h2>
+
+<div class="storyline-card">
+    <div class="card-image">
+        <img src="{{ storyline.image.url }}" alt="{{ storyline.image.alt }}">
+    </div>
+    <div class="card-content">
+        <h3>{{ storyline.name.value }}</h3>
+        <p>{{ storyline.description.value }}</p>
+    </div>
+</div>
+<a href="{{ path('anu_lms_storyline.view_storylines') }}">
+  <strong>{{ 'Change character selection' | trans }}</strong>
+</a>
+<p>
+    {% trans %}
+        Selecting different characters will start your progress from the beginning.
+        If you later switch back to your previous character selection you will continue where you left off.
+    {% endtrans %}
+</p>

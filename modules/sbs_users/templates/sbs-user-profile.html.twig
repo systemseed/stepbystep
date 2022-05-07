@@ -1,0 +1,70 @@
+<div class="user-profile-back">
+{% if user.hasPermission('access coordinator dashboard') %}
+  <a href="{{ path('view.unassigned_users.page_1') }}">
+    ← {{ 'Back to dashboard'|t }}
+  </a>
+{% elseif user.hasPermission('view own participant profiles') %}
+  <a href="{{ path('view.assigned_to_ehelper.page_1') }}">
+    ← {{ 'Back to dashboard'|t }}
+  </a>
+{% endif %}
+</div>
+
+<div class="user-profile-title">
+    <span>{{ 'Participant'|t }}</span>
+    <h4>{{ participant.label }}</h4>
+</div>
+
+<div class="user-profile">
+    <div class="user-profile-sidebar">
+        <h6>Onboarding details</h6>
+        <p class="user-profile-label">Registered email</p>
+        <span>{{ email }}</span>
+        <p class="user-profile-label">Registered phone number</p>
+        <span>{{ phone }}</span>
+        <p class="user-profile-label">Questionnaire result</p>
+        <span>{{ questionnaire_result }}</span>
+
+        <hr>
+        <h6>E-helper preferences</h6>
+
+        <p class="user-profile-label">E-helper requested</p>
+        <span>{{ is_ehelper_requested ? 'Yes'|t : 'No'|t }}</span>
+        {{ answers_to_ehelper_request}}
+
+        <hr>
+        <p class="user-profile-label">Assigned E-helper</p>
+        {% for ehelper in ehelpers %}
+          <span class="ehelper-selection ehelper-remove-{{ ehelper.id }}">
+            {{ ehelper.label }}
+
+            {% if user.hasPermission('assign e-helpers') %}
+              <div>
+                <a href="{{ path('sbs_ehelpers.assign_ehelper', {'user': participant.id}) }}" class="use-ajax ehelper-assign"
+                   data-dialog-type="modal" data-dialog-options="{{ {'width': 900}|json_encode }}">
+                  {{ 'Edit'|t }}
+                </a>
+                <a href="{{ path('sbs_ehelpers.remove_ehelper', {'user': participant.id, 'ehelper': ehelper.id}) }}"
+                   class="use-ajax ehelper-assign">
+                  {{ 'Remove'|t }}
+                </a>
+                </div>
+            {% endif %}
+            </span>
+        {% endfor %}
+
+        {{ attach_library('core/drupal.dialog.ajax') }}
+        {% if ehelpers is empty and user.hasPermission('assign e-helpers') %}
+            <span class="ehelper-selection">
+                <a href="{{ path('sbs_ehelpers.assign_ehelper', {'user': participant.id}) }}" class="use-ajax ehelper-assign" data-dialog-type="modal" data-dialog-options="{{ {'width': 900}|json_encode }}">
+                    {{ '+ Assign E-helper'|t }}
+                </a>
+            </span>
+        {% endif %}
+        <hr>
+    </div>
+
+    <div class="notes-content">
+      {{ profile_tabs }}
+    </div>
+</div>

@@ -1,0 +1,39 @@
+name: Admin SBS
+type: theme
+description: Custom theme based on Claro theme.
+core_version_requirement: ^9
+base theme: claro
+screenshot: screenshot.png
+libraries:
+  - admin_sbs/theme
+
+# libraries-override is not inherited from the base theme.
+# https://www.drupal.org/project/drupal/issues/2856499
+# Probably more entries need to be copied and adapted (absolute path to css/js asset)
+# from claro.
+libraries-override:
+  system/base:
+    css:
+      component:
+        /core/themes/stable/css/system/components/ajax-progress.module.css: /core/themes/claro/css/components/ajax-progress.module.css
+        /core/themes/stable/css/system/components/autocomplete-loading.module.css: /core/themes/claro/css/components/autocomplete-loading.module.css
+        /core/themes/stable/css/system/components/system-status-counter.css: /core/themes/claro/css/components/system-status-counter.css
+        /core/themes/stable/css/system/components/system-status-report-counters.css: /core/themes/claro/css/components/system-status-report-counters.css
+        /core/themes/stable/css/system/components/system-status-report-general-info.css: /core/themes/claro/css/components/system-status-report-general-info.css
+        /core/themes/stable/css/system/components/tabledrag.module.css: /core/themes/claro/css/components/tabledrag.css
+  core/drupal.dropbutton:
+    css:
+      component:
+        /core/themes/stable/css/core/dropbutton/dropbutton.css: /core/themes/claro/css/components/dropbutton.css
+regions:
+  header: 'Header'
+  pre_content: 'Pre-content'
+  breadcrumb: Breadcrumb
+  highlighted: Highlighted
+  help: Help
+  content: Content
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  sidebar_first: 'First sidebar'
+regions_hidden:
+  - sidebar_first

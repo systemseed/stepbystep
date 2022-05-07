@@ -1,0 +1,186 @@
+.text-right {
+  text-align: right;
+}
+
+/* Override padding for dropbuttons so they don't move when displaying items with long text */
+.dropbutton--multiple.dropbutton .dropbutton__item:first-of-type > * {
+  padding-right: calc(4rem - 1px);
+  padding-left: calc(4rem - 1px);
+}
+
+.user-profile {
+  display: flex;
+}
+
+.user-profile-back {
+  padding-left: 32px;
+}
+
+.user-profile-back a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.user-profile-back a:hover {
+  color: black;
+}
+
+.user-profile-sidebar,
+.user-profile-title {
+  padding: 32px;
+}
+
+.user-profile-title h4 {
+  margin-top: 4px;
+}
+
+.user-profile-sidebar {
+  width: 20%;
+  flex-shrink: 0;
+  flex-grow: 0;
+  background-color: #f3f4f9;
+  border-radius: 2px;
+}
+
+.user-profile-label {
+  font-size: 12px;
+  padding-top: 10px;
+  margin-bottom: 4px;
+}
+
+.user-profile-sidebar span,
+.user-profile-sidebar p {
+  word-break: break-word;
+}
+
+.user-profile .form-item__label {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.user-profile .ehelper-selection a.ehelper-assign {
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.user-profile .ehelper-selection a.ehelper-name {
+  text-decoration: none;
+  color: #222330;
+}
+
+.user-profile .notes-content {
+  padding-left: 32px;
+  flex-grow: 1;
+}
+
+.user-profile .notes-content .messages-list,
+.user-profile .notes-content .messages {
+  margin-top: 0;
+}
+
+.user-profile .notes-content .note-add {
+  margin-bottom: 2.5rem;
+}
+
+.user-profile .notes-content .note-add .form-actions {
+  background: #eeeeee;
+  border-left: 1px solid #919297;
+  border-right: 1px solid #919297;
+  border-bottom: 1px solid #919297;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+  margin: 0;
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 10;
+}
+
+.user-profile .notes-content .note-add textarea {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.user-profile .notes-content .note-add input,
+.user-profile .notes-content .note-add .form-item {
+  margin: 0;
+  position: relative;
+  z-index: 11;
+}
+
+.user-profile .notes-content .note-add .ajax-progress {
+  position: absolute;
+  left: 16px;
+  margin: 0;
+  top: calc(50% - 16px);
+}
+
+.user-profile .notes-content .note-add .ajax-progress .ajax-progress__throbber {
+  width: 32px;
+  height: 32px;
+}
+
+.user-profile .notes-content .note-add .ajax-progress .ajax-progress__message {
+  display: none;
+}
+
+.user-profile .notes-content .note {
+  border-bottom: 1px solid #919297;
+  padding: 0 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.user-profile .notes-content .note:last-child {
+  margin-bottom: 0;
+}
+
+.user-profile .notes-content .note .note__header {
+  background: url('../icons/note.svg') no-repeat left top;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.user-profile .notes-content .note .note__created {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.user-profile .notes-content .note .note__author {
+  color: #919297;
+  font-size: 12px;
+}
+
+.user-profile .notes-content .note .note__content {
+  white-space: pre-wrap;
+}
+
+.view-header {
+  margin: 1rem 0;
+}
+
+.vertical-tabs {
+  margin-left: 1rem;
+}
+
+.activity-name {
+  padding: 0;
+  cursor: pointer;
+}
+.activity-name::marker {
+  display: none;
+  content: "";
+}
+.activity-item {
+  padding: 1rem;
+  margin: 1rem;
+  background-color: rgb(238, 238, 238);
+}
+.checklist-item {
+  font-style: italic;
+}
+.activity-locked {
+  float: right;
+  padding-right: 1rem;
+}

@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - anu_lms_assessments
+id: assessment_question.token
+label: Token
+targetEntityType: assessment_question
+cache: true

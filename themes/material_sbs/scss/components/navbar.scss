@@ -1,0 +1,32 @@
+.navbar {
+  background: $white;
+  padding: 0 16px;
+  z-index: unset !important;
+  border-bottom: 1px solid $color-border;
+
+  &--blended {
+    background-color: $washed-green;
+    border-bottom: none;
+  }
+
+  .navbar__section {
+    padding: 0;
+
+  }
+
+  .navbar__spacer {
+    flex-grow: 1;
+  }
+
+  .language-switcher-toggle {
+    display: inline-flex;
+    align-items: center;
+    .icon, .language-switcher-toggle__label {
+      color: black;
+      font-size: 16px;
+    }
+    .language-switcher-toggle__label {
+      margin-bottom: 6px;
+    }
+  }
+}

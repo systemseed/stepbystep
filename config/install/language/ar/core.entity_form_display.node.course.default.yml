@@ -1,0 +1,12 @@
+third_party_settings:
+  field_group:
+    group_course_info:
+      label: معلومات
+    group_course_modules:
+      label: الوحدات
+    group_settings:
+      label: الإعدادات
+content:
+  field_course_finish_button:
+    settings:
+      placeholder_title: إنهاء

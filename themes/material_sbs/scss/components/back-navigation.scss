@@ -1,0 +1,41 @@
+.back-navigation {
+  color: $theme-primary;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+
+  &:hover {
+    color: $color-text;
+
+    .material-icons {
+      color: $color-text;
+    }
+  }
+
+  .material-icons {
+    color: $theme-primary;
+    font-size: 24px;
+    margin-right: 6px;
+  }
+}
+
+.back-navigation-button.mdc-button:not(:disabled) {
+  padding-left: 0;
+  height: auto !important;
+  background-color: transparent;
+
+  .mdc-button__label {
+    display: flex;
+    font-size: 16px;
+    font-weight: bold;
+    align-items: center;
+  }
+
+  .material-icons {
+    color: $theme-primary;
+    font-size: 24px;
+    margin-right: 6px;
+  }
+}

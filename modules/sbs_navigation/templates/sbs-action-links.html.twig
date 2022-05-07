@@ -1,0 +1,7 @@
+<div class="action-links text-right">
+  {% for link in links %}
+    <div class="action-links__item">
+      <a href="{{ link.url }}" class="action-link">{{ link.title }}</a>
+    </div>
+  {% endfor %}
+</div>

@@ -1,0 +1,109 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for SBS e-helpers module.
+ */
+
+use Drupal\Core\Field\FieldItemListInterface;
+use Drupal\Core\Session\AccountInterface;
+use Drupal\Core\Field\FieldDefinitionInterface;
+use Drupal\Core\Block\BlockPluginInterface;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Access\AccessResult;
+
+/**
+ * Implements hook_theme().
+ */
+function sbs_ehelpers_theme($existing, $type, $theme, $path) {
+  return [
+    'sbs_ehelpers_request' => [
+      'variables' => [
+        'title' => NULL,
+        'text' => NULL,
+        'second_text' => NULL,
+        'number' => NULL,
+        'accept' => NULL,
+        'cancel' => NULL,
+        'questionnaire_url' => NULL,
+      ],
+    ],
+  ];
+}
+
+/**
+ * Callback for the field field_ehelper_score_levels.
+ *
+ * Config page field.
+ */
+function sbs_ehelpers_score_level_options() {
+  $questionnaires = \Drupal::service('config_pages.loader')
+    ->getValue('sbs_questionnaires', 'field_questionnaires');
+  $questionnaireId = end($questionnaires);
+  if ($questionnaireId) {
+    $questionnaire = \Drupal::entityTypeManager()
+      ->getStorage('node')
+      ->load($questionnaireId['target_id']);
+    $levels = $questionnaire->get('questionnaire_score_levels')->referencedEntities();
+    $levelOptions = [];
+    foreach ($levels as $level) {
+      $levelOptions[$level->id()] = $level->get('webform_content_title')->value;
+    }
+    return $levelOptions;
+
+  }
+  return [];
+}
+
+/**
+ * Implements hook_block_view_alter().
+ */
+function sbs_ehelpers_block_view_system_menu_block_alter(array &$build, BlockPluginInterface $block) {
+  if ($block->getPluginId() === 'system_menu_block:main') {
+    $build['#pre_render'][] = function (array $build) {
+      $scoredQuestionnaire = \Drupal::service('sbs_questionnaire.service')->getScoredQuestionnaire();
+      if ($scoredQuestionnaire) {
+        $build['#cache']['tags'][] = 'webform_submission_list:' . $scoredQuestionnaire->get('webform')->first()->get('target_id')->getValue();
+      }
+      return $build;
+    };
+  }
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function sbs_ehelpers_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  /** @var \Drupal\sbs_ehelpers\SbsEhelpersQuestionnaire $questionnaireHelper */
+  $questionnaire_helper = \Drupal::service('sbs_ehelpers.questionnaire');
+
+  // Add an extra submit callback to the ehelper request form.
+  $request_ehelper_webform_id = $questionnaire_helper->getQuestionnaireId();
+  if (!empty($request_ehelper_webform_id)) {
+    $webform_id_pattern = sprintf('/webform_submission_webform_content_.+?_node_%s_add_form/', $request_ehelper_webform_id);
+    if (preg_match($webform_id_pattern, $form_id)) {
+      $form['actions']['submit']['#submit'][] = 'sbs_ehelpers_requesting_ehelper_form_submit';
+    }
+  }
+}
+
+/**
+ * Form element submit handler for the e-helper request form.
+ *
+ * Displays an info message to a user.
+ */
+function sbs_ehelpers_requesting_ehelper_form_submit($form, FormStateInterface &$form_state) {
+  \Drupal::messenger()->addMessage(t('You have successfully requested an E-helper, someone will be in touch with you soon.'));
+}
+
+/**
+ * Implements  hook_entity_field_access().
+ *
+ * Allow access to last active field to coordinators and E-helpers.
+ */
+function sbs_ehelpers_entity_field_access($operation, FieldDefinitionInterface $field_definition, AccountInterface $account, FieldItemListInterface $items = NULL) {
+  if ($field_definition->getName() == 'access' && $operation == 'view') {
+    return AccessResult::allowedIfHasPermission($account, 'access user profiles');
+  }
+  return AccessResult::neutral();
+}

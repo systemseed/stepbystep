@@ -1,0 +1,5 @@
+name: SBS navigation
+description: Custom functionality for navigation items.
+type: module
+package: SBS
+core_version_requirement: ^8 || ^9

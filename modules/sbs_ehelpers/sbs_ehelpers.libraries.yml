@@ -1,0 +1,6 @@
+request-popup:
+  js:
+    js/popup.js: {}
+  dependencies:
+    - core/drupal
+    - core/drupalSettings

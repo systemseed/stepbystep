@@ -1,0 +1,5 @@
+name: 'Redirect 403 to Homepage'
+description: 'Redirect anonymous users from 403 Access Denied pages to the homepage.'
+type: module
+package: SBS
+core_version_requirement: ^8 || ^9

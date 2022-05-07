@@ -1,0 +1,64 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.activity_checklist_item.activity_checklist_item
+    - field.field.activity_checklist_item.activity_checklist_item.field_activity
+    - field.field.activity_checklist_item.activity_checklist_item.field_status
+    - field.field.activity_checklist_item.activity_checklist_item.field_text
+id: activity_checklist_item.activity_checklist_item.default
+targetEntityType: activity_checklist_item
+bundle: activity_checklist_item
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_activity:
+    type: entity_reference_autocomplete
+    weight: 11
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_status:
+    type: boolean_checkbox
+    weight: 12
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_text:
+    type: string_textarea
+    weight: 13
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true

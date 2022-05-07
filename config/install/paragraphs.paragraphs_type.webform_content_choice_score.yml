@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_selection
+third_party_settings:
+  paragraphs_selection:
+    selection:
+      fields:
+        -
+          name: paragraph.webform_content_single_choice.webform_content_choices
+          weight: 10
+id: webform_content_choice_score
+label: 'Choice item with score'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

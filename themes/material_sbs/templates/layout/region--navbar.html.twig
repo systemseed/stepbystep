@@ -1,0 +1,74 @@
+{#
+/**
+ * @file
+ * Theme override to display a region.
+ *
+ * Available variables:
+ * - content: The content for this region, typically blocks.
+ * - attributes: HTML attributes for the region <div>.
+ * - region: The name of the region variable as defined in the theme's
+ *   .info.yml file.
+ *
+ * @see template_preprocess_region()
+ */
+#}
+{% set path = path('<current>') %}
+
+{% set classes = [
+    'region',
+    'region-' ~ region|clean_class,
+    'page-navbar',
+    'navbar',
+    'navbar--light',
+    navbar_fixed ? 'navbar--fixed',
+    navbar_style ? 'navbar--' ~ navbar_style,
+    path == '/sessions' or path == '/home' or path == '/welcome' or path == '/' ? 'navbar--blended'
+] %}
+
+{# The welcome page is a special case where the language switcher is displayed but not the menu #}
+{% set isWelcomePage = path == '/welcome' %}
+
+{% if content and (not hide_menu or isWelcomePage) %}
+  <div{{ attributes.addClass(classes) }}>
+    <div class="navbar__container">
+      <div class="navbar__section">
+        {% if not hide_menu %}
+        <button aria-pressed="false" class="mdc-icon-button drawer-open__button">
+          <i class="icon material-icons mdc-icon-button__icon" aria-hidden="true">menu</i>
+          <span class="drawer-open__button__text">{{ 'Menu'|t }}</span>
+        </button>
+        {% endif %}
+
+        <div class="navbar__spacer"></div>
+
+        {% if language_name %}
+          <div class="language-switcher-toggle overlay-switcher-open__button">
+            <span class="language-switcher-toggle__icon">
+              {% include "@material_base/components/01_atoms/icon.twig" with {
+                data: {
+                  value: 'language',
+                },
+                settings: {
+                  type: 'font',
+                  classes: ['material-icons'],
+                }
+              } %}
+            </span>
+            <span class="language-switcher-toggle__label">{{ language_name }}</span>
+            <span class="language-switcher-toggle__meta">
+              {% include "@material_base/components/01_atoms/icon.twig" with {
+                data: {
+                  value: 'expand_more',
+                },
+                settings: {
+                  type: 'font',
+                  classes: ['material-icons'],
+                }
+              } %}
+            </span>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+{% endif %}

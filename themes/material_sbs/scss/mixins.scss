@@ -1,0 +1,10 @@
+@mixin focus_colour($color) {
+
+  .mdc-notched-outline {
+    box-shadow: 0 0 4px 5px $washed-green !important;
+  }
+
+  .sbs_textfield_label {
+    color: $color-navigation-highlight !important;
+  }
+}

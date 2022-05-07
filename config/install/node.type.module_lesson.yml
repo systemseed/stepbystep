@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+name: Lesson
+type: module_lesson
+description: 'A lesson with content addressing a specific bit of the session.'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

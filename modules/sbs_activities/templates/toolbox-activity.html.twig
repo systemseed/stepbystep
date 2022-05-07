@@ -1,0 +1,24 @@
+{% set classes = [
+  'toolbox-activity',
+  is_locked ? 'locked',
+] %}
+
+{% if is_locked %}
+<div {{  attributes.addClass(classes) }}>
+{% else %}
+<a {{  attributes.addClass(classes) }} href={{ link }}>
+{% endif %}
+
+  {% if is_locked %}
+    <i class="material-icons locked">lock</i>
+  {% endif %}
+
+  <i class="material-icons icon">{{ icon }}</i>
+
+  <h2 class="title">{{ title }}</h2>
+
+{% if is_locked %}
+</div>
+{% else %}
+</a>
+{% endif %}

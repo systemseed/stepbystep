@@ -1,0 +1,7 @@
+assign e-helpers:
+  title: Assign E-helpers
+  description: Modify participants profiels to have an E-helper assigned.
+
+access coordinator dashboard:
+  title: Access coordinator dashboard
+  description: Ability to see participants assigned E-helpers on the dashboard.

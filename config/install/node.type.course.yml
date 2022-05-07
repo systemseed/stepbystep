@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+name: Session
+type: course
+description: 'A set of parts on a particular topic.'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.request_ehelper
+    - field.storage.config_pages.field_ehelper_text
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    minimal_html: minimal_html
+    line_breaks_only: '0'
+    simple_html: '0'
+    table: '0'
+    plain_text: '0'
+id: config_pages.request_ehelper.field_ehelper_text
+field_name: field_ehelper_text
+entity_type: config_pages
+bundle: request_ehelper
+label: Text
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: "<p>An E-helper is a real person who will contact you every week to see how you're doing and support&nbsp; you on your Step-by-Step journey.</p>\r\n\r\n<p>We highly recommend you to request one!</p>\r\n"
+    format: minimal_html
+default_value_callback: ''
+settings: {  }
+field_type: text_long

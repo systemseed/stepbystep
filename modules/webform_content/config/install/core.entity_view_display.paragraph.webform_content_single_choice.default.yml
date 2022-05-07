@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.webform_content_single_choice.webform_content_choices
+    - field.field.paragraph.webform_content_single_choice.webform_content_title
+    - paragraphs.paragraphs_type.webform_content_single_choice
+  module:
+    - entity_reference_revisions
+id: paragraph.webform_content_single_choice.default
+targetEntityType: paragraph
+bundle: webform_content_single_choice
+mode: default
+content:
+  webform_content_choices:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  webform_content_title:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

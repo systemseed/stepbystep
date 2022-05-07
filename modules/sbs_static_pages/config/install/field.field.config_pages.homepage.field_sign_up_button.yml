@@ -1,0 +1,28 @@
+uuid: 8b8060ab-8230-416b-bd7e-aa632aa9b249
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.homepage
+    - field.storage.config_pages.field_sign_up_button
+  module:
+    - link
+id: config_pages.homepage.field_sign_up_button
+field_name: field_sign_up_button
+entity_type: config_pages
+bundle: homepage
+label: 'Sign up Button'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    attributes: {  }
+    uri: 'internal:/user/registration-consent'
+    title: 'Sign up'
+    options: {  }
+default_value_callback: ''
+settings:
+  link_type: 1
+  title: 2
+field_type: link

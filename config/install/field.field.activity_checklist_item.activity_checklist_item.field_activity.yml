@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.activity_checklist_item.activity_checklist_item
+    - field.storage.activity_checklist_item.field_activity
+    - node.type.activity_checklist
+id: activity_checklist_item.activity_checklist_item.field_activity
+field_name: field_activity
+entity_type: activity_checklist_item
+bundle: activity_checklist_item
+label: Activity
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      activity_checklist: activity_checklist
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,9 @@
+name: SBS e-helpers
+description: SBS E-helpers-related functionality.
+type: module
+package: SBS
+core_version_requirement: ^8 || ^9
+dependencies:
+  - drupal:user
+  - drupal:block
+  - sbs_questionnaire:sbs_questionnaire

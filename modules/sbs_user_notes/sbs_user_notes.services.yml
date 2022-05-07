@@ -1,0 +1,5 @@
+services:
+  sbs_user_notes.route_subscriber:
+    class: Drupal\sbs_user_notes\Routing\RouteSubscriber
+    tags:
+      - { name: event_subscriber }

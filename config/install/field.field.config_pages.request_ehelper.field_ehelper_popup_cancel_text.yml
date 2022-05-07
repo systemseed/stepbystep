@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.request_ehelper
+    - field.storage.config_pages.field_ehelper_popup_cancel_text
+id: config_pages.request_ehelper.field_ehelper_popup_cancel_text
+field_name: field_ehelper_popup_cancel_text
+entity_type: config_pages
+bundle: request_ehelper
+label: 'Cancel text'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 'No thanks'
+default_value_callback: ''
+settings: {  }
+field_type: string

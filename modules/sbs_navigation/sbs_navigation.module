@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for SBS navigation module.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Render\Element;
+
+/**
+ * Implements hook_form_BASE_FORM_ID_alter().
+ *
+ * Case for config_pages_form.
+ *
+ * Hide the language context fieldset when only one available.
+ */
+function sbs_navigation_form_config_pages_form_alter(&$form, FormStateInterface $form_state) {
+  if (!isset($form['context_selection_language'])) {
+    return;
+  }
+  if (count(Element::children($form['context_selection_language'])) > 1) {
+    return;
+  }
+  $form['context_selection_language']['#access'] = FALSE;
+}
+
+/**
+ * Implements hook_theme().
+ */
+function sbs_navigation_theme() {
+  return [
+    'sbs_action_links' => [
+      'variables' => [
+        'links' => [],
+      ],
+    ],
+  ];
+}

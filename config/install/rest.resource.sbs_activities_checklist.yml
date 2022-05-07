@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - sbs_activities
+    - serialization
+    - user
+id: sbs_activities_checklist
+plugin_id: sbs_activities_checklist
+granularity: resource
+configuration:
+  methods:
+    - POST
+  formats:
+    - json
+  authentication:
+    - cookie

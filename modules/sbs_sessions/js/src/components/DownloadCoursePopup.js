@@ -155,12 +155,10 @@ class DownloadCoursePopup extends React.Component {
 
     this.handleDownload = this.handleDownload.bind(this);
     this.saveUrlToCache = this.saveUrlToCache.bind(this);
-    this.cacheLessonsAndReturnLessonImages = this.cacheLessonsAndReturnLessonImages.bind(
-      this
-    );
-    this.getParagraphImagesFromContent = this.getParagraphImagesFromContent.bind(
-      this
-    );
+    this.cacheLessonsAndReturnLessonImages =
+      this.cacheLessonsAndReturnLessonImages.bind(this);
+    this.getParagraphImagesFromContent =
+      this.getParagraphImagesFromContent.bind(this);
     this.dismissPopup = this.dismissPopup.bind(this);
     this.showPopup = this.showPopup.bind(this);
   }
@@ -244,9 +242,8 @@ class DownloadCoursePopup extends React.Component {
         const responseClone = response.clone();
         // Parse lesson content to get Lesson json data.
         const responseContent = await response.text();
-        const paragraphUrls = this.getParagraphImagesFromContent(
-          responseContent
-        );
+        const paragraphUrls =
+          this.getParagraphImagesFromContent(responseContent);
         // Put lesson to the pwa cache.
         const cacheName = getPwaSettings().current_cache;
         const cache = await caches.open(cacheName);
@@ -367,13 +364,8 @@ class DownloadCoursePopup extends React.Component {
   }
 
   render() {
-    const {
-      loading,
-      result,
-      alertOpen,
-      popupOpen,
-      availableOffline,
-    } = this.state;
+    const { loading, result, alertOpen, popupOpen, availableOffline } =
+      this.state;
     const { course, showButton } = this.props;
 
     const courseHasAudio = course.audios.length !== 0;

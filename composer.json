@@ -79,7 +79,10 @@
         "drupal/devel": "^4.1",
         "drupal/devel_php": "^1.5",
         "kint-php/kint": "^3.3",
-        "phpspec/prophecy-phpunit": "^2"
+        "mglaman/phpstan-drupal": "^1.1",
+        "phpspec/prophecy-phpunit": "^2",
+        "phpstan/extension-installer": "^1.1",
+        "phpstan/phpstan-deprecation-rules": "^1.0"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -92,7 +95,9 @@
             "cweagans/composer-patches": true,
             "composer/installers": true,
             "drupal/core-composer-scaffold": true,
-            "drupal/core-project-message": true
+            "drupal/core-project-message": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "phpstan/extension-installer": true
         }
     },
     "extra": {

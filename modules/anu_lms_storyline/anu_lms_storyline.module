@@ -62,7 +62,7 @@ function anu_lms_storyline_field_widget_chosen_select_form_alter(&$element, Form
 
   foreach ($element['#options'] as $id => $option) {
     $termQuery = \Drupal::entityQuery('taxonomy_term');
-    if (is_int($id) && $termQuery->condition('tid', $id)->condition('field_is_storyline', TRUE)->execute()) {
+    if (is_int($id) && $termQuery->condition('tid', $id)->condition('field_is_storyline', TRUE)->accessCheck(TRUE)->execute()) {
       $element['#options'][$id] = t('Storyline: @storyline_name', ['@storyline_name' => $option]);
     }
   }

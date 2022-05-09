@@ -7,3 +7,13 @@ services:
   sbs_users.profile:
     class: Drupal\sbs_users\Profile
     arguments: ['@entity_type.manager', '@anu_lms.courses_page', '@anu_lms_storyline.storyline', '@anu_lms.lesson', '@sbs_activities.node_view', '@database', '@date.formatter']
+
+  logger.channel.sbs_users:
+    parent: logger.channel_base
+    arguments: ['sbs_users']
+
+  sbs_users.lesson_completed_subscriber:
+    class: Drupal\sbs_users\EventSubscriber\LessonCompletedSubscriber
+    arguments: ['@anu_lms.lesson', '@anu_lms.course_progress', '@entity_type.manager', '@sbs_users.profile', '@logger.channel.sbs_users']
+    tags:
+      - { name: event_subscriber }

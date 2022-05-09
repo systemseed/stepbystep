@@ -9,10 +9,12 @@
  * Implements hook_install().
  */
 function webform_content_install($is_syncing) {
+  // TODO: rework to be compatible with Step By Step installation profile.
+  return;
+
   // The module is being installed as part of a config import so the changes
   // below have been applied already and should be in the configuration set
   // being imported.
-  return;
   if ($is_syncing) {
     return;
   }

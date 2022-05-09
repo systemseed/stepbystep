@@ -62,6 +62,7 @@ class AssignEhelper extends FormBase implements ConfirmFormInterface {
     $resultEhelpers = $userStorage->getQuery()
       ->condition('roles', 'e_helper', 'CONTAINS')
       ->condition('status', 1)
+      ->accessCheck(TRUE)
       ->execute();
 
     // Plain array with E-helper ids.

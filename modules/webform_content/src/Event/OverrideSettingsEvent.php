@@ -2,7 +2,7 @@
 
 namespace Drupal\webform_content\Event;
 
-use Symfony\Component\EventDispatcher\Event;
+use Symfony\Contracts\EventDispatcher\Event;
 use Drupal\webform\WebformSubmissionInterface;
 use Drupal\webform\Plugin\WebformHandlerInterface;
 

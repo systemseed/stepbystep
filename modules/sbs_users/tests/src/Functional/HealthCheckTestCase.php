@@ -39,7 +39,7 @@ class HealthCheckTestCase extends BrowserTestBase {
   public function testOpenFrontPage() {
 
     $this->drupalGet('<front>');
-    $this->assertUrl('/');
+    $this->assertSession()->addressEquals('/');
   }
 
 }

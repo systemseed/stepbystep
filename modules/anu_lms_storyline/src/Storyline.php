@@ -44,10 +44,9 @@ class Storyline {
   public function getStorylines() {
     $termStorage = $this->entityTypeManager->getStorage('taxonomy_term');
     $entity_query = $termStorage->getQuery();
-    $entity_query->accessCheck(TRUE);
     $entity_query->condition('field_is_storyline', TRUE);
     $entity_query->sort('weight', 'ASC');
-    $result = $entity_query->execute();
+    $result = $entity_query->accessCheck(TRUE)->execute();
     $terms = $result ? $termStorage->loadMultiple($result) : [];
 
     $data = [];
@@ -114,6 +113,7 @@ class Storyline {
             ->getQuery()
             ->condition('field_is_storyline', TRUE)
             ->sort('weight', 'ASC')
+            ->accessCheck(TRUE)
             ->execute();
 
           if (!empty($storyline_ids)) {

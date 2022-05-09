@@ -1,5 +1,8 @@
 import {BasicStorage, ChatMessage, ConversationId, MessageContentType, MessageStatus, MessageDirection} from "@chatscope/use-chat";
 
+// Custom status indicates that message sending is in pregress.
+export const MessageSendingStatus = -1;
+
 /**
  * Extends @chatscope storage with extra helpers for SBS chat.
  *
@@ -50,6 +53,28 @@ export class ChatStorage extends BasicStorage {
     }
 
     return pendingMessages;
+  }
+
+  /**
+   * A helper that checks existence of messages in "sending" state.
+   */
+  isSending(): Boolean {
+    const groups = this.messages[this.activeConversationId];
+
+    if (!groups || !groups.length) {
+      return false;
+    }
+
+    for (let gIndex = 0; gIndex < groups.length; gIndex++) {
+      const messages = groups[gIndex].messages;
+      for (let mIndex = 0; mIndex < messages.length; mIndex++) {
+        if (messages[mIndex].status === MessageSendingStatus) {
+          return true;
+        }
+      }
+    }
+
+    return false;
   }
 
   /**

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { nanoid } from "nanoid";
 import {
   ChatContainer,
@@ -16,7 +16,7 @@ import {
   MessageStatus,
 } from "@chatscope/use-chat";
 import { DrupalChatService } from "../utilities/DrupalChatService";
-import { ChatStorage } from "../utilities/ChatStorage";
+import { ChatStorage, MessageSendingStatus } from "../utilities/ChatStorage";
 import SnackAlert from "@anu/components/SnackAlert";
 
 const messageIdGenerator = () => nanoid();
@@ -38,6 +38,26 @@ const Chat = () => {
     activeConversation,
   } = useChat();
   const [error, setError] = useState("");
+
+  // Prevent user from leaving the page with unsent messages.
+  useEffect(() => {
+    const onPageLeave = (event) => {
+      if (chatStorage.isSending()) {
+        // According to https://stackoverflow.com/questions/40570164
+        // custom message support was dropped from all major browsers.
+        event.preventDefault();
+        if (event) {
+          event.returnValue = true;
+        }
+        return;
+      }
+    };
+
+    window.addEventListener("beforeunload", onPageLeave);
+    return () => {
+      window.removeEventListener("beforeunload", onPageLeave);
+    };
+  });
 
   const handleChange = (value) => {
     setCurrentMessage(value);
@@ -63,7 +83,7 @@ const Chat = () => {
       contentType: MessageContentType.TextHtml,
       senderId: currentUser.id,
       direction: MessageDirection.Outgoing,
-      status: MessageStatus.Sent,
+      status: MessageSendingStatus,
       timestamp: Date.now(),
     };
 

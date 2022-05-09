@@ -4,6 +4,7 @@ namespace Drupal\sbs_activities;
 
 use Drupal\Component\Serialization\Json;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
+use Drupal\Core\File\FileUrlGenerator;
 use Drupal\Core\Session\AccountInterface;
 use Drupal\node\NodeInterface;
 
@@ -27,16 +28,26 @@ class ActivityAudio {
   protected AccountInterface $currentUser;
 
   /**
+   * File url generator object.
+   *
+   * @var \Drupal\Core\File\FileUrlGenerator
+   */
+  protected FileUrlGenerator $fileUrlGenerator;
+
+  /**
    * Creates a new instance of activity checklist handler.
    *
    * @param \Drupal\Core\Entity\EntityTypeManagerInterface $entityTypeManager
    *   Entity type manager handler.
    * @param \Drupal\Core\Session\AccountInterface $currentUser
    *   Current user account object.
+   * @param \Drupal\Core\File\FileUrlGenerator $fileUrlGenerator
+   *   File url generator object.
    */
-  public function __construct(EntityTypeManagerInterface $entityTypeManager, AccountInterface $currentUser) {
+  public function __construct(EntityTypeManagerInterface $entityTypeManager, AccountInterface $currentUser, FileUrlGenerator $fileUrlGenerator) {
     $this->entityTypeManager = $entityTypeManager;
     $this->currentUser = $currentUser;
+    $this->fileUrlGenerator = $fileUrlGenerator;
   }
 
   /**
@@ -56,7 +67,7 @@ class ActivityAudio {
       'id' => (int) $activity->id(),
       'title' => $activity->label(),
       'description' => $activity->get('field_description')->getString(),
-      'audio_url' => !empty($file) ? file_create_url($file->getFileUri()) : '',
+      'audio_url' => !empty($file) ? $this->fileUrlGenerator->generateAbsoluteString($file->getFileUri()) : '',
     ];
 
     // You can use `jQuery('#activities').data('application')`

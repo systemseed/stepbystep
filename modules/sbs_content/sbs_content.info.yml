@@ -4,7 +4,9 @@ description: Default Content for SBS project
 package: SBS
 core_version_requirement: ^8 || ^9
 dependencies:
-  - drupal:default_content
+  - default_content:default_content
+  - pathauto:pathauto
+  - webform_content:webform_content
 default_content:
   node:
     - 08c56f02-a902-4eda-8c5a-0323233765dc
@@ -569,4 +571,4 @@ default_content:
     - ff36679a-c674-4f25-af41-a6782438e93c
     - ff3f5980-6497-4691-b664-e0994c6f6530
     - ff645336-ce4a-4051-b831-e186ad8d66ea
-    - ff7de942-ffb8-4856-ae1e-0b2c9593f276    
+    - ff7de942-ffb8-4856-ae1e-0b2c9593f276

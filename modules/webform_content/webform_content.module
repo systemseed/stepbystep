@@ -19,7 +19,7 @@ function webform_content_node_presave(NodeInterface $node) {
   $isTranslation = FALSE;
 
   $webformLabel = 'Questionnaire for node: ' . $node->label();
-  if ($node->get('webform')->isEmpty()) {
+  if ($node->get('webform')->isEmpty() || !$node->get('webform')->first()->entity) {
     $random = new Random();
     $webformId = 'webform_content_' . $random->word(14);
     $webformStorage = \Drupal::entityTypeManager()->getStorage('webform');

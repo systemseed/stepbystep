@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * @file
+ * Enables modules and site configuration for a Step By Step installation.
+ */
+
 use Drupal\user\Entity\User;
 
 /**
@@ -34,7 +39,7 @@ function stepbystep_finish_installation(array &$install_state): void {
  *
  * Allows the profile to alter the site configuration form.
  */
-function stepbystep_form_install_configure_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state) {
+function stepbystep_form_install_configure_form_alter(&$form, $form_state) {
   $form['site_information']['site_name']['#default_value'] = 'Step By Step';
 
   // Set recommended name for user 1.

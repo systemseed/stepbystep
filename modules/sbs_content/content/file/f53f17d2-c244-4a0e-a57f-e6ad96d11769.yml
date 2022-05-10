@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: f53f17d2-c244-4a0e-a57f-e6ad96d11769
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: 'DR NOA.png'
+  uri:
+    -
+      value: 'public://2021-07/DR NOA.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 35707
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1627384411

@@ -1,0 +1,875 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: e1a71b8c-3d4e-4dc8-885e-ffabac35cdbe
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    f92e6d89-376a-483d-83a4-d1f747ecd2f8: file
+    7cbda86d-d1bb-43de-aecc-a8a6d96a3f11: file
+    642893d6-85c5-4e54-ac23-b4c586e527dd: file
+    48040a07-a468-478c-9ba0-bb0e166f7ab3: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'How to boost your mood_clone'
+  created:
+    -
+      value: 1629979152
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/how-boost-your-moodclone
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 75d29d26-a354-45ae-88e1-efe86799f54c
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629980765
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: c38ff39c-47aa-4499-8964-e6f0441efb3c
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629980778
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: f92e6d89-376a-483d-83a4-d1f747ecd2f8
+                      alt: DrNoa_talking
+                      title: ''
+                      width: 1159
+                      height: 771
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 655614e6-239f-49ff-8d3c-ba095c62efb2
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629980820
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Indeed, the better you care for yourself, the better you will start feeling again.</p>\r\n\r\n<p>Now I am going to show you how small <strong>pleasant activities can actually help improve your mood.</strong></p>\r\n\r\n<p>As Mary experienced, the thought of doing even the smallest activity might seem daunting.</p>\r\n\r\n<p>This is normal when we are very sad or feeling very stressed.</p>\r\n"
+                      format: minimal_html
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 81ca9da2-5390-49b8-a35f-05e42e1b15d3
+                  bundle: lesson_divider
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629980878
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_divider_type:
+                    -
+                      value: simple
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 833531c3-b921-4539-acec-c4f713c7b7e0
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629980882
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Doing something that makes us feel good when we feel this way can help reduce stress and improve mood if done regularly.&nbsp;</p>\r\n\r\n<p>Just taking a few minutes each day to do something pleasant can help.</p>\r\n"
+                      format: minimal_html
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 4cf90cb9-ca63-4541-9cac-783e401df709
+                  bundle: lesson_divider
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629980904
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_divider_type:
+                    -
+                      value: simple
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: fb8612f6-ea08-400b-8f1f-7642e6ee4d96
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629980907
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>As you do this, take a moment to notice your mood. After doing the activity, do you feel even the smallest bit better?</p>\r\n\r\n<p>With practice it can lead to bigger improvements in mood.&nbsp;</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 85544772-58c3-436e-86a3-f14ffb05f0df
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629980981
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 47997cb9-b63a-4f4c-adac-2a27d8048179
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629981001
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 7cbda86d-d1bb-43de-aecc-a8a6d96a3f11
+                      alt: Ava_walkingsun
+                      title: ''
+                      width: 1407
+                      height: 935
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: bed466c4-93bc-4ac6-836b-b9ab7dc23404
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629981013
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Please think about one small thing that makes you feel a bit better.</p>\r\n\r\n<p>This could be something that you enjoyed in the past and might make you feel a little better now.</p>\r\n\r\n<p>Ava had always loved walking but had stopped because she was sad and tired.</p>\r\n\r\n<p>She found that taking a small walk again eased the tension in her shoulders.</p>\r\n"
+                      format: minimal_html
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 39f5242a-73b5-4db7-8612-1dc4e10d555b
+                  bundle: lesson_divider
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629981051
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_divider_type:
+                    -
+                      value: simple
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: d58d2129-3c6e-4c19-a91b-fdd9e49dd28b
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629981054
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Gentle exercise actually encourages a naturally occurring reaction in our brains that can improve our mood.</p>\r\n"
+                      format: minimal_html
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: c0d08131-da80-4515-a963-a4757d300d4f
+                  bundle: lesson_divider
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629981072
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_divider_type:
+                    -
+                      value: simple
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: b39a30e7-7917-411a-96a4-b68be01bae9a
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629981354
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>While it doesn’t solve our life problems, gentle physical activity is particularly helpful in making us feel better.</p>\r\n\r\n<p>And if we feel better it can make dealing with stress in life more manageable.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 21dc21ec-2f74-4683-a64e-741dd650c5d1
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629981360
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 8151c61b-745e-4898-bd75-38683460f558
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629981368
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>If we stop doing the things we like, we will start to feel worse.<br />\r\n<br />\r\nSo, the first step is to start doing small things we used to enjoy doing.<br />\r\n&nbsp;</p>\r\n"
+                      format: minimal_html
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 5b5c4b0b-5ba6-43b8-a2a5-2b38d4262d6d
+                  bundle: lesson_divider
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629981394
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_divider_type:
+                    -
+                      value: simple
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 0f9a38f2-1bf3-4101-b429-b5241f9d6bb8
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629981396
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Because what we do can have an impact on how we feel.</p>\r\n\r\n<p>This means you actually have more influence over how you feel than you might think.</p>\r\n"
+                      format: minimal_html
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: b490675b-425c-467c-8d23-dab246136139
+                  bundle: lesson_divider
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629981410
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_divider_type:
+                    -
+                      value: simple
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 254331ad-bea8-459e-9a3f-e1e3c21f5e72
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629981469
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 99b81dfb-4fa8-41f5-a1be-ed2ed6516133
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629981473
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 642893d6-85c5-4e54-ac23-b4c586e527dd
+                      alt: Small_Activities_agenda
+                      title: ''
+                      width: 1407
+                      height: 936
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: a71fe158-c927-4119-ba0a-b82b25deaa1e
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629981487
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>After today’s session, I’d like you to try to do one thing every day that you enjoy or used to enjoy.</p>\r\n\r\n<p>See if it helps you, even if the impact is very small at first.</p>\r\n\r\n<p>In this next technique called <strong>Small Activities,</strong> I will ask you to write down 3 small things you would normally enjoy doing.</p>\r\n\r\n<p>You can also add a picture or audio.</p>\r\n\r\n<p>You might feel like including the stress reduction exercises we’ve tried together so far, or Ava’s idea of a walk outside.</p>\r\n\r\n<p>Try to think of something that made you feel good in the past.</p>\r\n"
+                      format: minimal_html
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: ec63fc14-94da-43db-9f43-22e4820d6f14
+                  bundle: lesson_divider
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629981542
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_divider_type:
+                    -
+                      value: simple
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: f687cafd-3e08-45e8-927b-be35b750b0c9
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629981545
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>If you’re having trouble thinking of small activities, here are some examples:</p>\r\n\r\n<p>&nbsp;- Taking time to enjoy moments with family or friends</p>\r\n\r\n<p>&nbsp;- Going for a walk</p>\r\n\r\n<p>&nbsp;- Listening to your favourite singer</p>\r\n\r\n<p>&nbsp;- Watching a funny film</p>\r\n\r\n<p>&nbsp;- Trying the breathing or grounding technique</p>\r\n\r\n<p>&nbsp;- Doing something nice for someone else...</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: db588903-e3d8-4c94-b33c-f79081738cbf
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629981643
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: fa924776-e756-4614-96c6-aa71ed437ac7
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629981651
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 48040a07-a468-478c-9ba0-bb0e166f7ab3
+                      alt: DrNoa_applauding
+                      title: ''
+                      width: 1159
+                      height: 771
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 1cdef391-6f0a-4260-8843-54087cb06167
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629981664
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Well done, you created the first entries on your list of Small Activities!&nbsp;</p>\r\n\r\n<p>I hope this technique supports you in doing small things that you enjoy.</p>\r\n\r\n<p>You can add to your list of Small Activities at any time.</p>\r\n\r\n<p>Just go to your Toolbox, where you’ll find all your techniques, ready to practice.</p>\r\n\r\n<p><strong>Congratulations, you have now reached the end of this session. </strong><br />\r\n<br />\r\nYou can continue to session 2 or review session 1.</p>\r\n"
+                      format: minimal_html

@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 0e7e6a18-ad6a-44c4-b3e3-4ac9fd38cc76
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: S2.15(1)_0.png
+  uri:
+    -
+      value: 'public://2021-11/S2.15(1)_0.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 68328
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1637054971

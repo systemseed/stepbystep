@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 9c73b9f9-9843-45e3-ad7e-f5fb4e5ba38a
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: S1.22.combined_0.png
+  uri:
+    -
+      value: 'public://2021-10/S1.22.combined_0.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 1658499
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1633601192

@@ -1,0 +1,367 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 8f9165e4-0ce9-43c9-a376-7933d60628b7
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    829dd6ee-6399-451f-91fe-d7c3052b42aa: file
+    10c5fd3a-0866-467b-9c9a-02e045943b1c: file
+    ebeafcb5-3f23-4e0c-acff-a5582d2c5c06: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'How to deal with challenging activites'
+  created:
+    -
+      value: 1636629988
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/how-deal-challenging-activites
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: a8737c96-e682-48a4-bf0a-fdcf67fad561
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1636630036
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: d6bc2539-76e3-49bf-b719-69a35435b3de
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636630039
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 829dd6ee-6399-451f-91fe-d7c3052b42aa
+                      alt: DrNoa_steps
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 02dbd9b3-4db8-42cb-8248-44fa06c8e51a
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636630042
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>If you feel you would like to try something a bit more challenging, you can break your activity down into smaller and easier steps too!</p>\r\n\r\n<p>In the next exercise, I am going to ask you to make a list of Challenging Activities.</p>\r\n\r\n<p>Please think about an activity you would really like to do.</p>\r\n\r\n<p>This should be something you used to enjoy doing but now seems overwhelming.<br />\r\n<br />\r\nIt can help to choose something clear and specific, and something you can plan for.</p>\r\n\r\n<p>Try something challenging, but start small, don’t go for the most challenging activity too soon.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 240de6e1-0ae6-48f6-af8e-6eb4384fe6f3
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1636630348
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 5a3abfa6-d588-4af8-9a89-d68e2f7ee8a4
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636630352
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 10c5fd3a-0866-467b-9c9a-02e045943b1c
+                      alt: Ava_steps
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 1e36948d-4471-4459-bf7d-9e4cb649bc3f
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636630384
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Just as Ava and Mary did, let’s break the activity down into all the essential steps.</p>\r\n\r\n<p>Let me give you an example to help you: I would like to tidy the house.</p>\r\n\r\n<p><br />\r\nIf I break this activity down into manageable steps, here are the steps I’d have to think about:</p>\r\n"
+                      format: minimal_html
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: c22a64ac-dd0f-4e75-8f27-35443f067b70
+                  bundle: lesson_list
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636630420
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_list_items:
+                    -
+                      value: "Getting out of bed\r\n"
+                    -
+                      value: 'Getting dressed appropriately to tidy'
+                    -
+                      value: 'Planning which cleaning materials, I might need'
+                    -
+                      value: 'Clean the bathroom and kitchen '
+                    -
+                      value: 'Make beds'
+                    -
+                      value: 'Sweep the floor'
+                  field_lesson_list_type:
+                    -
+                      value: ul
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 5c3f14f0-a41b-483a-80ef-01136a8c7649
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636630467
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Your own Challenging Activity might be easier if broken down into smaller steps.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 18efc549-7dbb-4d44-b37c-7efa036f47f9
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1636630488
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 982f40ed-724a-4a67-a4c8-21db66544ba8
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636630518
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: ebeafcb5-3f23-4e0c-acff-a5582d2c5c06
+                      alt: DrNoa_waving
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 0d5de7bc-2291-414a-a7fa-6a19920a958e
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636630534
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>When first trying one of your new Challenging Activities you can always choose to do just the first few steps.</p>\r\n\r\n<p><br />\r\nI will leave you to schedule in some steps now.<br />\r\n<br />\r\nGood luck and see you in Session 3.</p>\r\n\r\n<p><strong><em>You can schedule one new step for your Challenging Activities at any time.You have now reached the end of session 2. After the activity, you can continue to session 3 or review session 2.</em></strong></p>\r\n"
+                      format: minimal_html

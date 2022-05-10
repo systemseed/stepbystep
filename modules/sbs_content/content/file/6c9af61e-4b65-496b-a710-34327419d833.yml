@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 6c9af61e-4b65-496b-a710-34327419d833
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: S4.20.png
+  uri:
+    -
+      value: 'public://courses/2021-10/S4.20.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 82123
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1633685846

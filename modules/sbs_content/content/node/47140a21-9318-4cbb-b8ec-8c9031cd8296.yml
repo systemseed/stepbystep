@@ -1,0 +1,214 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 47140a21-9318-4cbb-b8ec-8c9031cd8296
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    5d280547-ea56-4714-9fa3-753906d93c7a: file
+    33e898bf-8346-40c5-9910-d606e3576863: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Mary''s experience with small activities'
+  created:
+    -
+      value: 1636362882
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/marys-experience-small-activities
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 34d88373-01a5-4337-9272-bf928930bdcc
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1636363580
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 1a79a162-fbab-427e-ae1a-7b0da2fd6ccc
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636363584
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 5d280547-ea56-4714-9fa3-753906d93c7a
+                      alt: List_Mary
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 8026960c-b29a-4442-a1bf-9c6b49fab0cd
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636363588
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>I looked down at my list of things I had once enjoyed.</p>\r\n\r\n<p>I had written:<em> Go for a walk</em>.<br />\r\n<br />\r\nWhat a stupid idea, I said to myself. <em>I have to study and I don’t want to see anyone.</em><br />\r\n<br />\r\nBut the next day I pushed myself and went because I had learned it would be better for me.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 08829b4b-de3d-4dcb-b458-f8d009d06ec2
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1636363726
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 416f245b-692b-44a0-92b7-bbdc9960f1a9
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636363750
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 33e898bf-8346-40c5-9910-d606e3576863
+                      alt: Mary_walking
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: eb579b06-6d64-4739-a99f-129d87536222
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636363772
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>I felt uncomfortable doing something for myself.</p>\r\n\r\n<p>There was laundry to do, I had so much to prepare before class.</p>\r\n\r\n<p>Nevertheless, being outside in the fresh air did me some good.</p>\r\n\r\n<p>I found it gave me a bit more energy and I felt a little lighter.</p>\r\n\r\n<p>But the next day I woke up feeling sad and overwhelmed again.</p>\r\n\r\n<p><strong><em>Now let's hear from Ava and Mary together, as they have an important message for you.</em></strong></p>\r\n"
+                      format: minimal_html

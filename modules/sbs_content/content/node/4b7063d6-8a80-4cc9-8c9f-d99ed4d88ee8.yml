@@ -1,0 +1,220 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 4b7063d6-8a80-4cc9-8c9f-d99ed4d88ee8
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    039cd635-64c6-44f6-9900-702910baa2c5: file
+    2cea70db-6496-4a3c-b0d1-4d0b05cdcd73: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'How to calm down'
+  created:
+    -
+      value: 1629974499
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/how-calm-down
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: f6060d38-2d16-424c-a35d-a41dd982d298
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629974545
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 7dd684ac-025e-4385-80da-0d2159e7de54
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629974568
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 039cd635-64c6-44f6-9900-702910baa2c5
+                      alt: Ava_Mary_relaxed
+                      title: ''
+                      width: 2811
+                      height: 2065
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 8c738ddc-8b0a-4930-86f5-cde82151c8bd
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629974579
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>It is very useful to know techniques to feel calmer.<br />\r\n<br />\r\nYou have already been introduced to the Grounding Exercise to help you feel less stressed.</p>\r\n\r\n<p>I would now like to introduce you to a second technique to help you to relax.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 833c3602-e76d-4a00-9061-5023cdfa5525
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629974620
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: ab0fc831-390c-4567-bfbd-0f684f94c8f1
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629974626
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 2cea70db-6496-4a3c-b0d1-4d0b05cdcd73
+                      alt: DrNoa
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 7d64f617-8e27-4cd8-9da1-1da95efd7ff3
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629974669
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>This second technique is a <strong>Breathing Exercise. </strong></p>\r\n\r\n<p>It may sound strange, but breathing can alter how stressed people feel.</p>\r\n\r\n<p>This exercise will show you how to breathe slowly and at a pace that can help reduce stress.</p>\r\n\r\n<p>Once you know how to do it, you can use it to help you feel calmer whenever you feel stressed or overwhelmed.</p>\r\n\r\n<p>You just need to sit back and try to pay attention to your breathing.</p>\r\n\r\n<p>You can use this technique whenever you feel you need to reduce your stress.</p>\r\n\r\n<p>In the next step, just touch the play icon to play the audio file.</p>\r\n\r\n<p><em><strong>We have now reached the end of Part 1 of Session 1. After the activity, you can now either continue directly to Part 2 of Session 1, or do that another time, as you like.</strong></em></p>\r\n"
+                      format: minimal_html

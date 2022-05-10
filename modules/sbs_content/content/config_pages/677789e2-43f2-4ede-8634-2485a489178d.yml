@@ -1,0 +1,22 @@
+_meta:
+  version: '1.0'
+  entity_type: config_pages
+  uuid: 677789e2-43f2-4ede-8634-2485a489178d
+  bundle: sbs_questionnaires_welcome_back
+default:
+  label:
+    -
+      value: 'Questionnaires Welcome Back Page'
+  context:
+    -
+      value: 'a:1:{i:0;a:1:{s:8:"language";s:2:"en";}}'
+  field_welcome_back_button:
+    -
+      value: Continue
+  field_welcome_back_header:
+    -
+      value: 'Welcome back to Step-by-Step'
+  field_welcome_back_text:
+    -
+      value: "<p>We have prepared some questions to better understand how Step-by-Step can help you. Duration: 2 minutes</p>\r\n"
+      format: minimal_html

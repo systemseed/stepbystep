@@ -1,0 +1,56 @@
+_meta:
+  version: '1.0'
+  entity_type: config_pages
+  uuid: 9911f636-d4e3-4afe-ace8-ef3bb8495ef1
+  bundle: request_ehelper
+  depends:
+    136dac6f-a051-4965-a824-43b16577a0bb: node
+default:
+  label:
+    -
+      value: 'Request E-helper'
+  context:
+    -
+      value: 'a:1:{i:0;a:1:{s:8:"language";s:2:"en";}}'
+  field_ehelper_accept_button_text:
+    -
+      value: 'Request E-helper'
+  field_ehelper_popup_accept_text:
+    -
+      value: 'Yes, request E-helper'
+  field_ehelper_popup_cancel_text:
+    -
+      value: 'No thanks'
+  field_ehelper_popup_text:
+    -
+      value: "<p>An E-helper is a real person who will contact you every week to see how you're doing and support&nbsp; you on your Step-by-Step journey.</p>\r\n\r\n<p>We highly recommend you to request one!</p>\r\n"
+      format: minimal_html
+  field_ehelper_popup_title:
+    -
+      value: 'Would you like to request an E-helper now?'
+  field_ehelper_questionnaire:
+    -
+      entity: 136dac6f-a051-4965-a824-43b16577a0bb
+  field_ehelper_requested_text:
+    -
+      value: "<p>If this number isn't correct please contact <em>(add phone number / email)</em></p>\r\n\r\n<p>If you have any further questions, ask your E-helper when they next call you.</p>\r\n"
+      format: minimal_html
+  field_ehelper_requested_title:
+    -
+      value: 'Your details for E-helper'
+  field_ehelper_requested_tx_above:
+    -
+      value: "<p>This is the phone number an E-helper will contact you on</p>\r\n"
+      format: minimal_html
+  field_ehelper_score_levels:
+    -
+      value: 576
+    -
+      value: 577
+  field_ehelper_text:
+    -
+      value: "<p>An E-helper is a real person who will contact you every week to see how you're doing and support&nbsp; you on your Step-by-Step journey.</p>\r\n\r\n<p>We highly recommend you to request one!</p>\r\n"
+      format: minimal_html
+  field_ehelper_title:
+    -
+      value: 'Would you like to request an E-helper?'

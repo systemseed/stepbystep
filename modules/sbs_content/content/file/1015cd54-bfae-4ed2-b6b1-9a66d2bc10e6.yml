@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 1015cd54-bfae-4ed2-b6b1-9a66d2bc10e6
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: 'SBS thumb_Artboard 31.png'
+  uri:
+    -
+      value: 'public://2021-09/SBS thumb_Artboard 31.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 11346
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1631270374

@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 039cd635-64c6-44f6-9900-702910baa2c5
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: Image14Leb.png
+  uri:
+    -
+      value: 'public://2021-10/Image14Leb.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 1327991
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1633605411

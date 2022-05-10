@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 35228e88-11c1-4efb-81ea-5824de68281e
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: S5.05(1).png
+  uri:
+    -
+      value: 'public://2021-11/S5.05(1).png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 73654
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1638270203

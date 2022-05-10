@@ -1,0 +1,103 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: f043f087-016d-44e5-bb8a-726a39f6a58b
+  bundle: activity_checklist
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Small Activities'
+  created:
+    -
+      value: 1636539562
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /activity/small-activities
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_description:
+    -
+      value: 'Create a checklist of enjoyable activities.'
+  field_icon:
+    -
+      value: mood
+  field_suggestions:
+    -
+      value: 'Going for a walk'
+    -
+      value: 'Listening to your favourite singer'
+    -
+      value: 'Praying/meditation, reading'
+    -
+      value: "Taking time to enjoy moments with family or friends\r\n"
+translations:
+  ar:
+    status:
+      -
+        value: true
+    uid:
+      -
+        target_id: 1
+    title:
+      -
+        value: 'Small Activities'
+    created:
+      -
+        value: 1643205348
+    promote:
+      -
+        value: false
+    sticky:
+      -
+        value: false
+    revision_translation_affected:
+      -
+        value: true
+    path:
+      -
+        alias: /activity/small-activities
+        langcode: ar
+        pathauto: 1
+    content_translation_source:
+      -
+        value: en
+    content_translation_outdated:
+      -
+        value: false
+    field_description:
+      -
+        value: 'Create a checklist of enjoyable activities.'
+    field_suggestions:
+      -
+        value: 'Going for a walk'
+      -
+        value: 'Listening to your favourite singer'
+      -
+        value: 'Praying/meditation, reading'
+      -
+        value: "Taking time to enjoy moments with family or friends\r\n"

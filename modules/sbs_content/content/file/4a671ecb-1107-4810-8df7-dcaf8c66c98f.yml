@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 4a671ecb-1107-4810-8df7-dcaf8c66c98f
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: icon.png
+  uri:
+    -
+      value: 'public://courses/2021-07/icon.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 9980
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1626875427

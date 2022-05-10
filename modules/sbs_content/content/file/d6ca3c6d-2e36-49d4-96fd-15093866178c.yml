@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: d6ca3c6d-2e36-49d4-96fd-15093866178c
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: AVA_0.png
+  uri:
+    -
+      value: 'public://2021-08/AVA_0.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 33821
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1629972644

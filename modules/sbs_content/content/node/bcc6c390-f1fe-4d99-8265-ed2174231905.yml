@@ -1,0 +1,475 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: bcc6c390-f1fe-4d99-8265-ed2174231905
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    4bca2425-a2c3-4cd5-834c-f8a093d39072: file
+    b5c78d55-958b-43f2-a517-568cb1669cbb: file
+    3f3bbc91-2f19-49ff-b47e-f5a47b30d8b6: file
+    e23ac58d-b35a-43c3-8d10-693bcef5788d: file
+    af17b741-bb70-4fed-a40c-429c53e0e6d3: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'How to boost your mood'
+  created:
+    -
+      value: 1629979152
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/how-boost-your-mood
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 7f1c378b-a6e1-4557-83e6-538d628f2733
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629980765
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: a13d122d-5eef-42e9-9505-66b758d5ec27
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629980778
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 4bca2425-a2c3-4cd5-834c-f8a093d39072
+                      alt: DrNoa
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 6f6fe924-cc3b-4f32-b62c-27472b128696
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629980820
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Indeed, the better you care for yourself, the better you will start feeling again.</p>\r\n\r\n<p>Now I am going to show you how small <strong>pleasant activities can actually help improve your mood.</strong></p>\r\n\r\n<p>As Mary experienced, the thought of doing even the smallest activity might seem daunting.</p>\r\n\r\n<p>This is normal when we are very sad or feeling very stressed.</p>\r\n\r\n<p>Doing something that makes us feel good when we feel this way can help reduce stress and improve mood if done regularly.&nbsp;</p>\r\n\r\n<p>Just taking a few minutes each day to do something pleasant can help.</p>\r\n\r\n<p>As you do this, take a moment to notice your mood. After doing the activity, do you feel even the smallest bit better?</p>\r\n\r\n<p>With practice it can lead to bigger improvements in mood.&nbsp;</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: cefc1766-4892-4a2c-978e-6e5c9bc89086
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629980981
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 05a24688-97fb-45ec-8b0c-fef10e501c21
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629981001
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: b5c78d55-958b-43f2-a517-568cb1669cbb
+                      alt: Ava_DrNoa_activity
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: d319c48f-3bfe-4fee-84eb-062cd2c39f22
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629981013
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Please think about one small thing that makes you feel a bit better.</p>\r\n\r\n<p>This could be something that you enjoyed in the past and might make you feel a little better now.</p>\r\n\r\n<p>Ava had always loved walking but had stopped because she was sad and tired.</p>\r\n\r\n<p>She found that taking a small walk again eased the tension in her shoulders.</p>\r\n\r\n<p>Gentle exercise actually encourages a naturally occurring reaction in our brains that can improve our mood.</p>\r\n\r\n<p>While it doesn’t solve our life problems, gentle physical activity is particularly helpful in making us feel better.</p>\r\n\r\n<p>And if we feel better it can make dealing with stress in life more manageable.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: c08db4d7-e638-406f-942a-40a7edd47b56
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629981360
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 33696977-0c4d-4465-b57b-b5d3abb361d0
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1633679383
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 3f3bbc91-2f19-49ff-b47e-f5a47b30d8b6
+                      alt: AVA_feelingbetter
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: f6a37cae-42ae-4018-a2e2-68079b069a62
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629981368
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>If we stop doing the things we like, we will start to feel worse.<br />\r\n<br />\r\nSo, the first step is to start doing small things we used to enjoy doing.</p>\r\n\r\n<p>Because what we do can have an impact on how we feel.</p>\r\n\r\n<p>This means you actually have more influence over how you feel than you might think.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: b30c7f25-d056-4ec9-82e9-9335368175ab
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629981469
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 6bd9013d-0ca0-4e78-a81b-7f319836e783
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629981473
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: e23ac58d-b35a-43c3-8d10-693bcef5788d
+                      alt: Small_Activities_agenda
+                      title: ''
+                      width: 2433
+                      height: 1432
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 578fd659-a4af-4aef-b512-77c3763fa457
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629981487
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>After today’s session, I’d like you to try to do one thing every day that you enjoy or used to enjoy.</p>\r\n\r\n<p>See if it helps you, even if the impact is very small at first.</p>\r\n\r\n<p>In this next technique called <strong>Small Activities,</strong> I will ask you to write down 3 small things you would normally enjoy doing.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 46b04d31-4384-4674-aea3-eb0012acde1f
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1633679644
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 45bbc835-83ed-439d-a285-654a7076ca43
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1633679669
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: af17b741-bb70-4fed-a40c-429c53e0e6d3
+                      alt: DrNoa_calendar
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 0be4079c-ef0e-4477-81f3-83a8c8dd48c5
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1633679694
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>You might feel like including the stress reduction exercises we’ve tried together so far, or Ava’s idea of a walk outside.</p>\r\n\r\n<p>Try to think of something that made you feel good in the past.</p>\r\n\r\n<p>If you’re having trouble thinking of small activities, here are some examples:</p>\r\n\r\n<p>&nbsp;- Taking time to enjoy moments with family or friends</p>\r\n\r\n<p>&nbsp;- Going for a walk</p>\r\n\r\n<p>&nbsp;- Listening to your favourite singer</p>\r\n\r\n<p>&nbsp;- Watching a funny film</p>\r\n\r\n<p>&nbsp;- Trying the breathing or grounding technique</p>\r\n\r\n<p>&nbsp;- Doing something nice for someone else...</p>\r\n\r\n<p>You can add to your list of Small Activities at any time. Just go to your Toolbox, where you’ll find all your techniques, ready to practice.</p>\r\n\r\n<p>Let's give it a try now.</p>\r\n\r\n<p><strong><em>You have now reached the end of session 1. After the activity, you can continue to session 2 or review session 1.</em></strong></p>\r\n"
+                      format: minimal_html

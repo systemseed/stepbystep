@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: df641832-f8bb-4b69-8554-24a43a3a142a
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: image20.png
+  uri:
+    -
+      value: 'public://2021-08/image20.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 6098
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1629981007

@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 96cf8607-cbed-4781-9b77-25c9a84ce513
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: 'DR Maha portrait.png'
+  uri:
+    -
+      value: 'public://courses/2021-10/DR Maha portrait.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 109051
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1633685484

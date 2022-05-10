@@ -1,0 +1,220 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: d4a1b0fa-2354-4cbc-a387-5f1f2650f8b1
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    eeb04799-c274-4f6b-b1cc-68db5638f7db: file
+    67bb702d-9707-4761-b3d5-dda5dbd93b28: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Mary''s response to the warning signs'
+  created:
+    -
+      value: 1638267821
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/marys-response-warning-signs
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 2035b127-8da7-4e40-9e88-72235be2efa6
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1638288587
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 1c4c3c1d-0a0e-45bf-9145-caf3d1f3d532
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1638288595
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: eeb04799-c274-4f6b-b1cc-68db5638f7db
+                      alt: Mary_mother
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: d83a4d3d-e8ac-4c73-96c9-1d41ccf4e524
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1638288599
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>When I started criticizing myself for not doing things, I remembered to talk to myself as if I was talking to a friend.</p>\r\n\r\n<p>This kindness also extended to my mother.</p>\r\n\r\n<p>We got along better.</p>\r\n\r\n<p>Slowly, I felt okay again, despite having to re-sit the exams.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 8fb6c2ae-cd94-4ca8-837d-cc1ee91de069
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1638288743
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: e869d50b-647c-4053-b409-252c75670e21
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1638288809
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 67bb702d-9707-4761-b3d5-dda5dbd93b28
+                      alt: Mary_checklist
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: cc0e59bd-743b-45ec-a540-f18b380856ca
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1638288812
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>I followed Dr Noa’s advice and wrote down a few things I could do when my Warning Signs came.</p>\r\n\r\n<ul>\r\n\t<li>Be kind to myself</li>\r\n\t<li>Plan in some time to wash my hair</li>\r\n\t<li>Slow breathing</li>\r\n\t<li>Call Rosa</li>\r\n\t<li>Do something that makes me feel good again</li>\r\n\t<li>Spend time with other people</li>\r\n</ul>\r\n\r\n<p><strong><em>Speaking from experience, Ava and Mary have a message for you.</em></strong></p>\r\n"
+                      format: minimal_html

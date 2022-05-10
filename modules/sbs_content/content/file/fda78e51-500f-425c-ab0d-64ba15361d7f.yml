@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: fda78e51-500f-425c-ab0d-64ba15361d7f
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: S4.12.png
+  uri:
+    -
+      value: 'public://2021-11/S4.12.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 15256
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1637667373

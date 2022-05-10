@@ -1,0 +1,203 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 0c4ec9a9-7128-4f8c-92dc-e4b025a1a642
+  bundle: course
+  default_langcode: en
+  depends:
+    17bfe772-c020-4440-8e98-011fab919547: taxonomy_term
+    6d3d9899-f104-4109-8b10-afae0bd3c105: file
+    7730c1dc-5d2e-41a2-9c45-b5c2d66f1be4: node
+    ce2071de-ce70-4d66-b464-4b0fb22c7d57: node
+    92b3a0f2-9ca0-45f7-9690-8ff5e6126f9d: node
+    c3069b03-002f-4cc7-815e-3151b7e6685c: node
+    583e2eeb-9888-4df7-91fc-b7dfdaf81e86: node
+    831b7965-b9e8-4b13-bb5c-71f260ca6a08: node
+    91ae97fb-387b-4aca-a129-bc3ee5457291: node
+    560abdcd-12e3-4c4f-bd08-da8a9340e4f5: node
+    85d30b01-e535-4465-9722-4900847fee62: node
+    6668a98c-e59b-456f-a6e9-9d2581593cf6: node
+    9da73cde-e3fe-43b1-a980-6a36cb0c8ccb: node
+    d06ce0cf-0bd8-468a-ac52-fb1d84d0303a: node
+    b7b41ad6-21d8-4238-af78-257370b67b0b: node
+    9c2c2b7b-6c40-4d5b-b456-ec36ee2be4bf: node
+    7c62c39d-4d83-411f-be5b-2217e0f82d47: node
+    8bcdf6cc-afb9-4283-bc87-4c08c0539af0: node
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: false
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: '1. MEN Connect with others!'
+  created:
+    -
+      value: 1629964648
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /session/1-men-connect-others
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_course_category:
+    -
+      entity: 17bfe772-c020-4440-8e98-011fab919547
+  field_course_description:
+    -
+      value: 'Meet Kai and Uri who have been there. Learn new techniques to help you feel better.'
+      format: plain_text
+  field_course_finish_button:
+    -
+      uri: 'internal:/sessions'
+      title: Finish
+      options: {  }
+  field_course_image:
+    -
+      entity: 6d3d9899-f104-4109-8b10-afae0bd3c105
+      alt: KAI
+      title: ''
+      width: 296
+      height: 297
+  field_course_linear_progress:
+    -
+      value: true
+  field_course_module:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 6b9ba0fb-ebdf-4455-817a-2ff83fa047e6
+          bundle: course_modules
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629964739
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_module_lessons:
+            -
+              entity: 7730c1dc-5d2e-41a2-9c45-b5c2d66f1be4
+            -
+              entity: ce2071de-ce70-4d66-b464-4b0fb22c7d57
+            -
+              entity: 92b3a0f2-9ca0-45f7-9690-8ff5e6126f9d
+            -
+              entity: c3069b03-002f-4cc7-815e-3151b7e6685c
+            -
+              entity: 583e2eeb-9888-4df7-91fc-b7dfdaf81e86
+            -
+              entity: 831b7965-b9e8-4b13-bb5c-71f260ca6a08
+          field_module_title:
+            -
+              value: 'Part 1'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: c4438c87-7bc3-43cd-8658-4d268033c42b
+          bundle: course_modules
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629977746
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_module_lessons:
+            -
+              entity: 91ae97fb-387b-4aca-a129-bc3ee5457291
+            -
+              entity: 560abdcd-12e3-4c4f-bd08-da8a9340e4f5
+            -
+              entity: 85d30b01-e535-4465-9722-4900847fee62
+            -
+              entity: 6668a98c-e59b-456f-a6e9-9d2581593cf6
+            -
+              entity: 9da73cde-e3fe-43b1-a980-6a36cb0c8ccb
+          field_module_title:
+            -
+              value: 'Part 2'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: b148838d-12ad-43b3-9b0d-95f29dd0b263
+          bundle: course_modules
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629979038
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_module_lessons:
+            -
+              entity: d06ce0cf-0bd8-468a-ac52-fb1d84d0303a
+            -
+              entity: b7b41ad6-21d8-4238-af78-257370b67b0b
+            -
+              entity: 9c2c2b7b-6c40-4d5b-b456-ec36ee2be4bf
+            -
+              entity: 7c62c39d-4d83-411f-be5b-2217e0f82d47
+            -
+              entity: 8bcdf6cc-afb9-4283-bc87-4c08c0539af0
+          field_module_title:
+            -
+              value: 'Part 3'
+  field_weight:
+    -
+      value: -12

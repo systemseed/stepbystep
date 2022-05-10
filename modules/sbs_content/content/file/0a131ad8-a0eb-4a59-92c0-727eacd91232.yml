@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 0a131ad8-a0eb-4a59-92c0-727eacd91232
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: bg_0.png
+  uri:
+    -
+      value: 'public://courses/2021-07/bg_0.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 32618
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1627299196

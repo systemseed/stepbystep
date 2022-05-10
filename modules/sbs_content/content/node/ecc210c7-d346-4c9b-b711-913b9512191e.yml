@@ -1,0 +1,390 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: ecc210c7-d346-4c9b-b711-913b9512191e
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    95f172c4-5642-4b5b-9e69-f5f2cac209d5: file
+    e73bde82-1c9b-4fdc-bc72-1e8c18968d18: file
+    d96f225b-88c1-4bdd-9d58-b0e66e2fbee6: file
+    a249e8cf-0787-4f77-b3fb-7975b9bcdb6c: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Detect the warning signs'
+  created:
+    -
+      value: 1638267700
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/detect-warning-signs
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: b6501f8c-d6f0-4dc5-9523-daca994d68eb
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1638270824
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: dad908a9-4623-4205-a5b6-ed01c3312d20
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1638270828
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 95f172c4-5642-4b5b-9e69-f5f2cac209d5
+                      alt: DrNoa
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 8a1874b3-b73d-4f5b-8aa7-efae4aea6aa3
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1638270831
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Like Ava and Mary, you have shown a lot of strength in completing this programme.<br />\r\n<br />\r\nI hope you are starting to feel confident with the techniques you learned and have noticed some changes in your life.</p>\r\n\r\n<p>If you haven’t, or you’re still not feeling any better, keep going. Remember: change does not happen immediately.</p>\r\n\r\n<p>You are doing something for yourself right now by coming to Session 5.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: a75cafbf-9b7d-47d1-8ec1-8e9b5b1dd3cf
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1638270973
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 4f184892-86a2-4d1a-8cf7-7845e7809450
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1638270978
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: e73bde82-1c9b-4fdc-bc72-1e8c18968d18
+                      alt: DrNoa_explains
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 2237c3f1-f406-42f6-9ca3-0820f57c2e23
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1638270981
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Today’s main message is:&nbsp;</p>\r\n\r\n<p>It is normal to have ups and downs, especially when we think we are doing okay again.</p>\r\n\r\n<p>We cannot control what changes life brings, only how we cope with those changes.</p>\r\n\r\n<p>It can help to recognise early signs within yourself that you don’t feel good again.<br />\r\n<br />\r\nSometimes you might feel stressed, sad or anxious.</p>\r\n\r\n<p>The best thing you can do is be prepared.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: ebeac512-9519-4e71-9a75-cefbc82ea61f
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1638271057
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: f7541213-99ab-45c5-acf9-7365ca62494c
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1638271061
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: d96f225b-88c1-4bdd-9d58-b0e66e2fbee6
+                      alt: Ava_observe_miror
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: c0d22ca4-be2d-477e-a7e3-7e4681614ce3
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1638271063
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Recognising that you are struggling and knowing what to do will help you to feel better before it gets worse.</p>\r\n\r\n<p>Observe yourself and be aware of what is not feeling good.</p>\r\n\r\n<p>This way you can work on any emotional distress before it gets too much for you to cope with.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: c8bd1cfc-f289-4774-92f5-32cddebd75bf
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1638271147
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: fc678387-d106-49a5-bd7d-0767abf15f7f
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1638271150
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: a249e8cf-0787-4f77-b3fb-7975b9bcdb6c
+                      alt: DrNoa
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: eef81dbd-4dd1-40f3-a031-7e25fc3e6554
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1638271153
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>In the upcoming exercise, you will think about the signs that show you are not coping so well anymore.</p>\r\n\r\n<p>These are your Warning Signs.</p>\r\n\r\n<p>It could be that you feel sad or have negative thoughts, like Mary, do not sleep well like Ava, or start withdrawing from your friends.</p>\r\n\r\n<p>How do you know when you are starting to feel worse?</p>\r\n\r\n<p>Let’s take a moment now to add some Warning Signs to your Toolbox.</p>\r\n\r\n<p>This list works exactly the same as the previous lists in your Toolbox.</p>\r\n\r\n<p>Let’s try!</p>\r\n\r\n<p><strong><em>As always, after the activity, you can go directly to the second part of Session 5 or come back any time during the following days.</em></strong></p>\r\n"
+                      format: minimal_html

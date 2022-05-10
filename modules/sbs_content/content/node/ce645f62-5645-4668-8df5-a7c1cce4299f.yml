@@ -1,0 +1,138 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: ce645f62-5645-4668-8df5-a7c1cce4299f
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    e68c39a4-cd2d-4212-99bd-e18ae7c67589: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Ava''s experience with SBS_clone'
+  created:
+    -
+      value: 1629979072
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/avas-experience-sbsclone
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: ca4228b0-5bff-4dc6-bb8a-d972a126b87c
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629979757
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 3e1fde84-c202-4a37-ab7f-9907b331d0d7
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629979761
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: e68c39a4-cd2d-4212-99bd-e18ae7c67589
+                      alt: Ava_relax
+                      title: ''
+                      width: 1159
+                      height: 770
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: a06fa65d-3441-4461-8dcc-b7f1e81f7070
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629979789
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>In the beginning, I felt it was hard to try the techniques Dr Noa taught me.</p>\r\n\r\n<p>I felt like I was bad at them. It required so much effort and energy.</p>\r\n\r\n<p>It made me feel less abnormal to know that other patients were struggling with this as well.</p>\r\n\r\n<p>So I kept trying. With practice, I noticed that it became easier and started to feel the activities were helpful.</p>\r\n\r\n<p>I started practising the Breathing or Grounding Exercise each morning before waking up my kids and tried remembering to use them during the day when I felt stressed or overwhelmed.</p>\r\n"
+                      format: minimal_html

@@ -1,0 +1,216 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 0cc3e58a-1e52-40b5-bba3-a47a7e7a8ba4
+  bundle: webform
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: test
+  created:
+    -
+      value: 1643126274
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /questionnaire/test
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  questionnaire_score_levels:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 8b9d6fe9-da46-4b05-8dc7-a8ec138cc8c8
+          bundle: webform_content_score_level
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1643126745
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          webform_content_body:
+            -
+              value: '<p>However, you''ll find the activities in this app useful for maintaining a healthy mind.</p><p>Tap the button below to start your Step-by-Step journey.</p>'
+              format: minimal_html
+          webform_content_icon:
+            -
+              value: check_circle
+          webform_content_score_range:
+            -
+              from: 0
+              to: 30
+          webform_content_text:
+            -
+              value: 'The answers indicate you are doing okay'
+          webform_content_title:
+            -
+              value: 'Not depressed'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 5723655f-089a-4086-bc93-9f5c66e7091e
+          bundle: webform_content_score_level
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1643126745
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          webform_content_body:
+            -
+              value: '<p>The answers you''ve given indicate that this is going to be a great help for you.</p><p> Tap the button below to start your Step-by-Step journey.</p>'
+              format: minimal_html
+          webform_content_icon:
+            -
+              value: check_circle
+          webform_content_score_range:
+            -
+              from: 31
+              to: 60
+          webform_content_text:
+            -
+              value: 'We are here to help you feel better'
+          webform_content_title:
+            -
+              value: Depressed
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 7a6bc0cd-7dfb-4dae-a454-d2cdac9c97ad
+          bundle: webform_content_score_level
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1643126745
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          webform_content_body:
+            -
+              value: '<p>From what you have described in this questionnaire, we think you may be at risk and need some extra support. This is completely normal and there are many people in this position.</p><p> It is very important that you get yourself some help for these problems as soon as possible before continuing with this app.</p>'
+              format: minimal_html
+          webform_content_icon:
+            -
+              value: error
+          webform_content_score_range:
+            -
+              from: 61
+              to: 1000
+          webform_content_text:
+            -
+              value: 'You''re at risk of harm'
+          webform_content_title:
+            -
+              value: 'At risk'
+  webform:
+    -
+      target_id: webform_content_tawibucestospe
+      default_data: ''
+      status: ''
+      open: ''
+      close: ''
+  webform_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: a2ca88c5-0396-4703-9732-9b48ddfe2d9d
+          bundle: webform_content_text
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1643126740
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          webform_content_required:
+            -
+              value: true
+          webform_content_title:
+            -
+              value: test

@@ -1,0 +1,305 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 8e65cc61-fbc5-4b4f-9fe9-2d1c39cf750c
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    4bb54f8f-b26e-4932-9064-4af6f63057cd: file
+    6da8c383-fe8f-4af0-bcf3-13eaac0f221d: file
+    54e8d974-ae79-48a1-83ec-5cae73298e38: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Ava meets her friends'
+  created:
+    -
+      value: 1637567068
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/ava-meets-her-friends
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: c995e261-04dd-4ad5-86a8-f15d1cbd5941
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637568554
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 721c3448-241d-40c7-9c62-f5d418250f15
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637569035
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 4bb54f8f-b26e-4932-9064-4af6f63057cd
+                      alt: Ava_friends
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 37f68b23-abeb-420f-ab92-62cf6d0aeb8c
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637568568
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>When I arrived at Mona's place, Sara was already there.</p>\r\n\r\n<p>“Hi, Ava! I'm so glad to see you here! Just like old times,” smiled Mona welcoming me.</p>\r\n\r\n<p>“Except the husbands aren’t here… or the children!” laughed Sara.</p>\r\n\r\n<p>“Come sit, Ava.”</p>\r\n\r\n<p>I took my seat cautiously, forcing a smile. I felt my stomach tighten, afraid of their questions.<br />\r\n<br />\r\nBut no questions came.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 45872103-23e2-46c4-a945-ed711f182c8d
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637568620
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 55efe60d-fef0-461c-96f6-372baba1ef5c
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637569117
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 6da8c383-fe8f-4af0-bcf3-13eaac0f221d
+                      alt: Ava_friends_talk
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 0cbcc5b3-a26b-401f-8c26-2047be2a2b2e
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637568623
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>For a while, I followed their conversation quietly, a bit shy to be in company.</p>\r\n\r\n<p>But seeing the two of them there, my friends, laughing and chatting, put me at ease.</p>\r\n\r\n<p>I felt myself relax. I even started to enjoy myself.</p>\r\n\r\n<p>Mona must have told Sara not to say anything about my problems.<br />\r\n<br />\r\nIt wasn’t until we left Mona’s place that she gave me a reassuring hug.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: daa22c23-cfbe-493f-b0dd-6c1e0a9ab7d1
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637568789
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 9c85d802-1f83-4914-b789-33505bf1c5a2
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637569216
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 54e8d974-ae79-48a1-83ec-5cae73298e38
+                      alt: Ava_Mona_hug
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: c1a61765-f28a-485a-9e3f-8cc88b99e5c7
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637568793
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>“You know, Ava, if you ever need help, you just have to ask,” she said.</p>\r\n\r\n<p>I said nothing.</p>\r\n\r\n<p>I knew that if I opened my mouth I would cry.</p>\r\n\r\n<p>But my friend’s smile told me she had felt my gratitude.</p>\r\n\r\n<p><strong><em>Let's hear from&nbsp; Ava and Mary together, they have something to tell you.</em></strong></p>\r\n"
+                      format: minimal_html

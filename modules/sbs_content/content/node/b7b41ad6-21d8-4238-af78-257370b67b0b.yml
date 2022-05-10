@@ -1,0 +1,138 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: b7b41ad6-21d8-4238-af78-257370b67b0b
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    01cad374-6acb-4993-9124-56245efc349b: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Kai''s experience with SBS'
+  created:
+    -
+      value: 1629979072
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/kais-experience-sbs
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 6cca0e72-42ae-4836-aace-9acf0bffaecb
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629979757
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 1b223753-5412-47f5-a0a2-cd5420cddbcd
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629979761
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 01cad374-6acb-4993-9124-56245efc349b
+                      alt: to_be_replaced
+                      title: ''
+                      width: 752
+                      height: 370
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: abc4685d-5043-4393-adb7-2319a7d5cfa5
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629979789
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>In the beginning, I felt it was hard to try the techniques Dr Sam taught me.</p>\r\n\r\n<p>I felt like I was bad at them. It required so much effort and energy.</p>\r\n\r\n<p>It made me feel less abnormal to know that other patients were struggling with this as well.</p>\r\n\r\n<p>So I kept trying. With practice, I noticed that it became easier and started to feel the activities were helpful.</p>\r\n\r\n<p>I started practising the Breathing or Grounding Exercise each morning before waking up my kids and tried remembering to use them during the day when I felt stressed or overwhelmed.</p>\r\n"
+                      format: minimal_html

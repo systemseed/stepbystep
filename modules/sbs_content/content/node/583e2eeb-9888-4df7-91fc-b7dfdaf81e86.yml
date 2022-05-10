@@ -1,0 +1,508 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 583e2eeb-9888-4df7-91fc-b7dfdaf81e86
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    42dd5414-4828-4932-a306-3d0f2f5b2b2c: file
+    86928c4f-f033-4caf-8b97-5da1c5b4b417: file
+    7933744e-f680-4f5a-92c7-d948bf404792: file
+    ca5f23b3-803b-461c-b98e-71a12ed483e4: file
+    dae61b9c-015d-450e-9fad-11754c2c027e: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'You''re not alone!'
+  created:
+    -
+      value: 1629973323
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/youre-not-alone-0
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 0ec5a4b4-026a-44c6-a2d4-30d78bfaf2b3
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629973635
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 35b28962-40d9-4279-b071-4c170209374d
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629973662
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 42dd5414-4828-4932-a306-3d0f2f5b2b2c
+                      alt: to_be_replaced
+                      title: ''
+                      width: 752
+                      height: 370
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: ee0e4e9b-49c7-4924-bcf0-5ec362aa39df
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629973675
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>This is how Kai and Uri were feeling back then.</p>\r\n\r\n<p>Perhaps you can relate to their experience in some way?&nbsp;</p>\r\n\r\n<p>You might experience it differently, maybe feeling better or worse than they did. But the techniques you are going to learn in Step-by-Step are helpful for different levels of emotional distress.</p>\r\n\r\n<p>When Kai and Uri first came to see me, they had faced some of the hardest moments of their life.</p>\r\n\r\n<p>You might be experiencing difficult moments too.</p>\r\n\r\n<p><strong>Please remember, you are not alone.</strong></p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 6f1930e9-19cd-4ffb-8bdc-52358e6050ad
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629973715
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 44f4c00a-7892-4d61-81ed-b3a5674413e6
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629973814
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 86928c4f-f033-4caf-8b97-5da1c5b4b417
+                      alt: to_be_replaced
+                      title: ''
+                      width: 752
+                      height: 370
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: f4574ac8-577d-47c7-ab17-d37178a1474d
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629973827
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Negative events come in many shapes and sizes.</p>\r\n\r\n<p>Some people could be living without enough money or experiencing unsettling changes in circumstances.<br />\r\n<br />\r\nOthers might be losing their home or people close to them.</p>\r\n\r\n<p>Every day, many people are affected by war and disaster.</p>\r\n\r\n<p>Everyone reacts differently to these events.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 15b9e5a0-4439-478e-a48d-4b206feebc90
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629973862
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: a2f9c726-36e8-40d6-b4df-c485b8676b43
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629973911
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 7933744e-f680-4f5a-92c7-d948bf404792
+                      alt: to_be_replaced
+                      title: ''
+                      width: 752
+                      height: 370
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 0d49a4ca-1314-43f1-bb80-4d39ad8bc9a4
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629973926
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Like Uri, some people feel extreme sadness: they worry a lot or feel hopeless or nervous.</p>\r\n\r\n<p>Sometimes we might feel this way without any obvious reason, and we don’t understand why.</p>\r\n\r\n<p>Some people have physical complaints after a stressful or negative event.</p>\r\n\r\n<p>For example, they may have problems with their appetite or digestion.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: f1ac8017-5afd-40b3-845f-684d82de625e
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629974056
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 4d50b39b-2a27-41f2-a2ba-b3da4cad92b8
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629974089
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: ca5f23b3-803b-461c-b98e-71a12ed483e4
+                      alt: to_be_replaced
+                      title: ''
+                      width: 752
+                      height: 370
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: bb7862f4-f9f3-478c-bed7-866344c9f161
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629974128
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Like Kai, there are some people who cannot sleep, or experience other kinds of physical problems like headaches or back pain.</p>\r\n\r\n<p>It is common to feel very tired too.</p>\r\n\r\n<p>Sometimes, people can do things like staying away from people, drinking alcohol or using drugs to get away from it all.</p>\r\n\r\n<p>But even if these behaviours seem to relieve some pain in the short term, they generally cause more problems and make things worse in the longer term.</p>\r\n\r\n<p>When Kai first came to see me, he asked me some very important questions:</p>\r\n\r\n<p>How can I cope with this sadness?<br />\r\n<br />\r\nWhen will it end?</p>\r\n\r\n<p>For some people, the feelings of sadness, fear and hopelessness get better over time.</p>\r\n\r\n<p>For others, like Kai, these feelings get stuck. It might be the same for you too.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 29b6e26a-a1a9-48cd-ade7-1cb652b880fe
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629974276
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 590dfaab-4808-4fb6-beec-31ab6cf293e1
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629974297
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: dae61b9c-015d-450e-9fad-11754c2c027e
+                      alt: to_be_replaced
+                      title: ''
+                      width: 752
+                      height: 370
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: f53f20df-2131-4f61-8c0e-66235dec752c
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629974311
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>I know it’s hard now, but it’s important to remember that <strong>you are not alone.</strong></p>\r\n\r\n<p>It is very common to feel overwhelmed by sadness, worry and stress.</p>\r\n\r\n<p>In fact, one in four people all over the world experience emotional distress that really affects them at least once in their lifetime.</p>\r\n\r\n<p>Feelings of stress might be normal, but they can have a lot of negative consequences on your life.</p>\r\n"
+                      format: minimal_html

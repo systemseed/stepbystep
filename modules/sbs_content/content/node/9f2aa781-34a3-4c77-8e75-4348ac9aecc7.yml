@@ -1,0 +1,390 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 9f2aa781-34a3-4c77-8e75-4348ac9aecc7
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    60ebb235-4ccd-4044-a1f3-b7beb3a174fe: file
+    55eafc4e-029b-4c13-a8d2-41d6618ade0f: file
+    5b22d5e4-2066-459d-a96d-676bdf422e03: file
+    3b925c74-59b4-4cae-8405-76f893592dbf: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Positive changes take time'
+  created:
+    -
+      value: 1637053024
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/positive-changes-take-time
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 2cc511e2-8458-4e1a-ab79-987d8ffe470f
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637055142
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: c6b89f63-29db-47b7-b16b-1045e2901c99
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637058625
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 60ebb235-4ccd-4044-a1f3-b7beb3a174fe
+                      alt: DrNoa
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 30eb514e-5970-4088-9ee9-1a37f0ddc827
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637055145
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Hello, it’s good to see you back here for Session 3.</p>\r\n\r\n<p>Can you somehow relate to Ava’s or Mary’s stories?<br />\r\n<br />\r\nMaybe you are unsure if this programme is helping you, too?</p>\r\n\r\n<p>As you heard from Ava and Mary, it’s normal to feel still overwhelmed at this stage.</p>\r\n\r\n<p>If you are doing well with the activities, congratulate yourself because you can see from Ava’s and Mary’s stories that this is not the case for everyone.</p>\r\n\r\n<p>If you are having a hard time with Step-by-Step or with the exercises, remember that you sought help and that is a first step to feeling better.&nbsp;</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 87cd8497-3427-48cc-a2e1-39d38348939f
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637055269
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: fbd63e72-5590-45a9-a1f1-9ae0f72e2123
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637058705
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 55eafc4e-029b-4c13-a8d2-41d6618ade0f
+                      alt: DrNoa_explains
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 8b45fc89-b43c-4ebf-a6c3-6349831fc4a4
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637055290
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Positive change does not happen overnight.</p>\r\n\r\n<p>It takes time to get out of the “sadness and withdrawal cycle”.</p>\r\n\r\n<p>In the time before you sought help your body and mind got used to feeling the way they did. They got trained into it.</p>\r\n\r\n<p>You are now training more pleasant feelings again by doing small, enjoyable activities.&nbsp;</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 7a9a40f7-9c8b-4b37-9f20-7af3a4d09859
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637058770
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 0d633825-a2f4-46c8-839b-fd1770fbbbf7
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637058774
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 5b22d5e4-2066-459d-a96d-676bdf422e03
+                      alt: DrNoa_message
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: c34bec64-e6d9-4c6f-af97-df15c705269d
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637058777
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>It will take time, and it is normal to doubt or worry while doing this.</p>\r\n\r\n<p>That is why practice is so important.</p>\r\n\r\n<p>You have learnt several new techniques so far which you can use whenever you want.&nbsp;</p>\r\n\r\n<p>In your Toolbox you can find the Grounding and Breathing Exercises, and your Gratitude List.&nbsp;</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 1fd57462-8051-4d44-b020-bda549495e10
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637058891
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: f0f6688f-3585-4692-8d55-720cf643ddf6
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637058900
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 3b925c74-59b4-4cae-8405-76f893592dbf
+                      alt: Ava_positivechange
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 0e76a6aa-1006-42ef-8a16-872cd730a84f
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637058904
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Using these when you are feeling low or stressed really can be helpful, especially if you practice them regularly.</p>\r\n\r\n<p>You don’t have to use them all, just try the ones that help you the most. Remember you can schedule them in your agenda.</p>\r\n\r\n<p>At the end of this part, check your Toolbox and take some time to consider what techniques you would like to use more often.</p>\r\n\r\n<p><strong><em>You can now go directly to the second part of Session 3, or come back to it later, as you wish.</em></strong></p>\r\n"
+                      format: minimal_html

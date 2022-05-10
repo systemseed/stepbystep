@@ -1,0 +1,478 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 322701ad-52dc-47d5-9ddd-f803d71415fc
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    90ad0632-0b4f-4b32-9fce-55da8afa0cb1: file
+    65e4314d-8702-45d5-9d01-7dc5c27bc316: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Meet Dr Noa'
+  created:
+    -
+      value: 1634735616
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/meet-dr-noa
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: fdfc648a-04c3-4723-aefe-1351f574881e
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1634749276
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: eb374e1a-400d-476e-8bf3-70b8c9909cd9
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1634750126
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 90ad0632-0b4f-4b32-9fce-55da8afa0cb1
+                      alt: DrNoa
+                      title: ''
+                      width: 1024
+                      height: 745
+                translations:
+                  ar:
+                    status:
+                      -
+                        value: true
+                    created:
+                      -
+                        value: 1634750126
+                    revision_translation_affected:
+                      -
+                        value: true
+                    content_translation_source:
+                      -
+                        value: en
+                    content_translation_outdated:
+                      -
+                        value: false
+                    field_lesson_image_image:
+                      -
+                        entity: 90ad0632-0b4f-4b32-9fce-55da8afa0cb1
+                        alt: DrNoa
+                        title: ''
+                        width: 1024
+                        height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: daa815d4-5f89-4784-a70d-6263ff3a15f5
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1634749386
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Hi there, I’m looking forward to working with you. My name is Dr Noa.</p>\r\n\r\n<p>I will be teaching you what you need to know to start feeling better.</p>\r\n\r\n<p>I don’t know you yet, but here’s what I do know:</p>\r\n\r\n<p>You took the decision to join Step-by-Step.</p>\r\n\r\n<p>This shows me that you have enough strength to take the first steps in this programme.</p>\r\n"
+                      format: minimal_html
+                translations:
+                  ar:
+                    status:
+                      -
+                        value: true
+                    created:
+                      -
+                        value: 1634749386
+                    revision_translation_affected:
+                      -
+                        value: true
+                    content_translation_source:
+                      -
+                        value: en
+                    content_translation_outdated:
+                      -
+                        value: false
+                    field_lesson_text_content:
+                      -
+                        value: "<p dir=\"rtl\">أهلاً فيكي، أنا كتير متحمسة لاشتغل معك. إسمي الدكتورة مها.&nbsp;</p>\r\n\r\n<p dir=\"rtl\">رح كون حدّك وقلك شو لازم تعملي لتشعري بتحسن.</p>\r\n\r\n<p dir=\"rtl\">ما بعرفك بعد، بس هيدا اللي&nbsp;بعرفو:&nbsp;</p>\r\n\r\n<p dir=\"rtl\">&nbsp;أخذتي قرار تنضمي بخطوة خطوة&nbsp;</p>\r\n\r\n<p dir=\"rtl\">هيدا شي بفرجيني انك قادرة تخطي الخطوات الأولى بالبرنامج.</p>\r\n"
+                        format: minimal_html
+        translations:
+          ar:
+            status:
+              -
+                value: true
+            created:
+              -
+                value: 1634749276
+            revision_translation_affected:
+              -
+                value: true
+            content_translation_source:
+              -
+                value: en
+            content_translation_outdated:
+              -
+                value: false
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 98a9c0b9-b09c-40ff-bfbd-6a4167a18d10
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1634749424
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 7eb49172-3c7b-4d1f-ae84-a52d3060f2a7
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1634750163
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 65e4314d-8702-45d5-9d01-7dc5c27bc316
+                      alt: DrNoa_Ava_Mary
+                      title: ''
+                      width: 4227
+                      height: 2475
+                translations:
+                  ar:
+                    status:
+                      -
+                        value: true
+                    created:
+                      -
+                        value: 1634750163
+                    revision_translation_affected:
+                      -
+                        value: true
+                    content_translation_source:
+                      -
+                        value: en
+                    content_translation_outdated:
+                      -
+                        value: false
+                    field_lesson_image_image:
+                      -
+                        entity: 65e4314d-8702-45d5-9d01-7dc5c27bc316
+                        alt: DrNoa_Ava_Mary
+                        title: ''
+                        width: 4227
+                        height: 2475
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: c2802098-99a3-4d6f-bed4-0a1481d52d88
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1634749439
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Ava and Mary, two persons who came to me for help, have agreed to share how they used the skills I taught them to feel better.</p>\r\n\r\n<p><br />\r\nLet me introduce them to you!</p>\r\n"
+                      format: minimal_html
+                translations:
+                  ar:
+                    status:
+                      -
+                        value: true
+                    created:
+                      -
+                        value: 1634749439
+                    revision_translation_affected:
+                      -
+                        value: true
+                    content_translation_source:
+                      -
+                        value: en
+                    content_translation_outdated:
+                      -
+                        value: false
+                    field_lesson_text_content:
+                      -
+                        value: "<p>زينة وليلى، شخصين قصدوني لا ساعدن، قبلوا يشاركوا كيف استخدموا التقنيات اللي علمتن ياهن لا يحسوا بتحسن.&nbsp;&nbsp;</p>\r\n\r\n<p>خليني عرفك عليهن!&nbsp;</p>\r\n"
+                        format: minimal_html
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 93441247-43a4-4424-92b6-674bcac85be5
+                  bundle: lesson_list
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636028905
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_list_items:
+                    -
+                      value: 'Ava is married and has two children. Her mother died, and her father moved in with her family. When she first came to see me, she had to deal with difficult emotions and struggled with her daily activities.'
+                    -
+                      value: 'Mary is a student and lives with her mother. After her father left the family, she was under a lot of pressure to study and look after her sick mother. That’s when she signed up for Step-by-Step.'
+                  field_lesson_list_type:
+                    -
+                      value: ul
+                translations:
+                  ar:
+                    status:
+                      -
+                        value: true
+                    created:
+                      -
+                        value: 1636028905
+                    revision_translation_affected:
+                      -
+                        value: true
+                    content_translation_source:
+                      -
+                        value: en
+                    content_translation_outdated:
+                      -
+                        value: false
+                    field_lesson_list_items:
+                      -
+                        value: "<p>زينة متزوجة وعندها ولدين. توفت أمها وانتقل بيّها ليعيش معها. ومن وقتها، وهيّ عم تحاول تتعامل مع مشاعر صعبة وعم بتعاني من مشاكل بحياتها اليومية.</p>\r\n"
+                      -
+                        value: "<p>ليلى تلميذة عايشة مع أمها. بعد ما توفى بيّها، اضطرت تتعامل مع مشاعر صعبة ومشاكل يوميّة، هي وعم تدرس وتهتم بأمها.</p>\r\n"
+                    field_lesson_list_type:
+                      -
+                        value: ul
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: e4380914-3156-4c7e-93d5-234883dfab5d
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636028918
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Your situation might be different to theirs, but we hope you still find it helpful to hear from them.<br />\r\nYou will meet them soon, but first, I would like to introduce you to a technique you can use when you feel stressed.</p>\r\n"
+                      format: minimal_html
+                translations:
+                  ar:
+                    status:
+                      -
+                        value: true
+                    created:
+                      -
+                        value: 1636028918
+                    revision_translation_affected:
+                      -
+                        value: true
+                    content_translation_source:
+                      -
+                        value: en
+                    content_translation_outdated:
+                      -
+                        value: false
+                    field_lesson_text_content:
+                      -
+                        value: "<p>ممكن يكون وضعك مختلف، بس بتمنى أنك تستفيد من تجربتن.</p>\r\n\r\n<p>رح تشوفيهن قريباً، بس قبل بدي قلك عن تقنية فيكي تلجئي إلها لما تكوني موترة.</p>\r\n"
+                        format: minimal_html
+        translations:
+          ar:
+            status:
+              -
+                value: true
+            created:
+              -
+                value: 1634749424
+            revision_translation_affected:
+              -
+                value: true
+            content_translation_source:
+              -
+                value: en
+            content_translation_outdated:
+              -
+                value: false
+translations:
+  ar:
+    status:
+      -
+        value: true
+    uid:
+      -
+        target_id: 1
+    title:
+      -
+        value: 'تعرفي على الدكتورة مها '
+    created:
+      -
+        value: 1643194780
+    promote:
+      -
+        value: false
+    sticky:
+      -
+        value: false
+    revision_translation_affected:
+      -
+        value: true
+    path:
+      -
+        alias: /lesson/trfy-ly-aldktwrt-mha
+        langcode: ar
+        pathauto: 1
+    content_translation_source:
+      -
+        value: en
+    content_translation_outdated:
+      -
+        value: false

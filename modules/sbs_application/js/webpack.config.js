@@ -1,5 +1,5 @@
 const path = require('path');
-const anuConfig = require('../../../contrib/anu_lms/js/webpack.config');
+const anuConfig = require('../../../../../../modules/contrib/anu_lms/js/webpack.config');
 
 const pathTo = (file) => path.resolve(__dirname, file);
 
@@ -39,12 +39,12 @@ module.exports = {
   entry: {
     // Overridden ANU LMS Courses page bundle.
     '../../../sbs_sessions/js/dist/courses': {
-      import: path.resolve(__dirname, '../../../contrib/anu_lms/js/src/bundles/courses.js'),
+      import: path.resolve(__dirname, '../../../../../../modules/contrib/anu_lms/js/src/bundles/courses.js'),
       dependOn: 'vendors',
     },
     // Overridden ANU LMS Lesson page bundle.
     '../../../sbs_sessions/js/dist/lesson': {
-      import: path.resolve(__dirname, '../../../contrib/anu_lms/js/src/bundles/lesson.js'),
+      import: path.resolve(__dirname, '../../../../../../modules/contrib/anu_lms/js/src/bundles/lesson.js'),
       dependOn: 'vendors',
     },
     // Addition for ANU LMS by our custom ANU LMS Storyline module.
@@ -106,7 +106,7 @@ module.exports = {
       '@anu/pages/courses$': pathTo('../../sbs_sessions/js/src/pages/courses/index'),
       '@anu/Application': path.resolve(__dirname, './src/Application'),
       // Default ANU LMS components.
-      '@anu': path.resolve(__dirname, '../../../contrib/anu_lms/js/src'),
+      '@anu': path.resolve(__dirname, '../../../../../../modules/contrib/anu_lms/js/src'),
     },
   },
 };

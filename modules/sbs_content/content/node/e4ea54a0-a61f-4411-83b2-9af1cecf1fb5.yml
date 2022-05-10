@@ -1,0 +1,326 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: e4ea54a0-a61f-4411-83b2-9af1cecf1fb5
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    ce0e5c51-534a-41e1-9e2c-25e12d449846: file
+    4ec188de-86bc-4400-ba28-cb5db6a93b3a: file
+    214fe738-311c-4cb2-a779-1d2dcdd52564: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Learn to be kind to yourself'
+  created:
+    -
+      value: 1637073091
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/learn-be-kind-yourself
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 3c3c269f-9ac9-4373-9d09-ab7aa4873cc2
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637073134
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 15b84e0f-4f8e-4cc3-a1dc-8afe8770901b
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637079793
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: ce0e5c51-534a-41e1-9e2c-25e12d449846
+                      alt: DrNoa
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 86f76d42-ae37-4b5c-8d5b-4b35fbeec8d9
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637073137
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Try to imagine the things you might say to a friend facing a difficult situation so you could say the same to yourself.</p>\r\n\r\n<p>Some examples are:<br />\r\n<br />\r\n“It’s okay to feel like this, many people do”<br />\r\n<br />\r\n“These activities are hard, but they will get easier”</p>\r\n\r\n<p><br />\r\n“I am really helping myself by taking these steps”<br />\r\n<br />\r\n“I am trying my best, and that’s okay”</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: ef70d29b-8541-40dd-af1b-22b4f751a609
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637079871
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: c6d40ec3-c14a-4202-9ac3-08f7546be622
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637079874
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 4ec188de-86bc-4400-ba28-cb5db6a93b3a
+                      alt: Leila_mirror
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 6e0d5911-92ae-443a-a710-85e32db3d770
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637079877
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>What would you say to yourself to show kindness and support?</p>\r\n\r\n<p>Let’s go to a new technique called Kind to Yourself in your Toolbox.</p>\r\n\r\n<p>I would like you to create at least one entry with kind words to yourself. If you can’t think of anything, copy one of the examples above.</p>\r\n\r\n<p>This list works exactly like the lists before.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 31b587a3-c9f6-432e-8cc3-927fda657626
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637080324
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: df70b389-1f67-4cb3-9380-59c4b1a98c43
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637080328
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 214fe738-311c-4cb2-a779-1d2dcdd52564
+                      alt: DrNoa
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 59dcc43b-8b6b-4285-b5f7-cb97190e2a66
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637080347
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Remember, these words of kindness are available to you whenever you want to read them.</p>\r\n\r\n<p>You can always find them in your Toolbox.</p>\r\n\r\n<p>Stay positive, you are doing well.</p>\r\n\r\n<p><strong><em>As always, you can now go directly to the third part of Session 3, or come back to it later, as you wish</em></strong></p>\r\n"
+                      format: minimal_html

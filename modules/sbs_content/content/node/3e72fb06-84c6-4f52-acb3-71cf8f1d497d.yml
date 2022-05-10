@@ -1,0 +1,188 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 3e72fb06-84c6-4f52-acb3-71cf8f1d497d
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    9c73b9f9-9843-45e3-ad7e-f5fb4e5ba38a: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'In this part'
+  created:
+    -
+      value: 1629970687
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/part
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 4fb3fe02-44da-4dea-8fb1-b1366a67d648
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637761572
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: c51a91d7-d683-436c-8c03-79bef54fb87b
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637761576
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Ava and Mary tell you their story. Dr Noa teaches you a new technique to help you feel calmer and less stressed.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: d0a7aa72-afeb-4a07-a97c-3abe669f67c2
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629970930
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 848460df-43a0-4a37-ab33-4ef9e095a8ea
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629970935
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 9c73b9f9-9843-45e3-ad7e-f5fb4e5ba38a
+                      alt: DrNoa_Ava_Mary
+                      title: ''
+                      width: 4227
+                      height: 2475
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: b0f154ac-2e53-4c9e-8195-134526fcc8f6
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629970947
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>It’s great to see you back here, ready for this next step.</p>\r\n\r\n<p>We hope you had a chance to try the Grounding Exercise.<br />\r\nIf not, you can always find this technique in the Toolbox via the menu.</p>\r\n\r\n<p>It’s time for you to get to know Ava and Mary.</p>\r\n\r\n<p>They have also been through difficult times and will share their story with you in this first part of Session 1.</p>\r\n\r\n<p>You will also have the chance to try a new technique Dr Noa teaches you, called the Breathing Exercise.</p>\r\n\r\n<p><em><strong>First, let's say hello to Ava and hear her story.</strong></em></p>\r\n"
+                      format: minimal_html

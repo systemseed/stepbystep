@@ -1,0 +1,305 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 49fd0806-da38-4fef-936a-1ad50e2c04d8
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    ddcd2faa-6139-45ac-8b59-124b63f51343: file
+    de1f7be0-8964-4788-b571-70611fab4b14: file
+    8405c7c7-85c1-4727-be82-4e0f07ac09b1: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Dr Noa''s advice'
+  created:
+    -
+      value: 1637061129
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/dr-noas-advice-0
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 087c432f-0030-4430-a04b-4ef96fc93c60
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637061181
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 36597ef7-d860-44db-a7e4-d40a87e0cd4a
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637061184
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: ddcd2faa-6139-45ac-8b59-124b63f51343
+                      alt: DrNoa_advice
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 345ff81f-6a33-466e-8374-0eab1acf3a22
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637061188
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>When someone feels stressed or down like Ava or Mary, it is common that they have very critical thoughts that are not accurate.</p>\r\n\r\n<p>It is important to try and be kind to yourself, even if this feels strange.</p>\r\n\r\n<p>Imagine a friend telling you that they were planning to do something but couldn’t do it because they were having a bad day.</p>\r\n\r\n<p>What would you say to them?<br />\r\n<br />\r\nWhat would you do?</p>\r\n\r\n<p><strong><em>Let’s see how Mary responded to these questions.</em></strong></p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 495cc411-5408-45b2-a169-dbfe598264e0
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637070570
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 771d56b5-965b-43de-b565-1619fa8e486a
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637072782
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: de1f7be0-8964-4788-b571-70611fab4b14
+                      alt: Mary_eyesclosed
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: efcefea9-437d-4ce2-b3d6-38e1e1a97e88
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637070574
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>I thought about it for a moment.</p>\r\n\r\n<p>I knew I’d say: “That’s okay, please take care of yourself. Just try your best and let me know if there’s anything I can do to help.”</p>\r\n\r\n<p>Maybe I would reach over and offer a supportive hug, or a tissue if they were crying?</p>\r\n\r\n<p>I opened my eyes and saw Dr Noa smiling at me:</p>\r\n\r\n<p>\"You are so understanding and caring to others, Mary. What do you think would happen if you tried to be that for yourself?\"</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 8db1aafe-a199-4385-a7a3-e32fb4c6364c
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637070987
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 0ad40b93-88fd-45cc-a215-c0f0013243d6
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637072868
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 8405c7c7-85c1-4727-be82-4e0f07ac09b1
+                      alt: DrNoa_Mary
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: c669aae9-9fc7-4152-9529-9f7e5af4cebb
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637070990
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>She was right. It was such a simple idea.</p>\r\n\r\n<p>I felt a sudden moment of sadness because for a long time I had not been as kind to myself as I could be, or as I would be to a friend.<br />\r\n<br />\r\nAnd I would never speak to a friend the way I spoke to myself.</p>\r\n\r\n<p><strong><em>Now let's hear from Ava and Mary together, as they have something to tell you.</em></strong></p>\r\n"
+                      format: minimal_html

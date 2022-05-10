@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: e23ac58d-b35a-43c3-8d10-693bcef5788d
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: Image21Leb.png
+  uri:
+    -
+      value: 'public://2021-10/Image21Leb.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 846707
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1633679459

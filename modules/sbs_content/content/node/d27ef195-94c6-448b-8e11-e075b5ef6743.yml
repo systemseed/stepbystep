@@ -1,0 +1,164 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: d27ef195-94c6-448b-8e11-e075b5ef6743
+  bundle: course
+  default_langcode: en
+  depends:
+    40303306-44a0-499a-ba68-d582a9af75f5: taxonomy_term
+    6c9af61e-4b65-496b-a710-34327419d833: file
+    b754f2e9-65cb-4929-ab09-f4299f911af7: node
+    70f23ae7-04b6-49d5-9ba4-596c4df8e4fa: node
+    b92c3cf3-8e24-4796-8038-65e5353c110a: node
+    8e65cc61-fbc5-4b4f-9fe9-2d1c39cf750c: node
+    aedf7da1-9bee-4124-89d7-869400cc1fb5: node
+    f329d1a0-396b-4410-a44d-563e8569c895: node
+    ac75ce76-a5d4-42dc-8771-10a7a72dec38: node
+    22af8e17-542f-4c08-b2ce-941a81d04d2c: node
+    7bb93e8e-57d7-4f2f-97d8-9e5fc7727e49: node
+    6a732876-f488-46fd-afe8-dd3956fcb812: node
+    51c6393f-542b-4f49-acdb-75fc25cd62a5: node
+    a20fbb88-dcb3-488c-966b-bdc9af505ec3: node
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: '4. You''re not alone'
+  created:
+    -
+      value: 1630664902
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /session/4-youre-not-alone
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_course_category:
+    -
+      entity: 40303306-44a0-499a-ba68-d582a9af75f5
+  field_course_description:
+    -
+      value: 'Learn to accept help from others and provide support.'
+      format: plain_text
+  field_course_finish_button:
+    -
+      uri: 'internal:/sessions'
+      title: Finish
+      options: {  }
+  field_course_image:
+    -
+      entity: 6c9af61e-4b65-496b-a710-34327419d833
+      alt: Ava_friends
+      title: ''
+      width: 1024
+      height: 745
+  field_course_linear_progress:
+    -
+      value: true
+  field_course_module:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 4a197a19-6e66-4a43-8f2c-706a8dbd0651
+          bundle: course_modules
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1630664902
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_activity:
+            -
+              entity: b754f2e9-65cb-4929-ab09-f4299f911af7
+          field_module_lessons:
+            -
+              entity: 70f23ae7-04b6-49d5-9ba4-596c4df8e4fa
+            -
+              entity: b92c3cf3-8e24-4796-8038-65e5353c110a
+            -
+              entity: 8e65cc61-fbc5-4b4f-9fe9-2d1c39cf750c
+            -
+              entity: aedf7da1-9bee-4124-89d7-869400cc1fb5
+            -
+              entity: f329d1a0-396b-4410-a44d-563e8569c895
+          field_module_title:
+            -
+              value: 'Part 1'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 67df7a25-961c-4848-ab68-d662e187c512
+          bundle: course_modules
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637567260
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_module_lessons:
+            -
+              entity: ac75ce76-a5d4-42dc-8771-10a7a72dec38
+            -
+              entity: 22af8e17-542f-4c08-b2ce-941a81d04d2c
+            -
+              entity: 7bb93e8e-57d7-4f2f-97d8-9e5fc7727e49
+            -
+              entity: 6a732876-f488-46fd-afe8-dd3956fcb812
+            -
+              entity: 51c6393f-542b-4f49-acdb-75fc25cd62a5
+            -
+              entity: a20fbb88-dcb3-488c-966b-bdc9af505ec3
+          field_module_title:
+            -
+              value: 'Part 2'
+  field_weight:
+    -
+      value: -15

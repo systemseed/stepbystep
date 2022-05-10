@@ -1,0 +1,17 @@
+_meta:
+  version: '1.0'
+  entity_type: config_pages
+  uuid: 999bc5a6-5d5c-4e19-ad11-09de737f44d4
+  bundle: sbs_questionnaires
+  depends:
+    11194c05-c3b0-4882-a688-4cceaa83e601: node
+default:
+  label:
+    -
+      value: 'Step by Step questionnaires'
+  context:
+    -
+      value: 'a:1:{i:0;a:1:{s:8:"language";s:2:"en";}}'
+  field_questionnaires:
+    -
+      entity: 11194c05-c3b0-4882-a688-4cceaa83e601

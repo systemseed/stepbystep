@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 99e38b63-5272-4636-99e4-5b45f8c89ff7
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: 'aud_grounding-exercise_enf2 (online-audio-converter.com)_0.mp3'
+  uri:
+    -
+      value: 'public://audio/2022-01/aud_grounding-exercise_enf2 (online-audio-converter.com)_0.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 5128085
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1642590248

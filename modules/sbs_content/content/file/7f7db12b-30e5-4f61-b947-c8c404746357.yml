@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 7f7db12b-30e5-4f61-b947-c8c404746357
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: 'AVA KAI_0.png'
+  uri:
+    -
+      value: 'public://2021-07/AVA KAI_0.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 64647
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1627473493

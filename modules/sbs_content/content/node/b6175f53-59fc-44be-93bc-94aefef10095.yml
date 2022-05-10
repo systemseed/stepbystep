@@ -1,0 +1,305 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: b6175f53-59fc-44be-93bc-94aefef10095
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    cf003bad-3c3b-48eb-92a6-829ca75c8b2b: file
+    3b93b567-d6dd-463b-be2e-1d458acc80e2: file
+    af2d03eb-e652-4abb-9916-d4908013ef3b: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Mary''s difficulties in getting active'
+  created:
+    -
+      value: 1636376897
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/marys-difficulties-getting-active
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 76a83d72-8101-4f5d-9969-6b22629c017a
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1636445864
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 2fb01701-fbb2-4010-b518-48067c848b6c
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636445868
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: cf003bad-3c3b-48eb-92a6-829ca75c8b2b
+                      alt: Mary_sad
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: b2ffcafd-4c01-4fa7-ac12-901c389fde71
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636445918
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>My life was a strict routine of taking care of the house, my studies and dealing with my mother.</p>\r\n\r\n<p>I was always exhausted.&nbsp;</p>\r\n\r\n<p>Everything irritated me.&nbsp;</p>\r\n\r\n<p>I was feeling like an outsider, not confident in anything I was doing.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 0928d14c-513d-4e65-aeec-5f3f66b41d88
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1636445976
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 5fdce029-6392-4aff-9eb7-72aa9ccdd707
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636445980
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 3b93b567-d6dd-463b-be2e-1d458acc80e2
+                      alt: Mary_Mum_angry
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: da4e4e62-bfd3-410a-bb30-4357d47361c8
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636445999
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>“You’ll never find a husband if you act like this!” my mother would yell at me.</p>\r\n\r\n<p>“Where is my Mary, who loved to sing and make dinner?”</p>\r\n\r\n<p>“Not now!” I would snap back.<br />\r\n<br />\r\n“I also miss him,” she said bitterly. “But I don’t hide away from the world.”</p>\r\n\r\n<p>Knowing my mother was desperate seeing me like this made me feel even worse.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 528a7416-be22-4241-8c81-f1edc2a0e9c7
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1636446024
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: a6647124-2e3b-4c5e-b09d-4134a91a8401
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636446028
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: af2d03eb-e652-4abb-9916-d4908013ef3b
+                      alt: Mary_sleepless
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 2149a41a-7cbd-4ba4-b819-f7aa6e53b30a
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636446076
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>I thought, \"I am so tired, and I can't even sleep. I have no strength. There must be something really wrong with me.\"</p>\r\n\r\n<p>I was a lost cause.</p>\r\n\r\n<p>The less I did, the worse I felt.</p>\r\n\r\n<p><strong><em>Now let's hear from Ava and Mary together, as they have an important message for you.</em></strong></p>\r\n"
+                      format: minimal_html

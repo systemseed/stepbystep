@@ -1,0 +1,335 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 12aafee9-7063-4d58-8e70-b2b77b59ca02
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    e2c9e656-c5d5-42a3-bdb2-4aa269449374: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Tips to make Step-by-Step work best for you'
+  created:
+    -
+      value: 1634735569
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/tips-make-step-step-work-best-you
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 7c64721d-5de9-48f1-a3cc-4242b1d23105
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1634736871
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 3906217a-e286-4090-bb7e-c14c3c7def2a
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1634807869
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: e2c9e656-c5d5-42a3-bdb2-4aa269449374
+                      alt: tips
+                      title: ''
+                      width: 1024
+                      height: 745
+                translations:
+                  ar:
+                    status:
+                      -
+                        value: true
+                    created:
+                      -
+                        value: 1634807869
+                    revision_translation_affected:
+                      -
+                        value: true
+                    content_translation_source:
+                      -
+                        value: en
+                    content_translation_outdated:
+                      -
+                        value: false
+                    field_lesson_image_image:
+                      -
+                        entity: e2c9e656-c5d5-42a3-bdb2-4aa269449374
+                        alt: tips
+                        title: ''
+                        width: 1024
+                        height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: de6035f9-45e8-47cb-bcbc-a477b1bdab36
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1634736873
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>We know this is a lot to take in, so here are some tips to help make Step-by-Step work best for you:</p>\r\n"
+                      format: minimal_html
+                translations:
+                  ar:
+                    status:
+                      -
+                        value: true
+                    created:
+                      -
+                        value: 1634736873
+                    revision_translation_affected:
+                      -
+                        value: true
+                    content_translation_source:
+                      -
+                        value: en
+                    content_translation_outdated:
+                      -
+                        value: false
+                    field_lesson_text_content:
+                      -
+                        value: "<p>منعرف إنّه المعلومات اللي رح تتلقّيها ممكن تكون كتيرة، كرمال هيك حضرنالك هاللائحة من النصائح لتقدري تقطعي ببرنامج خطوة خطوة بأفضل طريقة:</p>\r\n"
+                        format: minimal_html
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 24b6a596-4bb2-43c4-aa99-4fe78e466634
+                  bundle: lesson_list
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1634736903
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_list_items:
+                    -
+                      value: "Complete sessions in a quiet place, if possible. This should be somewhere you feel comfortable and calm. \r\n"
+                    -
+                      value: 'Try to finish one session a week.  Remember, a session is made up of 2-3 parts so that you can do them over a few days.'
+                    -
+                      value: 'Practice what you have learnt as often as possible. This is one of the most important things you can do.'
+                  field_lesson_list_type:
+                    -
+                      value: ol
+                translations:
+                  ar:
+                    status:
+                      -
+                        value: true
+                    created:
+                      -
+                        value: 1634736903
+                    revision_translation_affected:
+                      -
+                        value: true
+                    content_translation_source:
+                      -
+                        value: en
+                    content_translation_outdated:
+                      -
+                        value: false
+                    field_lesson_list_items:
+                      -
+                        value: "<p>&nbsp;اعملي الجلسات بمكان هادئ بخليكي تشعري بالراحة والهدوء إذا ممكن</p>\r\n"
+                      -
+                        value: "<p>جربي خلصي جلسة وحدة بالأسبوع.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>تذكّري... كل جلسة مؤلفة من جزئين أو تلاتة، لتعمليها بأجزاء خلال أيام الأسبوع.</p>\r\n"
+                      -
+                        value: "<p>تمرني على&nbsp;اللي تعلمتيه بالجلسات قد ما فيكي.<br />\r\n<br />\r\nهيدي من أهم الأمور اللي ممكن تعمليها لتستفيدي بأكبر قدر من البرنامج.</p>\r\n"
+                    field_lesson_list_type:
+                      -
+                        value: ol
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 5a680cef-abaf-4bf5-b948-a2d3c9417ce8
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1634736981
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Now we’re ready to introduce you to Dr Noa. She is going to guide you through our programme.</p>\r\n"
+                      format: minimal_html
+                translations:
+                  ar:
+                    status:
+                      -
+                        value: true
+                    created:
+                      -
+                        value: 1634736981
+                    revision_translation_affected:
+                      -
+                        value: true
+                    content_translation_source:
+                      -
+                        value: en
+                    content_translation_outdated:
+                      -
+                        value: false
+                    field_lesson_text_content:
+                      -
+                        value: "<p>هلّق صار الوقت نعرفك على الدكتورة مهى.<br />\r\n<br />\r\nرح تكون عم ترشدك&nbsp;خلال البرنامج كله.</p>\r\n"
+                        format: minimal_html
+        translations:
+          ar:
+            status:
+              -
+                value: true
+            created:
+              -
+                value: 1634736871
+            revision_translation_affected:
+              -
+                value: true
+            content_translation_source:
+              -
+                value: en
+            content_translation_outdated:
+              -
+                value: false
+translations:
+  ar:
+    status:
+      -
+        value: true
+    uid:
+      -
+        target_id: 1
+    title:
+      -
+        value: 'نصائح لتقدري تقطعي ببرنامج خطوة خطوة بأفضل طريقة'
+    created:
+      -
+        value: 1643193508
+    promote:
+      -
+        value: false
+    sticky:
+      -
+        value: false
+    revision_translation_affected:
+      -
+        value: true
+    path:
+      -
+        alias: /lesson/nsayh-ltqdry-tqty-bbrnamj-khtwt-khtwt-bafdl-tryqt
+        langcode: ar
+        pathauto: 1
+    content_translation_source:
+      -
+        value: en
+    content_translation_outdated:
+      -
+        value: false

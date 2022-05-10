@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 12aefc95-1f9b-4cfb-b1be-c72aad27c68f
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: 'Screenshot 2021-08-02 at 11-14-29 Session page - UXPin.png'
+  uri:
+    -
+      value: 'public://courses/2021-08/Screenshot 2021-08-02 at 11-14-29 Session page - UXPin.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 2259
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1627895703

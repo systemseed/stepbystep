@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 8ebf90bb-bf8a-4aff-b895-a7e6bf47d2fd
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: S2.12(1).png
+  uri:
+    -
+      value: 'public://2021-11/S2.12(1).png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 119964
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1637569627

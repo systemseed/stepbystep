@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 3555760f-5ba9-40a4-a1c0-e49d6f3887e6
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: 'optional image.png'
+  uri:
+    -
+      value: 'public://courses/2021-07/optional image.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 3301
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1627304066

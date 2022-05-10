@@ -1,0 +1,138 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 54d9e953-64ce-46af-b398-ae71c69f827b
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    2ab0b3dd-5c77-43a8-9da2-60c69a943391: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Mary''s daily life_clone'
+  created:
+    -
+      value: 1629977915
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/marys-daily-lifeclone
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: f6bf04c8-f83b-4621-aa93-52da0fa91f25
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629978214
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 25236d8c-a4f9-4439-ba38-ce9f0fe178ec
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629978218
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 2ab0b3dd-5c77-43a8-9da2-60c69a943391
+                      alt: Mary_sad
+                      title: ''
+                      width: 959
+                      height: 637
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 9f77342b-4fb1-4653-b6a9-fa157bef9990
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629978240
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>I couldn’t see anything good in my daily life anymore.</p>\r\n\r\n<p>I used to smile just thinking about cooking with my mum, seeing my friends from the class...After my dad passed away, I couldn’t enjoy things anymore, not like I used to.</p>\r\n\r\n<p>Studying became such an effort...I was so anxious about falling behind.</p>\r\n\r\n<p>At home, the arthritis of my mum made it hard for her to help me around the house.</p>\r\n\r\n<p>There was always something to clean, to fix, to learn.</p>\r\n\r\n<p>Life had been easier with dad around.</p>\r\n\r\n<p>I just felt numb.</p>\r\n"
+                      format: minimal_html

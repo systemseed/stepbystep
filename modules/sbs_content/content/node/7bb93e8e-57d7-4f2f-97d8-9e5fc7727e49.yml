@@ -1,0 +1,475 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 7bb93e8e-57d7-4f2f-97d8-9e5fc7727e49
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    4f411f09-224f-425e-b4a0-7db447b9569d: file
+    9fb6e890-32e9-46b1-9611-09dd8553b436: file
+    98c61af6-cde8-43a3-84c2-d3c06dea423b: file
+    c8f5d258-feee-4ebf-9a56-935a19233c81: file
+    3f79b316-5125-4980-bace-0be3ff749601: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Mary needs a helping hand'
+  created:
+    -
+      value: 1637659600
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/mary-needs-helping-hand
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: ac89cad7-9864-4cca-a362-9b6ef8a4cca3
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637668990
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: c2bbd011-2910-488f-9ab3-8649a46e2e3a
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637739044
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 4f411f09-224f-425e-b4a0-7db447b9569d
+                      alt: Mary_thinking_wedding
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: ea17aa2b-e224-466b-b58e-dda95f5f629d
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637739047
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Not long after coffee with my classmates, it was time for my cousin’s wedding.</p>\r\n\r\n<p>I immediately panicked: I had not worn a dress for years.</p>\r\n\r\n<p>My first thought was to stay home, but my mother would not hear of it.<br />\r\n<br />\r\n“You will go to this wedding!” she yelled at me. “This is Elyse’s special day! What else are you doing? And how else will you meet a husband?”</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 21a6575a-d9ca-4b02-ac20-7e60c92594bb
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637739168
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 628b386c-d889-4ba7-80eb-8b8d72492f99
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637739171
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 9fb6e890-32e9-46b1-9611-09dd8553b436
+                      alt: Mary_Mother_cry
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 4797dbb2-c284-4d8c-9904-2efa081e3a1a
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637739173
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>“Mama, I have my studies!” I yelled back. “I can’t just abandon everything…”<br />\r\n<br />\r\nMy mother started crying.&nbsp;</p>\r\n\r\n<p>“I just want my daughter to be happy…” she told me.<br />\r\n<br />\r\n“Mama, don’t cry,” I said. “If it’s so important to you, and Elyse, I’ll come.”</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 00a86d5f-ac21-48b0-be39-e6278d747963
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637739239
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: cf1fc839-9d9e-43c7-b329-696a50338023
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637739242
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 98c61af6-cde8-43a3-84c2-d3c06dea423b
+                      alt: Mary_Stressed
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 7a520f8f-218a-4162-8086-81484270990e
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637739245
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>I felt stressed and asked myself why I didn’t want to go.</p>\r\n\r\n<p>Maybe because I knew <em>nothing</em> about wedding dresses and makeup…</p>\r\n\r\n<p>I had spent so long avoiding looking at myself in the mirror, I barely knew what I looked like.</p>\r\n\r\n<p><em>I should just cancel</em>, I thought.&nbsp;</p>\r\n\r\n<p>But I didn’t want to make my mother sad again.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 754e8c7b-63a8-4236-99d9-afb7eb6bd342
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637739417
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 3649a296-bd04-4fd7-8101-84d479c1ae78
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637739421
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: c8f5d258-feee-4ebf-9a56-935a19233c81
+                      alt: Mary_thinking_Rosa
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: d4b27546-2440-4c07-8aa9-3373fc9ed092
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637739472
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>I knew I needed help, but I thought:&nbsp;<em>How could I bother someone asking them to help me?</em></p>\r\n\r\n<p>But on the other hand, I knew someone who could give me a hand.</p>\r\n\r\n<p>Rosa was beautiful and always dressed well.</p>\r\n\r\n<p>I messaged her about the wedding, and she replied immediately:<br />\r\n<br />\r\n<em>OMG! Yes!! When are you free?</em></p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 0c9922a8-d2e0-45a2-bd96-51ec675ed213
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637739742
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: c69c07f1-7667-4159-af4a-9a09437e010a
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637739745
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 3f79b316-5125-4980-bace-0be3ff749601
+                      alt: Mary_Rosa_magazines
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 0e933e2a-60fa-4d70-874e-f75c20c49d32
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637739955
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>“I don’t know how to thank you…” I said when she arrived that evening, her arms full of makeup kits and fashion magazines.</p>\r\n\r\n<p>“Are you kidding?” laughed Rosa. “I love weddings! And honestly, it’s a relief to have a night off from studying...”<br />\r\n<br />\r\n“I know what you mean,” I smiled back.<br />\r\n<br />\r\n“This is what friends are for, Mary,” said Rosa, pulling me into a hug.</p>\r\n\r\n<p><strong><em>Let’s hear from Ava and Mary, they have another message for you.</em></strong></p>\r\n"
+                      format: minimal_html

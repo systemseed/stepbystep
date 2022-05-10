@@ -1,0 +1,138 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 08e16e1a-dc11-4624-bb1c-7f5b7652e6d8
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    baf547de-4ce8-4a0f-873b-426fdae30b98: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'In this part_clone'
+  created:
+    -
+      value: 1629970687
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/partclone
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: f017ee1d-648a-44a9-96c3-962ee2db14f6
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629970930
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 9e382a8b-9502-4837-bcef-bb769778f29a
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629970935
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: baf547de-4ce8-4a0f-873b-426fdae30b98
+                      alt: DrMaha_Leila_Zeina
+                      title: ''
+                      width: 4227
+                      height: 2475
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 6f5f9786-b391-47d4-8fe4-89c4760f56a4
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629970947
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>It’s great to see you back here, ready for this next step.</p>\r\n\r\n<p>It’s time for you to get to know Zeina and Leila.</p>\r\n\r\n<p>They have also been through difficult times and will share their story with you in this first part of Session 1.</p>\r\n\r\n<p>You will also have the chance to try a new technique Dr Maha teaches you, called the Breathing Exercise.</p>\r\n"
+                      format: minimal_html

@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: f4ed92de-6745-4d38-8684-14fe2116d516
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: Image11_0.png
+  uri:
+    -
+      value: 'public://2021-08/Image11_0.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 5565
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1629974662

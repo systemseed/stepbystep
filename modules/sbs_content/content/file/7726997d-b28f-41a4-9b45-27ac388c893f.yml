@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 7726997d-b28f-41a4-9b45-27ac388c893f
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: 'Screenshot 2021-07-26 at 13.48.51.png'
+  uri:
+    -
+      value: 'public://courses/2021-07/Screenshot 2021-07-26 at 13.48.51.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 36105
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1627304316

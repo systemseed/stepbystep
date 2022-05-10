@@ -1,0 +1,197 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: ae738262-fd92-4fd6-9a75-0f6d0acc0374
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    f918312b-b346-4587-9ec3-2012b96b5d87: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Mary''s experience with SBS_clone'
+  created:
+    -
+      value: 1629979079
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/marys-experience-sbsclone
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: b1fcb888-dc05-4bfa-8ddd-bcf3b1b284b6
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629979882
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: c64e2c52-3c90-4e65-875a-06543a4c5bed
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629979886
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: f918312b-b346-4587-9ec3-2012b96b5d87
+                      alt: Mary_Rosa_goingbetter
+                      title: ''
+                      width: 1407
+                      height: 935
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 7fad577e-a1e2-4378-9558-8908f24046a4
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629979899
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Same here! In the beginning, it was hard for me too to keep the motivation up and try the activities Dr Noa recommended to me. I couldn’t really see how breathing exercises were going to solve my problems but I kept doing them.</p>\r\n\r\n<p>Then one day I met my friend Rosa in class.</p>\r\n\r\n<p>“Are you feeling any better?” Rosa asked me. She knew I had been to see Dr Noa. I felt negative.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: b4f515c9-acc6-4bbb-9c09-a9e0ae3be2dd
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629980310
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 07705b9d-2557-4ac3-91c5-0b3b17686431
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629980313
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>“I can’t really see how breathing exercises are going to solve my problems,” I said.</p>\r\n\r\n<p>“They won’t,” said Rosa. “But I remember when I began slow breathing, relieving my stress for a moment helped me to start doing small things again. Going outside, seeing people…preparing for the professor's horrible comments on my essays!\"</p>\r\n\r\n<p>I tried to smile.&nbsp;</p>\r\n\r\n<p>“You see?” said Rosa. “The small things… like feeling like you can smile again.\"</p>\r\n\r\n<p>I nodded, but inside my stomach twisted with doubt.<br />\r\n<br />\r\nTo me even those small things seemed huge.</p>\r\n"
+                      format: minimal_html

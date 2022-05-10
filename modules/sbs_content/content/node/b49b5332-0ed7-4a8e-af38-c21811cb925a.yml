@@ -1,0 +1,220 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: b49b5332-0ed7-4a8e-af38-c21811cb925a
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    85558982-739e-4248-a7ef-94c7b40ccf6d: file
+    c84ebd68-d0d5-4f67-a486-50f513204342: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Ava''s response to the warning signs'
+  created:
+    -
+      value: 1638267809
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/avas-response-warning-signs
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 4353cc44-c961-4d30-83bd-fc11e9edec3a
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1638288064
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 14e42be8-8b1a-4fad-b3e0-9601f6487ad1
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1638288066
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 85558982-739e-4248-a7ef-94c7b40ccf6d
+                      alt: Ava_sofia_tired
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: a72f4a5e-a0d5-4c59-b6f5-f3241f320606
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1638288069
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p><strong><em>Let’s hear from Ava and her experience dealing with her warning signs.</em></strong></p>\r\n\r\n<p>I hadn’t had the time or energy to notice what was happening when things went wrong.</p>\r\n\r\n<p>It was all so overwhelming…</p>\r\n\r\n<p>But I knew I had pain in my neck again and couldn’t stop arguing with Tom.</p>\r\n\r\n<p>It was hard to help the children with their homework because I was so exhausted.</p>\r\n\r\n<p>Seeing friends, even Mona, felt too much.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 810caab8-e27c-4bab-aa06-5cbf11f85a05
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1638288332
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 2fa6bb8d-5f87-4e39-9bd0-19e0c97f3bd2
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1638288431
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: c84ebd68-d0d5-4f67-a486-50f513204342
+                      alt: Ava_techniques
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 0d9d1f84-9cb1-4d52-9030-3ca58e2706c7
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1638288482
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>But after seeing Dr Noa, I remembered there were techniques I could call to mind.</p>\r\n\r\n<p>I started to practice the Breathing Exercise again, to release the tension in my neck.</p>\r\n\r\n<p>The Grounding Exercise helped me get going every morning.</p>\r\n\r\n<p>When I felt a bit better, I reached out to Sara, and a local organization, to help me.</p>\r\n\r\n<p><strong><em>Let’s see now how Mary coped with her warning signs.</em></strong></p>\r\n"
+                      format: minimal_html

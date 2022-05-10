@@ -1,0 +1,293 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: d02a258a-c88f-4643-a9f9-4f0ee497d7d4
+  bundle: course
+  default_langcode: en
+  depends:
+    40303306-44a0-499a-ba68-d582a9af75f5: taxonomy_term
+    96cf8607-cbed-4781-9b77-25c9a84ce513: file
+    52cf472f-1be3-4033-ae55-ff51d073cd87: node
+    5d15c315-1022-4ab3-86df-b3ca039a024b: node
+    86bf7a1c-ef99-4831-9bc4-9416d68027c7: node
+    12aafee9-7063-4d58-8e70-b2b77b59ca02: node
+    63f3e0df-e383-473a-b384-bd4cd076af14: node
+    322701ad-52dc-47d5-9ddd-f803d71415fc: node
+    6288b27d-b235-4c4d-a930-171ebf71e240: node
+    761fa93a-e22a-4ab1-bee9-e00baabbd2a0: node
+    a8d83dc8-58c9-4a6d-b7aa-c6cb0bec853d: node
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Take the first step!'
+  created:
+    -
+      value: 1625909401
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /session/take-first-step
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_course_category:
+    -
+      entity: 40303306-44a0-499a-ba68-d582a9af75f5
+  field_course_description:
+    -
+      value: 'Learn how Step-by-Step works. Meet Dr Noa, your guide through the programme.'
+      format: plain_text
+  field_course_finish_button:
+    -
+      uri: 'internal:/sessions'
+      title: Finish
+      options: {  }
+  field_course_image:
+    -
+      entity: 96cf8607-cbed-4781-9b77-25c9a84ce513
+      alt: DrNoa
+      title: ''
+      width: 600
+      height: 720
+  field_course_linear_progress:
+    -
+      value: true
+  field_course_module:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: f2bf7199-3bcb-4639-b938-afe0e571dde1
+          bundle: course_modules
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1630661401
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_module_lessons:
+            -
+              entity: 52cf472f-1be3-4033-ae55-ff51d073cd87
+            -
+              entity: 5d15c315-1022-4ab3-86df-b3ca039a024b
+            -
+              entity: 86bf7a1c-ef99-4831-9bc4-9416d68027c7
+            -
+              entity: 12aafee9-7063-4d58-8e70-b2b77b59ca02
+          field_module_title:
+            -
+              value: Introduction
+        translations:
+          ar:
+            status:
+              -
+                value: true
+            created:
+              -
+                value: 1630661401
+            revision_translation_affected:
+              -
+                value: true
+            content_translation_source:
+              -
+                value: en
+            content_translation_outdated:
+              -
+                value: false
+            field_module_title:
+              -
+                value: المقدمة
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 34389b1c-1638-448b-baf5-7b00a36c1591
+          bundle: course_modules
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1634735591
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_activity:
+            -
+              entity: 63f3e0df-e383-473a-b384-bd4cd076af14
+          field_module_lessons:
+            -
+              entity: 322701ad-52dc-47d5-9ddd-f803d71415fc
+            -
+              entity: 6288b27d-b235-4c4d-a930-171ebf71e240
+          field_module_title:
+            -
+              value: 'Take the first step'
+        translations:
+          ar:
+            status:
+              -
+                value: true
+            created:
+              -
+                value: 1634735591
+            revision_translation_affected:
+              -
+                value: true
+            content_translation_source:
+              -
+                value: en
+            content_translation_outdated:
+              -
+                value: false
+            field_module_title:
+              -
+                value: 'خذي الخطوة الأولى'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 8ab78b63-ae38-4660-97d9-d362f212c581
+          bundle: course_modules
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1636027651
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_module_lessons:
+            -
+              entity: 761fa93a-e22a-4ab1-bee9-e00baabbd2a0
+            -
+              entity: a8d83dc8-58c9-4a6d-b7aa-c6cb0bec853d
+          field_module_title:
+            -
+              value: 'Well done!'
+        translations:
+          ar:
+            status:
+              -
+                value: true
+            created:
+              -
+                value: 1636027651
+            revision_translation_affected:
+              -
+                value: true
+            content_translation_source:
+              -
+                value: en
+            content_translation_outdated:
+              -
+                value: false
+            field_module_title:
+              -
+                value: أحسنتي!
+  field_weight:
+    -
+      value: -19
+translations:
+  ar:
+    status:
+      -
+        value: true
+    uid:
+      -
+        target_id: 1
+    title:
+      -
+        value: 'خذي الخطوه الأولى!'
+    created:
+      -
+        value: 1642676470
+    promote:
+      -
+        value: false
+    sticky:
+      -
+        value: false
+    revision_translation_affected:
+      -
+        value: true
+    path:
+      -
+        alias: /session/khdhy-alkhtwh-alawly
+        langcode: ar
+        pathauto: 1
+    content_translation_source:
+      -
+        value: en
+    content_translation_outdated:
+      -
+        value: false
+    field_course_description:
+      -
+        value: 'تعلمي كيف بيشتغل برنامج خطوة خطوة! تعرفي على الدكتورة مها، مرشدتك في البرنامج. '
+        format: plain_text
+    field_course_finish_button:
+      -
+        uri: 'internal:/sessions'
+        title: Finish
+        options: {  }
+    field_course_image:
+      -
+        entity: 96cf8607-cbed-4781-9b77-25c9a84ce513
+        alt: DrNoa
+        title: ''
+        width: 600
+        height: 720

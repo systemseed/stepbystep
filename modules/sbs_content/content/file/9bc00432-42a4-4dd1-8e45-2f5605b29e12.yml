@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 9bc00432-42a4-4dd1-8e45-2f5605b29e12
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: person.png
+  uri:
+    -
+      value: 'public://2021-07/person.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 656
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1627375174

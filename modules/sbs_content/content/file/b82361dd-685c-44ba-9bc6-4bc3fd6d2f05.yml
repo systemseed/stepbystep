@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: b82361dd-685c-44ba-9bc6-4bc3fd6d2f05
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: KAI.png
+  uri:
+    -
+      value: 'public://2021-09/KAI.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 28799
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1631602503

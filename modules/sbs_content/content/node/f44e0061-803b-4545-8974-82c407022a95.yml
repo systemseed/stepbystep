@@ -1,0 +1,183 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: f44e0061-803b-4545-8974-82c407022a95
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    185d3e6c-91b8-439b-b487-1134dc5b6f03: file
+    d6ca3c6d-2e36-49d4-96fd-15093866178c: file
+    7ccf4570-8c9e-4d74-82b3-d0e17755cffd: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Ava and Mary have a message for you_clone'
+  created:
+    -
+      value: 1629972592
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/ava-and-mary-have-message-youclone
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: fcb8c0b7-69a3-48a2-99a6-d5e1bf492e29
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629972620
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: b0037175-98a4-4ba4-a9cf-8de68ebfaac1
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629972824
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 185d3e6c-91b8-439b-b487-1134dc5b6f03
+                      alt: Ava_Mary_message
+                      title: ''
+                      width: 1407
+                      height: 936
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 05377db7-cdef-409e-a7db-9a076e7b881c
+                  bundle: lesson_image_thumbnail
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629972632
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_caption_long:
+                    -
+                      value: "Like Mary, I struggled too with the idea of talking about what was happening to me with someone. How could a doctor help me feel better? I didn't want to waste their time.\r\n\r\nNow I know that there is help out there. You have to reach out for support to start making changes. You don’t have to do everything on your own. \r\n"
+                  field_lesson_image_image:
+                    -
+                      entity: d6ca3c6d-2e36-49d4-96fd-15093866178c
+                      alt: AVA
+                      title: ''
+                      width: 491
+                      height: 491
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 70ec8581-3a9d-4a71-a207-3bc694a2ab28
+                  bundle: lesson_image_thumbnail
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629972678
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_caption_long:
+                    -
+                      value: "Doctors and healthcare workers are here to help you as Dr Noa helped me.. It’s their profession. They don’t judge.\r\n\r\n"
+                  field_lesson_image_image:
+                    -
+                      entity: 7ccf4570-8c9e-4d74-82b3-d0e17755cffd
+                      alt: MARY
+                      title: ''
+                      width: 578
+                      height: 550

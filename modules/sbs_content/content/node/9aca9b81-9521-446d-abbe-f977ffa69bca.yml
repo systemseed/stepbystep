@@ -1,0 +1,398 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 9aca9b81-9521-446d-abbe-f977ffa69bca
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    9292157f-7246-4ba7-a172-a804d693255b: file
+    aa452056-1305-49b0-91d9-b0d20e85f5b8: file
+    faeb4a63-08d1-470a-b58a-c3f850e6bc25: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Ava lists small steps'
+  created:
+    -
+      value: 1636626839
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/ava-lists-small-steps
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 6cb90801-c32c-4a1f-98ac-9ac1c804e0e8
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1636628275
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 1c55be3a-f3cf-4750-bdd6-316324a75a62
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636628341
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 9292157f-7246-4ba7-a172-a804d693255b
+                      alt: Ava_steps
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 3167789f-160e-4d1c-be8f-6c98a1c91c43
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636628278
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>At the beginning I was confused, how could small steps help me spend a Sunday by the sea with my family?</p>\r\n\r\n<p>But, I wrote it all down as Dr Noa suggested me:</p>\r\n"
+                      format: minimal_html
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: f0092743-795b-4888-b2b0-08ff999f65b8
+                  bundle: lesson_list
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636628287
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_list_items:
+                    -
+                      value: 'Check weather forecast '
+                    -
+                      value: 'Go to market to get food and  bottles of water '
+                    -
+                      value: 'Make picnic night before '
+                    -
+                      value: "Pack picnic + other things we’d need\r\n"
+                    -
+                      value: 'Take public bus to the beach'
+                  field_lesson_list_type:
+                    -
+                      value: ul
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 0a903334-2ce3-4a52-a517-dc545e4bdceb
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636628511
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Those days, I never went out with both children. They chased cats and the traffic terrified me.</p>\r\n\r\n<p>I decided I needed to try this before Sunday, without my husband.&nbsp;</p>\r\n\r\n<p>I did it, I went out with my children to the grocery store and it went well.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: d5f91939-76a6-4ddd-a660-9672305b201e
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1636628409
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 8991be3f-093c-48a6-8f43-3ca2dce3371c
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636628521
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: aa452056-1305-49b0-91d9-b0d20e85f5b8
+                      alt: Ava_grounding_Exercise
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 8c5cbe88-77fe-4bad-9383-12597944bac0
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636628524
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>But when Sunday morning came, I felt like I couldn’t get out of bed, so tired. But, I knew I had to try&nbsp; it.&nbsp;</p>\r\n\r\n<p>I listened to my grounding exercise to calm my anxieties.&nbsp;</p>\r\n\r\n<p>I could tell Tom was on edge. He was expecting me to cancel, to stay in bed.</p>\r\n\r\n<p>But I had followed my list to the last point, even though it had taken all my energy.</p>\r\n\r\n<p>I packed the picnic and gently got the children ready to leave.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 2f9f6458-72af-4d91-81e6-f4be65a7725e
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1636628696
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 6af2d4a5-cebb-4912-907a-956a661f3b87
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636628699
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: faeb4a63-08d1-470a-b58a-c3f850e6bc25
+                      alt: Ava_family_beach
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 342cffab-3f7c-4534-a204-94229054ebdb
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636628702
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>We spent an entire day on the beach.</p>\r\n\r\n<p>I felt the sea breeze on my skin. I even smiled once, when my son gave me a beautiful shell.</p>\r\n\r\n<p>The whole day was exhausting, but I made it.<br />\r\n<br />\r\nAnd that night, when we got home, I could tell Tom and my children were more relaxed.They had enjoyed spending time together.</p>\r\n\r\n<p><strong><em>Now let's hear from Ava and Mary together, as they have an important message for you.</em></strong></p>\r\n"
+                      format: minimal_html

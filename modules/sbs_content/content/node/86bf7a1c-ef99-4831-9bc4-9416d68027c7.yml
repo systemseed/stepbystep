@@ -1,0 +1,420 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 86bf7a1c-ef99-4831-9bc4-9416d68027c7
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    9662bb53-b3e4-4043-80ef-8e0e9e6f3675: file
+    867bcd92-e4dc-4744-b31e-8416463ffd5c: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'What can you learn?'
+  created:
+    -
+      value: 1634735537
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/what-can-you-learn
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 9fc0c285-1494-453f-ace1-253843c319f3
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1634736558
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 2b29d98f-9cac-46cb-8d57-3c83d0665b3b
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1634809475
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 9662bb53-b3e4-4043-80ef-8e0e9e6f3675
+                      alt: Techniques
+                      title: ''
+                      width: 1024
+                      height: 745
+                translations:
+                  ar:
+                    status:
+                      -
+                        value: true
+                    created:
+                      -
+                        value: 1634809475
+                    content_translation_source:
+                      -
+                        value: en
+                    content_translation_outdated:
+                      -
+                        value: false
+                    field_lesson_image_image:
+                      -
+                        entity: 9662bb53-b3e4-4043-80ef-8e0e9e6f3675
+                        alt: Techniques
+                        title: ''
+                        width: 1024
+                        height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 1a9678b5-0d16-4678-bc7d-fed4fe9b4852
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1634736562
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>This programme is going to teach you a set of techniques.<br />\r\n<br />\r\nYou can use them anytime you want to help yourself feel less stressed or sad.</p>\r\n\r\n<p>You will learn how to:</p>\r\n"
+                      format: minimal_html
+                translations:
+                  ar:
+                    status:
+                      -
+                        value: true
+                    created:
+                      -
+                        value: 1634736562
+                    content_translation_source:
+                      -
+                        value: en
+                    content_translation_outdated:
+                      -
+                        value: false
+                    field_lesson_text_content:
+                      -
+                        value: "<p>&nbsp;هيدا البرنامج رح يعلمك مجموعة تقنيات.&nbsp;</p>\r\n\r\n<p><br />\r\nفيكي تستعمليهن كل ما بدك تساعدي حالك تحسي بأقل توتر أو زعل.&nbsp;</p>\r\n\r\n<p>رح تتعلمي كيف:</p>\r\n"
+                        format: minimal_html
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 9dc6f87d-8157-4c04-9483-a8d94aae0ae0
+                  bundle: lesson_list
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1634736585
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_list_items:
+                    -
+                      value: 'Reduce stress in the moment'
+                    -
+                      value: "Increase activity and do more of what matters to you\r\n"
+                    -
+                      value: 'Be kind to yourself'
+                    -
+                      value: 'Connect with others '
+                    -
+                      value: 'Prevent yourself from feeling worse again'
+                  field_lesson_list_type:
+                    -
+                      value: ol
+                translations:
+                  ar:
+                    status:
+                      -
+                        value: true
+                    created:
+                      -
+                        value: 1634736585
+                    content_translation_source:
+                      -
+                        value: en
+                    content_translation_outdated:
+                      -
+                        value: false
+                    field_lesson_list_items:
+                      -
+                        value: "<p>تخففي التوتر اللي عم تمرقي فيه بالوقت الحاضر</p>\r\n"
+                      -
+                        value: "<p>تزيدي من نشاطاتك وتعملي الأشياء يللي بتحبيها أكتر&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n"
+                      -
+                        value: "<p>تكوني لطيفة مع نفسك&nbsp;</p>\r\n"
+                      -
+                        value: "<p>تتواصلي مع الآخرين</p>\r\n"
+                      -
+                        value: "<p>تتجنبي إنو تشعري بالسوء عن جديد</p>\r\n\r\n<p>&nbsp;</p>\r\n"
+                    field_lesson_list_type:
+                      -
+                        value: ol
+        translations:
+          ar:
+            status:
+              -
+                value: true
+            created:
+              -
+                value: 1634736558
+            content_translation_source:
+              -
+                value: en
+            content_translation_outdated:
+              -
+                value: false
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 1c3e9777-63db-4456-b9d6-b67d7c945b6e
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1634736702
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 58d1a5e5-cfae-4f03-a15c-16f55b156055
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1634807776
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 867bcd92-e4dc-4744-b31e-8416463ffd5c
+                      alt: techniques
+                      title: ''
+                      width: 1024
+                      height: 745
+                translations:
+                  ar:
+                    status:
+                      -
+                        value: true
+                    created:
+                      -
+                        value: 1634807776
+                    content_translation_source:
+                      -
+                        value: en
+                    content_translation_outdated:
+                      -
+                        value: false
+                    field_lesson_image_image:
+                      -
+                        entity: 867bcd92-e4dc-4744-b31e-8416463ffd5c
+                        alt: techniques
+                        title: ''
+                        width: 1024
+                        height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: c8d24bde-8b2a-49b3-b70e-c024bb7c64f8
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1634736705
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Each technique can help you feel less stressed and sad.</p>\r\n\r\n<p>They can even give you more energy.</p>\r\n\r\n<p>Practising what you learn with us is important.</p>\r\n\r\n<p>To make it easier for you to practice these techniques, we have placed them in a&nbsp;<strong>Toolbox&nbsp;</strong>for you.</p>\r\n\r\n<p>You can access your Toolbox from the Menu.</p>\r\n\r\n<p>Every time you are introduced to a new technique, you can access it in your Toolbox.</p>\r\n\r\n<p>This is so you can easily find it to practice between sessions.&nbsp;</p>\r\n\r\n<p>If you have not learnt the technique yet, it will appear as locked.</p>\r\n"
+                      format: minimal_html
+                translations:
+                  ar:
+                    status:
+                      -
+                        value: true
+                    created:
+                      -
+                        value: 1634736705
+                    content_translation_source:
+                      -
+                        value: en
+                    content_translation_outdated:
+                      -
+                        value: false
+                    field_lesson_text_content:
+                      -
+                        value: "<p>كل تقنية رح تساعدك تخففي شعور الحزن أو القلق.</p>\r\n\r\n<p>ورح تعطيكي طاقة أكتر.</p>\r\n\r\n<p>كتير مهم إنك تتمرني على يللي بتتعلميه معنا بالبرنامج.&nbsp;&nbsp;</p>\r\n\r\n<p>لنسهّل عليكي تطبقي هالتقنيات، حطّيناهم بـ <strong>لائحة</strong><strong> الأدوات</strong>.</p>\r\n\r\n<p>فيكي تلائي هيدي اللائحة بالقائمة.</p>\r\n\r\n<p>كل ما تتعرّفي على تقنية جديدة، رح تلاقيها انضافت تلقائياً على لائحة الأدوات.</p>\r\n\r\n<p>هيك فيكي تلاقيها بسهولة لتقدري تطّبقي اللي تعلّمتيه بالفترة يللي بين الجلسات.</p>\r\n\r\n<p>إذا ما كنتي وصلتي لهالتقنية بعد، رح تلاقي إنّها&nbsp;مقفلة.</p>\r\n"
+                        format: minimal_html
+        translations:
+          ar:
+            status:
+              -
+                value: true
+            created:
+              -
+                value: 1634736702
+            content_translation_source:
+              -
+                value: en
+            content_translation_outdated:
+              -
+                value: false
+translations:
+  ar:
+    status:
+      -
+        value: true
+    uid:
+      -
+        target_id: 1
+    title:
+      -
+        value: 'شو فيكي تتعلمي؟'
+    created:
+      -
+        value: 1642076973
+    promote:
+      -
+        value: false
+    sticky:
+      -
+        value: false
+    revision_translation_affected:
+      -
+        value: true
+    path:
+      -
+        alias: /lesson/shw-fyky-ttlmy
+        langcode: ar
+        pathauto: 1
+    content_translation_source:
+      -
+        value: en
+    content_translation_outdated:
+      -
+        value: false

@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: caf9a8a8-a32f-4b64-877d-0a0d756ec871
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: app-icon_1.png
+  uri:
+    -
+      value: 'public://pwa/app-icon_1.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 16733
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1628673545

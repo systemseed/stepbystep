@@ -1,0 +1,221 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: f9b1d8d2-ba52-47b0-b81b-a37010d270ee
+  bundle: course
+  default_langcode: en
+  depends:
+    40303306-44a0-499a-ba68-d582a9af75f5: taxonomy_term
+    5b54c5bb-1e1d-4483-a10f-33cc393b8b48: file
+    f043f087-016d-44e5-bb8a-726a39f6a58b: node
+    99645071-d50d-488c-8afd-d34d97c296b0: node
+    78ea9f95-6ccc-47c4-982f-3423d37a11be: node
+    47140a21-9318-4cbb-b8ec-8c9031cd8296: node
+    bd119409-f5a8-4942-8815-0632cda7628c: node
+    6664c927-3598-4642-a14c-9d8488ae2ff2: node
+    27d1e940-7ea5-422c-8a41-c75f6271b790: node
+    e0a0a7be-6cc1-443d-9067-82fed6591109: node
+    08c56f02-a902-4eda-8c5a-0323233765dc: node
+    b6175f53-59fc-44be-93bc-94aefef10095: node
+    59d69213-5b1e-4eae-812f-4dc7f7bbba7d: node
+    e22eb570-d548-4236-8cfe-4c87eca20a82: node
+    3823892d-9de2-4281-bd76-cb0b7083525c: node
+    bc6581c3-eabf-4520-b4e6-a0e0efc1ab75: node
+    12099acc-0b40-4ca6-b71b-fd5eaf52eba5: node
+    f514502b-4960-47e3-b8b5-f6c5ad4cc41e: node
+    ec12375a-0f60-4e8a-8355-8e3fb694c784: node
+    fcc8183b-2707-4e85-8490-689bc369d594: node
+    9aca9b81-9521-446d-abbe-f977ffa69bca: node
+    bb92aef4-fdc6-45b5-a4a4-599137c16628: node
+    8f9165e4-0ce9-43c9-a376-7933d60628b7: node
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: '2. Take my hand'
+  created:
+    -
+      value: 1630662826
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /session/2-take-my-hand
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_course_category:
+    -
+      entity: 40303306-44a0-499a-ba68-d582a9af75f5
+  field_course_description:
+    -
+      value: 'Learn how to increase activity and do more of what matters to you.'
+      format: plain_text
+  field_course_finish_button:
+    -
+      uri: 'internal:/sessions'
+      title: Finish
+      options: {  }
+  field_course_image:
+    -
+      entity: 5b54c5bb-1e1d-4483-a10f-33cc393b8b48
+      alt: Mary
+      title: ''
+      width: 1024
+      height: 745
+  field_course_linear_progress:
+    -
+      value: true
+  field_course_module:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 1e57a6e7-7a6e-4b27-a5ae-f36a122fcdeb
+          bundle: course_modules
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1630662826
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_activity:
+            -
+              entity: f043f087-016d-44e5-bb8a-726a39f6a58b
+          field_module_lessons:
+            -
+              entity: 99645071-d50d-488c-8afd-d34d97c296b0
+            -
+              entity: 78ea9f95-6ccc-47c4-982f-3423d37a11be
+            -
+              entity: 47140a21-9318-4cbb-b8ec-8c9031cd8296
+            -
+              entity: bd119409-f5a8-4942-8815-0632cda7628c
+            -
+              entity: 6664c927-3598-4642-a14c-9d8488ae2ff2
+          field_module_title:
+            -
+              value: 'Part 1'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 823644b2-dfef-4bde-931c-d9bff136f8fc
+          bundle: course_modules
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1636376320
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_activity:
+            -
+              entity: 27d1e940-7ea5-422c-8a41-c75f6271b790
+          field_module_lessons:
+            -
+              entity: e0a0a7be-6cc1-443d-9067-82fed6591109
+            -
+              entity: 08c56f02-a902-4eda-8c5a-0323233765dc
+            -
+              entity: b6175f53-59fc-44be-93bc-94aefef10095
+            -
+              entity: 59d69213-5b1e-4eae-812f-4dc7f7bbba7d
+            -
+              entity: e22eb570-d548-4236-8cfe-4c87eca20a82
+          field_module_title:
+            -
+              value: 'Part 2'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 2ce244be-6b23-4a00-9d41-9e9cba1e63f6
+          bundle: course_modules
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1636467894
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_activity:
+            -
+              entity: 3823892d-9de2-4281-bd76-cb0b7083525c
+          field_module_lessons:
+            -
+              entity: bc6581c3-eabf-4520-b4e6-a0e0efc1ab75
+            -
+              entity: 12099acc-0b40-4ca6-b71b-fd5eaf52eba5
+            -
+              entity: f514502b-4960-47e3-b8b5-f6c5ad4cc41e
+            -
+              entity: ec12375a-0f60-4e8a-8355-8e3fb694c784
+            -
+              entity: fcc8183b-2707-4e85-8490-689bc369d594
+            -
+              entity: 9aca9b81-9521-446d-abbe-f977ffa69bca
+            -
+              entity: bb92aef4-fdc6-45b5-a4a4-599137c16628
+            -
+              entity: 8f9165e4-0ce9-43c9-a376-7933d60628b7
+          field_module_title:
+            -
+              value: 'Part 3'
+  field_weight:
+    -
+      value: -17

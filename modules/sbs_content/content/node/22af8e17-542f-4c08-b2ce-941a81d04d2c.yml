@@ -1,0 +1,560 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 22af8e17-542f-4c08-b2ce-941a81d04d2c
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    9d334a65-f606-421e-9d89-73005defddb5: file
+    fda78e51-500f-425c-ab0d-64ba15361d7f: file
+    60c93220-22f6-4fcc-8209-3ccfe6731216: file
+    3cf30394-12eb-4c6d-b594-1e4d7149234e: file
+    70d8e4e0-c724-4a95-949a-f036ee9b5345: file
+    291ebb25-972a-49ef-9bdd-34bb9685b26f: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Ava asks for support'
+  created:
+    -
+      value: 1637659502
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/ava-asks-support
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: f00e92e1-3d3e-4dfd-8325-85f57ee3669e
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637667206
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 3e92ddae-7663-4753-bf45-6d73bfddae06
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637667210
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 9d334a65-f606-421e-9d89-73005defddb5
+                      alt: Ava_thinking_visit
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 0347734a-b08b-4375-b00a-506951fd19c2
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637667231
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p><strong><em>Let’s start this part with Ava.</em></strong></p>\r\n\r\n<p>A few days later, Mona invited me to visit a friend of ours who had just had a baby.</p>\r\n\r\n<p>But when that evening came, I had forgotten that Tom had arranged to play cards with his friends.</p>\r\n\r\n<p>The children would be alone...<br />\r\n<br />\r\n“Just take them with you, Ava,” he snapped at me. “Stop bothering me with this. You’re their mother.”</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: f64d6be5-273c-441d-b840-ba83208414d7
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637667316
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 4b1453b3-6a8f-4e2d-99f4-0101d5d1adae
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637667320
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: fda78e51-500f-425c-ab0d-64ba15361d7f
+                      alt: Tom_leaves_house
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 8c41fae9-06af-4e3b-8c66-b7401e6ece85
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637667322
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Tom left the house, slamming the door. I had let everyone down.</p>\r\n\r\n<p>I felt stressed and considered different options.</p>\r\n\r\n<p><em>I should just cancel</em>, I thought.</p>\r\n\r\n<p>But I knew how important it was to keep up social activities.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: a3225d4a-0b3f-4337-b0a5-fafdfb30f05c
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637667435
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: f64b95c5-0a30-4532-ae94-787c9e618448
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637667439
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 60c93220-22f6-4fcc-8209-3ccfe6731216
+                      alt: Ava_thinking_DrNoa
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 64a0f3d7-2f92-4794-961d-caf3e0e31b91
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637667457
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Dr Noa had already warned me about cancelling.</p>\r\n\r\n<p>What’s more, I wanted to see Mona.</p>\r\n\r\n<p>I had started to feel excited about seeing the baby.</p>\r\n\r\n<p><br />\r\nI hated myself for forgetting Tom’s plans.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 6c78fed8-9749-41a5-b556-63bf446ade6e
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637667511
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 3de8f368-d247-46fc-b8e6-343f2a8ac6c3
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637667515
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 3cf30394-12eb-4c6d-b594-1e4d7149234e
+                      alt: Ava_telephone
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 0a2b1712-8d75-4a09-b72e-055c79178974
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637667518
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>I texted Mona that I couldn’t make it. She replied quickly:</p>\r\n\r\n<p><em>Why don’t you see if Sara can help? She loves your kids, and doesn’t she live in the neighbourhood?</em>&nbsp;<br />\r\n<br />\r\nThe last thing I felt like doing was asking anyone for help.</p>\r\n\r\n<p>People had their own lives and problems.</p>\r\n\r\n<p><br />\r\nBut on the other hand, I thought: <em>will it hurt to ask?</em></p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: d6958628-7cb0-4f47-b4cd-f30bc4f280b8
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637667690
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: eb1bcf52-bb70-43fa-9dc2-f2466fb19329
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637667694
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 70d8e4e0-c724-4a95-949a-f036ee9b5345
+                      alt: Ava_call_Sara
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 1889bd97-05ea-450c-a49f-38ad2380a03e
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637667697
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>I dialled through to Sara.</p>\r\n\r\n<p>To my surprise she was free and happy to look after my children.</p>\r\n\r\n<p>“I don’t know how to thank you…” I said when she arrived.</p>\r\n\r\n<p>“Are you kidding?” laughed Sara. “I love these guys! And honestly, it’s a relief to get away from my mother.”</p>\r\n\r\n<p><br />\r\nAda had already jumped on Sara, giggling away. I realised my children had missed my friends too.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 2709d89e-f773-4fd9-b97b-6878db3ca4db
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637667790
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: b4050302-8293-4db5-b1f6-b2408188bbe3
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637668502
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 291ebb25-972a-49ef-9bdd-34bb9685b26f
+                      alt: Ava_Mona
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 31bbd6bc-5681-4d75-9090-4b02eefd8f4d
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637668506
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>I told Mona what had happened, and she smiled.</p>\r\n\r\n<p>“That’s what friends are for,” said Mona, as we approached our friend’s house.</p>\r\n\r\n<p>“Besides, how many times have you helped Sara out? Loads!”</p>\r\n\r\n<p>I took a pastry and as we knocked on the door… I felt lighter than I had in a long time.</p>\r\n\r\n<p>I felt supported by my friends.</p>\r\n\r\n<p><em><strong>Let’s hear from Mary now.</strong></em></p>\r\n"
+                      format: minimal_html

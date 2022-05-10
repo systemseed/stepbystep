@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 3f9f0959-2234-49ce-8b50-cc7377d87d4b
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: Image15.png
+  uri:
+    -
+      value: 'public://2021-08/Image15.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 5776
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1629977643

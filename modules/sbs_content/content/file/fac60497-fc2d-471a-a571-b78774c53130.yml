@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: fac60497-fc2d-471a-a571-b78774c53130
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: 'SBS thumb-22.png'
+  uri:
+    -
+      value: 'public://courses/2021-09/SBS thumb-22.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 14447
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1631172858

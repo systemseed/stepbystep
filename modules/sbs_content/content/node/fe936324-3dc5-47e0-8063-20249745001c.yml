@@ -1,0 +1,1985 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: fe936324-3dc5-47e0-8063-20249745001c
+  bundle: webform
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'How are you doing?'
+  created:
+    -
+      value: 1635865374
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /questionnaire/how-are-you-doing
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  questionnaire_score_levels:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: e6e61601-dcb5-40ec-abef-bee3911d0e72
+          bundle: webform_content_score_level
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1635866153
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          webform_content_body:
+            -
+              value: "<p>Tap the button below to start your Step-by-Step journey.</p>\r\n\r\n<p><em>NOTE: If you are finding it difficult to cope with intolerable stress or low mood, please seek help from relevant health or social services or from trusted people in your community.</em></p>\r\n"
+              format: minimal_html
+          webform_content_icon:
+            -
+              value: check_circle
+          webform_content_score_range:
+            -
+              from: 0
+              to: 9
+          webform_content_text:
+            -
+              value: 'The answers indicate that the activities in this app might be useful for maintaining a healthy mind.'
+          webform_content_title:
+            -
+              value: 'Not depressed'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 8aaf8364-d2a2-4286-9b94-7fc3af513342
+          bundle: webform_content_score_level
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1635866153
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          webform_content_body:
+            -
+              value: "<p>The answers you've given indicate that this app may be a great help for you.</p>\r\n\r\n<p>Tap the button below to start your Step-by-Step journey.</p>\r\n\r\n<p><em>NOTE: If you are finding it difficult to cope with intolerable stress or low mood, please seek help from relevant health or social services or from trusted people in your community.</em></p>\r\n"
+              format: minimal_html
+          webform_content_icon:
+            -
+              value: check_circle
+          webform_content_score_range:
+            -
+              from: 10
+              to: 30
+          webform_content_text:
+            -
+              value: 'We are here to help you feel better'
+          webform_content_title:
+            -
+              value: Depressed
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: b2972271-8e51-4fe7-9331-a115219f6b49
+          bundle: webform_content_score_level
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1635866153
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          webform_content_body:
+            -
+              value: "<p>From what you have described in this questionnaire, we think you may be at risk and need some extra support. This is completely normal and there are many people in this position.</p>\r\n\r\n<p>It is very important that you get yourself some help for these problems as soon as possible before continuing with this app.</p>\r\n"
+              format: minimal_html
+          webform_content_icon:
+            -
+              value: error
+          webform_content_score_range:
+            -
+              from: 2000
+              to: 3000
+          webform_content_text:
+            -
+              value: 'You''re at risk of harm'
+          webform_content_title:
+            -
+              value: 'At risk'
+  webform:
+    -
+      target_id: webform_content_draspuslivahob
+      default_data: ''
+      status: ''
+      open: ''
+      close: ''
+  webform_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 10a646ed-ab95-4d3b-939b-8ef7d8b608ab
+          bundle: webform_content_display_text
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1635865891
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          webform_content_body:
+            -
+              value: "<h5><strong>A quick questionnaire on your current mood</strong></h5>\r\n\r\n<p>We are now going to ask you 8 questions to find out how we can help you best.&nbsp;</p>\r\n\r\n<p>Please take your time to answer our questions, and remember there is no right or wrong answer.</p>\r\n"
+              format: simple_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 452dde62-1b7a-4439-9adb-a60491af2c13
+          bundle: webform_content_page_separator
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1635865991
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 298f71e4-64b6-450f-b16b-6fe177619777
+          bundle: webform_content_display_text
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1635868115
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          webform_content_body:
+            -
+              value: "<h5><strong>Over the last 2 weeks, how often have you been bothered by:</strong></h5>\r\n"
+              format: simple_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: f1b5e28a-97f2-4422-9731-7b95ac84a836
+          bundle: webform_content_scored_single_ch
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1635866057
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          webform_content_choices:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 23d9c88f-865e-45ad-8582-3b35b0eb0706
+                  bundle: webform_content_choice_score
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1635866057
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  webform_content_score:
+                    -
+                      value: 3
+                  webform_content_text:
+                    -
+                      value: 'Nearly every day'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 9f91e750-9d95-48a3-96bd-2b6f01becb78
+                  bundle: webform_content_choice_score
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1635866088
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  webform_content_score:
+                    -
+                      value: 2
+                  webform_content_text:
+                    -
+                      value: 'More than half the days'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: a418c4ed-40e8-4e90-84ed-c70410e12e10
+                  bundle: webform_content_choice_score
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1635866097
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  webform_content_score:
+                    -
+                      value: 1
+                  webform_content_text:
+                    -
+                      value: 'Several days'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 9d994f35-2d48-47f9-bb41-8c8440c9ead8
+                  bundle: webform_content_choice_score
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1635866116
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  webform_content_score:
+                    -
+                      value: 0
+                  webform_content_text:
+                    -
+                      value: 'Not at all'
+          webform_content_required:
+            -
+              value: false
+          webform_content_title:
+            -
+              value: 'Little interest or pleasure in doing things?'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 7cffa566-5cc8-4886-878c-fcd89577ab2d
+          bundle: webform_content_page_separator
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1635868226
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: f3420d70-3c57-4175-994e-cf52e51c71bd
+          bundle: webform_content_display_text
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1635868115
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          webform_content_body:
+            -
+              value: "<h5><strong>Over the last 2 weeks, how often have you been bothered by:</strong></h5>\r\n"
+              format: simple_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 6fecf25a-f7c0-4c0a-a5b2-7754f4a8c060
+          bundle: webform_content_scored_single_ch
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1635868234
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          webform_content_choices:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: dd7a79a0-7fde-4f2e-8d07-dff54199ddcb
+                  bundle: webform_content_choice_score
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1635868234
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  webform_content_score:
+                    -
+                      value: 3
+                  webform_content_text:
+                    -
+                      value: 'Nearly every day'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: fd3493b7-1525-4afb-936d-22a2aa59ab21
+                  bundle: webform_content_choice_score
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1635868277
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  webform_content_score:
+                    -
+                      value: 2
+                  webform_content_text:
+                    -
+                      value: 'More than half the days'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 4090465d-7e20-4a2e-84ad-07df10a4218a
+                  bundle: webform_content_choice_score
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1635868304
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  webform_content_score:
+                    -
+                      value: 1
+                  webform_content_text:
+                    -
+                      value: 'Several days'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: d527b438-96dc-418a-be84-7f63fdb33b7c
+                  bundle: webform_content_choice_score
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1635868314
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  webform_content_score:
+                    -
+                      value: 0
+                  webform_content_text:
+                    -
+                      value: 'Not at all'
+          webform_content_title:
+            -
+              value: 'Feeling down, depressed, or hopeless?'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 335a3d3e-78b3-4f3a-82dc-b93e1a1a821d
+          bundle: webform_content_page_separator
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1635868491
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 9a2ece93-a4dd-41b3-9639-05387c78ea72
+          bundle: webform_content_display_text
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1635868115
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          webform_content_body:
+            -
+              value: "<h5><strong>Over the last 2 weeks, how often have you been bothered by:</strong></h5>\r\n"
+              format: simple_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 33f4cade-ce5f-42dd-94a8-58144eaf5a74
+          bundle: webform_content_scored_single_ch
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1635868514
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          webform_content_choices:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 93d76a54-06b8-48e3-a95d-bd9cc4eaf4a3
+                  bundle: webform_content_choice_score
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1635868514
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  webform_content_score:
+                    -
+                      value: 3
+                  webform_content_text:
+                    -
+                      value: 'Nearly every day'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: dd945785-d6e7-4778-a9bb-d7e233aaa7b3
+                  bundle: webform_content_choice_score
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1635868533
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  webform_content_score:
+                    -
+                      value: 2
+                  webform_content_text:
+                    -
+                      value: 'More than half the days'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 82401be3-4369-4bde-9d17-0b092b3b3b72
+                  bundle: webform_content_choice_score
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1635868548
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  webform_content_score:
+                    -
+                      value: 1
+                  webform_content_text:
+                    -
+                      value: 'Several days'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: ce2ae7ac-1257-4c2d-b701-198a101f83e9
+                  bundle: webform_content_choice_score
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1635868558
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  webform_content_score:
+                    -
+                      value: 0
+                  webform_content_text:
+                    -
+                      value: 'Not at all'
+          webform_content_title:
+            -
+              value: 'Trouble falling or staying asleep, or sleeping too much?'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: de5e28bd-3aa3-480d-90ea-82a89a61b5ed
+          bundle: webform_content_page_separator
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1635868570
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 05c6c5d8-f456-46f9-8a31-207f7fc77853
+          bundle: webform_content_display_text
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1635868115
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          webform_content_body:
+            -
+              value: "<h5><strong>Over the last 2 weeks, how often have you been bothered by:</strong></h5>\r\n"
+              format: simple_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: afcebbb7-31ae-4e8b-bb18-b5681dc5a3bc
+          bundle: webform_content_scored_single_ch
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1635868590
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          webform_content_choices:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: a56afe46-0d42-44a0-b601-eb85f146b575
+                  bundle: webform_content_choice_score
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1635868590
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  webform_content_score:
+                    -
+                      value: 3
+                  webform_content_text:
+                    -
+                      value: 'Nearly every day'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 801d1c95-f891-4924-b13f-60f1fd59c76d
+                  bundle: webform_content_choice_score
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1635868607
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  webform_content_score:
+                    -
+                      value: 2
+                  webform_content_text:
+                    -
+                      value: 'More than half the days'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 55ddb27d-9798-4d55-8a17-bb7f0305b101
+                  bundle: webform_content_choice_score
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1635868615
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  webform_content_score:
+                    -
+                      value: 1
+                  webform_content_text:
+                    -
+                      value: 'Several days'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 79a590ec-dcaf-47fc-94a2-648794662df2
+                  bundle: webform_content_choice_score
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1635868623
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  webform_content_score:
+                    -
+                      value: 0
+                  webform_content_text:
+                    -
+                      value: 'Not at all'
+          webform_content_title:
+            -
+              value: 'Feeling tired or having little energy?'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: ff2f1f65-1bba-4117-812e-a860ead8f902
+          bundle: webform_content_page_separator
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1635868672
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 060576cc-a7d7-43a8-bd34-3982a0ce6f08
+          bundle: webform_content_display_text
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1635868115
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          webform_content_body:
+            -
+              value: "<h5><strong>Over the last 2 weeks, how often have you been bothered by:</strong></h5>\r\n"
+              format: simple_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 72cc922c-6152-4fcf-a45a-4185e961b3c2
+          bundle: webform_content_scored_single_ch
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1635869575
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          webform_content_choices:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 383b36ba-8e49-4a94-a4b2-b20cdac5e850
+                  bundle: webform_content_choice_score
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1635869575
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  webform_content_score:
+                    -
+                      value: 3
+                  webform_content_text:
+                    -
+                      value: 'Nearly every day'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 390ea9f0-58c3-4b6f-9146-700fe7ac06c0
+                  bundle: webform_content_choice_score
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1635869596
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  webform_content_score:
+                    -
+                      value: 2
+                  webform_content_text:
+                    -
+                      value: 'More than half the days'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 28475fb8-ee4d-43e9-83ef-4149d4c9312b
+                  bundle: webform_content_choice_score
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1635869609
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  webform_content_score:
+                    -
+                      value: 1
+                  webform_content_text:
+                    -
+                      value: 'Several days'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: b4afd734-60bb-4ac7-ae1c-90f34a65a5d8
+                  bundle: webform_content_choice_score
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1635869616
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  webform_content_score:
+                    -
+                      value: 0
+                  webform_content_text:
+                    -
+                      value: 'Not at all'
+          webform_content_title:
+            -
+              value: 'Poor appetite or overeating?'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: fd6c4525-9910-4778-98c5-61b86b437d3c
+          bundle: webform_content_page_separator
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1635869667
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 0628333d-c02f-4dd5-9b87-d00031cb7895
+          bundle: webform_content_display_text
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1635868115
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          webform_content_body:
+            -
+              value: "<h5><strong>Over the last 2 weeks, how often have you been bothered by:</strong></h5>\r\n"
+              format: simple_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 2f0fada3-044e-43c2-951c-4ec52060b5f1
+          bundle: webform_content_scored_single_ch
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1635869676
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          webform_content_choices:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: b76612e4-2cc9-4d14-bb89-bc7e9aea12c0
+                  bundle: webform_content_choice_score
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1635869676
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  webform_content_score:
+                    -
+                      value: 3
+                  webform_content_text:
+                    -
+                      value: 'Nearly every day'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 2f29b9ee-23ee-4904-849a-08037527440d
+                  bundle: webform_content_choice_score
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1635869704
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  webform_content_score:
+                    -
+                      value: 2
+                  webform_content_text:
+                    -
+                      value: 'More than half the days'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 1ce914f5-41f0-4223-bf30-e6a6a5f0ac5d
+                  bundle: webform_content_choice_score
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1635869718
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  webform_content_score:
+                    -
+                      value: 1
+                  webform_content_text:
+                    -
+                      value: 'Several days'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 9a58e529-7aa1-4bfa-ac7f-a47f6585c456
+                  bundle: webform_content_choice_score
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1635869724
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  webform_content_score:
+                    -
+                      value: 0
+                  webform_content_text:
+                    -
+                      value: 'Not at all'
+          webform_content_title:
+            -
+              value: 'Feeling bad about yourself – or that you are a failure or have let yourself or your family down?'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: c5518175-66de-4387-9bf6-7d5bc9eab04e
+          bundle: webform_content_page_separator
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1635869746
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 42ebf6f2-4dbc-4ecb-9b58-a8bb21054fb3
+          bundle: webform_content_display_text
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1635868115
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          webform_content_body:
+            -
+              value: "<h5><strong>Over the last 2 weeks, how often have you been bothered by:</strong></h5>\r\n"
+              format: simple_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 3373fda9-5c94-430b-9d74-cf4ac7c2b065
+          bundle: webform_content_scored_single_ch
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1635869750
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          webform_content_choices:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 0df7e5c3-0eaa-4f31-b7fa-39fd11cab0c3
+                  bundle: webform_content_choice_score
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1635869750
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  webform_content_score:
+                    -
+                      value: 3
+                  webform_content_text:
+                    -
+                      value: 'Nearly every day'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 4094f2a8-bc77-4d65-ab47-ddae7729c2cf
+                  bundle: webform_content_choice_score
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1635869796
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  webform_content_score:
+                    -
+                      value: 2
+                  webform_content_text:
+                    -
+                      value: 'More than half the days'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 1b7e9690-985b-433e-9923-9060ed2e85af
+                  bundle: webform_content_choice_score
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1635869809
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  webform_content_score:
+                    -
+                      value: 1
+                  webform_content_text:
+                    -
+                      value: 'Several days'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 7827c69a-963a-473a-9fad-22ca22cf0752
+                  bundle: webform_content_choice_score
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1635869819
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  webform_content_score:
+                    -
+                      value: 0
+                  webform_content_text:
+                    -
+                      value: 'Not at all'
+          webform_content_title:
+            -
+              value: 'Trouble concentrating on things, such as reading the newspaper or watching television?'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 3196e48a-06b3-4df8-a161-8f411428c3a6
+          bundle: webform_content_page_separator
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1635869825
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 435a57d5-a699-4582-acbb-b479d5a15801
+          bundle: webform_content_display_text
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1635868115
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          webform_content_body:
+            -
+              value: "<h5><strong>Over the last 2 weeks, how often have you been bothered by:</strong></h5>\r\n"
+              format: simple_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 00524459-592c-402e-b776-3f0ef74cf3ba
+          bundle: webform_content_scored_single_ch
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1635869839
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          webform_content_choices:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: a888066e-7cdc-48af-9827-d35922bcbebb
+                  bundle: webform_content_choice_score
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1635869839
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  webform_content_score:
+                    -
+                      value: 3
+                  webform_content_text:
+                    -
+                      value: 'Nearly every day'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 15f3f6e2-fd8a-4fea-a3e6-4d4c8cbf19c9
+                  bundle: webform_content_choice_score
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1635869882
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  webform_content_score:
+                    -
+                      value: 2
+                  webform_content_text:
+                    -
+                      value: 'More than half the days'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 5fc40d7d-437a-4724-b53d-0df66bfa0684
+                  bundle: webform_content_choice_score
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1635869897
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  webform_content_score:
+                    -
+                      value: 1
+                  webform_content_text:
+                    -
+                      value: 'Several days'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: c4993796-f985-4e3b-9b7d-4d2457c23735
+                  bundle: webform_content_choice_score
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1635869908
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  webform_content_score:
+                    -
+                      value: 0
+                  webform_content_text:
+                    -
+                      value: 'Not at all'
+          webform_content_title:
+            -
+              value: 'Moving or speaking so slowly that other people could have noticed? Or the opposite – being so fidgety or restless that you have been moving around a lot more than usual?'

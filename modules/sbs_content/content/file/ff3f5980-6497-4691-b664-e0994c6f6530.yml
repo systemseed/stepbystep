@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: ff3f5980-6497-4691-b664-e0994c6f6530
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: 'SBS thumb-24_0.png'
+  uri:
+    -
+      value: 'public://courses/2021-09/SBS thumb-24_0.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 11023
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1631173093

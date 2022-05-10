@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: config_pages
+  uuid: f42ba411-7917-4783-9623-44a89e412480
+  bundle: registration_choice
+default:
+  label:
+    -
+      value: 'Registration Choice Page'
+  context:
+    -
+      value: 'a:0:{}'
+  field_registration_choice_descri:
+    -
+      value: 'How would you like to register?'
+  field_registration_choice_headli:
+    -
+      value: 'Sign up'
+  field_sign_up_buttons:
+    -
+      uri: 'internal:/user/register/mobile'
+      title: Phone
+      options: {  }
+    -
+      uri: 'internal:/user/register'
+      title: Email
+      options: {  }

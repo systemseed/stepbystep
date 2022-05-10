@@ -1,0 +1,390 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 11ece5c1-0ef4-4987-8810-0f4da50a9669
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    ac7d28d3-b118-4026-b512-fb6d09a03b90: file
+    35228e88-11c1-4efb-81ea-5824de68281e: file
+    84173e53-e0fb-442d-bce5-c2abe0e2da1e: file
+    625417be-f1cc-4973-98aa-9b88cfb5a3de: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Ava''s experience after Step-by-Step'
+  created:
+    -
+      value: 1638267607
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/avas-experience-after-step-step
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: c16e207d-a9b3-4b76-9e86-e08b4148e2e8
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1638269470
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 563db1d7-97de-4caf-b0d7-0bf848808871
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1638269489
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: ac7d28d3-b118-4026-b512-fb6d09a03b90
+                      alt: Ava_happy_home
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: d92ea58a-ba18-447f-95cf-d3f4d0aa6564
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1638269474
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>The house was starting to feel like a home again. Friends were coming to visit.&nbsp;<br />\r\n<br />\r\nThe children were happier too…</p>\r\n\r\n<p>But then my husband lost his job.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: a1191258-693d-4180-8c5a-c927eab37b99
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1638269619
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 24d3dbeb-7f81-4618-b0da-47b2a0139618
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1638269623
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 35228e88-11c1-4efb-81ea-5824de68281e
+                      alt: Ava_teacher_school
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: e59a9cb8-fae2-4370-9c48-ac14e7a33295
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1638269625
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>He was in the house all day and things changed.</p>\r\n\r\n<p>We started fighting again. The sleepless nights returned.</p>\r\n\r\n<p>One day I was asked to collect my daughter, Ada, from school, for bad behaviour.</p>\r\n\r\n<p>“Is everything alright at home?” her teacher asked me.<br />\r\n<br />\r\n“Yes, all’s fine,’ I lied, forcing a smile.<br />\r\n<br />\r\nI felt ashamed. I was too tired to explain.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 9ced5493-2f73-4df1-9e2f-4d1c42ac3702
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1638269700
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 300561da-7df3-49c5-85a4-85a8ac107847
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1638269977
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 84173e53-e0fb-442d-bce5-c2abe0e2da1e
+                      alt: Ava_Mona_phone
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 31820e83-0a53-4976-bbec-c1bca8b8cc86
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1638269703
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Everything was spiralling out of control again.</p>\r\n\r\n<p>“Ava, call Dr Noa,” Mona urged me.</p>\r\n\r\n<p>We had stopped our sessions several weeks ago, as I had been feeling much better.<br />\r\n<br />\r\n“Don’t forget how far you’ve come,” she said. “This is life happening... you just need to get back on track, Ava.”</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 3965854e-0687-448d-98bf-1e883cb95692
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1638270324
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: e9ef1e1c-a6b3-429a-a673-b52ce9b2ba97
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1638270328
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 625417be-f1cc-4973-98aa-9b88cfb5a3de
+                      alt: Ava_angry_miror
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 92a6f46b-3de2-41f7-afe0-d2874394791f
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1638270331
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>I had come a long way, yes.&nbsp;</p>\r\n\r\n<p>But life has ups and downs.</p>\r\n\r\n<p>How could I fall back into such bad patterns of thinking and behaviour?<br />\r\n<br />\r\nI blamed myself.</p>\r\n\r\n<p><strong><em>Let’s hear now from Ava and Mary who have a piece of advice to share with you.</em></strong></p>\r\n"
+                      format: minimal_html

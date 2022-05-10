@@ -1,0 +1,390 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 760fb77c-0066-4ed5-b434-f3b65ec66d7b
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    fb4fdd27-38e9-4c45-8c15-adf83aa2c742: file
+    d95e830d-1d81-40f9-9a50-709c7c7182de: file
+    bd426ce4-3488-4c03-9622-4fdcb352770d: file
+    452d7f2f-4db9-47ce-ae06-182cb8b53e26: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Learn to cope with warning signs'
+  created:
+    -
+      value: 1638267932
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/learn-cope-warning-signs
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: f5497625-2f9b-443a-be1c-e7b700d97d36
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1638289544
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 5cbbd7d1-0bb0-4ba5-ba22-773f0df36db1
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1638289547
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: fb4fdd27-38e9-4c45-8c15-adf83aa2c742
+                      alt: DrNoa
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: b02f81a4-8b4e-4c12-84c1-f567b51ecccd
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1638289549
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>It is normal to feel worse again every once in a while.</p>\r\n\r\n<p>It’s important to remember the techniques you have learnt in Step-by-Step. They can help you get through difficult times.</p>\r\n\r\n<p>Breaking the “sadness and withdrawal cycle” is a bit like keeping fit…</p>\r\n\r\n<p>You need to practice in order to keep up your strength and fitness.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: ea1cce5f-5d5b-44c8-b4b6-8c305704146d
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1638289636
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 963fa7cd-3a25-49b9-a5dc-29d488f70a67
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1638289701
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: d95e830d-1d81-40f9-9a50-709c7c7182de
+                      alt: Mary_techniques
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 7a5b0c5e-3c74-4474-a816-11fc78fd7f22
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1638289712
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Let’s think about what we’ve practised in this programme.<br />\r\n<br />\r\nWe’ve practised reducing stress with the Breathing and the Grounding Exercises.</p>\r\n\r\n<p>We’ve practiced breaking the ‘sadness and withdrawal cycle’ in this programme by:</p>\r\n\r\n<ul>\r\n\t<li>Doing small things we enjoy.</li>\r\n\t<li>Carefully planning bigger things we enjoy, and breaking them into smaller steps.</li>\r\n\t<li>Recognizing challenges to our plans, and finding solutions.</li>\r\n</ul>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 12969d8d-f413-4f0b-8595-50d0950080fd
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1638289856
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 1441bdb2-8600-4b54-b4b2-57218229e3c5
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1638289860
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: bd426ce4-3488-4c03-9622-4fdcb352770d
+                      alt: Mary_rain_sun
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 77bfadf6-15ec-4e50-a1df-72544a56b7d4
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1638289862
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>And we have practised being kind to ourselves if we do not manage to do things as we would like to.&nbsp;</p>\r\n\r\n<p>It is important to notice signs that you are not doing well.</p>\r\n\r\n<p>It’s time to think of the ways you can cope with your Warning Signs when they come up.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 283e723b-c21d-4d69-96e7-01f9c4980890
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1638290053
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: debe8b29-70b3-450f-8122-bee95b196da6
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1638290100
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 452d7f2f-4db9-47ce-ae06-182cb8b53e26
+                      alt: DrNoa_explains
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 1a197647-236e-4b03-b92f-62a872117de8
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1638290070
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>You will now see the list of Warning Signs you made in Part 1.</p>\r\n\r\n<p>You can add ideas for how you would like to cope with these signs by clicking on each warning sign.</p>\r\n\r\n<p>As with the other techniques, you can always access it in your Toolbox to change or edit it.</p>\r\n\r\n<p>Let’s try!</p>\r\n\r\n<p><strong><em>After the activity,&nbsp; you can now go directly to the last part of Session 5 or come back later, as you wish.</em></strong></p>\r\n"
+                      format: minimal_html

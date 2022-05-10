@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 07fb2102-78ca-4edb-9527-d063a59fe39c
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: intro-narr4_4.png
+  uri:
+    -
+      value: 'public://2021-11/intro-narr4_4.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 70394
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1636021445

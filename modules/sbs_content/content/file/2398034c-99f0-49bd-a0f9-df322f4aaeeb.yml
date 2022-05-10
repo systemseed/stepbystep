@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 2398034c-99f0-49bd-a0f9-df322f4aaeeb
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: S2.06_0.png
+  uri:
+    -
+      value: 'public://2021-11/S2.06_0.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 27959
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1636368465

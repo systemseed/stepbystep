@@ -1,0 +1,305 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: ccec5675-01a5-4d05-b0d5-8d59f1c951e7
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    d280db7c-55ed-4a17-a525-00c7c0e5df78: file
+    3d8708cc-5a45-4c43-8934-1e1613f6118f: file
+    be35f73a-6d96-4761-87b4-ae57e3028f2a: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Ava''s experience meeting friends'
+  created:
+    -
+      value: 1637059170
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/avas-experience-meeting-friends
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: e5f8aaf0-845d-4ecb-9cf8-9a397ed81fab
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637059708
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: c9f4444b-8027-4413-ad62-2e118df75757
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637060234
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: d280db7c-55ed-4a17-a525-00c7c0e5df78
+                      alt: Ava_in_bed
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: a5a06848-3e63-42b1-ae00-e0c7f3a2ad0a
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637059711
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p><strong><em>Let's go back to Ava and hear how she felt about meeting her friends.</em></strong></p>\r\n\r\n<p>I always slipped back into negative thoughts.</p>\r\n\r\n<p>And then I would blame myself for being useless.</p>\r\n\r\n<p>I could think of every possible excuse to cancel my plans, even though everything was ready and in place.</p>\r\n\r\n<p>One morning I had planned to have tea with Mona and another friend, Sara, but I just couldn't face it.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 6f0cf1fc-78ad-4359-8e85-50b1f96e65d3
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637060286
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: b5e70acc-fd27-4c48-bc5a-e2e08864504d
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637060289
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 3d8708cc-5a45-4c43-8934-1e1613f6118f
+                      alt: Ava_thinking_friend
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 2375e984-8aa5-46d0-a96f-f47318bde33e
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637060292
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p><em>Sure, see you there! </em><br />\r\n<br />\r\nI had messaged Mona.</p>\r\n\r\n<p>But that morning, I woke up feeling so heavy.<br />\r\n<br />\r\nIt took me longer than usual to gather my strength and get up...</p>\r\n\r\n<p>I worried about what my friends would say about me.</p>\r\n\r\n<p><em>She nags, she’s selfish, she’s gained weight… why doesn’t she take better care of herself?</em></p>\r\n\r\n<p>&nbsp;</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 26365a93-3ecd-4114-8294-bdbf13eaadad
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637060396
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 03c358e5-aad3-405f-9da5-d184e91a926b
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637060432
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: be35f73a-6d96-4761-87b4-ae57e3028f2a
+                      alt: Ava_clock
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 32df595b-4a2a-484d-8cb6-282c29b615f5
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637060446
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>I spent so long worrying and feeling anxious that it became too late to go.</p>\r\n\r\n<p>I hated myself for being so useless.&nbsp;</p>\r\n\r\n<p>While imagining what they could say about me, my heart started pounding and I felt sweaty.&nbsp;</p>\r\n\r\n<p>I could not stop worrying and thinking badly about myself.</p>\r\n\r\n<p>My thoughts went in circles, and I felt worse…</p>\r\n\r\n<p><strong><em>This is how Ava felt. Now, let’s hear from Mary and see how this was for her.</em></strong></p>\r\n"
+                      format: minimal_html

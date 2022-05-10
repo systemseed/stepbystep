@@ -1,0 +1,396 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: f8f509ce-4876-4eff-80fa-8ff15c254f8d
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    f46589f2-24f8-4430-a5b4-d0b4619a36d0: file
+    768f41c5-7efd-4406-b289-4d691b400e01: file
+    02bf0d5f-0ae0-4905-a1ad-e9ea098c822c: file
+    b96a30a7-d699-4d40-9865-e4cae065629b: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Ava shares her story'
+  created:
+    -
+      value: 1629965724
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/ava-shares-her-story
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 30f3ac1d-4bc2-4b63-b18f-5866fd5a8b4d
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629968483
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 9f0acd09-bc41-40bb-b396-4d48ffb94715
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1630049266
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: f46589f2-24f8-4430-a5b4-d0b4619a36d0
+                      alt: AVA_home
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 05fe2221-55e6-4d59-a747-938ded79018b
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1630049312
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Hi, I’m Ava. I did Step-by-Step some time ago with Dr Noa, in her clinic.</p>\r\n\r\n<p>The techniques she taught me helped me through some really difficult times.</p>\r\n\r\n<p>And now they’ve made the programme I did into this app.</p>\r\n\r\n<p>When I first started this program, I had lost things that were important to me.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: a636df1f-e760-4fca-b0cf-24bd699b239d
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629968984
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 970147d6-ab0f-48f4-8ce1-1e93db123b67
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629968991
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 768f41c5-7efd-4406-b289-4d691b400e01
+                      alt: AVA_death_mother
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 8427fb94-d178-44bc-a676-0f4446a79306
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629969022
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>My mum passed away over a year ago,&nbsp; she was so young. I should have been there to protect her. I felt so guilty.</p>\r\n\r\n<p>I promised to take care of my dad.</p>\r\n\r\n<p>“He has to come and live with us,” I told my husband Tom. He agreed, but we were both anxious.</p>\r\n\r\n<p>Our house was very small. I felt so heavy.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: a01fbf3c-0b9f-4ccd-8312-4814dea574a2
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629970151
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: acc57f28-8119-4a60-abd0-7960b6fa48b7
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629970178
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 02bf0d5f-0ae0-4905-a1ad-e9ea098c822c
+                      alt: AVA_heaviness
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 60aece3d-b38b-4d99-af55-8d57f4293bd4
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629970191
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>This heaviness stayed for months.&nbsp; It was as if I was carrying an extra weight.</p>\r\n\r\n<p>My shoulders and neck felt so tense, and I didn’t want to eat.</p>\r\n\r\n<p>I couldn’t sleep, even though I felt tired all the time. I lost my appetite, but whenever I felt stressed, I ate unhealthy snacks between meals.</p>\r\n\r\n<p>I gained weight and started to dislike the way I looked.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 53228c7b-15c0-4f5b-b119-746af44e043a
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629970231
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: fba233d6-0aaf-4a66-bcf4-7868cd63a6fa
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629970236
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: b96a30a7-d699-4d40-9865-e4cae065629b
+                      alt: AVA_bed
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: f7dcf3b8-9732-41d4-8940-8f29cf63aa36
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629970324
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Sometimes I felt so low I couldn’t get out of bed in the morning. This frustrated my husband.</p>\r\n\r\n<p>“Please, Ava, I can’t prepare for work and take care of the children at the same time.”</p>\r\n\r\n<p>I knew he was right.</p>\r\n\r\n<p>I hated myself for not being the woman he had married.</p>\r\n\r\n<p>But I felt so tired and sad.</p>\r\n\r\n<p><strong><em>Now let’s hear from Mary, the young student who also completed Step-By-Step.</em></strong></p>\r\n"
+                      format: minimal_html

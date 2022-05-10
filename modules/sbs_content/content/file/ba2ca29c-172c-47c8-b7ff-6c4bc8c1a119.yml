@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: ba2ca29c-172c-47c8-b7ff-6c4bc8c1a119
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: Uri.png
+  uri:
+    -
+      value: 'public://2021-09/Uri.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 2516
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1631602658

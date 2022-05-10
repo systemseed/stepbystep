@@ -1,0 +1,222 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: a8d83dc8-58c9-4a6d-b7aa-c6cb0bec853d
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    a7991468-4fc8-45e8-9e05-80cb37e0f56b: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'One last thing...'
+  created:
+    -
+      value: 1636028241
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/one-last-thing
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: de16229a-cdd0-44b0-8d09-a9d4384fdf6c
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1636028314
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 889b39fb-f3b5-4300-aaa8-f897dfd892e6
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636028345
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: a7991468-4fc8-45e8-9e05-80cb37e0f56b
+                      alt: Team
+                      title: ''
+                      width: 1024
+                      height: 745
+                translations:
+                  ar:
+                    status:
+                      -
+                        value: true
+                    created:
+                      -
+                        value: 1636028345
+                    content_translation_source:
+                      -
+                        value: en
+                    content_translation_outdated:
+                      -
+                        value: false
+                    field_lesson_image_image:
+                      -
+                        entity: a7991468-4fc8-45e8-9e05-80cb37e0f56b
+                        alt: Team
+                        title: ''
+                        width: 1024
+                        height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: dd813ad2-b498-4d75-851a-213548873163
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636028370
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>One last thing…</p>\r\n\r\n<p>It is likely there may be some days when you don’t feel like continuing with Step-by-Step.</p>\r\n\r\n<p>But please, don’t give up!<br />\r\n<br />\r\nIt can take a few weeks to feel a difference.<br />\r\n<br />\r\nTry to stick with us and see if things change.</p>\r\n\r\n<p>You reached the end of the \"Take the first step\" session.</p>\r\n\r\n<p>Session 1 is now open, you can proceed to it now or come back to it later this week when you’re ready.</p>\r\n"
+                      format: minimal_html
+                translations:
+                  ar:
+                    status:
+                      -
+                        value: true
+                    created:
+                      -
+                        value: 1636028370
+                    revision_translation_affected:
+                      -
+                        value: true
+                    content_translation_source:
+                      -
+                        value: en
+                    content_translation_outdated:
+                      -
+                        value: false
+                    field_lesson_text_content:
+                      -
+                        value: "<p style=\"direction: rtl;\">وشغلة أخيرة...</p>\r\n\r\n<p style=\"direction: rtl;\">من الطبيعي إنّه ببعض الأيام رح تشعري إنّه مش قادرة تكملي بالبرنامج.</p>\r\n\r\n<p style=\"direction: rtl;\">بس رجاءً، ما تستسلمي.</p>\r\n\r\n<p style=\"direction: rtl;\">ممكن يستغرق الأمر أسابيع قبل ما تحسّي بالفارق.</p>\r\n\r\n<p style=\"direction: rtl;\">جرّبي قد ما فيكي تضلّك معنا، وشوفي إذا رح تتغيّر الأمور.</p>\r\n\r\n<p style=\"direction: rtl;\">وصلتي لنهاية جلسة \"خذي الخطوة الأولى\"</p>\r\n\r\n<p style=\"direction: rtl;\">الجلسة الأولى صارت هلق مفتوحة، بتقدري تنتقلي عليها أو ترجعيلها بوقت ثاني بهالأسبوع، وقت تكوني مستعدة.</p>\r\n"
+                        format: minimal_html
+        translations:
+          ar:
+            status:
+              -
+                value: true
+            created:
+              -
+                value: 1636028314
+            revision_translation_affected:
+              -
+                value: true
+            content_translation_source:
+              -
+                value: en
+            content_translation_outdated:
+              -
+                value: false
+translations:
+  ar:
+    status:
+      -
+        value: true
+    uid:
+      -
+        target_id: 1
+    title:
+      -
+        value: 'وشغلة أخيرة...'
+    created:
+      -
+        value: 1643720636
+    promote:
+      -
+        value: false
+    sticky:
+      -
+        value: false
+    revision_translation_affected:
+      -
+        value: true
+    path:
+      -
+        alias: /lesson/wshghlt-akhyrt
+        langcode: ar
+        pathauto: 1
+    content_translation_source:
+      -
+        value: en
+    content_translation_outdated:
+      -
+        value: false

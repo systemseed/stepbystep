@@ -1,0 +1,323 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 9da73cde-e3fe-43b1-a980-6a36cb0c8ccb
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    bf09f4eb-8d71-4114-b99e-0c57fd549dc7: file
+    b71cfd63-7ac3-4de7-acbc-e585c5d939a6: file
+    881de9f0-5b44-47ea-9aec-3ede7b1a1898: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'How to reduce stress'
+  created:
+    -
+      value: 1629977963
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/how-reduce-stress-0
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 6eae43ce-3f4b-4442-84bc-032fb40ebca0
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629978421
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 5412a12e-ae15-4ac9-a01c-badf1d0da540
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629978423
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: bf09f4eb-8d71-4114-b99e-0c57fd549dc7
+                      alt: to_be_replaced
+                      title: ''
+                      width: 752
+                      height: 370
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 987f3cfc-b66b-498b-9b45-6b2f31240e95
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629978438
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>It may seem hard to believe, but remembering things we are grateful for, no matter how small, can help reduce stress, especially when practiced over time.</p>\r\n\r\n<p>In the Toolbox you will find the Gratitude List.</p>\r\n\r\n<p>To use this technique, take a few minutes to think of 3 things you are grateful for.</p>\r\n\r\n<p>This can be anything big or small.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 72f694c9-652b-4319-b560-bbbbeb9468bd
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629978670
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 9b6d6af9-d3cb-43d2-af24-0e588d7f0b82
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629978681
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: b71cfd63-7ac3-4de7-acbc-e585c5d939a6
+                      alt: to_be_replaced
+                      title: ''
+                      width: 752
+                      height: 370
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: ed74feaf-0643-4279-8249-7323309b1683
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629978714
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>For example, a person who was kind to you, something you did for yourself, something you did for others, something you learnt, or someone you are grateful to have in your life.</p>\r\n\r\n<p>For Uri, it was Tam who helped him reach out for support, for Kai it was going for a walk...</p>\r\n\r\n<p>It can be any small everyday thing or anything you particularly appreciate in your current life.</p>\r\n\r\n<p>In the <strong>Gratitude List</strong> you can either write, record or take a photo of things you feel grateful for.</p>\r\n\r\n<p>You can then look at this list whenever you need to and be reminded of the things you are grateful for in your life.</p>\r\n\r\n<p>Let’s try!</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 33529c98-a7eb-45b3-bd57-3549021c4637
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629978877
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 0bed8632-249e-43ea-928b-1e2d8b1c735e
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629978899
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 881de9f0-5b44-47ea-9aec-3ede7b1a1898
+                      alt: to_be_replaced
+                      title: ''
+                      width: 752
+                      height: 370
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 86e844b3-d9f6-4412-8326-0e7ef563e615
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629978915
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Congratulations on creating your personal Gratitude List!</p>\r\n\r\n<p>I hope this technique helps you remember the positive things in your life.</p>\r\n\r\n<p>You can add things to your list whenever you like by coming back to this list in your Toolbox.</p>\r\n\r\n<p>We have now reached the end of Part 2 of Session 1.</p>\r\n\r\n<p>You can now start the last part of Session 1, or come back another time.</p>\r\n"
+                      format: minimal_html

@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 24c2747b-f8c0-4f47-9e93-97022bb00518
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: Image9.png
+  uri:
+    -
+      value: 'public://2021-08/Image9.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 5754
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1629971941

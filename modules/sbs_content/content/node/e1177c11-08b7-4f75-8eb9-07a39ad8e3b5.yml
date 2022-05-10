@@ -1,0 +1,220 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: e1177c11-08b7-4f75-8eb9-07a39ad8e3b5
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    78255c5b-8a7e-4216-bffb-eb3109511b79: file
+    dc578cf5-1c42-4c27-8f01-e8765786de28: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Mary''s experience with Step-by-Step'
+  created:
+    -
+      value: 1629979079
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/marys-experience-step-step
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: f10dd44a-95a7-4e4d-9c8b-09e706738e3b
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629979882
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: d7055c99-c83b-498f-b36e-6026d9d9cdcd
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629979886
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 78255c5b-8a7e-4216-bffb-eb3109511b79
+                      alt: Mary_smile
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 8664b5d8-30e0-4da4-bf6d-8453f0632fe7
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629979899
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p><strong><em>How was Mary's experience with Step-by-Step? Let's hear it.</em></strong></p>\r\n\r\n<p>In the beginning, it was hard for me to keep the motivation up and try the activities Dr Noa recommended to me. I couldn’t really see how breathing exercises were going to solve my problems but I kept doing them.</p>\r\n\r\n<p>Then one day I met my friend Rosa in class.</p>\r\n\r\n<p>“Are you feeling any better?” Rosa asked me.</p>\r\n\r\n<p>She knew I had been to see Dr Noa. I was quite negative.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 9a2d72cf-cac7-4c9d-83eb-96e0eb454168
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629980310
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 16a9058e-0ddb-4793-b9f3-f167a267c42b
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1633677796
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: dc578cf5-1c42-4c27-8f01-e8765786de28
+                      alt: Mary_breath
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 5fab2690-8d9b-43eb-8571-ca76ffef3428
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629980313
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>\"I can't really see how breathing exercises are going to solve my problems,\" I said.</p>\r\n\r\n<p>\"They won't,\" said Rosa. \"But I remember when I began slow breathing, relieving my stress for a moment helped me to start doing small things again. Going outside, seeing people…preparing for the professor's comments on my essays!\"</p>\r\n\r\n<p>I tried to smile.&nbsp;</p>\r\n\r\n<p>\"You see?\" said Rosa. \"The small things… like feeling like you can smile again.\"</p>\r\n\r\n<p>I nodded, but inside, my stomach twisted with doubt.<br />\r\n<br />\r\nTo me, even those tiny things seemed huge.</p>\r\n\r\n<p><strong><em>From their own experience with Step-by-Step, Ava and Mary want to share a message with you.</em></strong></p>\r\n"
+                      format: minimal_html

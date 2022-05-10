@@ -1,0 +1,220 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 1b7f3d83-cb37-4080-b0dd-f63d5310dece
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    036b1b62-4559-41a3-b7b5-5e7e324debeb: file
+    626ccf61-8bd7-48b1-abc0-ae184b6fecb8: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Get prepared for challenges'
+  created:
+    -
+      value: 1637140485
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/get-prepared-challenges
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 41d21dc5-33d6-4063-802a-592e379293e0
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637143471
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: b5539647-dc7e-4349-9c87-caeba52c443d
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637144126
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 036b1b62-4559-41a3-b7b5-5e7e324debeb
+                      alt: DrNoa_plan
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 06f69344-999c-4831-b4e9-5c00b2b4f84d
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637144130
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Anticipating when things will be difficult is also an important part of managing your stress.</p>\r\n\r\n<p>Mary found that planning to do a Breathing Exercise in advance helped her complete something she had planned to do.</p>\r\n\r\n<p>Ava realized that doing the Grounding Exercise before going out and saying some kind words to herself helped her manage stress..</p>\r\n\r\n<p>Try to think about the things that prevent you from completing your own activities. And then try to figure out how to overcome these difficulties.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 6a29d45d-a15d-4476-ad8c-6ad7ca764e1f
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637144536
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 9c5ba6ca-8665-4947-9fe1-27d08e1505d1
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637144618
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 626ccf61-8bd7-48b1-abc0-ae184b6fecb8
+                      alt: DrNoa_explains
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: ba1cb805-cf9b-4fdb-8763-99dce934b1d8
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637144658
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>We now will go to your Toolbox, where you can access your list of Challenging Activities.</p>\r\n\r\n<p>This time, think about any problems you foresee coming up with the activity.</p>\r\n\r\n<p>You can then write down how you can overcome these challenges using your techniques, or other ideas you might have.</p>\r\n\r\n<p><br />\r\n<strong><em>You have now reached the end of this session. </em></strong><br />\r\n<br />\r\n<strong><em>You can now continue to session 4 or review session 3.</em></strong></p>\r\n"
+                      format: minimal_html

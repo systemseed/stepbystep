@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 04abdac3-a458-4743-843a-e0a0ceb9b790
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: 'SBS Session 1-11_0.jpg'
+  uri:
+    -
+      value: 'public://2021-08/SBS Session 1-11_0.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 212867
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1630420634

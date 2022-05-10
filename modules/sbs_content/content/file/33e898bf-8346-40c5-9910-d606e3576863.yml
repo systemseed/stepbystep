@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 33e898bf-8346-40c5-9910-d606e3576863
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: S2.05.png
+  uri:
+    -
+      value: 'public://2021-11/S2.05.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 44524
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1636363760

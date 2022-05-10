@@ -1,0 +1,220 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: e22eb570-d548-4236-8cfe-4c87eca20a82
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    be5a87a0-c3aa-45fd-9aa6-f3b2d5d8e539: file
+    8e2e88e4-8445-48d2-94f3-ecae6a3b7d70: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Enjoyable activities can help you'
+  created:
+    -
+      value: 1636376954
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/enjoyable-activities-can-help-you
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 5a30ab82-5274-47e5-8389-99ec7fc8ce9d
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1636446304
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 8b7158a1-9048-4061-a237-8dc3d3d2ddcb
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636446307
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: be5a87a0-c3aa-45fd-9aa6-f3b2d5d8e539
+                      alt: DrNoa_Mary_Sadnesscircle
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 4baa3875-daaa-4749-9654-16bebf510b9e
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636446311
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>When people are experiencing low mood, they can feel stuck.</p>\r\n\r\n<p>People might carry on doing their daily tasks, but have little energy and feel stressed, so they stop doing activities they normally would enjoy.</p>\r\n\r\n<p>This makes them feel worse and they may become more stressed, sad or isolated.&nbsp;</p>\r\n\r\n<p>This is called the “sadness and withdrawal cycle”.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: c5fec769-6f3f-4192-a45a-ba853af5b5b5
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1636446475
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 82b57109-3669-46c5-b79b-2573b758a3a8
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636446478
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 8e2e88e4-8445-48d2-94f3-ecae6a3b7d70
+                      alt: DrNoa_plan_activities
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 131ea222-8bb5-4461-9ab6-5dd55bde200f
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636446545
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Making enjoyable activities a regular part of your life can make you feel better.</p>\r\n\r\n<p>Try with something small and build up; just notice if doing enjoyable things or that you used to enjoy makes your mood change, even if a little.</p>\r\n\r\n<p>Remember, you can visit your Toolbox whenever you feel low.</p>\r\n\r\n<p>If you are struggling to come up with ideas, why not plan some grounding or breathing exercises as small activities?</p>\r\n\r\n<p><em><strong>We have now reached the end of Part 2 of Session 2. You can now either continue directly to Part 3 of Session 2, or come back later, as you wish.</strong></em></p>\r\n"
+                      format: minimal_html

@@ -1,0 +1,103 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: b754f2e9-65cb-4929-ab09-f4299f911af7
+  bundle: activity_checklist
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Social Activities'
+  created:
+    -
+      value: 1637231306
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /activity/social-activities
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_description:
+    -
+      value: 'Create a checklist of enjoyable activities that involve other people.'
+  field_icon:
+    -
+      value: people_outline
+  field_suggestions:
+    -
+      value: 'Texting or talking to a friend'
+    -
+      value: 'Cook or have dinner with a friend'
+    -
+      value: 'Play a game with a friend'
+    -
+      value: 'Go for a walk with a friend'
+translations:
+  ar:
+    status:
+      -
+        value: true
+    uid:
+      -
+        target_id: 1
+    title:
+      -
+        value: 'Social Activities'
+    created:
+      -
+        value: 1643205343
+    promote:
+      -
+        value: false
+    sticky:
+      -
+        value: false
+    revision_translation_affected:
+      -
+        value: true
+    path:
+      -
+        alias: /activity/social-activities
+        langcode: ar
+        pathauto: 1
+    content_translation_source:
+      -
+        value: en
+    content_translation_outdated:
+      -
+        value: false
+    field_description:
+      -
+        value: 'Create a checklist of enjoyable activities that involve other people.'
+    field_suggestions:
+      -
+        value: 'Texting or talking to a friend'
+      -
+        value: 'Cook or have dinner with a friend'
+      -
+        value: 'Play a game with a friend'
+      -
+        value: 'Go for a walk with a friend'

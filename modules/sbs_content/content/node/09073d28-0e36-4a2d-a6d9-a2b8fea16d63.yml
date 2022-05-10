@@ -1,0 +1,220 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 09073d28-0e36-4a2d-a6d9-a2b8fea16d63
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    eb54353c-fd52-4a95-9adc-976284a97800: file
+    ac6252e9-eb53-4f2e-9af4-0d92b94813fd: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Ava anticipates the challenge'
+  created:
+    -
+      value: 1637140345
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/ava-anticipates-challenge
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: d4df6b23-b93a-4229-98b0-362669ba06c9
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637140536
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: f2be7813-d56a-444d-8a64-3c21ccccd916
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637140623
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: eb54353c-fd52-4a95-9adc-976284a97800
+                      alt: Ava_worried
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: e247836d-f092-4859-a589-5f0f35506a39
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637140538
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p><strong><em>Let’s hear first from Ava</em></strong></p>\r\n\r\n<p>Mona said we could rearrange having tea for another morning, so we did.</p>\r\n\r\n<p>“We meet up often,” she said when I apologized to her the next day. “Don’t worry about it, Ava. Next time!”</p>\r\n\r\n<p>But I had a feeling that next time I would cancel again… I already felt guilty.</p>\r\n\r\n<p><br />\r\nI couldn’t rely on myself, and nor could anyone else.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 09863386-58bf-448c-a965-0941bc9b1edb
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637140716
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: ea555198-9ede-4fe2-a5ac-06e2cbacac15
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637140719
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: ac6252e9-eb53-4f2e-9af4-0d92b94813fd
+                      alt: Ava_kind_mirror
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 7f0ec3d0-bfbb-42ab-b7d6-681b27d83a9a
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637140766
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>I also knew I had to be kinder to myself.</p>\r\n\r\n<p>Dr Noa was right… I couldn’t be so hard on myself any longer.</p>\r\n\r\n<p>If I felt stressed about meeting my friends, I would do a Grounding Exercise before going out and say some kind words to myself.</p>\r\n\r\n<p><strong><em>Now let’s hear which technique Mary chose to meet this challenge.</em></strong></p>\r\n"
+                      format: minimal_html

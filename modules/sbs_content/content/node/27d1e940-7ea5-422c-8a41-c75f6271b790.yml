@@ -1,0 +1,97 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 27d1e940-7ea5-422c-8a41-c75f6271b790
+  bundle: activity_audio
+  default_langcode: en
+  depends:
+    47bb492c-8094-49ba-a2ea-99e858e0a1e9: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Breathing Exercise'
+  created:
+    -
+      value: 1638959808
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /activity/breathing-exercise
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_audio:
+    -
+      entity: 47bb492c-8094-49ba-a2ea-99e858e0a1e9
+      display: true
+      description: ''
+  field_description:
+    -
+      value: 'Listen to the audio and follow along.'
+  field_icon:
+    -
+      value: air
+translations:
+  ar:
+    status:
+      -
+        value: true
+    uid:
+      -
+        target_id: 1
+    title:
+      -
+        value: 'تمرين التنفس '
+    created:
+      -
+        value: 1643204927
+    promote:
+      -
+        value: false
+    sticky:
+      -
+        value: false
+    revision_translation_affected:
+      -
+        value: true
+    path:
+      -
+        alias: /activity/tmryn-altnfs
+        langcode: ar
+        pathauto: 1
+    content_translation_source:
+      -
+        value: en
+    content_translation_outdated:
+      -
+        value: false
+    field_audio:
+      -
+        entity: 47bb492c-8094-49ba-a2ea-99e858e0a1e9
+        display: true
+        description: ''
+    field_description:
+      -
+        value: 'اسمعي التسجيل و اتبعي مع المرشدة!'

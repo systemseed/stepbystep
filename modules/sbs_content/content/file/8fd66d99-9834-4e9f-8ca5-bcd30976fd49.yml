@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 8fd66d99-9834-4e9f-8ca5-bcd30976fd49
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: SBS-03.png
+  uri:
+    -
+      value: 'public://courses/2021-08/SBS-03.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 57255
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1629218729

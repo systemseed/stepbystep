@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 332145f3-9b6d-4a8c-b3d9-4b2696a03687
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: 'Separate Ways (Worlds Apart) (Sefon.me).mp3'
+  uri:
+    -
+      value: 'public://activity_audio/2021-12/Separate Ways (Worlds Apart) (Sefon.me).mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 12973496
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1638959808

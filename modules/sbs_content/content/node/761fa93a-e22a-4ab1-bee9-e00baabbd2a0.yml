@@ -1,0 +1,225 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 761fa93a-e22a-4ab1-bee9-e00baabbd2a0
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    20ca32a2-ce5c-4ad2-a60c-b3369b59cef2: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'How did it go?'
+  created:
+    -
+      value: 1636027677
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/how-did-it-go
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 1f5d9633-b7d4-4128-ac98-6a05cb1032be
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1636027831
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: a864aa0b-a9c9-4955-871d-e535f9b712d0
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636027836
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 20ca32a2-ce5c-4ad2-a60c-b3369b59cef2
+                      alt: DrNoa
+                      title: ''
+                      width: 1024
+                      height: 745
+                translations:
+                  ar:
+                    status:
+                      -
+                        value: true
+                    created:
+                      -
+                        value: 1636027836
+                    revision_translation_affected:
+                      -
+                        value: true
+                    content_translation_source:
+                      -
+                        value: en
+                    content_translation_outdated:
+                      -
+                        value: false
+                    field_lesson_image_image:
+                      -
+                        entity: 20ca32a2-ce5c-4ad2-a60c-b3369b59cef2
+                        alt: DrNoa
+                        title: ''
+                        width: 1024
+                        height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 02127062-26b2-4b53-be06-e871838f2f60
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636027919
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Well done for trying out the Grounding Exercise!</p>\r\n\r\n<p>I hope it made you feel a little less stressed.</p>\r\n\r\n<p>If not, that’s okay. It will probably take more than one try to feel the effect of the exercise.</p>\r\n\r\n<p>All of the techniques we teach in this programme work best with practice.</p>\r\n\r\n<p>It is like doing physical exercise: the more you do, the easier it becomes as your muscles become stronger.</p>\r\n\r\n<p>You can even practice the technique when you do not feel very stressed so that you know it better.</p>\r\n\r\n<p>You will learn other techniques as you go through this course.</p>\r\n\r\n<p>For now, I hope you can practice this one.</p>\r\n"
+                      format: minimal_html
+                translations:
+                  ar:
+                    status:
+                      -
+                        value: true
+                    created:
+                      -
+                        value: 1636027919
+                    revision_translation_affected:
+                      -
+                        value: true
+                    content_translation_source:
+                      -
+                        value: en
+                    content_translation_outdated:
+                      -
+                        value: false
+                    field_lesson_text_content:
+                      -
+                        value: "<p style=\"direction: rtl;\">أحسنتي بتجربتك تمرين الإستدراك!</p>\r\n\r\n<p style=\"direction: rtl;\">منتمنى يكون ساعدك ترتاحي شوي.</p>\r\n\r\n<p style=\"direction: rtl;\">إذا لا, مابأثر.ممكن تاخدك كذا مرّة قبل ماتحسيّ بالفرق.</p>\r\n\r\n<p style=\"direction: rtl;\">كل التقنيات اللي منقدّمها بهالبرنامج بتكون فعالة إذا قمتي بتطبيقها.</p>\r\n\r\n<p style=\"direction: rtl;\">متلها متل أي تمرين جسدي: كل ما تمرنتي أكتر، كل ما صار التمرين أسهل لأن عضلاتك تحركوا أكتر وصاروا أقوى.</p>\r\n\r\n<p style=\"direction: rtl;\">فيكي تطبقي هالتقنية حتّى بالأوقات اللي ما بتكوني متوترة فيها لتتمكّني منها. .</p>\r\n\r\n<p style=\"direction: rtl;\">رح تتعلّمي تقنيات غيرها خلال هالبرنامج.</p>\r\n\r\n<p style=\"direction: rtl;\">حالياً، بتمنى عليكي إنّك تتدرّبي على هالتمرين.</p>\r\n"
+                        format: minimal_html
+        translations:
+          ar:
+            status:
+              -
+                value: true
+            created:
+              -
+                value: 1636027831
+            revision_translation_affected:
+              -
+                value: true
+            content_translation_source:
+              -
+                value: en
+            content_translation_outdated:
+              -
+                value: false
+translations:
+  ar:
+    status:
+      -
+        value: true
+    uid:
+      -
+        target_id: 1
+    title:
+      -
+        value: 'كيف كان التمرين؟'
+    created:
+      -
+        value: 1643720547
+    promote:
+      -
+        value: false
+    sticky:
+      -
+        value: false
+    revision_translation_affected:
+      -
+        value: true
+    path:
+      -
+        alias: /lesson/kyf-kan-altmryn
+        langcode: ar
+        pathauto: 1
+    content_translation_source:
+      -
+        value: en
+    content_translation_outdated:
+      -
+        value: false

@@ -1,0 +1,97 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 63f3e0df-e383-473a-b384-bd4cd076af14
+  bundle: activity_audio
+  default_langcode: en
+  depends:
+    bf788f78-4b53-424d-a29c-665152371660: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Grounding Exercise'
+  created:
+    -
+      value: 1638959765
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /activity/grounding-exercise
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_audio:
+    -
+      entity: bf788f78-4b53-424d-a29c-665152371660
+      display: true
+      description: ''
+  field_description:
+    -
+      value: 'Listen to the audio and follow along.'
+  field_icon:
+    -
+      value: visibility
+translations:
+  ar:
+    status:
+      -
+        value: true
+    uid:
+      -
+        target_id: 1
+    title:
+      -
+        value: 'Grounding Exercise'
+    created:
+      -
+        value: 1641909216
+    promote:
+      -
+        value: false
+    sticky:
+      -
+        value: false
+    revision_translation_affected:
+      -
+        value: true
+    path:
+      -
+        alias: /activity/grounding-exercise
+        langcode: ar
+        pathauto: 1
+    content_translation_source:
+      -
+        value: en
+    content_translation_outdated:
+      -
+        value: false
+    field_audio:
+      -
+        entity: bf788f78-4b53-424d-a29c-665152371660
+        display: true
+        description: ''
+    field_description:
+      -
+        value: 'Listen to the audio and follow along.'

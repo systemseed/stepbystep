@@ -1,0 +1,138 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 25ac8ae9-2ce2-4912-aa2b-62d083ee5445
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    282fd5d8-6083-4e2e-b8d0-b87643ed77c8: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Ava and Mary have a message for you_clone'
+  created:
+    -
+      value: 1629977937
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/ava-and-mary-have-message-youclone-0
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: a5831c20-56fd-476f-b781-b6d769f94fcf
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629978304
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: cd2c2b65-3832-4448-922d-f1b38f625503
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629978306
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 282fd5d8-6083-4e2e-b8d0-b87643ed77c8
+                      alt: Ava_Mary_message
+                      title: ''
+                      width: 1407
+                      height: 936
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 828fa0d4-709c-4a7e-9a2d-7b3701fa5e7f
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629978320
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>You too you may feel weak and lose hope when you encounter difficulties in your life.</p>\r\n\r\n<p>You may feel down and overwhelmed and, like us, tend to forget the small things that can make a difference to the way we feel.</p>\r\n\r\n<p>Remind you of those small things that you're grateful to have in your life!</p>\r\n"
+                      format: minimal_html

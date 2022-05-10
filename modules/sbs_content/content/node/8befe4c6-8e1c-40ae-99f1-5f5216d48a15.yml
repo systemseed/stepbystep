@@ -1,0 +1,305 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 8befe4c6-8e1c-40ae-99f1-5f5216d48a15
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    b4dfbf5d-4ce6-4db2-87f8-4f483c8d29d8: file
+    fbec34a4-3989-4ed4-bf13-6cbd9d853027: file
+    86600bdd-681c-4fa6-b835-81aeb5ba725d: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Mary''s experience after Step-by-Step'
+  created:
+    -
+      value: 1638267599
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/marys-experience-after-step-step
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: a8c3d2ee-fa89-43a5-b55c-881a0d2d3e89
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1638268316
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 137ba170-21fb-4f9f-ab00-3e6091cb3054
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1638268318
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: b4dfbf5d-4ce6-4db2-87f8-4f483c8d29d8
+                      alt: Mary_miror
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: c023cd90-45f7-4388-918c-2d56503b1267
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1638268321
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>I was surprised by how much better I felt after Step-by-Step.</p>\r\n\r\n<p>I felt better than I had in years…</p>\r\n\r\n<p>Making the techniques part of my life gave me more energy.</p>\r\n\r\n<p>I could get through my day, study, support my mother, and sometimes even enjoy it.</p>\r\n\r\n<p>I could look at myself in the mirror again and say:<br />\r\n<br />\r\n<em>I’m okay.</em></p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: ca34ec83-0412-4d08-881f-de3227d189ee
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1638268416
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 6dc7aecd-aafc-45a0-8757-d393ad7bbf48
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1638268419
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: fbec34a4-3989-4ed4-bf13-6cbd9d853027
+                      alt: Mary_mother_happy
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: e918ca30-dc16-4996-9703-9bbe065c2b2b
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1638268421
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>“You seem brighter,” my mum said, stroking my cheek. She was right.</p>\r\n\r\n<p>Elyse’s wedding was beautiful and I enjoyed being there.</p>\r\n\r\n<p>I was seeing my classmates regularly. We were getting closer. I felt like I had friends. I was doing well at school…<br />\r\n<br />\r\nI didn’t want to go back to that dark place again.</p>\r\n\r\n<p>Habits became routines as the weeks passed, and after a few months, I felt genuinely better with myself.</p>\r\n\r\n<p>But then exam season came.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 6439bc76-5e38-487d-a60e-29dd9704849d
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1638268591
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 040d8674-f032-4977-a828-09c10e378a04
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1638268706
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 86600bdd-681c-4fa6-b835-81aeb5ba725d
+                      alt: Mary_exams
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 47d6f35e-aeeb-4e93-abb3-b973b0844765
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1638268709
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>I did my best to stay calm, but the pressure got too much.&nbsp;</p>\r\n\r\n<p>I felt myself slipping into old patterns…&nbsp;</p>\r\n\r\n<p>All I did was study, but it was hard to concentrate when I ate so little.</p>\r\n\r\n<p>I didn’t do well in my exams. I felt anxious all the time…</p>\r\n\r\n<p>Negative thoughts clouded my days, and I felt myself closing off.</p>\r\n\r\n<p><strong><em>Now let’s hear from Ava and her experience after the end of the Step-by-Step program.</em></strong></p>\r\n"
+                      format: minimal_html

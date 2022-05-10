@@ -1,0 +1,135 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 736ba4e0-6911-401c-8947-975642bc0adf
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    31070336-9cbc-4a48-b0c7-848a529160e3: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Mary''s daily life'
+  created:
+    -
+      value: 1629977915
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/marys-daily-life
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 3e1c4c68-a3cb-462a-b4b4-bd36181b3689
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629978214
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 9890bbe2-101d-40ed-a755-3fe2a76a941d
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629978218
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 31070336-9cbc-4a48-b0c7-848a529160e3
+                      alt: Mary_sad
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 5d037327-fa2c-4b3e-b7cc-19616d3e65d1
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629978240
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p><strong><em>There were difficult times for Mary as well, let's hear about her experiences. </em></strong></p>\r\n\r\n<p>I couldn’t see anything good in my daily life anymore. I used to smile just thinking about cooking with my mum, seeing my friends in the class...</p>\r\n\r\n<p>Now I didn’t smile at all, and cooking just felt like another chore.<br />\r\n<br />\r\nI couldn’t enjoy things anymore, not like I used to.</p>\r\n\r\n<p>Studying became such an effort. I was so anxious about falling behind.</p>\r\n\r\n<p>At home, the arthritis of my mum made it hard for her to help me around the house.</p>\r\n\r\n<p>There was always something to clean, to fix, to learn.</p>\r\n\r\n<p>Life had been easier with dad around.</p>\r\n\r\n<p>I just felt numb.</p>\r\n\r\n<p><strong><em>Ava and Mary have been there, like you, and have something to share with you. </em></strong></p>\r\n"
+                      format: minimal_html

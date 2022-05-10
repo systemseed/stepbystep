@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: f63189c1-8762-4d14-a35b-e62a4b9bbe30
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: intro-narr2_1_1.png
+  uri:
+    -
+      value: 'public://2021-11/intro-narr2_1_1.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 18210
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1636446336

@@ -1,0 +1,305 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 6664c927-3598-4642-a14c-9d8488ae2ff2
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    387ee729-fc4a-46ac-879a-d9cb0f485701: file
+    ed31cee8-f31c-4f7c-b094-1dcfab49f7c3: file
+    2398034c-99f0-49bd-a0f9-df322f4aaeeb: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Try something pleasant'
+  created:
+    -
+      value: 1636363035
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/try-something-pleasant
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 775b2ad1-c3b2-46f4-baad-000cec117665
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1636363972
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: cc544d1b-977d-4d4c-9e27-27330d1d6eb8
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636363977
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 387ee729-fc4a-46ac-879a-d9cb0f485701
+                      alt: DrNoa_listactivities
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 4f9bfa8d-9b17-40da-94e1-abc9128a1336
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636363994
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Maybe you were not able to try something enjoyable last week.</p>\r\n\r\n<p>Or you did, like Mary, and it did not have the effect you thought it would.</p>\r\n\r\n<p>Please don’t be hard on yourself if that’s the case.<br />\r\n<br />\r\nIt’s normal to find some parts of this programme hard.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 300243b4-b774-4774-9660-34713dd35c97
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1636364043
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 88e889ac-e462-45d1-a770-613d1d12853b
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636364048
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: ed31cee8-f31c-4f7c-b094-1dcfab49f7c3
+                      alt: Mary_reminder
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 05b2017a-0135-4b69-b3b7-22d10978b5d5
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636364082
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>If you didn’t manage last week’s activities, you can try them again this week.</p>\r\n\r\n<p>It can help to set a reminder.<br />\r\n<br />\r\nSome people put a note somewhere, on a door perhaps, or in their wallet or bag.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 845df067-0c41-4a22-b443-38529a3d4f1d
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1636364162
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: f8ce0838-2f1c-4b89-a41f-0248885cadad
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636368452
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 2398034c-99f0-49bd-a0f9-df322f4aaeeb
+                      alt: DrNoa_list
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: e52c2539-0853-47f2-97b1-fd558bab3f50
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636368485
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Let’s take a look at your list of small activities again.<br />\r\n<br />\r\nYou can create new entries or edit existing ones if you like.</p>\r\n\r\n<p>Try to pick something you enjoy doing and schedule it into your day or week.</p>\r\n\r\n<p>I hope you can plan a small activity regularly, so you can start seeing the link between what you do and how you feel.</p>\r\n\r\n<p>Let’s give it a try.</p>\r\n\r\n<p><strong><em>After the activity, you can either continue directly to Part 2 of Session 2 or start that part of the session another time.</em></strong></p>\r\n"
+                      format: minimal_html

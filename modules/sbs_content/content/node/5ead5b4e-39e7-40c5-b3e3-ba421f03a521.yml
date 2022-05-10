@@ -1,0 +1,566 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 5ead5b4e-39e7-40c5-b3e3-ba421f03a521
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    9171f4b6-a98b-4799-a90d-94bd820fdd5a: file
+    a909cf6d-abeb-441c-8114-d41460068f1c: file
+    509225b1-2cc1-4c14-97ac-6f535e107f26: file
+    ed33fc3b-75bf-42fa-9096-21fa70f437ec: file
+    ea144ede-7d1b-48bc-a24e-4db799bcc928: file
+    02e6fded-ca1c-4fb7-80ce-ef79e926f649: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Leila shares her story'
+  created:
+    -
+      value: 1629970722
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/leila-shares-her-story
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 14c5d0c9-3650-4ab1-a70a-f067c3bf3feb
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629971068
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 0e88a2d6-53df-4f3c-ab86-d6521a15f1a9
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629971080
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 9171f4b6-a98b-4799-a90d-94bd820fdd5a
+                      alt: Leila_unvieled_home
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: b4efff34-037b-405d-bb26-3039c380d409
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629971124
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>I know so well that feeling of sadness that Zeina is talking about...</p>\r\n\r\n<p>Hi, I’m Leila. When I signed up to SBS following the advice of Dr. Maha,&nbsp; I was feeling so lonely.</p>\r\n\r\n<p>We had lost my dad over a year ago… he was so young. Mum fell apart.</p>\r\n\r\n<p>I promised to take care of her and the house. But I had to finish my studies, too. Most days, all I could feel was the weight of our loss.</p>\r\n\r\n<p>So heavy…I could see no way out.</p>\r\n\r\n<p>&nbsp;</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 38800237-9963-4e00-b9e7-3f258aa26481
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629971238
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: f035eb04-b7b4-40e6-80a2-f7e210da4db4
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629971614
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: a909cf6d-abeb-441c-8114-d41460068f1c
+                      alt: Leila_alone_students
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 780272ad-de7b-406d-ba49-543b9cd33bf2
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629971659
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>I felt hopeless.</p>\r\n\r\n<p>On my course, everyone seemed so carefree and at ease. They were just students, had a purpose in their lives, and were involved in many activities.</p>\r\n\r\n<p>I envied them.</p>\r\n\r\n<p>It was hard to connect with anyone,&nbsp; so I stopped trying. I didn't feel like hanging out with my friends anymore.<br />\r\n<br />\r\nI didn’t want to talk to anyone.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: fb6e80e6-de95-4b64-a656-1f9a65fb008b
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629971690
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: e374bced-8f6b-4b9c-a5c7-8eb31bfd5086
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629971753
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 509225b1-2cc1-4c14-97ac-6f535e107f26
+                      alt: Leila_Rima_university
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: cda7e7c3-19d4-4074-990f-0b2013ea574a
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629971767
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Then one day, Rima, a friend from class, was waiting for me.</p>\r\n\r\n<p>I felt nervous. <em>What does she want with me? We were not that close.</em><br />\r\n<br />\r\n“Hi Leila\", she said, smiling at me. “I wanted to ask if you’re okay?”</p>\r\n\r\n<p>I was so shocked that someone had noticed me.</p>\r\n\r\n<p>I couldn’t speak. My eyes teared up.<br />\r\n<br />\r\nI felt so embarrassed…</p>\r\n\r\n<p>I was sure she would leave me alone like everyone else.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 4f01a956-f207-488f-ab14-9950ea8872c0
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629971930
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 086d5ebc-9ad8-4805-9fa0-ceb5e7263de3
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629971934
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: ed33fc3b-75bf-42fa-9096-21fa70f437ec
+                      alt: Leila_crying_Lima
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 264eea78-9653-48c9-b490-026892af3516
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629971953
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Instead, she asked me if I would like to sit down.</p>\r\n\r\n<p>We sat together for a long while. It could have been hours before I told her what was happening.</p>\r\n\r\n<p><br />\r\n“I feel so tired all the time,” I told Rima. “I’m a mess… but I have to take care of my mother. There’s so much to do.”&nbsp;</p>\r\n\r\n<p>Rosa put her hand on my shoulder.</p>\r\n\r\n<p>“Leila, I’m so sorry you are going through this,” she said. “It sounds so hard like you’re carrying the weight of the world on your shoulders. It’s not the same, but I’ve also been in a bad place. And I know how dark it is there...”</p>\r\n\r\n<p>I couldn’t imagine how someone like Rima could ever feel this way.<br />\r\n<br />\r\nBut she had.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 76e579af-7f94-4467-b8d4-fe1eb26aa8fc
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629972316
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 7135c7cb-5882-446b-86d8-cf65b6c05a03
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1631089771
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: ea144ede-7d1b-48bc-a24e-4db799bcc928
+                      alt: Leila_Rima_discussing
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: a1e5378c-bcdd-44d6-942a-1d2a4dc77e17
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629972319
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>“When we had to leave our home, we left everything behind,” she explained.</p>\r\n\r\n<p>“It broke something deep inside of me. I stopped eating and just couldn’t feel happy. Everything was numb for a very long time.”</p>\r\n\r\n<p>“But you’re top of the class,” I said. “You seem so… happy.”<br />\r\n<br />\r\n“Really?” smiled Rima. “Things are better now. But it’s been a long journey. When I saw you today, looking so fragile, I saw myself one year ago. I remember feeling so lonely.”</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 12da02dd-608b-4474-bc2b-528a490136d6
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629972377
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 826b9de6-6d48-48a6-81a1-be0cf2ee1132
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1631089842
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 02e6fded-ca1c-4fb7-80ce-ef79e926f649
+                      alt: Rima_DrMaha
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: efa05316-67dc-4d83-8c2b-79202476b9e0
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629972381
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>“I feel so alone,” I said. “So tired, so numb, all the time… I don’t want to do anything anymore.”<br />\r\n<br />\r\n“Have you thought about seeing a doctor?” asked Rima.</p>\r\n\r\n<p>“How can a doctor help me?” I asked, shaking my head.</p>\r\n\r\n<p>“It’s a process,” said Rima. “It seemed strange at first, but with the doctor’s guidance, I slowly learnt to do things I enjoyed again.”</p>\r\n\r\n<p>But I was feeling so ashamed, how could I let anyone know I’m feeling this way?</p>\r\n"
+                      format: minimal_html

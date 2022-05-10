@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 2e1fa56b-81f7-456d-81bc-46b54b15d06b
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: Thumbnail_Zeina.png
+  uri:
+    -
+      value: 'public://courses/2021-10/Thumbnail_Zeina.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 31551
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1633684461

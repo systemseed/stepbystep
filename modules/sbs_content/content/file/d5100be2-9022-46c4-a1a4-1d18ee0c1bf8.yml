@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: d5100be2-9022-46c4-a1a4-1d18ee0c1bf8
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: 'image 10.png'
+  uri:
+    -
+      value: 'public://2021-10/image 10.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 927034
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1633604757

@@ -1,0 +1,135 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: e3cea2e2-7706-459d-9fe9-098c156fac74
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    4e999844-cbc1-42c5-9573-1f650e4265ea: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Ava and Mary have a message for you'
+  created:
+    -
+      value: 1638267845
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/ava-and-mary-have-message-you-10
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: e6398fed-007b-4fab-91ae-88e1a61291d3
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1638289292
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 0bfcb57a-f6b2-45ca-b069-1cc4ec12dc4f
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1638289298
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 4e999844-cbc1-42c5-9573-1f650e4265ea
+                      alt: Ava_Mary_message
+                      title: ''
+                      width: 3315
+                      height: 2589
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 995877aa-e613-4a53-9896-df6d5bd7406f
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1638289295
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>We still feel down sometimes.</p>\r\n\r\n<p>And we can’t control what life throws at us…</p>\r\n\r\n<p>But we feel good about the techniques we learned.</p>\r\n\r\n<p>We are far from that dark place we were in before we started the programme.</p>\r\n\r\n<p>And we can say from our experience that the only person who can put what you have learnt into practice is you.</p>\r\n\r\n<p>So, do your best.</p>\r\n\r\n<p>And know that your best is always good enough.</p>\r\n\r\n<p><em><strong>Let’s return with Dr Noa, who will show you how to cope with warning signs. </strong></em></p>\r\n"
+                      format: minimal_html

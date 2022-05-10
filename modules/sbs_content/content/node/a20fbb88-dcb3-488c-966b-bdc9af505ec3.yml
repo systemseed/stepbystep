@@ -1,0 +1,390 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: a20fbb88-dcb3-488c-966b-bdc9af505ec3
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    531b06cb-2281-4ee8-8ba7-63bf6b4ce0ee: file
+    a29e5a67-d964-4266-aeaa-9d49d4f0a59c: file
+    d6dc0cc1-0a48-472e-b813-541231ac9c4f: file
+    c9bbef02-b95d-4a80-a326-1fcf17639f65: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Organizations ready to help'
+  created:
+    -
+      value: 1638520463
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/organizations-ready-help
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 727604c1-b965-44ee-bc78-976724caa160
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1638520666
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 835d8017-5e1e-4874-aabe-ecacd9a7405d
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1638520670
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 531b06cb-2281-4ee8-8ba7-63bf6b4ce0ee
+                      alt: Ava_friends
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: b95bb4dd-3d44-4095-b8a1-58a30d84a0cd
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1638520673
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>I was lucky to have friends like Sara and Mona.</p>\r\n\r\n<p>The next time I saw Dr Noa, I told her what had happened, and she asked me if I found it easy to ask for help.</p>\r\n\r\n<p>I shook my head.</p>\r\n\r\n<p>I told her how I worry about my children being affected by me feeling this way.&nbsp; My little boy, Sami, didn’t seem himself sometimes.</p>\r\n\r\n<p>She mentioned that this is common. She reminded me to reach out to friends and that there were organisations that could help me.</p>\r\n\r\n<p><strong><em>Let's hear from Dr Noa who will explain to you how organizations could help you.</em></strong></p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: a837a3d7-441d-4606-8253-a7580ad4c718
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1638520905
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 45a93156-91e9-43cd-81e6-a4bf3ff58204
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1638520932
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: a29e5a67-d964-4266-aeaa-9d49d4f0a59c
+                      alt: DrNoa
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 683738a9-30b4-4e61-beac-eaa36d42fb6e
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1638520934
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>There are helpful organisations ready to support you with a range of problems.</p>\r\n\r\n<p>Remember, it is okay to get help if you need it.</p>\r\n\r\n<p>Like Ava, you might be struggling with difficulties with your children; or you might need help to get organised.</p>\r\n\r\n<p>Other people might be struggling financially, or need different kinds of outside support such as livelihood, trainings, etc…<br />\r\n&nbsp;</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: f5a2b2a3-0887-401f-b5d7-83d90d58e281
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1638521474
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 62128daa-18c4-4471-98bd-3d838239ffc5
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1638521478
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: d6dc0cc1-0a48-472e-b813-541231ac9c4f
+                      alt: DrNoa_explains
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 4b0e78b8-9bfb-4657-8f24-d2af684f91ef
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1638521497
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Your friends can advise you about local organisations.</p>\r\n\r\n<p>You can also take a look at the following list of organizations that you could contact.</p>\r\n\r\n<ul>\r\n\t<li><strong>Add list of local organizations here</strong></li>\r\n</ul>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 3a9776d2-04d7-4d8e-9a6f-3e56c83afd8e
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1638521771
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: abfbe91c-75fd-4444-bbf1-5b8422b685f6
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1638521888
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: c9bbef02-b95d-4a80-a326-1fcf17639f65
+                      alt: DrNoa_Ava
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: a4ad0626-6621-4918-9e07-e1b2d42fd2a4
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1638521790
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Helping others and accepting help from others are important steps in feeling better in your daily life.</p>\r\n\r\n<p>Overcoming challenges is not always easy, but I hope you’re managing well using your new techniques.</p>\r\n\r\n<p>You’ve worked yourself through four sessions now.</p>\r\n\r\n<p>I hope you feel really proud of yourself.</p>\r\n\r\n<p><br />\r\n<em><strong>You have now reached the end of this session. You can continue to the last session or come back to it later.</strong></em></p>\r\n"
+                      format: minimal_html

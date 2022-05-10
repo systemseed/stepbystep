@@ -1,0 +1,135 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: ec12375a-0f60-4e8a-8355-8e3fb694c784
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    71ac8b0e-621e-48bf-9369-d63a71d2eb85: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Dr Noa''s advice'
+  created:
+    -
+      value: 1636626662
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/dr-noas-advice
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 6007f2bf-a389-484a-8448-cf09e976d0ae
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1636626903
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: b3863d93-bebf-48b5-ba69-4632dd4785f6
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636626967
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 71ac8b0e-621e-48bf-9369-d63a71d2eb85
+                      alt: DrNoa
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: f76218ba-b6b7-44e5-bc42-f4d96a86e32c
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636626906
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Ava and Mary were trying to do something big that felt too difficult to do because they were worried about many different things.</p>\r\n\r\n<p>I told them that they could make their life easier by breaking bigger activities into smaller steps.</p>\r\n\r\n<p>I asked Mary: “To go on a small run, what would you have to do to prepare? Why not try to write it down, step by step.”</p>\r\n\r\n<p><strong><em>Let’s see how Mary applied this advice.</em></strong></p>\r\n"
+                      format: minimal_html

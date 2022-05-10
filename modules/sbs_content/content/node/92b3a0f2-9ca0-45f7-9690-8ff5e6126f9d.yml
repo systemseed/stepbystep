@@ -1,0 +1,526 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 92b3a0f2-9ca0-45f7-9690-8ff5e6126f9d
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    b720ff39-446f-4b3a-86a8-eb0ad61b1249: file
+    3ab85ccb-f83d-446c-8d14-e231e4ac86c7: file
+    b6b49a2b-8500-4f1a-b799-99b269181cd8: file
+    5bb40452-e0da-4062-b80d-13d29b3b0565: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Uri shares his story'
+  created:
+    -
+      value: 1629970722
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/uri-shares-his-story
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: ed418d4a-99c3-45f4-9e80-50d42ad940d7
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629971068
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: a2dff27d-2f60-42d9-bf00-181bc4eb78a8
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629971080
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: b720ff39-446f-4b3a-86a8-eb0ad61b1249
+                      alt: to_be_replaced
+                      title: ''
+                      width: 752
+                      height: 370
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: da70bdd3-8d19-4cfb-a326-85c0c1d2d713
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629971124
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>I know so well that feeling of sadness that Kai is talking about...</p>\r\n\r\n<p>Hi, I’m Uri. When I signed up to SBS following the advice of Dr. Sam,&nbsp; I was feeling so lonely.</p>\r\n\r\n<p>We had lost my dad over a year ago… he was so young. Mum fell apart.</p>\r\n\r\n<p>I promised to take care of her and the house. But I didn’t have a job.</p>\r\n\r\n<p>I needed to find one, but all I could feel was the weight of our loss.</p>\r\n\r\n<p>So heavy…I could see no way out.</p>\r\n\r\n<p>&nbsp;</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 4d6e0a8c-56a1-4928-aa71-b610a2a8cf87
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629971238
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: b494f543-a048-4e86-9fb8-97d5438c4edf
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629971614
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 3ab85ccb-f83d-446c-8d14-e231e4ac86c7
+                      alt: to_be_replaced
+                      title: ''
+                      width: 752
+                      height: 370
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 1696d8d8-dbc5-4e18-8c3f-55f13688e0d8
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629971659
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>I felt hopeless.</p>\r\n\r\n<p>In our neighborhood, everyone seemed to have their lives sorted out.<br />\r\n<br />\r\nMy friends had families, jobs, got together on the weekend.</p>\r\n\r\n<p>I envied them.</p>\r\n\r\n<p>It was hard to connect with anyone,&nbsp; so I stopped trying. I didn't feel like hanging out with my friends anymore.<br />\r\n<br />\r\nI didn’t want to talk to anyone.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 0407be9b-ee4c-41b2-a157-dae9563f4e5f
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629971690
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: dbba7942-12a0-42bc-ad00-82da0705aa74
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629971753
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: b6b49a2b-8500-4f1a-b799-99b269181cd8
+                      alt: to_be_replaced
+                      title: ''
+                      width: 752
+                      height: 370
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 9f5e0eeb-9bf7-4960-89ac-dab96510fccd
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629971767
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Then one day, Tam, a friend from childhood, came to visit.</p>\r\n\r\n<p>I felt nervous<em> </em>having him in the house. He spoke a lot with my mother.<br />\r\n<br />\r\n“Uri, can we talk?” Tam said, when I finally came out of my room.</p>\r\n\r\n<p>Tam was like family for me. I couldn’t speak. My eyes teared up.<br />\r\n<br />\r\nI felt so ashamed…</p>\r\n\r\n<p>Men don’t cry like little girls.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 841666d1-78b9-441f-868c-ba9bbcd038d7
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629971930
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: c1adea45-6da7-4b45-9a06-2757c0784efb
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629971934
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 5bb40452-e0da-4062-b80d-13d29b3b0565
+                      alt: to_be_replaced
+                      title: ''
+                      width: 752
+                      height: 370
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 93d29aa2-b49b-474f-a687-1fed80c075dc
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629971953
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>“Let’s take a walk,” he said.</p>\r\n\r\n<p>We walked together for a long while. It could have been hours before I told him what was happening.</p>\r\n\r\n<p><br />\r\n“I feel so tired all the time,” I told Tam. “I’m a mess… but I have to take care of my mother. There’s so much to do.”&nbsp;</p>\r\n\r\n<p>Tam patted me on the shoulder.</p>\r\n\r\n<p>“Uri, I didn’t know you felt this way,” he said. “It sounds really tough. You’ve got a lot of pressure on you right now. It’s not the same, but I’ve also been in a bad place. And I know how dark it is in there...”</p>\r\n\r\n<p>I couldn’t imagine how someone like Tam could ever feel this way.<br />\r\n<br />\r\nBut he had.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: ddeb0384-b947-4aed-996f-c4bf392c607a
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629972316
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 9c86dfbf-2ab3-4782-bbfe-5b5c9fce8c37
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629972319
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>“When I lost my job, I fell apart,” he explained. “I couldn’t get out of bed.\"</p>\r\n\r\n<p>I hated myself and everyone around me. I was so angry… everything felt hard for a long time.”</p>\r\n\r\n<p>“I didn’t know…” I said.<br />\r\n<br />\r\n“How could you know?” said Tam, with a sad smile. “People don’t talk about this stuff… I remember feeling so lonely.”&nbsp;</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 51351ff1-fb98-4d65-9553-883d52f10de3
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629972377
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: a6ce5f2d-83e1-4ce6-9467-3075e0166e09
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629972381
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>“I feel so alone,” I said. “So tired, so numb, all the time… I don’t want to do anything anymore.”<br />\r\n<br />\r\n“Maybe it’s time to see a doctor then?” said Tam.</p>\r\n\r\n<p>“How can a doctor help me?” I asked, shaking my head.</p>\r\n\r\n<p>“It’s a process,” said Tam. “It seemed strange at first, but with the doctor’s guidance, I slowly learnt to do things I enjoyed again.”</p>\r\n\r\n<p>But I was feeling so ashamed, how could I let anyone know I’m feeling this way?</p>\r\n"
+                      format: minimal_html

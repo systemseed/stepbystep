@@ -1,0 +1,402 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 12099acc-0b40-4ca6-b71b-fd5eaf52eba5
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    392652f4-7581-4135-8b4d-c6eb5988cca0: file
+    e38358ad-4530-477d-b3f4-7fdd378f1a8c: file
+    293b1d6e-778f-4c46-867f-e3f4a85ce00f: file
+    d90b7dce-e7ef-4410-8c0c-7b0144b3b6ac: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Ava tries bigger activities'
+  created:
+    -
+      value: 1636468012
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/ava-tries-bigger-activities
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: ec832284-043f-4eb4-a807-3ae881103f41
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1636468012
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 81c32f06-1f5a-47a8-9149-5b7fbba3a65d
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636468089
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 392652f4-7581-4135-8b4d-c6eb5988cca0
+                      alt: Ava_worried
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 5ddbb560-efd3-4200-8123-52c4b62b7b7b
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636468012
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p><strong><em>Let’s first hear from Ava and how she dealt with this challenge.</em></strong></p>\r\n\r\n<p>I had to force myself to keep doing small activities.</p>\r\n\r\n<p>It felt tough, but it was helping me feel less sad. I started seeing that when I did something, I felt a little bit better, less stressed or a bit lighter.</p>\r\n\r\n<p>But I knew I had to also take bigger steps.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 45c8d5dc-b887-40e0-b050-fe3ab44e57f3
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1636468112
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: bc073e1f-3a5b-4fca-89e9-2c75b2547aa2
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636468218
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: e38358ad-4530-477d-b3f4-7fdd378f1a8c
+                      alt: Ava_family
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: fd420961-5f11-4745-9734-6ac674f3d625
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636468221
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Walking was ok, but I missed doing things with my family.</p>\r\n\r\n<p>Sami was 6 and Ada was 4… they loved walking with me.</p>\r\n\r\n<p>Sunday was my husband’s day off, so we would always be together as a family on that day.</p>\r\n\r\n<p>I loved the cool breeze by the sea, laughing with my children, going for a picnic.</p>\r\n\r\n<p>Those days seemed like a lifetime ago.</p>\r\n\r\n<p>When I told Dr Noa this, she said:</p>\r\n\r\n<p>\"Aiming to do bigger activities like spending time with your children will boost your confidence and may help you feel better, Ava.\"</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: db2a48eb-c935-4901-8fd2-3aa3e859d1f4
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1636468398
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 9bb02268-5fc0-432d-a1f1-ecf6ac0fce27
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636468416
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 293b1d6e-778f-4c46-867f-e3f4a85ce00f
+                      alt: Ava_husband
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: ad67aaaa-1a3a-4003-9aef-72d66bd5e474
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636468401
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>So, I suggested the idea to my husband.</p>\r\n\r\n<p>“If you think it will help” he said. “Just don’t let the children down, ok?”<br />\r\n<br />\r\n“I won’t…” I promised. I felt ashamed my husband would think this of me.</p>\r\n\r\n<p>But when Sunday came, doubts raced around my mind.</p>\r\n\r\n<p>I felt so tired.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: caee7ba3-d005-4583-ba89-a0479b79a7ac
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1636468640
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: c42f2f27-d574-40f4-96b1-2e8aea92c6bf
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636468643
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: d90b7dce-e7ef-4410-8c0c-7b0144b3b6ac
+                      alt: Ava_crying
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 068b47eb-13fe-40ff-bc28-85a4f1affa65
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636468657
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>The thought of a trip exhausted me. There was too much to prepare – the food, the children, the journey.<br />\r\n<br />\r\nMy heart was pounding. How could I go out in the traffic? There would be people, cars, talking…</p>\r\n\r\n<p>“I can’t do it,” I broke down, shaking my head. I knew my husband would hate me.</p>\r\n\r\n<p><strong><em>This was Ava’s first experience with trying bigger activities. Let’s hear now from Mary and see how it went for her.</em></strong></p>\r\n"
+                      format: minimal_html

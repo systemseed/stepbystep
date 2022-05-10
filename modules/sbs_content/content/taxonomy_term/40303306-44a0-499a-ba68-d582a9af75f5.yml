@@ -1,0 +1,49 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 40303306-44a0-499a-ba68-d582a9af75f5
+  bundle: course_category
+  default_langcode: en
+  depends:
+    0c90140c-1165-4a38-b8f8-4068814d5ed1: file
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: 'Women like you'
+  weight:
+    -
+      value: 1
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  content_translation_uid:
+    -
+      target_id: 1
+  field_enable_course_sequence:
+    -
+      value: true
+  field_is_storyline:
+    -
+      value: true
+  field_storyline_description:
+    -
+      value: 'Dr Noa, Ava and Mary accompany you through your journey towards getting better. '
+  field_storyline_image:
+    -
+      entity: 0c90140c-1165-4a38-b8f8-4068814d5ed1
+      alt: DrNoa
+      title: ''
+      width: 600
+      height: 720

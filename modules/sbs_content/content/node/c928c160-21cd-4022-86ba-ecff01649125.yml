@@ -1,0 +1,326 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: c928c160-21cd-4022-86ba-ecff01649125
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    5797ae93-a8f9-4822-acf7-96b7260227a1: file
+    1b008a4b-5103-47a6-825f-14f052e0cf56: file
+    8a6468c0-c52c-441c-931b-4c6cdf846903: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'How to reduce stress_clone'
+  created:
+    -
+      value: 1629977963
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/how-reduce-stressclone
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 2a2f996f-ae29-4458-972b-5f6534b9c842
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629978421
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 1830fd2d-3dc5-429c-8b5a-028bb148ae91
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629978423
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 5797ae93-a8f9-4822-acf7-96b7260227a1
+                      alt: DrNoa_talking
+                      title: ''
+                      width: 1159
+                      height: 771
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: b9237341-48a0-46ca-8c6a-87fbae3d4497
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629978438
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>It may seem hard to believe, but remembering things we are grateful for, no matter how small, can help reduce stress, especially when practiced over time.</p>\r\n\r\n<p>In the Toolbox you will find the Gratitude List.</p>\r\n\r\n<p>To use this technique, take a few minutes to think of 3 things you are grateful for.</p>\r\n\r\n<p>This can be anything big or small.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 72ffc3af-bace-4518-a9ae-5b293d05c111
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629978670
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: a0230074-c957-4457-aa33-825f4e6820d2
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629978681
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 1b008a4b-5103-47a6-825f-14f052e0cf56
+                      alt: Mary_Rosa_walking
+                      title: ''
+                      width: 1407
+                      height: 936
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: d0b32030-d816-4e7c-9bbd-d0aa9546f984
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629978714
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>For example, a person who was kind to you, something you did for yourself, something you did for others, something you learnt, or someone you are grateful to have in your life.</p>\r\n\r\n<p>For Mary, it was Rosa who helped her reach out for support, for Ava it was her kids who gave meaning in her life…</p>\r\n\r\n<p>It can be any small everyday thing or anything you particularly appreciate in your current life.</p>\r\n\r\n<p>In the <strong>Gratitude List</strong> you can either write, record or take a photo of things you feel grateful for.</p>\r\n\r\n<p>You can then look at this list whenever you need to and be reminded of the things you are grateful for in your life.</p>\r\n\r\n<p>Let’s try!</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: c3f2640c-b570-4d92-ad9d-3789153b341f
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629978877
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 90ff0cc3-7125-4510-9e62-2ecdc4a85ecc
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629978899
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 8a6468c0-c52c-441c-931b-4c6cdf846903
+                      alt: DrNoa_applauding
+                      title: ''
+                      width: 1159
+                      height: 771
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 3c5bf34e-81ec-4f5f-b38c-58d10668cbc3
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629978915
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Congratulations on creating your personal Gratitude List!</p>\r\n\r\n<p>&nbsp;I hope this technique helps you remember the positive things in your life.</p>\r\n\r\n<p>You can add things to your list whenever you like by coming back to this list in your Toolbox.</p>\r\n\r\n<p>We have now reached the end of Part 2 of Session 1.</p>\r\n\r\n<p>You can now start the last part of Session 1, or come back another time.</p>\r\n"
+                      format: minimal_html

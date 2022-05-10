@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: b424adb2-5bdb-49a6-8eb4-4673138f49be
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: 'optional image_8.png'
+  uri:
+    -
+      value: 'public://2021-09/optional image_8.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 3301
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1631602473

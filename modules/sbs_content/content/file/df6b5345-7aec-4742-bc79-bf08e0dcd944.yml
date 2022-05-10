@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: df6b5345-7aec-4742-bc79-bf08e0dcd944
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: sample3.mp3
+  uri:
+    -
+      value: 'public://audio/2022-03/sample3.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 1693405
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1648295553

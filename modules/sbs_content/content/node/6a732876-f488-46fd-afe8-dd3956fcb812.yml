@@ -1,0 +1,129 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 6a732876-f488-46fd-afe8-dd3956fcb812
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    2ca8f539-aa5d-4d64-bd03-637d5ba0d65d: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Ava and Mary have a message for you'
+  created:
+    -
+      value: 1637659622
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/ava-and-mary-have-message-you-9
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 55b38139-c47f-49b2-a74d-2b8c1fa662a6
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637740047
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 39a9e2da-75a1-4bcd-9b06-61909b7edce7
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637740049
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 2ca8f539-aa5d-4d64-bd03-637d5ba0d65d
+                      alt: Ava_Mary_message
+                      title: ''
+                      width: 3315
+                      height: 2589
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 53f69a35-a66c-4570-9bf7-a7e237bafabf
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637740052
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Asking for help is an important step towards taking better care of yourself.</p>\r\n\r\n<p>You can’t do everything all the time.</p>\r\n\r\n<p>If, like us, you don’t want to bother others with their problems, ask yourself:</p>\r\n\r\n<p><em>If you knew someone you care about was struggling, wouldn’t you want to help them?</em></p>\r\n\r\n<p>They probably feel the same way about you.</p>\r\n\r\n<p>Supporting each other is so important.</p>\r\n\r\n<p><strong><em>Let’s return with Dr Noa, who has another essential piece of advice to share with you.</em></strong></p>\r\n"
+                      format: minimal_html

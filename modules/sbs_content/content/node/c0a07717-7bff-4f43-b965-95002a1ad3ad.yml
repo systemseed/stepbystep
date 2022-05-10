@@ -1,0 +1,822 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: c0a07717-7bff-4f43-b965-95002a1ad3ad
+  bundle: webform
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Getting to know you'
+  created:
+    -
+      value: 1635863015
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /questionnaire/getting-know-you
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  questionnaire_score_levels:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 4f4ddcc9-1580-4112-aa27-fcb097d87a80
+          bundle: webform_content_score_level
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1635863837
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          webform_content_body:
+            -
+              value: '<p>However, you''ll find the activities in this app useful for maintaining a healthy mind.</p><p>Tap the button below to start your Step-by-Step journey.</p>'
+              format: minimal_html
+          webform_content_icon:
+            -
+              value: check_circle
+          webform_content_score_range:
+            -
+              from: 0
+              to: 30
+          webform_content_text:
+            -
+              value: 'The answers indicate you are doing okay'
+          webform_content_title:
+            -
+              value: 'Not depressed'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 365eb982-ff7b-462a-9650-d7b4d2ab1366
+          bundle: webform_content_score_level
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1635863837
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          webform_content_body:
+            -
+              value: '<p>The answers you''ve given indicate that this is going to be a great help for you.</p><p> Tap the button below to start your Step-by-Step journey.</p>'
+              format: minimal_html
+          webform_content_icon:
+            -
+              value: check_circle
+          webform_content_score_range:
+            -
+              from: 31
+              to: 60
+          webform_content_text:
+            -
+              value: 'We are here to help you feel better'
+          webform_content_title:
+            -
+              value: Depressed
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 308487e7-7b43-45ed-822e-5a743d685c56
+          bundle: webform_content_score_level
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1635863837
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          webform_content_body:
+            -
+              value: '<p>From what you have described in this questionnaire, we think you may be at risk and need some extra support. This is completely normal and there are many people in this position.</p><p> It is very important that you get yourself some help for these problems as soon as possible before continuing with this app.</p>'
+              format: minimal_html
+          webform_content_icon:
+            -
+              value: error
+          webform_content_score_range:
+            -
+              from: 61
+              to: 1000
+          webform_content_text:
+            -
+              value: 'You''re at risk of harm'
+          webform_content_title:
+            -
+              value: 'At risk'
+  webform:
+    -
+      target_id: webform_content_wupradropusibi
+      default_data: ''
+      status: ''
+      open: ''
+      close: ''
+  webform_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: c769b588-77d0-4191-8edd-232af1674997
+          bundle: webform_content_display_text
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1635863429
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          webform_content_body:
+            -
+              value: "<h2>Let's begin</h2>\r\n\r\n<p>We are first going to ask you some background questions to get to know you better.</p>\r\n"
+              format: simple_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: e939f912-8045-4bea-a1c4-41200d87f817
+          bundle: webform_content_page_separator
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1635863881
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 5694b41f-e310-4306-8dc8-3026fd6363be
+          bundle: webform_content_single_choice
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1635863889
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          webform_content_choices:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 4d3773d6-047d-4e54-9bf8-461a3981f4fa
+                  bundle: webform_content_choice_item
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1635863889
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  webform_content_text:
+                    -
+                      value: Male
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 1792b5c1-37d8-48e7-9a5b-223ab02a6244
+                  bundle: webform_content_choice_item
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1635863913
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  webform_content_text:
+                    -
+                      value: 'Female '
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 21f19f1e-af34-4bc6-80a3-99d491038cf2
+                  bundle: webform_content_choice_item
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1635863917
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  webform_content_text:
+                    -
+                      value: Other
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 98dd1054-d047-42ba-b169-76951e7095b6
+                  bundle: webform_content_choice_item
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1635863928
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  webform_content_text:
+                    -
+                      value: 'Prefer not to say'
+          webform_content_title:
+            -
+              value: 'What’s your gender?'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 9156ce84-0c65-4c8b-9f13-578d89415f50
+          bundle: webform_content_page_separator
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1635863936
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: f56ad5cd-edbe-4543-b203-1b577bb7452a
+          bundle: webform_content_number
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637661408
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          webform_content_error:
+            -
+              value: 'Thanks for your interest, but Step-by-Step isn''t suitable for you'
+          webform_content_max:
+            -
+              value: 100
+          webform_content_min:
+            -
+              value: 18
+          webform_content_required:
+            -
+              value: true
+          webform_content_title:
+            -
+              value: 'Please specify your age'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: a8e85b8b-1801-4b2e-9dde-8a1f97a48ab8
+          bundle: webform_content_page_separator
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1635864987
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 57cb7af6-177e-4b3c-8c4b-24dcc204bd17
+          bundle: webform_content_options_predef
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1635864993
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          webform_content_option_set:
+            -
+              target_id: country_names
+          webform_content_required:
+            -
+              value: false
+          webform_content_title:
+            -
+              value: 'Select the country you live in '
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 523d0ef2-5c28-4fa8-954c-428460dc517e
+          bundle: webform_content_page_separator
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1635865038
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: ae635eea-f6eb-4996-bf4a-8d66cc72e3bc
+          bundle: webform_content_single_choice
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1635865049
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          webform_content_choices:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 439559ee-a43b-4401-979e-03b9930b178c
+                  bundle: webform_content_choice_item
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1635865049
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  webform_content_text:
+                    -
+                      value: 'No education'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 132fd90b-0b78-4333-8fa1-c9762bc86f8e
+                  bundle: webform_content_choice_item
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1635865064
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  webform_content_text:
+                    -
+                      value: 'Primary School (age 3-6)'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 566016ea-267c-430c-9ec2-0fee03eb6317
+                  bundle: webform_content_choice_item
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1635865071
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  webform_content_text:
+                    -
+                      value: 'Elementary Education (age 6-15)'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: c071d889-810d-4c6e-861f-7cc77eda1ad1
+                  bundle: webform_content_choice_item
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1635865078
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  webform_content_text:
+                    -
+                      value: 'Secondary Education (age 15-18)'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 8cce8ca5-316b-4ad3-8079-b133f1f40f51
+                  bundle: webform_content_choice_item
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1635865085
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  webform_content_text:
+                    -
+                      value: 'Undergraduate or BSc degree (age 18+)'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 15291924-4531-48c5-9533-08092ba9b136
+                  bundle: webform_content_choice_item
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1635865097
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  webform_content_text:
+                    -
+                      value: 'Graduate or MSc degree'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 1a7d4351-b081-4c4c-b73b-d8161e5713d5
+                  bundle: webform_content_choice_item
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1635865104
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  webform_content_text:
+                    -
+                      value: 'Higher university degree (PhD)'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: fab2d244-414d-4466-8e59-dcf351d16f0a
+                  bundle: webform_content_choice_item
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1635865112
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  webform_content_text:
+                    -
+                      value: 'Technical secondary education (age 18+)'
+          webform_content_title:
+            -
+              value: 'What is the highest level of education you started?'

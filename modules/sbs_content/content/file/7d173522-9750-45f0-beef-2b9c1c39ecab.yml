@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 7d173522-9750-45f0-beef-2b9c1c39ecab
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: S1.30.png
+  uri:
+    -
+      value: 'public://2021-10/S1.30.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 42456
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1633677304

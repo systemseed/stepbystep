@@ -1,0 +1,64 @@
+<?php
+
+/**
+ * @file
+ * Functions for SBS content module.
+ */
+
+/**
+ * Reasigns corresponding content entities to superadmin user.
+ */
+function _reasign_default_content_to_admin() {
+  $info_file = \Drupal::service('extension.path.resolver')->getPath('module', 'sbs_content') . '/sbs_content.info.yml';
+  $info = \Drupal::service('info_parser')->parse($info_file);
+
+  if (empty($info['default_content'])) {
+    return;
+  }
+
+  $reassing_entity_types = ['node', 'taxonomy_term', 'file'];
+  $entity_repository = \Drupal::service('entity.repository');
+  foreach ($reassing_entity_types as $entity_type) {
+    if (empty($info['default_content'][$entity_type])) {
+      continue;
+    }
+
+    foreach ($info['default_content'][$entity_type] as $uuid) {
+      $uid_changed = FALSE;
+      $entity = $entity_repository->loadEntityByUuid($entity_type, $uuid);
+      if (empty($entity)) {
+        continue;
+      }
+
+      switch ($entity_type) {
+        case 'node':
+          $entity->uid = 1;
+          $entity->revision_uid = 1;
+          $existing_translation = $entity_repository->getTranslationFromContext($entity, 'ar');
+          if ($existing_translation->langcode->value === 'ar') {
+            $entity_translation = $entity->getTranslation('ar');
+            $entity_translation->uid = 1;
+          }
+          $uid_changed = TRUE;
+          break;
+
+        case 'taxonomy_term':
+          if (!empty($entity->content_translation_uid)) {
+            $entity->content_translation_uid = 1;
+            $uid_changed = TRUE;
+          }
+          break;
+
+        case 'file':
+          $entity->uid = 1;
+          $uid_changed = TRUE;
+          break;
+      }
+
+      if ($uid_changed) {
+        $entity->save();
+        \Drupal::logger('sbs_content')->notice('UID for ' . $entity_type . ' entity with id ' . $entity->id() . ' has been changed to 1.');
+      }
+    }
+  }
+}

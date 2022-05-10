@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 98d25c78-7016-45a6-a284-2c6e2e90883e
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: Techniques.JPG
+  uri:
+    -
+      value: 'public://2021-10/Techniques.JPG'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 23243
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1634807787

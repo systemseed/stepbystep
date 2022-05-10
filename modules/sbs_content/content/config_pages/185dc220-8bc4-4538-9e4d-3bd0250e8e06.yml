@@ -1,0 +1,22 @@
+_meta:
+  version: '1.0'
+  entity_type: config_pages
+  uuid: 185dc220-8bc4-4538-9e4d-3bd0250e8e06
+  bundle: sbs_questionnaires_first_welcome
+default:
+  label:
+    -
+      value: 'Questionnaires First Welcome Page'
+  context:
+    -
+      value: 'a:1:{i:0;a:1:{s:8:"language";s:2:"en";}}'
+  field_welcome_button:
+    -
+      value: Next
+  field_welcome_header:
+    -
+      value: 'Thanks for joining,  it''s great to have you here.'
+  field_welcome_text:
+    -
+      value: "<p>We have prepared some questions to better understand how Step-by-Step can help you. Duration: 2 minutes</p>\r\n"
+      format: minimal_html

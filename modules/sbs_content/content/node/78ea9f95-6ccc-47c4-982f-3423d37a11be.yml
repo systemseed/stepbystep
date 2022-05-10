@@ -1,0 +1,220 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 78ea9f95-6ccc-47c4-982f-3423d37a11be
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    94266b25-b494-4ab8-9c27-7a4b3e63d099: file
+    922fc76f-0a3c-4ba2-8d55-460bd1f2d278: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Ava''s experience with small activities'
+  created:
+    -
+      value: 1636362834
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/avas-experience-small-activities
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: dcc19fe6-068b-4126-9e58-a37653a0e678
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1636363363
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: c5a01a30-d40b-4b72-8d60-1b17ab6a3f91
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636363367
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 94266b25-b494-4ab8-9c27-7a4b3e63d099
+                      alt: Ava_sofa_worried
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: bed14ede-ae35-486d-bdd6-4b7ee080ee7e
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636363386
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>I kept doing what Dr Noa told me.</p>\r\n\r\n<p>I made my eating and sleeping habits regular, did the stress management exercises regularly, and planned a small pleasant activity every day.&nbsp;</p>\r\n\r\n<p>But it was not easy at all.</p>\r\n\r\n<p>I was tired of trying to make myself feel better.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 26e27f37-22c5-434e-ac4c-d1daae42778e
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1636363441
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: e7993e1e-aede-4617-a142-a4ce6804beb1
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636363445
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 922fc76f-0a3c-4ba2-8d55-460bd1f2d278
+                      alt: Ava_breathing
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: f8d9be73-78ab-478c-a7df-ffa9b524adc2
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636363474
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>I felt like I was “bad” at the breathing technique. I just couldn’t relax.<br />\r\n<br />\r\nI tried the grounding technique too.</p>\r\n\r\n<p>Yes, it relieved the pain in my neck for a few minutes…</p>\r\n\r\n<p>But it never lasted very long. I just couldn’t get into a routine.</p>\r\n\r\n<p>When I told Dr Noa this, she said it was normal.</p>\r\n\r\n<p><strong><em>Now let’s hear from Mary and her experience with the Small Activities exercise.</em></strong></p>\r\n"
+                      format: minimal_html

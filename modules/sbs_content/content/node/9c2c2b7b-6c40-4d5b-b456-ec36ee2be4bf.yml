@@ -1,0 +1,197 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 9c2c2b7b-6c40-4d5b-b456-ec36ee2be4bf
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    71af039b-ab18-4762-885a-51f56421785b: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Uri''s experience with SBS'
+  created:
+    -
+      value: 1629979079
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/uris-experience-sbs
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: d8d4fdac-9598-46a7-8d8f-cc30f6c6ce5c
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629979882
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 83c4162b-6ab7-4e8a-a6c2-1781b9856f5e
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629979886
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 71af039b-ab18-4762-885a-51f56421785b
+                      alt: to_be_replaced
+                      title: ''
+                      width: 752
+                      height: 370
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 4862cbd2-0f85-4337-8ab6-462bde669d0c
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629979899
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Same here! In the beginning, it was hard for me too to keep the motivation up and try the activities Dr Sam recommended to me. I couldn’t really see how breathing exercises were going to solve my problems but I kept doing them.</p>\r\n\r\n<p>Then one day I met Tam in the street.</p>\r\n\r\n<p>“Are you feeling any better?” Tam asked me. He knew I had been to see Dr Sam. I felt negative.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 14cbe8ac-ebe3-4f5a-aea3-b72ce0856562
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629980310
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 56b279e2-e2a7-4652-b9ab-208453a396d0
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629980313
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>“I can’t really see how breathing exercises are going to solve my problems,” I said.</p>\r\n\r\n<p>“They won’t,” said Tam. “But I remember when I began slow breathing, relieving my stress for a moment helped me to start doing small things again. Going outside, seeing people…&nbsp;football on weekends!\"</p>\r\n\r\n<p>I tried to smile.&nbsp;</p>\r\n\r\n<p>“You see?” said Tam. “The small things… like feeling like you can smile again.\"</p>\r\n\r\n<p>I nodded, but inside my stomach twisted with doubt.<br />\r\n<br />\r\nTo me even those small things seemed huge.</p>\r\n"
+                      format: minimal_html

@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 48a09615-f8ff-4b8e-b510-949208cdb2e4
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: S3.21.png
+  uri:
+    -
+      value: 'public://2021-11/S3.21.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 31748
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1637141162

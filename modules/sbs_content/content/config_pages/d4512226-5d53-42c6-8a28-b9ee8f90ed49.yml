@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: config_pages
+  uuid: d4512226-5d53-42c6-8a28-b9ee8f90ed49
+  bundle: homepage
+default:
+  label:
+    -
+      value: 'Welcome Page'
+  context:
+    -
+      value: 'a:0:{}'
+  field_login_buttons:
+    -
+      uri: 'internal:/user/login/mobile'
+      title: Phone
+      options: {  }
+    -
+      uri: 'internal:/user/login'
+      title: Email
+      options: {  }
+  field_login_description:
+    -
+      value: 'Select how you want to log in:'
+  field_login_title:
+    -
+      value: 'Log in'
+  field_sign_up_button:
+    -
+      uri: 'internal:/user/registration-consent'
+      title: 'Sign up'
+      options: {  }
+  field_welcome_page_description:
+    -
+      value: 'An evidence based support program for people with depression and stress'
+  field_welcome_page_headline:
+    -
+      value: "Welcome to\r\nStep-by-Step"

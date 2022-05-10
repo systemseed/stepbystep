@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 3de4b1dc-f289-47ba-b16a-e4d25de8f38b
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: 'Captura de pantalla 2022-01-26 a las 17.40.48.png'
+  uri:
+    -
+      value: 'public://courses/2022-01/Captura de pantalla 2022-01-26 a las 17.40.48.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 129681
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1643215300

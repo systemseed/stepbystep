@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 5567d8d5-2332-42d0-b2d3-6abf29db2af8
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: IMage21.png
+  uri:
+    -
+      value: 'public://2021-08/IMage21.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 5793
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1629981482

@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: da1ed521-b84d-4ef2-b3d4-d6889d9768a7
+  bundle: menu_link_content
+  default_langcode: en
+  depends:
+    a0ff7029-4d68-424c-a252-ad5e689fa551: node
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: Sessions
+  menu_name:
+    -
+      value: main
+  link:
+    -
+      target_uuid: a0ff7029-4d68-424c-a252-ad5e689fa551
+      title: ''
+      options: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: false
+  weight:
+    -
+      value: 0
+  expanded:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true

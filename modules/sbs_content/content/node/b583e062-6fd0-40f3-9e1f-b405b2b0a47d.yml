@@ -1,0 +1,129 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: b583e062-6fd0-40f3-9e1f-b405b2b0a47d
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    9f028267-fce6-487b-960c-49ba9df8830d: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Dr Noa congratulates you'
+  created:
+    -
+      value: 1638268034
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/dr-noa-congratulates-you
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 6a4953f0-205e-4f19-93e0-8ff59cd09de3
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1638290521
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: f9d66dcc-21cb-4281-80c4-a9a9e9531135
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1638290524
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 9f028267-fce6-487b-960c-49ba9df8830d
+                      alt: DrNoa
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 1e7b5dc2-2cfa-4746-8d5e-a1b9e42a24de
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1638290568
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Congratulations on reaching the end of Step-by-Step!</p>\r\n\r\n<p>Please take a moment to realize what you have achieved over the past few weeks.</p>\r\n\r\n<p>You have invested in improving your situation with courage and determination.</p>\r\n\r\n<p>We hope you feel really proud of yourself.</p>\r\n\r\n<p>Try to keep these techniques a part of your daily life, and notice when you’re feeling better.</p>\r\n"
+                      format: minimal_html

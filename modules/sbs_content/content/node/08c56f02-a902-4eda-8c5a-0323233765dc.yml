@@ -1,0 +1,220 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 08c56f02-a902-4eda-8c5a-0323233765dc
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    f2e97253-9376-4a9e-b3d9-5a93d3b262e2: file
+    720be918-102a-4bf5-9d76-7cb3cc974f73: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Ava''s struggle with negative feelings'
+  created:
+    -
+      value: 1636376587
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/avas-struggle-negative-feelings
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: cc2cc6f3-38a3-4570-803e-815a7a915f3f
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1636445433
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: c86c9c7d-0654-43de-ba1c-08cd4f04c149
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636445437
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: f2e97253-9376-4a9e-b3d9-5a93d3b262e2
+                      alt: Ava_helpless
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 62c3c01c-e504-40a9-a4d2-0e626a8c0d5f
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636445440
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>It had been so long since I did things I enjoyed.<br />\r\n<br />\r\nI couldn’t even remember what they were.</p>\r\n\r\n<p>My time was taken up taking care of my children and looking after my dad. I had no energy left.</p>\r\n\r\n<p><br />\r\nEverything was such an effort… people tired me out. I didn’t want to be around their happiness.</p>\r\n\r\n<p><br />\r\nI hated myself for feeling this way.</p>\r\n\r\n<p>I felt that people were thinking:<br />\r\n<br />\r\n<em>She’s a loser.</em><br />\r\n<br />\r\nThey were right. I didn’t have the energy to be anything else.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 056f633c-afc4-47d2-a860-1d046de4443a
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1636445619
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: c44714fc-97e2-4695-a65d-be941bfe3dc9
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636445622
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 720be918-102a-4bf5-9d76-7cb3cc974f73
+                      alt: Ava_husband_desperate
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: ab368fd8-6d48-4bf0-bbdb-ecd0187dabbc
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636445626
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>“What is <em>wrong</em> with you, Ava?” my husband, Tom, yelled at me one night.&nbsp;</p>\r\n\r\n<p>“Don’t you think I’m tired of this? Just pull yourself together!”</p>\r\n\r\n<p>“Leave me alone!” I would snap back.</p>\r\n\r\n<p>“Ava, we cannot go on like this. Something has to change”, he said.</p>\r\n\r\n<p>Knowing my husband was frustrated made me feel ashamed.<br />\r\n<br />\r\n<em>Why can’t I be stronger?</em> I asked myself.</p>\r\n\r\n<p><em><strong>This is how Ava felt. Now, let’s hear from Mary how this was for her.</strong></em></p>\r\n"
+                      format: minimal_html

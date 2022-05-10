@@ -1,0 +1,103 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: ab5edbf9-dcbd-49e6-b77f-cefa3a636f9b
+  bundle: activity_checklist
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Kind to yourself'
+  created:
+    -
+      value: 1637080935
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /activity/kind-yourself
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_description:
+    -
+      value: 'Add kind words to yourself to this list.'
+  field_icon:
+    -
+      value: favorite_border
+  field_suggestions:
+    -
+      value: 'It’s okay to feel like this, many people do.'
+    -
+      value: 'I am really helping myself by taking these steps.'
+    -
+      value: 'These activities are hard, but they will get easier.'
+    -
+      value: 'I am trying my best, and that’s okay.'
+translations:
+  ar:
+    status:
+      -
+        value: true
+    uid:
+      -
+        target_id: 1
+    title:
+      -
+        value: 'Kind to yourself'
+    created:
+      -
+        value: 1643205345
+    promote:
+      -
+        value: false
+    sticky:
+      -
+        value: false
+    revision_translation_affected:
+      -
+        value: true
+    path:
+      -
+        alias: /activity/kind-yourself
+        langcode: ar
+        pathauto: 1
+    content_translation_source:
+      -
+        value: en
+    content_translation_outdated:
+      -
+        value: false
+    field_description:
+      -
+        value: 'Add kind words to yourself to this list.'
+    field_suggestions:
+      -
+        value: 'It’s okay to feel like this, many people do.'
+      -
+        value: 'I am really helping myself by taking these steps.'
+      -
+        value: 'These activities are hard, but they will get easier.'
+      -
+        value: 'I am trying my best, and that’s okay.'

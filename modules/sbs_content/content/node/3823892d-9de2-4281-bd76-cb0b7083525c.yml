@@ -1,0 +1,111 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 3823892d-9de2-4281-bd76-cb0b7083525c
+  bundle: activity_checklist
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Challenging Activities'
+  created:
+    -
+      value: 1636561624
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /activity/challenging-activities
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_description:
+    -
+      value: 'Plan challenging activities in smaller steps.'
+  field_icon:
+    -
+      value: extension
+  field_suggestions:
+    -
+      value: 'Have friends over for dinner'
+    -
+      value: 'Step 1: identify friends I''m most comfortable with; '
+    -
+      value: 'Step 2: find a date and invite friends; '
+    -
+      value: 'Step 3: decide menu and get groceries; '
+    -
+      value: 'Step 4: make dinner; '
+    -
+      value: 'Step 5: get dressed and ready.'
+translations:
+  ar:
+    status:
+      -
+        value: true
+    uid:
+      -
+        target_id: 1
+    title:
+      -
+        value: 'Challenging Activities'
+    created:
+      -
+        value: 1643205351
+    promote:
+      -
+        value: false
+    sticky:
+      -
+        value: false
+    revision_translation_affected:
+      -
+        value: true
+    path:
+      -
+        alias: /activity/challenging-activities
+        langcode: ar
+        pathauto: 1
+    content_translation_source:
+      -
+        value: en
+    content_translation_outdated:
+      -
+        value: false
+    field_description:
+      -
+        value: 'Plan challenging activities in smaller steps.'
+    field_suggestions:
+      -
+        value: 'Have friends over for dinner'
+      -
+        value: 'Step 1: identify friends I''m most comfortable with; '
+      -
+        value: 'Step 2: find a date and invite friends; '
+      -
+        value: 'Step 3: decide menu and get groceries; '
+      -
+        value: 'Step 4: make dinner; '
+      -
+        value: 'Step 5: get dressed and ready.'

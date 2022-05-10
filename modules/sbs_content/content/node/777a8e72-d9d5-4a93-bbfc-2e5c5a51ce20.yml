@@ -1,0 +1,103 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 777a8e72-d9d5-4a93-bbfc-2e5c5a51ce20
+  bundle: activity_checklist
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Warning Signs'
+  created:
+    -
+      value: 1637138263
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /activity/warning-signs
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_description:
+    -
+      value: 'Create a list of warning signs.'
+  field_icon:
+    -
+      value: warning_amber
+  field_suggestions:
+    -
+      value: 'Having negative thoughts'
+    -
+      value: 'Feeling exhausted'
+    -
+      value: 'Feeling tense'
+    -
+      value: 'Withdrawing from my friends'
+translations:
+  ar:
+    status:
+      -
+        value: true
+    uid:
+      -
+        target_id: 1
+    title:
+      -
+        value: 'Warning Signs'
+    created:
+      -
+        value: 1643205337
+    promote:
+      -
+        value: false
+    sticky:
+      -
+        value: false
+    revision_translation_affected:
+      -
+        value: true
+    path:
+      -
+        alias: /activity/warning-signs
+        langcode: ar
+        pathauto: 1
+    content_translation_source:
+      -
+        value: en
+    content_translation_outdated:
+      -
+        value: false
+    field_description:
+      -
+        value: 'Create a list of warning signs.'
+    field_suggestions:
+      -
+        value: 'Having negative thoughts'
+      -
+        value: 'Feeling exhausted'
+      -
+        value: 'Feeling tense'
+      -
+        value: 'Withdrawing from my friends'

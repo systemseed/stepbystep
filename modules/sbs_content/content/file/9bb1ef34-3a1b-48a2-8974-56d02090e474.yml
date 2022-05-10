@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 9bb1ef34-3a1b-48a2-8974-56d02090e474
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: SBS-08_1.png
+  uri:
+    -
+      value: 'public://courses/2021-09/SBS-08_1.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 51768
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1630663836

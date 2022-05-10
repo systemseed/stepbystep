@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 954f77fd-a722-4a3f-9032-0df169280ecf
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: 'IMage 2_0.png'
+  uri:
+    -
+      value: 'public://2021-08/IMage 2_0.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 5673
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1630049275

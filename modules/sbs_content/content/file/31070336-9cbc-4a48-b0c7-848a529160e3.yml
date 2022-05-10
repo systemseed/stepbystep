@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 31070336-9cbc-4a48-b0c7-848a529160e3
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: S1.27.png
+  uri:
+    -
+      value: 'public://2021-10/S1.27.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 76407
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1633606669

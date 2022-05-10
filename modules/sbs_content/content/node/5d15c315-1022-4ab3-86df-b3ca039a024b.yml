@@ -1,0 +1,366 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 5d15c315-1022-4ab3-86df-b3ca039a024b
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    e549d9de-161a-4ab9-8164-560abdbd8135: file
+    94836ce7-d78e-4086-b7fe-f799f8005315: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: ' How does it work?'
+  created:
+    -
+      value: 1634735511
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/how-does-it-work
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: b1883adb-4f85-4317-bcdf-a6a4fa2cab49
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1634736149
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 6002e76d-6b2b-414c-8606-08193da1468c
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1634736154
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: e549d9de-161a-4ab9-8164-560abdbd8135
+                      alt: Five_sessions
+                      title: ''
+                      width: 1024
+                      height: 745
+                translations:
+                  ar:
+                    status:
+                      -
+                        value: true
+                    created:
+                      -
+                        value: 1634736154
+                    content_translation_source:
+                      -
+                        value: en
+                    content_translation_outdated:
+                      -
+                        value: false
+                    field_lesson_image_image:
+                      -
+                        entity: e549d9de-161a-4ab9-8164-560abdbd8135
+                        alt: Five_sessions
+                        title: ''
+                        width: 1024
+                        height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 140c668b-a1d0-480a-888e-4281788eb8a7
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1634736168
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>You are going to complete five sessions in our programme.</p>\r\n\r\n<p>Each session contains two or three small parts.</p>\r\n\r\n<p>Take your time and start at your own pace.&nbsp;</p>\r\n\r\n<p>You can try to do the whole session in one day or do the parts over a few days each week.</p>\r\n"
+                      format: minimal_html
+                translations:
+                  ar:
+                    status:
+                      -
+                        value: true
+                    created:
+                      -
+                        value: 1634736168
+                    revision_translation_affected:
+                      -
+                        value: true
+                    content_translation_source:
+                      -
+                        value: en
+                    content_translation_outdated:
+                      -
+                        value: false
+                    field_lesson_text_content:
+                      -
+                        value: "<p>رح تخلصي 5 جلسات بهالبرنامج.</p>\r\n\r\n<p>كل جلسة رح تتضمّن اتنين أو تلات أجزاء قصيرة.</p>\r\n\r\n<p>خذي وقتك وبلشي لمّا تحسّي حالك مستعدة.</p>\r\n\r\n<p>فيكي تخلصي الجلسة كلها خلال يوم، أو تقسمي الأجزاء اللي فيها على عدة أيام خلال أسبوع.</p>\r\n"
+                        format: minimal_html
+        translations:
+          ar:
+            status:
+              -
+                value: true
+            created:
+              -
+                value: 1634736149
+            revision_translation_affected:
+              -
+                value: true
+            content_translation_source:
+              -
+                value: en
+            content_translation_outdated:
+              -
+                value: false
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 25adbdc0-ffb6-4e64-aaaf-f052189c1494
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1634736362
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: cefea670-a821-4b78-b13c-7152cea5fcd8
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1634736367
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 94836ce7-d78e-4086-b7fe-f799f8005315
+                      alt: complete_session
+                      title: ''
+                      width: 1024
+                      height: 745
+                translations:
+                  ar:
+                    status:
+                      -
+                        value: true
+                    created:
+                      -
+                        value: 1634736367
+                    content_translation_source:
+                      -
+                        value: en
+                    content_translation_outdated:
+                      -
+                        value: false
+                    field_lesson_image_image:
+                      -
+                        entity: 94836ce7-d78e-4086-b7fe-f799f8005315
+                        alt: complete_session
+                        title: ''
+                        width: 1024
+                        height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 9f00e440-767d-4116-afc5-31849d5d5f33
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1634736397
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Completing one session a week will help you stay on track and get the best results.</p>\r\n\r\n<p>As soon as you have completed one session, the next one will be unlocked. You can access this new session directly or come back to it later when you’re ready.</p>\r\n\r\n<p>This break between sessions will give you time to practice what you have learnt so far.</p>\r\n"
+                      format: minimal_html
+                translations:
+                  ar:
+                    status:
+                      -
+                        value: true
+                    created:
+                      -
+                        value: 1634736397
+                    revision_translation_affected:
+                      -
+                        value: true
+                    content_translation_source:
+                      -
+                        value: en
+                    content_translation_outdated:
+                      -
+                        value: false
+                    field_lesson_text_content:
+                      -
+                        value: "<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<div style=\"direction: rtl;\">الانتهاء من جلسة كاملة خلال أسبوع رح يساعدك تضلك مركزة على البرنامج ويؤدي لنتائج أفضل.</div>\r\n\r\n<p dir=\"RTL\">أوّل ما تخلّصي جلسة, التانية رح تفتح. فيكي تفوت على الجلسة الجديدة مباشرة أو ترجعيلها بوقت ثاني بهالأسبوع، وقت تكوني مستعدة.</p>\r\n\r\n<p dir=\"RTL\">هالاستراحة بين كل جلسة والتانية، رح تسمحلك تاخذي وقت لتطبقي التمارين يللي تعلمتيها.</p>\r\n"
+                        format: minimal_html
+        translations:
+          ar:
+            status:
+              -
+                value: true
+            created:
+              -
+                value: 1634736362
+            revision_translation_affected:
+              -
+                value: true
+            content_translation_source:
+              -
+                value: en
+            content_translation_outdated:
+              -
+                value: false
+translations:
+  ar:
+    status:
+      -
+        value: true
+    uid:
+      -
+        target_id: 1
+    title:
+      -
+        value: 'شو الخطوات؟'
+    created:
+      -
+        value: 1642605429
+    promote:
+      -
+        value: false
+    sticky:
+      -
+        value: false
+    revision_translation_affected:
+      -
+        value: true
+    path:
+      -
+        alias: /lesson/shw-alkhtwat
+        langcode: ar
+        pathauto: 1
+    content_translation_source:
+      -
+        value: en
+    content_translation_outdated:
+      -
+        value: false

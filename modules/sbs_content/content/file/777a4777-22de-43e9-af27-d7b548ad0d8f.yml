@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 777a4777-22de-43e9-af27-d7b548ad0d8f
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: Image10Leb_2.png
+  uri:
+    -
+      value: 'public://2021-11/Image10Leb_2.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 926233
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1637071526

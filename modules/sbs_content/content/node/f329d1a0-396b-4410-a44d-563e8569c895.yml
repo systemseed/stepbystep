@@ -1,0 +1,390 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: f329d1a0-396b-4410-a44d-563e8569c895
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    8ebf90bb-bf8a-4aff-b895-a7e6bf47d2fd: file
+    8e10ef22-4b39-41d6-b21f-92700189a33a: file
+    6dc97514-f1af-45b4-9fe7-715865025bd5: file
+    d30dfb1e-8743-4451-83ff-97d9a327b925: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Spend time with others'
+  created:
+    -
+      value: 1637567186
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/spend-time-others
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: be35df0a-4092-425a-af28-40f21b6a21d4
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637569489
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: b11a58d4-acfd-43ac-9649-13150b0fcf67
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637569492
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 8ebf90bb-bf8a-4aff-b895-a7e6bf47d2fd
+                      alt: DrNoa_sadnesscircile_Ava
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 34365d39-bbe7-49cd-bb6c-5e29ca3f331b
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637569516
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>I hope you are finding ways to be kind to yourself since we last met.</p>\r\n\r\n<p>Could you somehow relate to the stories of Ava and Mary?</p>\r\n\r\n<p>It is important to remember that the “sadness and withdrawal cycle” can stop you from seeing other people.</p>\r\n\r\n<p>You might start feeling worse because of this.<br />\r\nFor this reason, it is important to try to spend time with others, even if it feels hard, just like Mary and Ava found it hard.<br />\r\n<br />\r\nThis could be with a friend, someone in your family, or a neighbour.&nbsp;</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: a56a85ba-1979-4ec7-85bf-7612f018a072
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637569683
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 3d279a22-a0cc-4003-b2b0-9f8abdf57612
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637569747
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 8e10ef22-4b39-41d6-b21f-92700189a33a
+                      alt: DrNoa_Ava_socialactivity
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 52927fba-88fe-4d2c-a422-7af374a4604d
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637569764
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>This is another way of breaking the “sadness and withdrawal cycle”.</p>\r\n\r\n<p>In general, seeing others helps us feel better.</p>\r\n\r\n<p>So now it’s time to think about social activities you might like to try, even if they seem difficult right now.</p>\r\n\r\n<p>If you have not stopped seeing other people, you can use the next exercise to reflect on which social contacts you would like to strengthen.<br />\r\n<br />\r\nOur social network is so important. It’s worth the effort.</p>\r\n\r\n<p>In the next exercise I would like you to make a list of Social Activities that you would like to start doing again.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: e3037f07-0790-49c0-999a-70b7467d3227
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637569813
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 8922b661-0759-4d11-98fa-2feba21b7ce5
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637569927
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 6dc97514-f1af-45b4-9fe7-715865025bd5
+                      alt: Ava_friends_dinner
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: ee5d66af-e453-46f6-96d7-23389a98082b
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637569816
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Why not think of something you used to enjoy doing with someone, which now seems quite overwhelming?</p>\r\n\r\n<p>Or something you would like to do more of.</p>\r\n\r\n<p>Some people would choose to invite their friends over for dinner...<br />\r\n<br />\r\nOther people enjoy family gatherings or meeting friends or neighbours for coffee.</p>\r\n\r\n<p>This may feel difficult for you. If you feel this way, don’t worry.</p>\r\n\r\n<p>Planning and trying them can make socializing a possibility for you again.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 56fa078e-7f23-420e-be5a-84d0b9c245d9
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637569969
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 31928575-b15c-42aa-863f-7a1d5bebf3af
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637570007
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: d30dfb1e-8743-4451-83ff-97d9a327b925
+                      alt: DrNoa_question
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 10dc9109-cc49-40f3-9f31-11a436de4f42
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637569973
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Let’s think of one Social Activity you can try now.</p>\r\n\r\n<p>This list works exactly the same as the previous lists, like Small Activities and Challenging Activities.</p>\r\n\r\n<p>You can create entries and break them into steps. For now, please just add one Social Activity that you find difficult at the moment.<br />\r\n<br />\r\nYou don’t have to think about steps yet.</p>\r\n\r\n<p>Let’s try!</p>\r\n\r\n<p><strong><em>After the activity, you can either go directly to Part 2 of Session 4 or do that another time, as you like.</em></strong></p>\r\n"
+                      format: minimal_html

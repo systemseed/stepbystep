@@ -1,0 +1,591 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 136dac6f-a051-4965-a824-43b16577a0bb
+  bundle: webform
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Requesting an E-helper'
+  created:
+    -
+      value: 1637663828
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /questionnaire/requesting-e-helper
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  questionnaire_score_levels:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: c223025e-e362-4990-9dff-b5f9a58a6d96
+          bundle: webform_content_score_level
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637679948
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          webform_content_body:
+            -
+              value: "<p>However, you'll find the activities in this app useful for maintaining a healthy mind.</p>\r\n\r\n<p>Tap the button below to start your Step-by-Step journey.</p>\r\n"
+              format: minimal_html
+          webform_content_icon:
+            -
+              value: check_circle
+          webform_content_score_range:
+            -
+              from: 0
+              to: 30
+          webform_content_text:
+            -
+              value: 'The answers indicate you are doing okay'
+          webform_content_title:
+            -
+              value: 'Not depressed'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: c58cb38e-795b-4070-92da-1909412a4073
+          bundle: webform_content_score_level
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637679948
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          webform_content_body:
+            -
+              value: "<p>The answers you've given indicate that this is going to be a great help for you.</p>\r\n\r\n<p>Tap the button below to start your Step-by-Step journey.</p>\r\n"
+              format: minimal_html
+          webform_content_icon:
+            -
+              value: check_circle
+          webform_content_score_range:
+            -
+              from: 31
+              to: 60
+          webform_content_text:
+            -
+              value: 'We are here to help you feel better'
+          webform_content_title:
+            -
+              value: Depressed
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 1f793bbe-c5d8-473b-83da-c3f75a3b54e1
+          bundle: webform_content_score_level
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637679948
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          webform_content_body:
+            -
+              value: "<p>From what you have described in this questionnaire, we think you may be at risk and need some extra support. This is completely normal and there are many people in this position.</p>\r\n\r\n<p>It is very important that you get yourself some help for these problems as soon as possible before continuing with this app.</p>\r\n"
+              format: minimal_html
+          webform_content_icon:
+            -
+              value: error
+          webform_content_score_range:
+            -
+              from: 61
+              to: 1000
+          webform_content_text:
+            -
+              value: 'You''re at risk of harm'
+          webform_content_title:
+            -
+              value: 'At risk'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: f61e869f-7c4b-4944-b5db-1989f7b24ca1
+          bundle: webform_content_score_level
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1643128424
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          webform_content_body:
+            -
+              value: "<p>test</p>\r\n"
+              format: minimal_html
+          webform_content_score_range:
+            -
+              from: 0
+              to: 100
+          webform_content_text:
+            -
+              value: test
+          webform_content_title:
+            -
+              value: test
+  webform:
+    -
+      target_id: webform_content_spokuprihespag
+      default_data: ''
+      status: ''
+      open: ''
+      close: ''
+  webform_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: d4480da3-d705-41bd-beee-c442c3551db4
+          bundle: webform_content_display_text
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637663899
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          webform_content_body:
+            -
+              value: "<h2>Request E-helper</h2>\r\n\r\n<p>As mentioned, an E-helper is a real person who will contact you every week to see how you're doing and support you on your Step-by-Step journey.</p>\r\n\r\n<p>On the following screens you'll be asked some easy questions so we can match you up with the best person.</p>\r\n"
+              format: simple_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: c42deda8-bc75-4fa4-8e74-b278273372f0
+          bundle: webform_content_page_separator
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637679796
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          webform_content_next_label:
+            -
+              value: 'Request E-helper'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 3299f51a-9205-4b19-bdbf-7ae8329c4bd7
+          bundle: webform_content_single_choice
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637679821
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          webform_content_choices:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 8b6c7888-fe6e-48d2-9976-47ae753523ef
+                  bundle: webform_content_choice_item
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637679821
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  webform_content_text:
+                    -
+                      value: 'Yes, that’s fine with me'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: ff333c00-fe14-4886-8f90-22fede2603f6
+                  bundle: webform_content_choice_item
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637679844
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  webform_content_text:
+                    -
+                      value: 'No, I have a serious objection'
+          webform_content_required:
+            -
+              value: true
+          webform_content_title:
+            -
+              value: '1. Are you ok with having an E-helper from a different gender?'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 150c3784-e6e4-40a1-a5e2-94903709b2df
+          bundle: webform_content_page_separator
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637679856
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 580067da-fd9e-4d1c-91c7-64e795688101
+          bundle: webform_content_single_choice
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637679877
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          webform_content_choices:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 079ae03c-4e0c-4bb8-aafb-f49b0bdb3d28
+                  bundle: webform_content_choice_item
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637679877
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  webform_content_text:
+                    -
+                      value: English
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 340fd021-df55-49dd-8246-a27da9778761
+                  bundle: webform_content_choice_item
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637679886
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  webform_content_text:
+                    -
+                      value: Arabic
+          webform_content_required:
+            -
+              value: true
+          webform_content_title:
+            -
+              value: 'What language would you like to be contacted in?'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 187f37f3-e6f7-4fc4-8186-c743951721e0
+          bundle: webform_content_page_separator
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637679895
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 671f0ea6-b0a1-4913-96f5-26c7e82cb53a
+          bundle: webform_content_text
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637679912
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          webform_content_required:
+            -
+              value: true
+          webform_content_title:
+            -
+              value: '3. Please provide the phone number you''d like to be contacted on'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: ef4611d8-1c3c-4f36-82d1-e022a8165a04
+          bundle: webform_content_display_text
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637679936
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          webform_content_body:
+            -
+              value: "<p>We'll only use this number to call you for an introductory call, your data is safe with us.</p>\r\n"
+              format: simple_html

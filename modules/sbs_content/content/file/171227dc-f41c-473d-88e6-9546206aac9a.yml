@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 171227dc-f41c-473d-88e6-9546206aac9a
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: 'Can''t Stop The Feeling (Sefon.me).mp3'
+  uri:
+    -
+      value: 'public://activity_audio/2021-12/Can''t Stop The Feeling (Sefon.me).mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 9444877
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1638959765

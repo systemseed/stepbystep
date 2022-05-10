@@ -1,0 +1,326 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 76aa6a03-db46-4c64-8f3e-d69db336718a
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    8801eecc-8d2d-4f88-a8aa-191a67793efb: file
+    04abdac3-a458-4743-843a-e0a0ceb9b790: file
+    d9d70734-e91b-46ea-9876-3df9a3c2bdf8: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'How to calm down_clone'
+  created:
+    -
+      value: 1629974499
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/how-calm-downclone
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 8a63fadf-1c37-4788-b7e4-f2e7b5b140ce
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629974545
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: fc1397df-61f4-4170-acbd-4325c9124c7b
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629974568
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 8801eecc-8d2d-4f88-a8aa-191a67793efb
+                      alt: Breathing_Grounding
+                      title: ''
+                      width: 1407
+                      height: 936
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 867a5f92-7d7e-4044-b0b4-dbd78de5fb49
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629974579
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>It is very useful to know techniques to feel calmer and less stressed.<br />\r\n<br />\r\nYou have already been introduced to the Grounding Exercise to help you feel less stressed.</p>\r\n\r\n<p>I would now like to introduce you to a second technique to help you reduce your stress.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 82142072-e5d7-43cb-95c7-53ae164c672d
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629974620
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: a5a20758-c231-4cfc-a71f-ddb36dbf5730
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629974626
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 04abdac3-a458-4743-843a-e0a0ceb9b790
+                      alt: DrNoa_talking
+                      title: ''
+                      width: 1159
+                      height: 771
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: d146c105-4de0-4cf9-8a90-25f3a8f8801e
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629974669
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>This second technique is a <strong>Breathing Exercise. </strong></p>\r\n\r\n<p>It may sound strange, but breathing can alter how stressed people feel.</p>\r\n\r\n<p>This exercise will show you how to breathe slowly and at a pace that can help reduce stress.</p>\r\n\r\n<p>Once you know how to do it, you can use it to help you feel calmer whenever you feel stressed or overwhelmed.</p>\r\n\r\n<p>You just need to sit back and try to pay attention to your breathing.</p>\r\n\r\n<p>In the next step, just touch the play icon to play the audio file.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 407a4f79-33b5-4f66-8a6c-32463401d20a
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629977607
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 49f96670-e4d8-4b32-8f24-e612c093d948
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629977634
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: d9d70734-e91b-46ea-9876-3df9a3c2bdf8
+                      alt: DrNoa_applauding
+                      title: ''
+                      width: 1159
+                      height: 771
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 5a4333fd-1442-427e-99f5-0b0b6bb1dfd0
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629977651
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Congratulations on trying the Breathing Exercise!</p>\r\n\r\n<p>I hope it made you feel less stressed.</p>\r\n\r\n<p>You can use this technique whenever you feel you need to reduce your stress.</p>\r\n\r\n<p>We have now reached the end of Part 1 of Session 1.</p>\r\n\r\n<p>You can now either go directly to Part 2 of Session 1, or do that another time, as you like.</p>\r\n"
+                      format: minimal_html

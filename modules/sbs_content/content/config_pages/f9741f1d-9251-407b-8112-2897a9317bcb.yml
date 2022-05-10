@@ -1,0 +1,22 @@
+_meta:
+  version: '1.0'
+  entity_type: config_pages
+  uuid: f9741f1d-9251-407b-8112-2897a9317bcb
+  bundle: ss_translation_settings
+default:
+  label:
+    -
+      value: 'Translation settings'
+  context:
+    -
+      value: 'a:0:{}'
+  field_show_in_language_switcher:
+    -
+      target_id: en
+    -
+      target_id: ar
+  field_show_in_switcher_for_admin:
+    -
+      target_id: en
+    -
+      target_id: ar

@@ -1,0 +1,225 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 6288b27d-b235-4c4d-a930-171ebf71e240
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    f176fd6a-8261-4473-bda8-a0eaada0a35c: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'How to manage stress?'
+  created:
+    -
+      value: 1634735669
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/how-manage-stress
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: ef4e584d-3245-438f-bd55-cc11e5d9b02e
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1634750548
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 871a5cbe-e9d6-4cb4-a77e-37fe50ca7067
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1634808399
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: f176fd6a-8261-4473-bda8-a0eaada0a35c
+                      alt: Grounding
+                      title: ''
+                      width: 1024
+                      height: 745
+                translations:
+                  ar:
+                    status:
+                      -
+                        value: true
+                    created:
+                      -
+                        value: 1634808399
+                    revision_translation_affected:
+                      -
+                        value: true
+                    content_translation_source:
+                      -
+                        value: en
+                    content_translation_outdated:
+                      -
+                        value: false
+                    field_lesson_image_image:
+                      -
+                        entity: f176fd6a-8261-4473-bda8-a0eaada0a35c
+                        alt: Grounding
+                        title: ''
+                        width: 1024
+                        height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 8f432c6b-fc9e-4a6e-b052-bfed9126db38
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1634750551
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Let me introduce you to a new technique that might make you feel calmer.</p>\r\n\r\n<p>We call this technique Grounding.</p>\r\n\r\n<p>Grounding can help you be less caught up in your thoughts by focusing more on the here and now.</p>\r\n\r\n<p>It can help you take a break from worrying about the past or future.</p>\r\n\r\n<p>This can help people to feel less stressed.</p>\r\n\r\n<p>It may not be easy at first and it helps to practice it every day if you can.</p>\r\n\r\n<p>I’d like you to try it now.</p>\r\n"
+                      format: minimal_html
+                translations:
+                  ar:
+                    status:
+                      -
+                        value: true
+                    created:
+                      -
+                        value: 1634750551
+                    revision_translation_affected:
+                      -
+                        value: true
+                    content_translation_source:
+                      -
+                        value: en
+                    content_translation_outdated:
+                      -
+                        value: false
+                    field_lesson_text_content:
+                      -
+                        value: "<p dir=\"rtl\">خليني علمك على تقنية جديدة يمكن تساعدك تحسي حالك أروق.</p>\r\n\r\n<p dir=\"rtl\">هيدي التقنية منسميها الإستدراك.</p>\r\n\r\n<p dir=\"rtl\">الإستدراك بساعدك&nbsp;&nbsp;ما تغرقي بالأفكار العلقانة فيها، وتركزي أكتر على الحاضر</p>\r\n\r\n<p dir=\"rtl\">رح تساعدك تاخذي فرصة من القلق حول الماضي أو المستقبل.</p>\r\n\r\n<p dir=\"rtl\">ممكن تلاقي صعوبة بالتمرين بالأول، بس إذا قمتي بالتمرين كل يوم إذا قدرتي، رح يصير أسهل.<br />\r\n<br />\r\nحابة&nbsp; منّك تجربي التمرين هلّق.</p>\r\n"
+                        format: minimal_html
+        translations:
+          ar:
+            status:
+              -
+                value: true
+            created:
+              -
+                value: 1634750548
+            revision_translation_affected:
+              -
+                value: true
+            content_translation_source:
+              -
+                value: en
+            content_translation_outdated:
+              -
+                value: false
+translations:
+  ar:
+    status:
+      -
+        value: true
+    uid:
+      -
+        target_id: 1
+    title:
+      -
+        value: 'كيف منتأقلم مع التوتر؟'
+    created:
+      -
+        value: 1643199555
+    promote:
+      -
+        value: false
+    sticky:
+      -
+        value: false
+    revision_translation_affected:
+      -
+        value: true
+    path:
+      -
+        alias: /lesson/kyf-mntaqlm-m-altwtr
+        langcode: ar
+        pathauto: 1
+    content_translation_source:
+      -
+        value: en
+    content_translation_outdated:
+      -
+        value: false

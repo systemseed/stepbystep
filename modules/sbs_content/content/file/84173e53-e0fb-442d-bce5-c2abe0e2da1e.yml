@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 84173e53-e0fb-442d-bce5-c2abe0e2da1e
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: S5.06.png
+  uri:
+    -
+      value: 'public://2021-11/S5.06.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 24574
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1638270000

@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 8a38d55f-0c94-4a6c-83bc-b3d7f11540d6
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: Image10Leb_5.png
+  uri:
+    -
+      value: 'public://2021-11/Image10Leb_5.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 926233
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1638270592

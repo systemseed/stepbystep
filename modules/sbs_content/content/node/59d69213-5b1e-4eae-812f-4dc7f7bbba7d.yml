@@ -1,0 +1,135 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 59d69213-5b1e-4eae-812f-4dc7f7bbba7d
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    59ee7293-be22-4889-9d4f-2951755cc83d: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Ava and Mary have a message for you'
+  created:
+    -
+      value: 1636376911
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/ava-and-mary-have-message-you-3
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 74ad4e8c-365a-4b60-98cc-7f5836ad2966
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1636446144
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: b107a859-5e0f-49f1-93b4-0c4a735074cb
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636446148
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 59ee7293-be22-4889-9d4f-2951755cc83d
+                      alt: Ava_Mary_message
+                      title: ''
+                      width: 3315
+                      height: 2589
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 75b94c37-9f0a-4070-a627-293c471ebd60
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636446174
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Like us, you might feel tired, frustrated and unable to do anything to change your situation.</p>\r\n\r\n<p>In case you are worrying, this is common and does not mean you are weak.</p>\r\n\r\n<p>Keep on trying!</p>\r\n\r\n<p><strong><em>Let's return to Dr Noa, she also has something to tell you.</em></strong></p>\r\n"
+                      format: minimal_html

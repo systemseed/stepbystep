@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 47bb492c-8094-49ba-a2ea-99e858e0a1e9
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: aud_slow-breathing_enm1.mp3
+  uri:
+    -
+      value: 'public://activity_audio/2021-12/aud_slow-breathing_enm1.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 5732036
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1638965095

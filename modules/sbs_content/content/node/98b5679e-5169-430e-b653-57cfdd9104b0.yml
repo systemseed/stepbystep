@@ -1,0 +1,372 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 98b5679e-5169-430e-b653-57cfdd9104b0
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    0c427302-fce6-401f-a9f2-7520f7689b79: file
+    a0599a0a-0fde-4a18-bbe0-1646615e38a4: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'How to reduce stress'
+  created:
+    -
+      value: 1629977963
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/how-reduce-stress
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: ff66d294-1823-45ef-a354-094f5f0ef498
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629978421
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 96b79cf0-4ff7-453f-b8a9-6afae84f8206
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629978423
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 0c427302-fce6-401f-a9f2-7520f7689b79
+                      alt: DrNoa
+                      title: ''
+                      width: 1024
+                      height: 745
+                translations:
+                  ar:
+                    status:
+                      -
+                        value: true
+                    created:
+                      -
+                        value: 1629978423
+                    revision_translation_affected:
+                      -
+                        value: true
+                    content_translation_source:
+                      -
+                        value: en
+                    content_translation_outdated:
+                      -
+                        value: false
+                    field_lesson_image_image:
+                      -
+                        entity: 0c427302-fce6-401f-a9f2-7520f7689b79
+                        alt: DrNoa
+                        title: ''
+                        width: 1024
+                        height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: bff7cce6-333e-47a8-8af8-e862cbfac445
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629978438
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>It may seem hard to believe, but remembering things we are grateful for, no matter how small, can help reduce stress, especially when practiced over time.</p>\r\n\r\n<p>In the Toolbox you will find the Gratitude List.</p>\r\n\r\n<p>To use this technique, take a few minutes to think of 3 things you are grateful for.</p>\r\n\r\n<p>This can be anything big or small.</p>\r\n"
+                      format: minimal_html
+                translations:
+                  ar:
+                    status:
+                      -
+                        value: true
+                    created:
+                      -
+                        value: 1629978438
+                    revision_translation_affected:
+                      -
+                        value: true
+                    content_translation_source:
+                      -
+                        value: en
+                    content_translation_outdated:
+                      -
+                        value: false
+                    field_lesson_text_content:
+                      -
+                        value: "<p>It may seem hard to believe, but remembering things we are grateful for, no matter how small, can help reduce stress, especially when practiced over time.</p>\r\n\r\n<p>In the Toolbox you will find the Gratitude List.</p>\r\n\r\n<p>To use this technique, take a few minutes to think of 3 things you are grateful for.</p>\r\n\r\n<p>This can be anything big or small.</p>\r\n"
+                        format: minimal_html
+        translations:
+          ar:
+            status:
+              -
+                value: true
+            created:
+              -
+                value: 1629978421
+            revision_translation_affected:
+              -
+                value: true
+            content_translation_source:
+              -
+                value: en
+            content_translation_outdated:
+              -
+                value: false
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 63b17842-6bfa-43a6-ae03-55009c3e5180
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629978670
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 805f56e6-c4a4-4d2a-8270-32fb3e4ba2a3
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629978681
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: a0599a0a-0fde-4a18-bbe0-1646615e38a4
+                      alt: Mary_Rosa_walking
+                      title: ''
+                      width: 1024
+                      height: 745
+                translations:
+                  ar:
+                    status:
+                      -
+                        value: true
+                    created:
+                      -
+                        value: 1629978681
+                    revision_translation_affected:
+                      -
+                        value: true
+                    content_translation_source:
+                      -
+                        value: en
+                    content_translation_outdated:
+                      -
+                        value: false
+                    field_lesson_image_image:
+                      -
+                        entity: a0599a0a-0fde-4a18-bbe0-1646615e38a4
+                        alt: Mary_Rosa_walking
+                        title: ''
+                        width: 1024
+                        height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 9769fd5e-e763-440d-bad6-e79f3ec12751
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629978714
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>For example, a person who was kind to you, something you did for yourself, something you did for others, something you learnt, or someone you are grateful to have in your life.</p>\r\n\r\n<p>For Mary, it was Rosa who helped her reach out for support; for Ava, it was her kids who gave meaning in her life.</p>\r\n\r\n<p>It can be any small everyday thing or anything you particularly appreciate in your current life.</p>\r\n\r\n<p>In the Gratitude List, you can write things you feel grateful for.</p>\r\n\r\n<p>You can then return to this list whenever you need it in your Toolbox.</p>\r\n\r\n<p>Let’s try!</p>\r\n\r\n<p><em><strong>We have now reached the end of Part 2 of Session 1. After the activity, you can start the last part of Session 1 or come back another time.</strong></em></p>\r\n"
+                      format: minimal_html
+                translations:
+                  ar:
+                    status:
+                      -
+                        value: true
+                    created:
+                      -
+                        value: 1629978714
+                    revision_translation_affected:
+                      -
+                        value: true
+                    content_translation_source:
+                      -
+                        value: en
+                    content_translation_outdated:
+                      -
+                        value: false
+                    field_lesson_text_content:
+                      -
+                        value: "<p>For example, a person who was kind to you, something you did for yourself, something you did for others, something you learnt, or someone you are grateful to have in your life.</p>\r\n\r\n<p>For Mary, it was Rosa who helped her reach out for support; for Ava, it was her kids who gave meaning in her life.</p>\r\n\r\n<p>It can be any small everyday thing or anything you particularly appreciate in your current life.</p>\r\n\r\n<p>In the Gratitude List, you can write things you feel grateful for.</p>\r\n\r\n<p>You can then return to this list whenever you need it in your Toolbox.</p>\r\n\r\n<p>Let’s try!</p>\r\n\r\n<p><em><strong>We have now reached the end of Part 2 of Session 1. After the activity, you can start the last part of Session 1 or come back another time.</strong></em></p>\r\n"
+                        format: minimal_html
+        translations:
+          ar:
+            status:
+              -
+                value: true
+            created:
+              -
+                value: 1629978670
+            revision_translation_affected:
+              -
+                value: true
+            content_translation_source:
+              -
+                value: en
+            content_translation_outdated:
+              -
+                value: false
+translations:
+  ar:
+    status:
+      -
+        value: true
+    uid:
+      -
+        target_id: 1
+    title:
+      -
+        value: 'How to reduce stress'
+    created:
+      -
+        value: 1643720778
+    promote:
+      -
+        value: false
+    sticky:
+      -
+        value: false
+    revision_translation_affected:
+      -
+        value: true
+    path:
+      -
+        alias: /lesson/how-reduce-stress
+        langcode: ar
+        pathauto: 1
+    content_translation_source:
+      -
+        value: en
+    content_translation_outdated:
+      -
+        value: false

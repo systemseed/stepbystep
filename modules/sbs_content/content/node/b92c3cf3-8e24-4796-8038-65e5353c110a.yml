@@ -1,0 +1,305 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: b92c3cf3-8e24-4796-8038-65e5353c110a
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    1c7f5dac-30a7-432d-b832-27b3c95fe510: file
+    a29d1707-4430-47bb-9333-2bee225b2d6e: file
+    16ef160b-4a57-452c-8abb-530f66643a87: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Mary meets her friends'
+  created:
+    -
+      value: 1637567059
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/mary-meets-her-friends
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: a3aa4d33-8884-4c4e-8feb-2b382cc0b0d4
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637567675
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: b0148cc0-3697-43fb-b926-ef39be24c6b0
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637567679
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 1c7f5dac-30a7-432d-b832-27b3c95fe510
+                      alt: Mary_hesitating_entrance
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 811946a5-0bad-451f-a8fc-6cb96109f83d
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637567697
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>I stepped out of the cab. I had reached the café where my classmates were meeting.</p>\r\n\r\n<p>My palms were sweating. My legs were shaking.</p>\r\n\r\n<p>I felt like everyone was staring at me as I walked through the door.</p>\r\n\r\n<p>I thought: <em>Should I just go?</em> <em>Look, the cab is still there…</em></p>\r\n\r\n<p>I took out my phone to send Rosa a message, saying something urgent came up, and I couldn’t join.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 0afa1e2a-f7c2-40e3-bf59-31fe380119a8
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637567857
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 5a667f2f-2db2-4352-8a20-b65a92e8c5cc
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637567876
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: a29d1707-4430-47bb-9333-2bee225b2d6e
+                      alt: Mary_Rosa_entrance
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 40eb483f-b061-4991-b67b-e084c1c72828
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637567909
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>“Mary!”</p>\r\n\r\n<p>I turned and saw Rosa arriving at the same time.</p>\r\n\r\n<p><br />\r\n“I am so glad to see you here!” she said, pulling me into a hug.<br />\r\n<br />\r\nShe led me over to the small group of students that sat nearby.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 35e6e526-529d-439f-ac8a-ab80ec0c0248
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637567946
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 31eb58c7-2820-4691-b472-5c75f983b4f4
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637568024
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 16ef160b-4a57-452c-8abb-530f66643a87
+                      alt: Mary_friends
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: c751c61a-a35a-4d62-b433-6da4f13cb49e
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637568037
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>“Guys, you know Mary from class,” said Rosa.<br />\r\n<br />\r\n“Hi” I said shyly.<br />\r\n<br />\r\nRosa was so confident. I really wished I was more like her.<br />\r\n<br />\r\n“Hey Mary,” a couple of the girls smiled. “Come sit with us.”</p>\r\n\r\n<p><strong><em>Let’s hear now how it went for Ava.</em></strong></p>\r\n"
+                      format: minimal_html

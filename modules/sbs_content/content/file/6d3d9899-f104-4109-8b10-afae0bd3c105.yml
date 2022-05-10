@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 6d3d9899-f104-4109-8b10-afae0bd3c105
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: 'SBS thumb_Artboard 32 copy.png'
+  uri:
+    -
+      value: 'public://courses/2021-09/SBS thumb_Artboard 32 copy.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 11016
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1631620806

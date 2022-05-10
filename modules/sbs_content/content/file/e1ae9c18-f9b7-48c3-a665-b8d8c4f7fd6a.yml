@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: e1ae9c18-f9b7-48c3-a665-b8d8c4f7fd6a
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: MARY.png
+  uri:
+    -
+      value: 'public://2021-08/MARY.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 3582
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1629972748

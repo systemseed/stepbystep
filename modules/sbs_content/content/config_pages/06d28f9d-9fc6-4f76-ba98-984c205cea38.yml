@@ -1,0 +1,20 @@
+_meta:
+  version: '1.0'
+  entity_type: config_pages
+  uuid: 06d28f9d-9fc6-4f76-ba98-984c205cea38
+  bundle: sbs_questionnaires
+  depends:
+    c0a07717-7bff-4f43-b965-95002a1ad3ad: node
+    fe936324-3dc5-47e0-8063-20249745001c: node
+default:
+  label:
+    -
+      value: 'Questionnaires Order'
+  context:
+    -
+      value: 'a:0:{}'
+  field_questionnaires:
+    -
+      entity: c0a07717-7bff-4f43-b965-95002a1ad3ad
+    -
+      entity: fe936324-3dc5-47e0-8063-20249745001c

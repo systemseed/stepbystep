@@ -1,0 +1,103 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 1d7ecd26-0066-42ab-97ea-200c288228fd
+  bundle: activity_checklist
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Gratitude list'
+  created:
+    -
+      value: 1636539538
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /activity/gratitude-list
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_description:
+    -
+      value: 'Make a list of things (small or big) that you are grateful for.'
+  field_icon:
+    -
+      value: list
+  field_suggestions:
+    -
+      value: 'My family'
+    -
+      value: Nature
+    -
+      value: 'Cup of warm coffee or tea'
+    -
+      value: 'My neighbour cooking for me'
+translations:
+  ar:
+    status:
+      -
+        value: true
+    uid:
+      -
+        target_id: 1
+    title:
+      -
+        value: 'لائحة الإمتنان '
+    created:
+      -
+        value: 1643205340
+    promote:
+      -
+        value: false
+    sticky:
+      -
+        value: false
+    revision_translation_affected:
+      -
+        value: true
+    path:
+      -
+        alias: /activity/layht-alamtnan
+        langcode: ar
+        pathauto: 1
+    content_translation_source:
+      -
+        value: en
+    content_translation_outdated:
+      -
+        value: false
+    field_description:
+      -
+        value: 'اكتبي لائحة اشياء، إن كانت صغيرة أو كبيرة، بتحسي بالإمتنان إلها. '
+    field_suggestions:
+      -
+        value: 'عائلتي '
+      -
+        value: 'الطبيعة '
+      -
+        value: 'فنجان شاي أو قهوة سخنين '
+      -
+        value: 'جارتي لما تعمل أكل طيب و تبعتلي صحن  '

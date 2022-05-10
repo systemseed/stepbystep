@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 8e10ef22-4b39-41d6-b21f-92700189a33a
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: S3.17(2).png
+  uri:
+    -
+      value: 'public://2021-11/S3.17(2).png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 74288
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1637743545

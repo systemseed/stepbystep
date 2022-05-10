@@ -1,0 +1,135 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 51c6393f-542b-4f49-acdb-75fc25cd62a5
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    cd958325-cd7b-437f-ba0d-dbe9f7f4efe1: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Dr Noa''s advice'
+  created:
+    -
+      value: 1637659735
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/dr-noas-advice-1
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 2f28492c-f87a-486d-87d3-ee81831ae127
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637740297
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 97fb84f3-a6d4-4757-8481-03c88d711ea5
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637740300
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: cd958325-cd7b-437f-ba0d-dbe9f7f4efe1
+                      alt: DrNoa_advice
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: aebeedbc-3c20-4650-a1c4-04668b7d13cb
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637740302
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>This exchange of support can help you feel part of a friendship, relationship or community.</p>\r\n\r\n<p>You can use the <strong>Social Activities</strong> activity from Part 1 to schedule asking for help with something you find hard.</p>\r\n\r\n<p>You could also schedule in doing something nice for someone else.</p>\r\n\r\n<p>You might like to break your ideas into steps or add any potential obstacles to your plans.</p>\r\n\r\n<p><strong><em>Let’s retrieve Ava.</em></strong></p>\r\n"
+                      format: minimal_html

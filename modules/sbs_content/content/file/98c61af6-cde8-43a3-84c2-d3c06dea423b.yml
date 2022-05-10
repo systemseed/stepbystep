@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 98c61af6-cde8-43a3-84c2-d3c06dea423b
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: S4.13(1).png
+  uri:
+    -
+      value: 'public://2021-11/S4.13(1).png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 80892
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1637739330

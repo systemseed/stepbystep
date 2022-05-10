@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: edb3af4c-3ec9-4aa5-b0a8-4c9721faf520
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: S3.18.png
+  uri:
+    -
+      value: 'public://courses/2021-10/S3.18.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 77431
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1633685712

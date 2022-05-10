@@ -1,0 +1,454 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: fcc8183b-2707-4e85-8490-689bc369d594
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    cb922859-669f-4e3f-a910-11c355ee4ec9: file
+    0f88bae1-396a-4db4-be80-9236f121b9fb: file
+    f3419c26-19e6-43c7-a5af-b791e105708b: file
+    e9497100-ec75-4259-824e-12ef2b6a5618: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Mary goes step by step'
+  created:
+    -
+      value: 1636626776
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/mary-goes-step-step
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 6a726bdb-1e5c-41c0-8cf1-0c39f4840aee
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1636627084
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 7fb87504-a5d9-47a9-b31d-c4cdc7e7f713
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636627110
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: cb922859-669f-4e3f-a910-11c355ee4ec9
+                      alt: Mary_steps
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 61a2d3ab-6ca2-4f76-8903-9390e12a80f0
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636627086
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>I felt so ashamed of letting myself down.</p>\r\n\r\n<p>I knew I had to try what Dr Noa suggested if I wanted to run again.&nbsp;</p>\r\n\r\n<p>So, I wrote it all down:</p>\r\n"
+                      format: minimal_html
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 47e2d6aa-712a-41a7-8ebb-8c48940a9ff5
+                  bundle: lesson_list
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636627788
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_list_items:
+                    -
+                      value: 'Check weather forecast'
+                    -
+                      value: 'Try outfit for running and get a new one if needed '
+                    -
+                      value: 'Plan a small, achievable route in an area I know'
+                    -
+                      value: 'Eat something small for energy beforehand'
+                  field_lesson_list_type:
+                    -
+                      value: ul
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: da05492a-25eb-4cc7-add7-6a0cb80e1be9
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636627817
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>I decided I would run on the weekend, when I had no classes.<br />\r\n<br />\r\nOtherwise I knew it would be too much…</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: d5ae2e9a-a64d-4e32-a73d-bcfd3848773f
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1636627162
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: a85517cf-9868-4d14-a35e-c679cec328ec
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636627215
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 0f88bae1-396a-4db4-be80-9236f121b9fb
+                      alt: Mary_breathingexercise
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 048342a6-e825-428a-affc-f949359ecb1c
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636627218
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>But when Sunday morning came, I felt tired and had a terrible ache across my shoulders and neck. I told myself:</p>\r\n\r\n<p><em>Maybe it would be better to wait until another time?</em></p>\r\n\r\n<p>But no, I knew I had to try it.</p>\r\n\r\n<p>So I listened to my breathing exercise to calm my anxieties.</p>\r\n\r\n<p>As I relaxed, the pain left my shoulders.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: e99fb4e3-6f39-4c85-9b0b-a33aa597079a
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1636627622
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: c53afa11-c35b-422b-82ca-1000a95b4775
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636627645
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: f3419c26-19e6-43c7-a5af-b791e105708b
+                      alt: Mary_runing_phone
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 5c35fe29-aee9-45b1-b397-db8696071aa9
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636627649
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>I dressed myself, making sure I felt okay in my sportswear.</p>\r\n\r\n<p>I ate a banana to give myself some energy. This already made me feel better…<br />\r\n<br />\r\nI planned out a safe route to reassure myself I would not get lost.<br />\r\n<br />\r\nI typed in the route to the map app on my phone…</p>\r\n\r\n<p>When I started to run, my legs resisted the new exercise.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 1a441ea4-203e-4a06-a6e6-7c34fbde43d7
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1636627854
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 746d2c2c-b363-46d7-8859-5afc11d01612
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636627891
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: e9497100-ec75-4259-824e-12ef2b6a5618
+                      alt: Mary_runing
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: bd82bfe0-e4ad-4c5a-820c-4bb30ef8f217
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636627857
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>My muscles ached, my heart pounded in my chest and I began to sweat.<br />\r\n<br />\r\nAt first, I felt self-conscious of my body in public. But soon I could only focus on catching my breath.<br />\r\n<br />\r\nAnd then it came: that familiar, happy sensation of moving myself through space and air...</p>\r\n\r\n<p>It did not last very long, and I soon became exhausted.<br />\r\n<br />\r\nBut even though I had to stop and walk after one kilometre, I was glad I had tried.</p>\r\n\r\n<p>That night, I was so exhausted… I could have slept for a thousand years, but I also felt proud of myself.</p>\r\n\r\n<p><em><strong>This is how Mary began to run again. Let’s hear now how Ava applied Dr Noa’s advice.</strong></em></p>\r\n"
+                      format: minimal_html

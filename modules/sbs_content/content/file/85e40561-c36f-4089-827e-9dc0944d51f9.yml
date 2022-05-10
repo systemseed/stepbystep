@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 85e40561-c36f-4089-827e-9dc0944d51f9
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: S3.19(3).png
+  uri:
+    -
+      value: 'public://2021-11/S3.19(3).png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 82089
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1637141065

@@ -1,0 +1,487 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: f514502b-4960-47e3-b8b5-f6c5ad4cc41e
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    bf6abb43-08e3-4e82-bb6e-544fde7531d7: file
+    9283d2fa-0976-4a45-bcc8-fe2a1b42f72d: file
+    75e00195-d7cb-4df2-bd54-9c2df8de67e9: file
+    778d134b-de79-430a-93b4-ac7c01a984f8: file
+    20242d25-5ca0-494e-affb-59580ef3bfc9: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Mary tries bigger activities'
+  created:
+    -
+      value: 1636536740
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/mary-tries-bigger-activities
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 3314409b-145f-4386-87af-a07bcc446374
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1636536802
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: ed2d0fc3-1460-47e8-a578-b94c9901f674
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636536805
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: bf6abb43-08e3-4e82-bb6e-544fde7531d7
+                      alt: Mary_running
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: bdeb0e98-8f55-463c-8330-b99c44b91606
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636536808
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>Going outside was okay, but I missed moving my body and doing regular exercise.<br />\r\nWhen I was younger, I had raced in school competitions.<br />\r\n<br />\r\nMy dad had called me his little champ...</p>\r\n\r\n<p>I remembered the thrill of watching the sun rise over the sea as my legs raced through our hometown.<br />\r\n<br />\r\nHair flying, heart pumping….I had felt like a champion.</p>\r\n\r\n<p>When I told Dr Noa, she advised that trying running again may help me feel better.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 1f3e73a7-2a09-4e41-a12f-f378c0c28681
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1636646313
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 2cf0ffd8-edd1-4c4f-9e10-bc120247605b
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636646331
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 9283d2fa-0976-4a45-bcc8-fe2a1b42f72d
+                      alt: Mary_Mother_talk
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 8f396906-5204-4a93-8b44-78c4d49775cb
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636646365
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>So, I suggested the idea to my mother.</p>\r\n\r\n<p>“Studying, running… when will I see you?” my mother said.</p>\r\n\r\n<p>Mama looked sad, even neglected.</p>\r\n\r\n<p>But I think deep down she was pleased I wanted to be more active.</p>\r\n\r\n<p>“I have to try something, Mama”, I told her. “I want to be stronger, like you.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 602eccc7-a05f-4e44-9a4e-ffb390b7feb3
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1636536945
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 0d17a82f-3c36-45c5-9bdd-6708e9d408ed
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636537048
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 75e00195-d7cb-4df2-bd54-9c2df8de67e9
+                      alt: Mary_sad
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 3699f527-1640-4328-8be6-c93f7762a3fe
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636537057
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>However, when the morning came, doubts raced around my mind.</p>\r\n\r\n<p><em>Will I be able to do this without having to stop? Would my clothes fit? Will people look at me and think: she is really unfit?</em><br />\r\n<br />\r\nHow could I step out into the world, in my sportswear, when I was so out of shape? And with so much pain in my chest?<br />\r\n<br />\r\nAnd didn’t I have so much studying to do?</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 2334629a-90c3-4bf9-af06-b2821505236c
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1636537277
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 79ebef05-7d58-462b-afb0-6ac94a214542
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636537282
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 778d134b-de79-430a-93b4-ac7c01a984f8
+                      alt: Mary_Mum_angry
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: fea613fc-ef44-45a2-8e54-c4e67e47db0f
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636537285
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>“I thought you were going for a run?” my mother said when I joined her in the kitchen.</p>\r\n\r\n<p>I just couldn't do it. I knew she would be disappointed.</p>\r\n\r\n<p>“Well, just do <em>something</em>,” she snapped. “I’m tired of this attitude, Mary.”</p>\r\n\r\n<p>I felt myself snap.</p>\r\n\r\n<p>“Do you not think I’m tired of you?” I screamed at her. “Yes, <em>you!</em> Always criticizing me! Leave me alone!”</p>\r\n\r\n<p>“Mary, wait!” she called after me.</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 123bce7e-0c2b-46bc-89a3-2765ca02fc2a
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1636537482
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: e952cf85-758e-4b90-a42e-afb9471fe58f
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636626049
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 20242d25-5ca0-494e-affb-59580ef3bfc9
+                      alt: Mary_guilty
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 88b31e05-6d2e-4c7b-856c-f95d2a0f631e
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636537485
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>But her words had wounded me. I went back to bed and cried myself to sleep.</p>\r\n\r\n<p>I woke up feeling so guilty.</p>\r\n\r\n<p><em>My poor mother...</em><br />\r\n<br />\r\nI didn't do much else that day.</p>\r\n\r\n<p><em><strong>Let's hear the advice that Dr Noa gave Mary and Ava at this challenging moment.</strong></em></p>\r\n"
+                      format: minimal_html

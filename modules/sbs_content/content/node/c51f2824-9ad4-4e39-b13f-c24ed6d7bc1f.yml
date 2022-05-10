@@ -1,0 +1,207 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: c51f2824-9ad4-4e39-b13f-c24ed6d7bc1f
+  bundle: course
+  default_langcode: en
+  depends:
+    40303306-44a0-499a-ba68-d582a9af75f5: taxonomy_term
+    edb3af4c-3ec9-4aa5-b0a8-4c9721faf520: file
+    ba0cf023-05e6-4720-892e-45caa53381ea: node
+    7a1f4894-7146-46de-85b4-d855344d096d: node
+    79a217fd-35f1-468b-a9e7-a3eece3c8bd7: node
+    2de0300b-2d8c-428e-b46b-cbb7ac562a0d: node
+    9f2aa781-34a3-4c77-8e75-4348ac9aecc7: node
+    ab5edbf9-dcbd-49e6-b77f-cefa3a636f9b: node
+    1c5cc0f8-a3fa-4f6e-8527-99e898190695: node
+    ccec5675-01a5-4d05-b0d5-8d59f1c951e7: node
+    11fb9124-81c8-4db5-8400-ee0e8b278eeb: node
+    49fd0806-da38-4fef-936a-1ad50e2c04d8: node
+    b72f731d-2d7b-48a1-aee5-b3397e85a08a: node
+    e4ea54a0-a61f-4411-83b2-9af1cecf1fb5: node
+    d565f271-5a83-4f63-8b55-3c2b910c6b65: node
+    09073d28-0e36-4a2d-a6d9-a2b8fea16d63: node
+    0f64c4ef-81e2-4157-ba90-5a25499479cf: node
+    df8879af-b022-4608-856d-e47460022712: node
+    1b7f3d83-cb37-4080-b0dd-f63d5310dece: node
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: '3. Be kind to yourself'
+  created:
+    -
+      value: 1630663836
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /session/3-be-kind-yourself
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_course_category:
+    -
+      entity: 40303306-44a0-499a-ba68-d582a9af75f5
+  field_course_description:
+    -
+      value: 'Take action to tackle stress and anxiety.'
+      format: plain_text
+  field_course_finish_button:
+    -
+      uri: 'internal:/sessions'
+      title: Finish
+      options: {  }
+  field_course_image:
+    -
+      entity: edb3af4c-3ec9-4aa5-b0a8-4c9721faf520
+      alt: Mary
+      title: ''
+      width: 1024
+      height: 745
+  field_course_linear_progress:
+    -
+      value: true
+  field_course_module:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 160e0396-140e-462f-b806-d022fdcb5e93
+          bundle: course_modules
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1630663836
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_module_lessons:
+            -
+              entity: ba0cf023-05e6-4720-892e-45caa53381ea
+            -
+              entity: 7a1f4894-7146-46de-85b4-d855344d096d
+            -
+              entity: 79a217fd-35f1-468b-a9e7-a3eece3c8bd7
+            -
+              entity: 2de0300b-2d8c-428e-b46b-cbb7ac562a0d
+            -
+              entity: 9f2aa781-34a3-4c77-8e75-4348ac9aecc7
+          field_module_title:
+            -
+              value: 'Part 1'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 1f53c0da-1efb-4a79-b6d5-0f50c3262643
+          bundle: course_modules
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637053027
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_activity:
+            -
+              entity: ab5edbf9-dcbd-49e6-b77f-cefa3a636f9b
+          field_module_lessons:
+            -
+              entity: 1c5cc0f8-a3fa-4f6e-8527-99e898190695
+            -
+              entity: ccec5675-01a5-4d05-b0d5-8d59f1c951e7
+            -
+              entity: 11fb9124-81c8-4db5-8400-ee0e8b278eeb
+            -
+              entity: 49fd0806-da38-4fef-936a-1ad50e2c04d8
+            -
+              entity: b72f731d-2d7b-48a1-aee5-b3397e85a08a
+            -
+              entity: e4ea54a0-a61f-4411-83b2-9af1cecf1fb5
+          field_module_title:
+            -
+              value: 'Part 2'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 314f7c94-94ff-422d-a263-7e718402cf75
+          bundle: course_modules
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637080736
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_module_lessons:
+            -
+              entity: d565f271-5a83-4f63-8b55-3c2b910c6b65
+            -
+              entity: 09073d28-0e36-4a2d-a6d9-a2b8fea16d63
+            -
+              entity: 0f64c4ef-81e2-4157-ba90-5a25499479cf
+            -
+              entity: df8879af-b022-4608-856d-e47460022712
+            -
+              entity: 1b7f3d83-cb37-4080-b0dd-f63d5310dece
+          field_module_title:
+            -
+              value: 'Part 3'
+  field_weight:
+    -
+      value: -16

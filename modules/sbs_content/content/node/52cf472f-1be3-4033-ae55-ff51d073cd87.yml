@@ -1,0 +1,278 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 52cf472f-1be3-4033-ae55-ff51d073cd87
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    61ce3ab5-9a53-4c10-a131-56d8ddc2da42: file
+    99e38b63-5272-4636-99e4-5b45f8c89ff7: file
+    11071fc7-51a8-4410-9682-dd2d39358401: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: Welcome
+  created:
+    -
+      value: 1631172914
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/welcome
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 332b9ca9-b942-4435-b304-234c9d01cec2
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1631620164
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 1c232024-f2ff-42f8-90ca-89f710283c59
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1634735881
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 61ce3ab5-9a53-4c10-a131-56d8ddc2da42
+                      alt: SBS_team
+                      title: ''
+                      width: 1024
+                      height: 745
+                translations:
+                  ar:
+                    status:
+                      -
+                        value: true
+                    created:
+                      -
+                        value: 1634735881
+                    content_translation_source:
+                      -
+                        value: en
+                    content_translation_outdated:
+                      -
+                        value: false
+                    field_lesson_image_image:
+                      -
+                        entity: 61ce3ab5-9a53-4c10-a131-56d8ddc2da42
+                        alt: SBS_team
+                        title: ''
+                        width: 1024
+                        height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 91aae632-f768-4f25-8b2c-71edd681a19c
+                  bundle: lesson_audio
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1642590243
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_audio_file:
+                    -
+                      entity: 99e38b63-5272-4636-99e4-5b45f8c89ff7
+                      display: true
+                      description: ''
+                  field_audio_name:
+                    -
+                      value: 'Listen to this section'
+                translations:
+                  ar:
+                    status:
+                      -
+                        value: true
+                    created:
+                      -
+                        value: 1642590243
+                    content_translation_source:
+                      -
+                        value: en
+                    content_translation_outdated:
+                      -
+                        value: false
+                    field_audio_file:
+                      -
+                        entity: 11071fc7-51a8-4410-9682-dd2d39358401
+                        display: true
+                        description: ''
+                    field_audio_name:
+                      -
+                        value: 'اسمعي هيدا الجزء'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: f5097949-c7fc-4a0e-a5fa-cd3277f6765a
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1631620168
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p><strong>Welcome to the Step-by-Step programme!</strong></p>\r\n\r\n<p>We’re so glad to see you here at the start of this journey.</p>\r\n\r\n<p>Our programme shares a set of techniques known to help people who are feeling sad or stressed.</p>\r\n\r\n<p>Let us explain how Step-by-Step works before meeting Dr Noa and some of the persons she helped with this program.</p>\r\n"
+                      format: minimal_html
+                translations:
+                  ar:
+                    status:
+                      -
+                        value: true
+                    created:
+                      -
+                        value: 1631620168
+                    content_translation_source:
+                      -
+                        value: en
+                    content_translation_outdated:
+                      -
+                        value: false
+                    field_lesson_text_content:
+                      -
+                        value: "<p><strong>مرحبًا بك في خطوة خطوة</strong><strong>!</strong></p>\r\n\r\n<p dir=\"rtl\">نحن كتير مبسوطين انك هون ببداية هيدي الرحلة</p>\r\n\r\n<p style=\"direction: rtl;\">برنامجنا بشارك مجموعة تقنيات المعروف عنا انها بتساعد العالم اللي عم تحس بحزن أو توتر.&nbsp;</p>\r\n\r\n<p style=\"direction: rtl;\">خلينا نشرحلك كيف خطوة خطوة بيشتغل قبل ما نتعرف على الدكتورة مها و بعض الأشخاص اللي ساعدتن من خلال البرنامج.&nbsp;</p>\r\n"
+                        format: minimal_html
+        translations:
+          ar:
+            status:
+              -
+                value: true
+            created:
+              -
+                value: 1631620164
+            content_translation_source:
+              -
+                value: en
+            content_translation_outdated:
+              -
+                value: false
+translations:
+  ar:
+    status:
+      -
+        value: true
+    uid:
+      -
+        target_id: 1
+    title:
+      -
+        value: مرحبا
+    created:
+      -
+        value: 1642076492
+    promote:
+      -
+        value: false
+    sticky:
+      -
+        value: false
+    revision_translation_affected:
+      -
+        value: true
+    path:
+      -
+        alias: /lesson/mrhba
+        langcode: ar
+        pathauto: 1
+    content_translation_source:
+      -
+        value: en
+    content_translation_outdated:
+      -
+        value: false

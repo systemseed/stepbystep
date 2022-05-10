@@ -1,0 +1,135 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: aedf7da1-9bee-4124-89d7-869400cc1fb5
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    5a4c58d2-0434-4dc4-a5c2-ba50abfdcc98: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Ava and Mary have a message for you'
+  created:
+    -
+      value: 1637567132
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/ava-and-mary-have-message-you-8
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: ab283c1e-f230-4bec-9fc0-6b6fe3a960f5
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637569339
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 010140b7-8011-40f5-a6ca-869a7c9c13cd
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637569342
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 5a4c58d2-0434-4dc4-a5c2-ba50abfdcc98
+                      alt: Ava_Mary_message
+                      title: ''
+                      width: 3315
+                      height: 2589
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 7bf6c800-28a9-4dfd-b732-6042fde34b1d
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637569344
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>We were feeling so nervous about seeing other people.</p>\r\n\r\n<p>If you’re anxious, even about meeting close friends, then know that there are other people, like us, who struggled with this as well.</p>\r\n\r\n<p>Helping others and accepting help from others are important steps in feeling better in your daily life.</p>\r\n\r\n<p><strong><em>Let’s return with Dr Noa who will introduce you to the Social Activities exercise.</em></strong></p>\r\n"
+                      format: minimal_html

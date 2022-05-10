@@ -1,0 +1,305 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 11fb9124-81c8-4db5-8400-ee0e8b278eeb
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    9c8498cf-2f2d-451f-9d30-2f7b5a49787d: file
+    7c7521a9-7628-46dd-8e51-82b10b5f1fb6: file
+    e224b16a-f745-4f47-aba7-d8e4e57c58d3: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Mary''s experience meeting friends'
+  created:
+    -
+      value: 1637059182
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/marys-experience-meeting-friends
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: d8261483-4e85-4337-8de3-480ac1731ca9
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637060549
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 13f21ab2-61a0-4c96-a1c3-2723cdfeb4b9
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637060554
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 9c8498cf-2f2d-451f-9d30-2f7b5a49787d
+                      alt: Mary_thinking_Rosa
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 50c3f271-3c1b-4d2b-8223-d8b1690e304a
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637060557
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>One afternoon Rosa invited me to join some friends from class for coffee. I felt so anxious.</p>\r\n\r\n<p>I was feeling ashamed to say no again...so I agreed to join them.</p>\r\n\r\n<p>I worried about what the girls in my class would say about me.</p>\r\n\r\n<p><em>She's quiet, she's unkempt, she always disappears after class… What's wrong with her?</em></p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 93bdb908-473c-49e2-a20f-7e89e8e9a0da
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637060721
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: bd312f32-7361-4227-bdc0-6cc387efda4b
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637060724
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 7c7521a9-7628-46dd-8e51-82b10b5f1fb6
+                      alt: Mary_call_DrNoa
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 4bc257d1-98d2-41a0-b495-333b671ba808
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637060727
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>My chest felt so tight!<br />\r\n<br />\r\nAt some point, I even started worrying whether there was something wrong with my heart.</p>\r\n\r\n<p>I was panicking… in pain… I had to call Dr Noa…</p>\r\n\r\n<p>This is what she said:</p>\r\n\r\n<p>\" It seems that the idea of meeting your classmates was very stressful for you, because you were worried that they might judge you for how you feel.</p>\r\n\r\n<p>When you are worrying too much, it is normal that your heart rate goes up, you start sweating and your thoughts go really fast.</p>\r\n\r\n<p>A Grounding Exercise may help you feel less stressed. Would you like me to guide you through it on the phone?\"</p>\r\n"
+                      format: minimal_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 4710d965-6061-417c-8fb1-c594ad8e2bb6
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1637060912
+          behavior_settings:
+            -
+              value: {  }
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: b8c3ff4d-374d-4d97-9045-24b5d2102320
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637060921
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: e224b16a-f745-4f47-aba7-d8e4e57c58d3
+                      alt: Mary_grounding
+                      title: ''
+                      width: 1024
+                      height: 745
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 9200ee50-6c4b-4a8a-9f66-01c5819cae6b
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1637060951
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>The Grounding Exercise calmed me down. In our next meeting, when I told Dr Noa what had made me feel so distressed, she said:</p>\r\n\r\n<p>\"You have very negative thoughts about yourself, and you assume that everyone else thinks the same about you.\"</p>\r\n\r\n<p>I realised that this was true.<br />\r\nIt wasn’t that my friends had actually said this about me.<br />\r\nIt was me <em>thinking</em> that they would say bad things.&nbsp;</p>\r\n\r\n<p>I had assumed that they would have the same negative thoughts about me that I had about myself.</p>\r\n"
+                      format: minimal_html

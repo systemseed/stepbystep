@@ -1,0 +1,135 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 85d30b01-e535-4465-9722-4900847fee62
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    acc40b94-9599-494c-a6a1-a77bd362800f: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Uri''s daily life'
+  created:
+    -
+      value: 1629977915
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/uris-daily-life
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 74baf27d-006b-40bf-84ef-022c0c823625
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1629978214
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 97bc71fe-5179-4bf6-9881-1a9bb31164e4
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629978218
+                  behavior_settings:
+                    -
+                      value: {  }
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: acc40b94-9599-494c-a6a1-a77bd362800f
+                      alt: to_be_replaced
+                      title: ''
+                      width: 752
+                      height: 370
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: fac216da-1183-446d-bdbf-eeb8bc4c179b
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1629978240
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>I couldn’t see anything good in my daily life anymore.</p>\r\n\r\n<p>Finding work seemed impossible … I was so anxious I wouldn’t be able to support my mother and me.</p>\r\n\r\n<p>At home, it wasn’t easy to spend time with my mother.&nbsp; She depended on me to be strong, for us both.</p>\r\n\r\n<p>But sometimes I needed her too…Yet, I had no one to rely on.</p>\r\n\r\n<p>Her arthritis made it hard for her to help around the house. I used to love it when she was proud of me for fixing something at home with my dad.</p>\r\n\r\n<p>But now it was just another chore.</p>\r\n\r\n<p>Life had been easier with dad around.</p>\r\n\r\n<p>Everything felt harder now… there was always something to resolve. I just felt numb.</p>\r\n"
+                      format: minimal_html

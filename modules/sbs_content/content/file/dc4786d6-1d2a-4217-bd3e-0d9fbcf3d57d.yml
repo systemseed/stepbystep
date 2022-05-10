@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: dc4786d6-1d2a-4217-bd3e-0d9fbcf3d57d
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: 'Copy of Safe space2_WHO Suicide Risk Illustrations.jpg'
+  uri:
+    -
+      value: 'public://2021-10/Copy of Safe space2_WHO Suicide Risk Illustrations.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 1873923
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1633425313

@@ -1,0 +1,138 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: b098d81d-8807-4916-ade3-cb478027787a
+  bundle: module_lesson
+  default_langcode: en
+  depends:
+    8a38d55f-0c94-4a6c-83bc-b3d7f11540d6: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Ava and Mary have a message for you'
+  created:
+    -
+      value: 1638267636
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lesson/ava-and-mary-have-message-you-11
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_module_lesson_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 8f690f0b-058d-4b34-bf1c-863f3663aa7c
+          bundle: lesson_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1638270570
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_lesson_section_content:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 9e8f7bc1-45ca-4898-9055-ba4e294e0658
+                  bundle: lesson_image
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1638270573
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_image_image:
+                    -
+                      entity: 8a38d55f-0c94-4a6c-83bc-b3d7f11540d6
+                      alt: Ava_Mary_message
+                      title: ''
+                      width: 3315
+                      height: 2589
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 693ad756-f30c-4d60-b6ae-18dc1143296c
+                  bundle: lesson_text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1638270576
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  content_translation_source:
+                    -
+                      value: und
+                  content_translation_outdated:
+                    -
+                      value: false
+                  field_lesson_text_content:
+                    -
+                      value: "<p>If it still happens to you to think, “I’m not good at anything”, know that it happened to us as well.</p>\r\n\r\n<p>This negativity frightened us so much.</p>\r\n\r\n<p>It’s normal to have ups and downs.</p>\r\n\r\n<p>Change does not happen immediately!</p>\r\n\r\n<p>Keep trying!</p>\r\n\r\n<p><strong><em>Let’s return to Dr Noa, who will show you how you can cope with feeling low in the future.</em></strong></p>\r\n"
+                      format: minimal_html

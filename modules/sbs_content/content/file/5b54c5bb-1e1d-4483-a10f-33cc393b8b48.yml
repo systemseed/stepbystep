@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 5b54c5bb-1e1d-4483-a10f-33cc393b8b48
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: S1.02(2).png
+  uri:
+    -
+      value: 'public://courses/2021-10/S1.02(2).png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 45278
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1633685608

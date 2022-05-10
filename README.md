@@ -56,9 +56,61 @@ make composer req systemseed/who-stepbystep:"9.x-dev"
 
 Install your Step By Step site like any other Drupal website.
 
+### Enabling development mode (NOT FOR PRODUCTION!)
+
+The profile comes with preconfigured development mode for quick testing on dev
+environments. The development mode is powered by `config_split` module.
+
+To enable development mode, you need to perform the following steps.
+
+Install `devel_php`:
+```
+composer req --dev drupal/devel_php
+```
+
+Enable development config split and test users by adding the following lines
+in settings.php:
+
+```
+$settings['config_sync_directory'] = '../config/sync';
+$config["config_split.config_split.development"]["status"] = TRUE;
+```
+
+Export your current configuration in `./config/sync`:
+```
+drush config-export
+```
+
+Copy preconfigured config splits into your config folder:
+
+```
+cp -r web/profiles/contrib/who-stepbystep/config/split config/
+```
+
+Clear cache, run config import, run cron:
+```
+drush cr
+drush config-import
+drush cron
+```
+
+The development mode enables:
+
+- Quick registration with dev+YOURNAME@whostepbystep.oeg email addresses
+- Test users for each existing role:
+  - dev+developer@whostepbystep.org
+  - dev+manager@whostepbystep.org
+  - dev+coordinator@whostepbystep.org
+  - dev+e_helper@whostepbystep.org
+  - dev+content_editor@whostepbystep.org
+  - dev+translator@whostepbystep.org
+  - dev+authenticated@whostepbystep.org
+
 ### Configuration
 
-TBD
+Before running the site on production the following configuration must be
+reviewed:
+- TBD
 
 ### Update
 

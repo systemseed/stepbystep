@@ -1,0 +1,11 @@
+application_mode: development
+test_users_active_on_production: {  }
+test_users_additional_users: {  }
+test_users_check_frequency: 3600
+test_users_email_domain: 'whostepbystep.org'
+test_users_email_prefix: 'dev+'
+test_users_email_suffix: ''
+test_users_password: 'stepbystep'
+test_users_password_for_production: ''
+test_users_usernames_map: {  }
+display_emails_as_messages: 1

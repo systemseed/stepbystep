@@ -102,7 +102,7 @@ class LessonCompletedSubscriber implements EventSubscriberInterface {
    */
   public function onLessonCompleted(LessonCompletedEvent $event) {
     $account = $event->getAccount();
-    /* @var $user \Drupal\user\Entity\User */
+    /** @var \Drupal\user\Entity\User $user */
     $user = $this->entityTypeManager->getStorage('user')->load($account->id());
     if ($user->get('field_user_state')->value == 'completed') {
       return;

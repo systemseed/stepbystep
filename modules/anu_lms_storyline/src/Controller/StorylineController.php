@@ -7,7 +7,6 @@ use Drupal\anu_lms_storyline\Normalizer;
 use Drupal\anu_lms_storyline\Storyline;
 use Drupal\Component\Serialization\Json;
 use Drupal\Core\Extension\ModuleHandlerInterface;
-use Drupal\Core\Routing\CurrentRouteMatch;
 use Drupal\Core\Url;
 use Drupal\taxonomy\Controller\TaxonomyController;
 use Drupal\taxonomy\VocabularyInterface;
@@ -26,19 +25,29 @@ class StorylineController extends TaxonomyController {
    * @var \Drupal\anu_lms_storyline\Normalizer
    */
   protected Normalizer $normalizer;
+
+  /**
+   * The storyline service.
+   *
+   * @var \Drupal\anu_lms_storyline\Storyline
+   */
   private Storyline $storyline;
+
+  /**
+   * Anu LMS settings.
+   *
+   * @var \Drupal\anu_lms\Settings
+   */
   private Settings $anulmsSettings;
-  private CurrentRouteMatch $currentRouteMatch;
 
   /**
    * Creates the controller.
    */
-  public function __construct(Normalizer $normalizer, Storyline $storyline, Settings $anulmsSettings, ModuleHandlerInterface $moduleHandler, CurrentRouteMatch $currentRouteMatch) {
+  public function __construct(Normalizer $normalizer, Storyline $storyline, Settings $anulmsSettings, ModuleHandlerInterface $moduleHandler) {
     $this->normalizer = $normalizer;
     $this->storyline = $storyline;
     $this->anulmsSettings = $anulmsSettings;
     $this->moduleHandler = $moduleHandler;
-    $this->currentRouteMatch = $currentRouteMatch;
   }
 
   /**
@@ -50,7 +59,6 @@ class StorylineController extends TaxonomyController {
       $container->get('anu_lms_storyline.storyline'),
       $container->get('anu_lms.settings'),
       $container->get('module_handler'),
-      $container->get('current_route_match')
     );
   }
 

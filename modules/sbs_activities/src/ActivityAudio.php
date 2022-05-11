@@ -91,7 +91,10 @@ class ActivityAudio {
         ],
       ];
 
-      $build['application']['#attached']['html_head'][] = [$preload_audio, 'preload_audio'];
+      $build['application']['#attached']['html_head'][] = [
+        $preload_audio,
+        'preload_audio',
+      ];
     }
 
     $build['#attached'] = [

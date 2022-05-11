@@ -18,7 +18,7 @@ class OverrideProtectedUserFieldConstraintValidator extends ProtectedUserFieldCo
       return;
     }
 
-    /* @var \Drupal\user\UserInterface $account */
+    /** @var \Drupal\user\UserInterface $account */
     $account = $items->getEntity();
     if (!isset($account) || !empty($account->_skipProtectedUserFieldConstraint)) {
       // Looks like we are validating a field not being part of a user, or the
@@ -29,7 +29,7 @@ class OverrideProtectedUserFieldConstraintValidator extends ProtectedUserFieldCo
     // Only validate for existing entities and if this is the current user.
     if (!$account->isNew() && $account->id() == $this->currentUser->id()) {
       // Special case for the email, it can be empty.
-      /* @var \Drupal\Core\Field\FieldItemListInterface $items */
+      /** @var \Drupal\Core\Field\FieldItemListInterface $items */
       $field = $items->getFieldDefinition();
       if ($field->getName() == 'mail') {
         return;

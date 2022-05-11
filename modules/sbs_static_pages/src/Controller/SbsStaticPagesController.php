@@ -13,6 +13,11 @@ use Symfony\Component\HttpFoundation\RedirectResponse;
  */
 class SbsStaticPagesController extends ControllerBase {
 
+  /**
+   * Config pages.
+   *
+   * @var \Drupal\config_pages\ConfigPagesLoaderService
+   */
   private ConfigPagesLoaderService $configPages;
 
   /**

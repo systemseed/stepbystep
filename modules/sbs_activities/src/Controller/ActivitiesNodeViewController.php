@@ -131,7 +131,6 @@ class ActivitiesNodeViewController extends AnulmsNodeViewController {
       $build = $this->activityAudio->getPageData($node);
     }
 
-    // TODO: can be improved using cache tags.
     // Disable cache for this page.
     $build['#cache']['max-age'] = 0;
     return $build;

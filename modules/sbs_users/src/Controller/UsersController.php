@@ -197,7 +197,7 @@ class UsersController extends ControllerBase {
    * Renders admin chat as a tab.
    */
   protected function renderChat($participant) {
-    /* @var $controller ChatController */
+    /** @var \Drupal\sbs_chat\Controller\ChatController $controller */
     $controller = $this->classResolver->getInstanceFromDefinition(ChatController::class);
     $chat_render = $controller->adminChat($participant);
 

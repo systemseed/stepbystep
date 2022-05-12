@@ -24,16 +24,10 @@ class HealthCheckTest extends BrowserTestBase {
   protected $strictConfigSchema = FALSE;
 
   /**
-   * Health check.
+   * {@inheritdoc}
    */
-  public function testHealthCheck() {
-    $this->drupalGet('');
-
-    if ($this->loggedInUser) {
-      $this->drupalLogout();
-    }
-
-    $account = User::load(1);
+  protected function drupalLogin($account, $password = '') {
+    $pass = $password ? $password : $this->rootUser->pass_raw;
     $this->drupalGet(Url::fromRoute('user.login'));
     $this->submitForm([
       'name' => $account->getEmail(),
@@ -46,6 +40,24 @@ class HealthCheckTest extends BrowserTestBase {
 
     $this->loggedInUser = $account;
     $this->container->get('current_user')->setAccount($account);
+  }
+
+  /**
+   * Login as user 1 and ensure there is welcome page.
+   */
+  public function testHealthCheck() {
+    $check_string = 'Take the first step!';
+
+    $this->drupalGet('');
+
+    if ($this->loggedInUser) {
+      $this->drupalLogout();
+    }
+
+    $account = User::load(1);
+    $this->drupalLogin($account);
+    $contains_string = strpos( $this->getSession()->getPage()->getContent(), $check_string) !== FALSE;
+    $this->assertTrue($contains_string, "Page source contains '$check_string' string");
   }
 
 }

@@ -23,8 +23,9 @@ jobs:
             sudo apt install -y php8.0-sqlite3
       - checkout:
           path: who-stepbystep
+
       - run:
-          name: Prepare composer from template
+          name: Prepare composer from the Step By Step template
           command: |
             composer create-project systemseed/who-stepbystep-project drupal --no-install --stability=dev --repository="{\"url\": \"git@github.com:systemseed/who-stepbystep-project.git\", \"type\": \"vcs\"}"
       - run:
@@ -39,17 +40,20 @@ jobs:
           working_directory: drupal
           command: composer install
       - run:
-          name: Replace symlink with real files to build assets
+          name: Replace symlink with real files to be able to build assets.
           working_directory: drupal
           command: |
             rm -f web/.eslintrc.json
             rm -rf web/profiles/contrib/who-stepbystep
             cp -r ../who-stepbystep web/profiles/contrib/
+
       - run:
           name: Run PHP code sniffer
           working_directory: drupal
           command: |
             vendor/bin/phpcs --standard=Drupal --ignore=node_modules,vendor,dist,js,*.md web/profiles/contrib/who-stepbystep
+
+      # Install JS app dependencies to ensure JS code is properly built.
       - restore_cache:
           name: Restore JS dependencies cache
           keys:
@@ -77,9 +81,11 @@ jobs:
           working_directory: drupal/web/profiles/contrib/who-stepbystep/modules/sbs_application/js
           command: git status
       - run:
-          name: Fail build if there are uncommitted changes after build
+          name: Fail build if there are uncommitted changes after build (did you forget to commit built JS files?)
           working_directory: drupal/web/profiles/contrib/who-stepbystep/modules/sbs_application/js
           command: git diff-index --quiet HEAD --
+
+      # Drupal test suite installs fresh Step By Step installation on each test.
       - run:
           name: Run Drupal tests
           working_directory: drupal

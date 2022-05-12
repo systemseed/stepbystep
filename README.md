@@ -51,7 +51,7 @@ composer config minimum-stability dev
 Require Step By Step profile package:
 
 ```
-make composer req systemseed/who-stepbystep:"9.x-dev"
+composer req systemseed/who-stepbystep:"9.x-dev"
 ```
 
 Install your Step By Step site like any other Drupal website.
@@ -117,3 +117,93 @@ reviewed:
 TBD
 
 ### Contribute
+
+To develop the profile on your development environment, install the package
+from source:
+
+```
+composer req systemseed/who-stepbystep:"9.x-dev" --prefer-source
+```
+
+PHP code should pass [PHPCS](https://github.com/squizlabs/PHP_CodeSniffer#composer) checks:
+
+```
+phpcs --standard=Drupal --ignore=node_modules,vendor,dist,js,*.md .
+```
+
+New configuration should be put in profile's config folder.
+
+Configuration changes should be organised in Drupal update hooks using the
+[Update helper](https://www.drupal.org/project/update_helper) module.
+
+To contribute to the frontend and to Material SBS theme, Node.js is required.
+
+#### Frontend app
+
+Go to the frontend app folder:
+
+```
+cd modules/sbs_application/js
+```
+
+Download dependencies:
+
+```
+npm install
+```
+
+Disable CSS/JS preprocessing in Drupal and start "watch" mode to make changes
+and see them on page refresh:
+
+```
+npm run watch
+```
+
+When the changes are ready, run linter and fix any found issues:
+
+```
+npm run format
+npm run lint
+```
+
+Build the final JS assets:
+
+```
+npm run build
+```
+
+#### Material SBS theme
+
+The development process is the same as for the frontend app.
+
+Go to the theme folder:
+
+```
+cd theme/material_sbs
+```
+
+Download dependencies:
+
+```
+npm install
+```
+
+Disable CSS/JS preprocessing in Drupal and start "watch" mode to make changes
+and see them on page refresh:
+
+```
+npm run watch
+```
+
+Build the final JS assets:
+
+```
+npm run build
+```
+
+#### CI
+
+Circle CI installs clean Drupal from Composer template, runs code checks and
+basic tests to ensure the distribution can be installed.
+
+See `.circleci/config.yml` file for details.

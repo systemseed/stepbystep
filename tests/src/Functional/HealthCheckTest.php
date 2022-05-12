@@ -56,7 +56,7 @@ class HealthCheckTest extends BrowserTestBase {
 
     $account = User::load(1);
     $this->drupalLogin($account);
-    $contains_string = strpos( $this->getSession()->getPage()->getContent(), $check_string) !== FALSE;
+    $contains_string = strpos($this->getSession()->getPage()->getContent(), $check_string) !== FALSE;
     $this->assertTrue($contains_string, "Page source contains '$check_string' string");
   }
 

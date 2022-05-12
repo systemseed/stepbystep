@@ -55,7 +55,7 @@ class SessionHealthCheck extends WebDriverTestBase {
 
     $lesson_heading = $assert->waitForElementVisible('css', 'h4.MuiTypography-root');
     $this->assertNotEmpty($lesson_heading);
-    $this->assertEquals($lesson_heading->getText(), 'Welcome');
+    $this->assertEquals($lesson_heading->getText(), 'Kate test');
   }
 
 }

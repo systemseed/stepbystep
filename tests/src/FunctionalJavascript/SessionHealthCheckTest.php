@@ -11,7 +11,7 @@ use Drupal\user\Entity\User;
  *
  * @group stepbystep
  */
-class SessionHealthCheck extends WebDriverTestBase {
+class SessionHealthCheckTest extends WebDriverTestBase {
 
   /**
    * {@inheritdoc}
@@ -43,7 +43,7 @@ class SessionHealthCheck extends WebDriverTestBase {
   }
 
   /**
-   * Test there is some courses.
+   * Make sure the first session can be opened in browser.
    */
   public function testSessions() {
     $account = User::load(1);
@@ -55,7 +55,7 @@ class SessionHealthCheck extends WebDriverTestBase {
 
     $lesson_heading = $assert->waitForElementVisible('css', 'h4.MuiTypography-root');
     $this->assertNotEmpty($lesson_heading);
-    $this->assertEquals($lesson_heading->getText(), 'Kate test');
+    $this->assertEquals($lesson_heading->getText(), 'Welcome');
   }
 
 }

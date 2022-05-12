@@ -50,14 +50,20 @@ jobs:
           working_directory: drupal
           command: |
             vendor/bin/phpcs --standard=Drupal --ignore=node_modules,vendor,dist,js,*.md web/profiles/contrib/who-stepbystep
+      - restore_cache:
+          name: Restore JS dependencies cache
+          keys:
+            - app-{{ checksum "drupal/web/profiles/contrib/who-stepbystep/modules/sbs_application/js/package-lock.json" }}
+            - app-
       - run:
           name: App - Install nodejs dependencies
           working_directory: drupal/web/profiles/contrib/who-stepbystep/modules/sbs_application/js
           command: npm install
-      - run:
-          name: Theme - Install nodejs dependencies
-          working_directory:  drupal/web/profiles/contrib/who-stepbystep/themes/material_sbs
-          command: npm install
+      - save_cache:
+          name: Save JS dependencies cache
+          key: app-{{ checksum "drupal/web/profiles/contrib/who-stepbystep/modules/sbs_application/js/package-lock.json" }}
+          paths:
+            - drupal/web/profiles/contrib/who-stepbystep/modules/sbs_application/js/node_modules
       - run:
           name: App - Run eslint
           working_directory: drupal/web/profiles/contrib/who-stepbystep/modules/sbs_application/js
@@ -65,10 +71,6 @@ jobs:
       - run:
           name: App - Build assets
           working_directory: drupal/web/profiles/contrib/who-stepbystep/modules/sbs_application/js
-          command: npm run build
-      - run:
-          name: Theme - Build assets
-          working_directory: drupal/web/profiles/contrib/who-stepbystep/themes/material_sbs
           command: npm run build
       - run:
           name: Print git status

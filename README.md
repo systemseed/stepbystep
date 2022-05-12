@@ -106,17 +106,17 @@ The development mode enables:
   - dev+translator@whostepbystep.org
   - dev+authenticated@whostepbystep.org
 
-### Configuration
+## Configuration
 
 Before running the site on production the following configuration must be
 reviewed:
 - TBD
 
-### Update
+## Update
 
 TBD
 
-### Contribute
+## Contribute
 
 To develop the profile on your development environment, install the package
 from source:
@@ -138,7 +138,7 @@ Configuration changes should be organised in Drupal update hooks using the
 
 To contribute to the frontend and to Material SBS theme, Node.js is required.
 
-#### Frontend app
+### Frontend app
 
 Go to the frontend app folder:
 
@@ -172,7 +172,7 @@ Build the final JS assets:
 npm run build
 ```
 
-#### Material SBS theme
+### Material SBS theme
 
 The development process is the same as for the frontend app.
 
@@ -201,7 +201,7 @@ Build the final JS assets:
 npm run build
 ```
 
-#### CI
+### CI
 
 Circle CI installs clean Drupal from Composer template, runs code checks and
 basic tests to ensure the distribution can be installed.

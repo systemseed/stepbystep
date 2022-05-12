@@ -2,16 +2,17 @@
 
 // Looks like there is overlap between Material and @chatscope variable names
 // and just importing all variables will make chat look strange.
-//@import "../../contrib/material_base/scss/base/variables";
+//@import "../../../../../../themes/contrib/material_base/scss/base/variables";
 
 // Loading @chatscope theme variables.
 // See https://github.com/chatscope/chat-ui-kit-styles/blob/master/themes/default/_variables.scss
 @import "@chatscope/chat-ui-kit-styles/themes/default/variables";
 @import "@chatscope/chat-ui-kit-styles/themes/default/main";
 
+
 // Base
-@import "../../contrib/material_base/scss/base/variables";
-@import "../../contrib/material_base/scss/base/mixins";
+@import "../../../../../../themes/contrib/material_base/scss/base/variables";
+@import "../../../../../../themes/contrib/material_base/scss/base/mixins";
 
 $message-separator-color: #000;
 

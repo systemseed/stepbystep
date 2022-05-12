@@ -83,4 +83,4 @@ jobs:
       - run:
           name: Run Drupal tests
           working_directory: drupal
-          command: php -S localhost:8888 -t web/ & chromedriver --whitelisted-ips --verbose & sleep 1 && vendor/bin/phpunit -c web/core/phpunit.xml.dist web/profiles/contrib/who-stepbystep/tests
+          command: php -S localhost:8888 -t web/ & chromedriver --whitelisted-ips & sleep 1 && vendor/bin/phpunit -c web/core/phpunit.xml.dist web/profiles/contrib/who-stepbystep/tests

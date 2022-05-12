@@ -39,10 +39,45 @@ jobs:
           working_directory: drupal
           command: composer install
       - run:
+          name: Replace symlink with real files to build assets
+          working_directory: drupal
+          command: |
+            rm -f web/.eslintrc.json
+            rm -rf web/profiles/contrib/who-stepbystep
+            cp -r ../who-stepbystep web/profiles/contrib/
+      - run:
           name: Run PHP code sniffer
           working_directory: drupal
           command: |
             vendor/bin/phpcs --standard=Drupal --ignore=node_modules,vendor,dist,js,*.md web/profiles/contrib/who-stepbystep
+      - run:
+          name: App - Install nodejs dependencies
+          working_directory: drupal/web/profiles/contrib/who-stepbystep/modules/sbs_application/js
+          command: npm install
+      - run:
+          name: Theme - Install nodejs dependencies
+          working_directory:  drupal/web/profiles/contrib/who-stepbystep/themes/material_sbs
+          command: npm install
+      - run:
+          name: App - Run eslint
+          working_directory: drupal/web/profiles/contrib/who-stepbystep/modules/sbs_application/js
+          command: npm run lint
+      - run:
+          name: App - Build assets
+          working_directory: drupal/web/profiles/contrib/who-stepbystep/modules/sbs_application/js
+          command: npm run build
+      - run:
+          name: Theme - Build assets
+          working_directory: drupal/web/profiles/contrib/who-stepbystep/themes/material_sbs
+          command: npm run build
+      - run:
+          name: Print git status
+          working_directory: drupal/web/profiles/contrib/who-stepbystep/modules/sbs_application/js
+          command: git status
+      - run:
+          name: Fail build if there are uncommitted changes after build
+          working_directory: drupal/web/profiles/contrib/who-stepbystep/modules/sbs_application/js
+          command: git diff-index --quiet HEAD --
       - run:
           name: Run Drupal tests
           working_directory: drupal

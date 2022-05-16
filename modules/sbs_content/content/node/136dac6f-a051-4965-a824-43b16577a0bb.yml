@@ -217,10 +217,10 @@ default:
   webform:
     -
       target_id: webform_content_spokuprihespag
-      default_data: ''
-      status: ''
-      open: ''
-      close: ''
+      default_data: null
+      status: null
+      open: null
+      close: null
   webform_content:
     -
       entity:

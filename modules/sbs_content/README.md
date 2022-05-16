@@ -55,3 +55,26 @@ To update default content in future, please follow next steps.
     ```
     drush dcem sbs_content
     ```
+
+4. Update a few export files manually
+
+    Export files of the node of type `webform` need to be slightly updated.
+    The easiest option to find lines that need to be changed - use search in
+    files in the `content/node` folder by keyword `webform:`.
+    Then replace 4 values in each file that matches:
+
+    ```
+    default_data: ''
+    status: ''
+    open: ''
+    close: ''
+    ```
+
+    to
+    
+    ```
+    default_data: null
+    status: null
+    open: null
+    close: null
+    ```

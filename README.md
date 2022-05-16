@@ -110,11 +110,41 @@ The development mode enables:
 
 Before running the site on production the following configuration must be
 reviewed:
-- TBD
+
+- SMTP settings for sending emails (/admin/config/system/smtp)
+- Twilio (or other) SMS gateway (/admin/config/smsframework/gateways/twilio)
 
 ## Update
 
-TBD
+The update process for each release should be first tested on non-production
+environment.
+
+Update codebase using Composer:
+
+```
+composer update --with-all-dependencies systemseed/who-stepbystep
+```
+
+Apply database and config updates:
+
+```
+drush updatedb
+```
+
+Review Update helper checklist (/admin/config/development/update-helper).
+Export active site configuration in files and review changes. You may want to
+skip some updates if your Step by Step installation is customised.
+
+### Applying updates to Drupal core
+
+Step by Step installation profile doesn't come with `composer.lock` file, so you
+can update patch versions of Drupal core without updating the entire profile.
+
+Example:
+
+```
+composer update --with-all-dependencies drupal/core-recommended drupal/core-composer-scaffold drupal/core-project-message
+```
 
 ## Contribute
 
@@ -134,7 +164,8 @@ phpcs --standard=Drupal --ignore=node_modules,vendor,dist,js,*.md .
 New configuration should be put in profile's config folder.
 
 Configuration changes should be organised in Drupal update hooks using the
-[Update helper](https://www.drupal.org/project/update_helper) module.
+[Update helper](https://www.drupal.org/project/update_helper) module. Follow
+instructions for distributions provided by the Update helper module.
 
 To contribute to the frontend and to Material SBS theme, Node.js is required.
 
@@ -207,3 +238,17 @@ Circle CI installs clean Drupal from Composer template, runs code checks and
 basic tests to ensure the distribution can be installed.
 
 See `.circleci/config.yml` file for details.
+
+### Releases
+
+Major Step By Step release versions match supported Drupal core version, e.g.
+9.0.0 release is compatible with Drupal 9.
+
+Minor and patch versions should be released using [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+To make a new release:
+
+1. Test the upgrade path and document it in CHANGELOG.md.
+2. Make sure CI build is green (all automated checks should pass).
+3. Make sure CHANGELOG.md is up-to-date with all introduced changes.
+4. Create a new tag in git and crete a new release in Github.

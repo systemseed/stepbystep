@@ -1,0 +1,6 @@
+dblog.settings:
+  expected_config:
+    row_limit: 1000
+  update_actions:
+    change:
+      row_limit: 10000

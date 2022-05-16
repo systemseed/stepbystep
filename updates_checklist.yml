@@ -1,0 +1,8 @@
+v9.0.0:
+    '#title': 'Update to version 9.0.0'
+    '#description': '<h3>This is demo update:</h3>'
+    stepbystep_update_8001:
+        '#title': 'DB log update from 1000 to 10000'
+        '#description': '<p>This configuration update will update site configuration to newly provided configuration</p>'
+        '#description_successful': '<p>Configuration is successfully updated.</p>'
+        '#description_failed': '<p><strong>Update of configuration has failed.</strong><p>'

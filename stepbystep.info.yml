@@ -106,6 +106,7 @@ install:
   - domino:domino
   - rollbar:rollbar
   - sbs_chat:sbs_chat
+  - update_helper_checklist:update_helper_checklist
 
 themes:
   - stable

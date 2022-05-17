@@ -4,7 +4,7 @@ All notable changes to Basilio will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## Unreleased
--
+- Fixed config pages import on site install.
 
 ## [9.0.0]
 - Added `default_content` module and module which stores content for import.

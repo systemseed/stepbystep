@@ -9,9 +9,6 @@
  * Implements hook_install().
  */
 function sbs_questionnaire_install() {
-  include_once __DIR__ . '/sbs_questionnaire.post_update.php';
-  sbs_questionnaire_post_update_default_config_page();
-
   // TODO: update Domino to make Seven configs optional.
   \Drupal::service('theme_installer')->install(['seven']);
 }

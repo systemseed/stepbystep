@@ -113,6 +113,7 @@ reviewed:
 
 - SMTP settings for sending emails (/admin/config/system/smtp)
 - Twilio (or other) SMS gateway (/admin/config/smsframework/gateways/twilio)
+- Score levels that a user has to reach to be offered an E-helper (/admin/content/questionnaires/ehelper)
 
 ## Update
 

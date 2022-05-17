@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/systemseed/who-stepbystep/tree/9.x.svg?style=svg&circle-token=c158f3227fd5e1eb86612e1a36ce85c6f4362202)](https://circleci.com/gh/systemseed/who-stepbystep/tree/9.x)
+
 # Step By Step Drupal distribution
 
 Step By Step is a Drupal distribution for an evidence based support program

@@ -82,7 +82,7 @@ class PhoneRegistrationForm extends RegisterForm {
       '#title' => 'Phone Number',
       '#required' => TRUE,
       '#maxlength' => 15,
-      '#description' => t('We will send an SMS to verify your account'),
+      '#description' => $this->t('We will send an SMS to verify your account'),
     ];
 
     $form['account']['pass']['#description'] = NULL;

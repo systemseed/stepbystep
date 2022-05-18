@@ -6,6 +6,8 @@ use Drupal\Core\Url;
 use Drupal\FunctionalJavascriptTests\WebDriverTestBase;
 use Drupal\user\Entity\User;
 
+// phpcs:disable DrupalPractice.Objects.StrictSchemaDisabled.StrictConfigSchema
+
 /**
  * Check the sessions page with Javascript enabled.
  *
@@ -17,6 +19,11 @@ class SessionHealthCheckTest extends WebDriverTestBase {
    * {@inheritdoc}
    */
   protected $profile = 'stepbystep';
+
+  /**
+   * {@inheritdoc}
+   */
+  protected $strictConfigSchema = FALSE;
 
   /**
    * {@inheritdoc}

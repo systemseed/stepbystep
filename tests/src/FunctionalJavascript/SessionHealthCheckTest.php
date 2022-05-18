@@ -31,7 +31,7 @@ class SessionHealthCheckTest extends WebDriverTestBase {
     $this->drupalGet(Url::fromRoute('user.login'));
     $this->submitForm([
       'name' => $account->getEmail(),
-      'pass' => $this->rootUser->pass_raw,
+      'pass' => $pass,
     ], 'Log in', 'user-login-form');
 
     $account->sessionId = $this->getSession()->getCookie(\Drupal::service('session_configuration')->getOptions(\Drupal::request())['name']);

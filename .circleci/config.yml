@@ -51,7 +51,7 @@ jobs:
           name: Run PHP code sniffer
           working_directory: drupal
           command: |
-            vendor/bin/phpcs --standard=Drupal --ignore=node_modules,vendor,dist,js,*.md web/profiles/contrib/who-stepbystep
+            vendor/bin/phpcs --standard=Drupal,DrupalPractice --ignore=node_modules,vendor,dist,js,*.md web/profiles/contrib/who-stepbystep
 
       # Install JS app dependencies to ensure JS code is properly built.
       - restore_cache:

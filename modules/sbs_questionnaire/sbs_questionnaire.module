@@ -70,7 +70,7 @@ function sbs_questionnaire_node_presave(EntityInterface $entity) {
     'webform_content_title' => 'Not depressed',
     'webform_content_score_range' => [
       'from' => 0,
-      'to' => 30,
+      'to' => 9,
     ],
     'webform_content_text' => 'The answers indicate you are doing okay',
     'webform_content_icon' => 'check_circle',
@@ -88,8 +88,8 @@ function sbs_questionnaire_node_presave(EntityInterface $entity) {
     'type' => 'webform_content_score_level',
     'webform_content_title' => 'Depressed',
     'webform_content_score_range' => [
-      'from' => 31,
-      'to' => 60,
+      'from' => 10,
+      'to' => 30,
     ],
     'webform_content_text' => 'We are here to help you feel better',
     'webform_content_icon' => 'check_circle',
@@ -107,7 +107,7 @@ function sbs_questionnaire_node_presave(EntityInterface $entity) {
     'type' => 'webform_content_score_level',
     'webform_content_title' => 'At risk',
     'webform_content_score_range' => [
-      'from' => 61,
+      'from' => 31,
       'to' => 1000,
     ],
     'webform_content_text' => 'You\'re at risk of harm',

@@ -7,6 +7,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Fixed config pages import on site install.
 - Added DrupalPractice standard to PHPCS config in CI.
 - Fine tuned default webform score values for questionnaires.
+- Fixed default favicon.
 
 ## [9.0.0]
 - Added `default_content` module and module which stores content for import.

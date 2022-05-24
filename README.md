@@ -53,7 +53,7 @@ composer config minimum-stability dev
 Require Step By Step profile package:
 
 ```
-composer req systemseed/who-stepbystep:"9.x-dev"
+composer req systemseed/who-stepbystep:"^9.0.1"
 ```
 
 Install your Step By Step site like any other Drupal website.
@@ -99,7 +99,7 @@ drush cron
 The development mode enables:
 
 - Quick registration with dev+YOURNAME@whostepbystep.oeg email addresses
-- Test users for each existing role:
+- Test users for each existing role with password set to `stepbystep`:
   - dev+developer@whostepbystep.org
   - dev+manager@whostepbystep.org
   - dev+coordinator@whostepbystep.org

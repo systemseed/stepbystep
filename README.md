@@ -5,6 +5,10 @@
 Step By Step is a Drupal distribution for an evidence based support program
 for people with depression and stress.
 
+## User documentation
+
+User documentation can be found in the [`docs/`](https://github.com/systemseed/who-stepbystep/tree/9.x/docs) folder.
+
 ## Installation
 
 ### Requirements

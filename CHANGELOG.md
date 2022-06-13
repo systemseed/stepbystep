@@ -6,6 +6,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## Unreleased
 -
 
+## [9.0.2]
+- Renamed project to systemseed/stepbystep.
+
 ## [9.0.1]
 - Fixed config pages import on site install.
 - Added DrupalPractice standard to PHPCS config in CI.

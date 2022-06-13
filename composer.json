@@ -1,5 +1,5 @@
 {
-    "name": "systemseed/who-stepbystep",
+    "name": "systemseed/stepbystep",
     "description": "Step By Step Drupal installation profile.",
     "type": "drupal-profile",
     "license": "GPL-2.0-or-later",

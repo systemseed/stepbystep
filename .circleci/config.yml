@@ -22,18 +22,18 @@ jobs:
             sudo apt update && \
             sudo apt install -y php8.0-sqlite3
       - checkout:
-          path: who-stepbystep
+          path: stepbystep
 
       - run:
           name: Prepare composer from the Step By Step template
           command: |
-            composer create-project systemseed/who-stepbystep-project drupal --no-install --stability=dev --repository="{\"url\": \"git@github.com:systemseed/who-stepbystep-project.git\", \"type\": \"vcs\"}"
+            composer create-project systemseed/stepbystep-project drupal --no-install --stability=dev --repository="{\"url\": \"git@github.com:systemseed/stepbystep-project.git\", \"type\": \"vcs\"}"
       - run:
           name: Link local version of the installation profile in composer
           working_directory: drupal
           command: |
-            composer config repositories.1 path ../who-stepbystep && \
-            composer require "systemseed/who-stepbystep:*" --no-install && \
+            composer config repositories.1 path ../stepbystep && \
+            composer require "systemseed/stepbystep:*" --no-install && \
             composer require --dev --no-install dealerdirect/phpcodesniffer-composer-installer
       - run:
           name: Composer install
@@ -44,49 +44,49 @@ jobs:
           working_directory: drupal
           command: |
             rm -f web/.eslintrc.json
-            rm -rf web/profiles/contrib/who-stepbystep
-            cp -r ../who-stepbystep web/profiles/contrib/
+            rm -rf web/profiles/contrib/stepbystep
+            cp -r ../stepbystep web/profiles/contrib/
 
       - run:
           name: Run PHP code sniffer
           working_directory: drupal
           command: |
-            vendor/bin/phpcs --standard=Drupal,DrupalPractice --ignore=node_modules,vendor,dist,js,*.md web/profiles/contrib/who-stepbystep
+            vendor/bin/phpcs --standard=Drupal,DrupalPractice --ignore=node_modules,vendor,dist,js,*.md web/profiles/contrib/stepbystep
 
       # Install JS app dependencies to ensure JS code is properly built.
       - restore_cache:
           name: Restore JS dependencies cache
           keys:
-            - app-{{ checksum "drupal/web/profiles/contrib/who-stepbystep/modules/sbs_application/js/package-lock.json" }}
+            - app-{{ checksum "drupal/web/profiles/contrib/stepbystep/modules/sbs_application/js/package-lock.json" }}
             - app-
       - run:
           name: App - Install nodejs dependencies
-          working_directory: drupal/web/profiles/contrib/who-stepbystep/modules/sbs_application/js
+          working_directory: drupal/web/profiles/contrib/stepbystep/modules/sbs_application/js
           command: npm install
       - save_cache:
           name: Save JS dependencies cache
-          key: app-{{ checksum "drupal/web/profiles/contrib/who-stepbystep/modules/sbs_application/js/package-lock.json" }}
+          key: app-{{ checksum "drupal/web/profiles/contrib/stepbystep/modules/sbs_application/js/package-lock.json" }}
           paths:
-            - drupal/web/profiles/contrib/who-stepbystep/modules/sbs_application/js/node_modules
+            - drupal/web/profiles/contrib/stepbystep/modules/sbs_application/js/node_modules
       - run:
           name: App - Run eslint
-          working_directory: drupal/web/profiles/contrib/who-stepbystep/modules/sbs_application/js
+          working_directory: drupal/web/profiles/contrib/stepbystep/modules/sbs_application/js
           command: npm run lint
       - run:
           name: App - Build assets
-          working_directory: drupal/web/profiles/contrib/who-stepbystep/modules/sbs_application/js
+          working_directory: drupal/web/profiles/contrib/stepbystep/modules/sbs_application/js
           command: npm run build
       - run:
           name: Print git status
-          working_directory: drupal/web/profiles/contrib/who-stepbystep/modules/sbs_application/js
+          working_directory: drupal/web/profiles/contrib/stepbystep/modules/sbs_application/js
           command: git status
       - run:
           name: Fail build if there are uncommitted changes after build (did you forget to commit built JS files?)
-          working_directory: drupal/web/profiles/contrib/who-stepbystep/modules/sbs_application/js
+          working_directory: drupal/web/profiles/contrib/stepbystep/modules/sbs_application/js
           command: git diff-index --quiet HEAD --
 
       # Drupal test suite installs fresh Step By Step installation on each test.
       - run:
           name: Run Drupal tests
           working_directory: drupal
-          command: php -S localhost:8888 -t web/ & chromedriver --whitelisted-ips & sleep 1 && vendor/bin/phpunit -c web/core/phpunit.xml.dist web/profiles/contrib/who-stepbystep/tests
+          command: php -S localhost:8888 -t web/ & chromedriver --whitelisted-ips & sleep 1 && vendor/bin/phpunit -c web/core/phpunit.xml.dist web/profiles/contrib/stepbystep/tests

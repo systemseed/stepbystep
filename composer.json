@@ -31,7 +31,7 @@
         "composer/installers": "~1.0 || ~2.0",
         "cweagans/composer-patches": "^1.7",
         "drupal/admin_toolbar": "^3.0",
-        "drupal/administerusersbyrole": "^3.0",
+        "drupal/administerusersbyrole": "^3.1",
         "drupal/checklistapi": "^1.9||^2.0",
         "drupal/chosen": "^3.0",
         "drupal/chosen-library": "^1.8",
@@ -75,7 +75,7 @@
         "drupal/view_password": "^6.0",
         "drupal/views_add_button": "^2.0",
         "drupal/webform": "^6.0",
-        "systemseed/anu_lms": "^2.5"
+        "systemseed/anu_lms": "^2.5.7"
     },
     "require-dev": {
         "drupal/core-dev": "^9.3",
@@ -118,6 +118,9 @@
                 "Ajax failing on urls with basic auth": "https://www.drupal.org/files/issues/2020-07-13/d9-2868712-4.patch",
                 "Supress translation warning [https://www.pivotaltracker.com/story/show/180875803]": "patches/translation-warning.patch",
                 "Routes fail to validate mthod if language the user has a language preference": "https://www.drupal.org/files/issues/2021-10-22/2706241-59.patch"
+            },
+            "drupal/administerusersbyrole": {
+                "Roles no longer visible on user_form since 3.1.0 release": "https://www.drupal.org/files/issues/2022-06-23/3292173-1.patch"
             }
         },
         "drupal-scaffold": {

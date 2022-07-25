@@ -6,6 +6,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## Unreleased
 -
 
+## [9.0.3]
+- Fixed issues after update to latest drupal/administerusersbyrole and systemseed/anu_lms.
+
 ## [9.0.2]
 - Renamed project to systemseed/stepbystep.
 

@@ -48,7 +48,7 @@ const ContentNavigation = ({
     if (noNextLesson && nextIsLesson && nextIsActivity) {
       window.location.href = `${
         currentLesson.upcomingActivity.url
-      }?destination=${new URL(nextLesson.url).pathname}${
+      }?destination=${nextLesson.url}${
         currentLesson.isCompleted ? "" : "&unlocked=1"
       }`;
       return;

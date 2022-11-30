@@ -6,5 +6,6 @@ services:
   # Normalizer for Course node type.
   sbs_sessions.normalizer.course:
     class: Drupal\sbs_sessions\Normalizer\CourseNormalizer
+    arguments: ['@anu_lms.course', '@anu_lms.course_progress']
     tags:
       - { name: normalizer, priority: 14 }

@@ -46,7 +46,7 @@ class StorylineController extends TaxonomyController {
    *
    * @var \Drupal\Core\Config\ConfigFactoryInterface
    */
-  protected ConfigFactoryInterface $configFactory;
+  protected $configFactory;
 
   /**
    * Creates the controller.

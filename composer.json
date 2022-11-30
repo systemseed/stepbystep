@@ -29,6 +29,7 @@
         "drupal/admin_toolbar": "^3.3",
         "drupal/administerusersbyrole": "^3.1",
         "drupal/checklistapi": "^1.9||^2.0",
+        "drupal/csv_serialization": "^2.1",
         "drupal/chosen": "^3.0",
         "drupal/chosen-library": "^1.8",
         "drupal/config_filter": "^2.2",
@@ -65,6 +66,7 @@
         "drupal/rollbar": "^2.0",
         "drupal/rpt": "^2.0",
         "drupal/simple_pass_reset": "^1.1",
+        "drupal/shs": "^2.0",
         "drupal/sms_simplegateway": "^1.2",
         "drupal/smsframework": "^2@alpha",
         "drupal/smtp": "^1.0",
@@ -72,7 +74,9 @@
         "drupal/update_helper": "^3.0.1",
         "drupal/view_password": "^6.0",
         "drupal/views_add_button": "^2.0",
+        "drupal/views_data_export": "^1.2",
         "drupal/webform": "^6.0",
+        "drupal/xls_serialization": "^1.2",
         "drupal/anu_lms": "^2.9"
     },
     "require-dev": {

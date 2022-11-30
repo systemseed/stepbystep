@@ -1,8 +1,4 @@
 services:
-  sbs_sessions.normalizer:
-    class: Drupal\sbs_sessions\Normalizer
-    arguments: [ '@entity.repository', '@serializer', '@cache.default', '@cache_contexts_manager', '@module_handler']
-
   # Normalizer for Course node type.
   sbs_sessions.normalizer.course:
     class: Drupal\sbs_sessions\Normalizer\CourseNormalizer

@@ -4,6 +4,7 @@ namespace Drupal\sbs_activities\Controller;
 
 use Drupal\anu_lms\AnuLmsContentTypePluginManager;
 use Drupal\anu_lms\Lesson;
+use Drupal\Core\Config\ConfigFactoryInterface;
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Entity\EntityRepositoryInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
@@ -65,6 +66,8 @@ class ActivitiesNodeViewController extends AnulmsNodeViewController {
    *   Anu LMS Settings service.
    * @param \Drupal\anu_lms\AnuLmsContentTypePluginManager $contentTypePluginManager
    *   The plugin manager.
+   * @param \Drupal\Core\Config\ConfigFactoryInterface $configFactory
+   *   The config factory.
    * @param \Drupal\anu_lms\Lesson $lesson
    *   Lesson handler.
    * @param \Drupal\sbs_activities\ActivityChecklist $activityChecklist
@@ -81,12 +84,13 @@ class ActivitiesNodeViewController extends AnulmsNodeViewController {
     EntityRepositoryInterface $entity_repository,
     Settings $anulmsSettings,
     AnuLmsContentTypePluginManager $contentTypePluginManager,
+    ConfigFactoryInterface $configFactory,
     Lesson $lesson,
     ActivityChecklist $activityChecklist,
     ActivityAudio $activityAudio,
     MessengerInterface $messenger
   ) {
-    parent::__construct($entity_type_manager, $renderer, $current_user, $entity_repository, $anulmsSettings, $contentTypePluginManager);
+    parent::__construct($entity_type_manager, $renderer, $current_user, $entity_repository, $anulmsSettings, $contentTypePluginManager, $configFactory);
     $this->lesson = $lesson;
     $this->messenger = $messenger;
     $this->activityChecklist = $activityChecklist;
@@ -104,11 +108,11 @@ class ActivitiesNodeViewController extends AnulmsNodeViewController {
       $container->get('entity.repository'),
       $container->get('anu_lms.settings'),
       $container->get('plugin.manager.anu_lms_content_type'),
+      $container->get('config.factory'),
       $container->get('anu_lms.lesson'),
       $container->get('sbs_activities.checklist'),
       $container->get('sbs_activities.audio'),
-      $container->get('messenger'),
-      $container->get('request_stack')
+      $container->get('messenger')
     );
   }
 

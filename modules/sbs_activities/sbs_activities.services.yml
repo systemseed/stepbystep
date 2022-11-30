@@ -10,7 +10,7 @@ services:
   # Handler of activities node view.
   sbs_activities.node_view:
     class: Drupal\sbs_activities\Controller\ActivitiesNodeViewController
-    arguments: ['@entity_type.manager', '@renderer', '@current_user', '@entity.repository', '@anu_lms.settings', '@plugin.manager.anu_lms_content_type', '@anu_lms.lesson', '@sbs_activities.checklist', '@sbs_activities.audio', '@messenger', '@request_stack']
+    arguments: ['@entity_type.manager', '@renderer', '@current_user', '@entity.repository', '@anu_lms.settings', '@plugin.manager.anu_lms_content_type', '@config.factory', '@anu_lms.lesson', '@sbs_activities.checklist', '@sbs_activities.audio', '@messenger']
 
   # Service for checklist activity handler.
   sbs_activities.checklist:

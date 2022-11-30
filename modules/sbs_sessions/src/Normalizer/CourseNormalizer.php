@@ -36,6 +36,7 @@ class CourseNormalizer extends AnuCourseNormalizer {
   public function __construct(Course $course, CourseProgress $course_progress) {
     $this->course = $course;
     $this->courseProgress = $course_progress;
+  }
 
   /**
    * {@inheritdoc}

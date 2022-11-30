@@ -34,6 +34,7 @@
         "drupal/config_filter": "^2.2",
         "drupal/config_ignore": "^3@beta",
         "drupal/config_split": "^2",
+        "drupal/config_pages": "^2.10",
         "drupal/core-composer-scaffold": "^9",
         "drupal/core": "~9.4",
         "drupal/default_content": "2.0.x-dev@dev",

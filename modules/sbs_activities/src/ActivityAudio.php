@@ -59,7 +59,7 @@ class ActivityAudio {
    *   Current user account object.
    * @param \Drupal\Core\File\FileUrlGenerator $fileUrlGenerator
    *   File url generator object.
-   * @param \Drupal\anu_lms\Settings $settings
+   * @param \Drupal\anu_lms\Settings $anulmsSettings
    *   Anu LMS Settings service.
    * @param \Drupal\Core\Config\ConfigFactoryInterface $configFactory
    *   The config factory.

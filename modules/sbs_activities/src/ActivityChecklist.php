@@ -49,7 +49,7 @@ class ActivityChecklist {
    *   Entity type manager handler.
    * @param \Drupal\Core\Session\AccountInterface $currentUser
    *   Current user account object.
-   * @param \Drupal\anu_lms\Settings $settings
+   * @param \Drupal\anu_lms\Settings $anulmsSettings
    *   Anu LMS Settings service.
    * @param \Drupal\Core\Config\ConfigFactoryInterface $configFactory
    *   The config factory.

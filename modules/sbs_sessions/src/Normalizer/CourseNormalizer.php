@@ -54,16 +54,16 @@ class CourseNormalizer extends AnuCourseNormalizer {
       // back cache.
       if (isset($context[static::SERIALIZATION_CONTEXT_CACHEABILITY])) {
         /** @var \Drupal\Core\Cache\CacheableMetadata $cacheable_metadata */
-          $cacheable_metadata = $context[static::SERIALIZATION_CONTEXT_CACHEABILITY];
-          $cacheable_metadata->setCacheMaxAge(0);
-        }
+        $cacheable_metadata = $context[static::SERIALIZATION_CONTEXT_CACHEABILITY];
+        $cacheable_metadata->setCacheMaxAge(0);
       }
-
-      if (isset($context['course_page_categories']) && $this->courseProgress->isLocked($entity, $context['course_page_categories'])) {
-        $normalized['locked'] = ['value' => TRUE];
-      }
-
-      return $normalized;
     }
+
+    if (isset($context['course_page_categories']) && $this->courseProgress->isLocked($entity, $context['course_page_categories'])) {
+      $normalized['locked'] = ['value' => TRUE];
+    }
+
+    return $normalized;
+  }
 
 }

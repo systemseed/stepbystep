@@ -87,6 +87,9 @@
         "phpstan/extension-installer": "^1.1",
         "phpstan/phpstan-deprecation-rules": "^1.0"
     },
+    "replace": {
+        "drupal/telephone": "self.version"
+    },
     "conflict": {
         "drupal/drupal": "*"
     },

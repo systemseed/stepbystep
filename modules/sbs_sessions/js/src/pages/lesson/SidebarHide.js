@@ -50,7 +50,10 @@ const LessonSidebarHide = ({ isSidebarVisible, toggleSidebarVisibility }) => {
     <Box className={classes.wrapper}>
       <Box className={classes.background} />
 
-      <Link className={classes.link} onClick={() => toggleSidebarVisibility(!isSidebarVisible)}>
+      <Link
+        className={classes.link}
+        onClick={() => toggleSidebarVisibility(!isSidebarVisible)}
+      >
         <DoubleArrowIcon className={classes.hideSectionIcon} />
         {isSidebarVisible
           ? Drupal.t("Hide modules", {}, { context: "ANU LMS" })

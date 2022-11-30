@@ -7,4 +7,4 @@ services:
   sbs_sessions.normalizer.course:
     class: Drupal\sbs_sessions\Normalizer\CourseNormalizer
     tags:
-      - { name: normalizer, priority: 13 }
+      - { name: normalizer, priority: 14 }

@@ -6,10 +6,6 @@
     "homepage": "https://systemseed.com",
     "repositories": [
         {
-            "type": "vcs",
-            "url": "git@github.com:systemseed/anu_lms.git"
-        },
-        {
             "type": "package",
             "package": {
                 "name": "drupal/chosen-library",

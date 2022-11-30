@@ -167,7 +167,7 @@ class DownloadCoursePopup extends React.Component {
    * Parses lesson content to get list of paragraph image urls.
    */
   getParagraphImagesFromContent(pageContent) {
-    const regExpString = /<div id="anu-application" data-application="(.*?)">/g;
+    const regExpString = /<div id="anu-application" data-application="(.*?)"/g;
     const regExpResult = regExpString.exec(pageContent);
 
     // In an unlikely case when the page doesn't contain data-application don't

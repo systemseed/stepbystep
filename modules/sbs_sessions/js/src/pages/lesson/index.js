@@ -8,12 +8,12 @@ import makeStyles from "@material-ui/core/styles/makeStyles";
 
 import LessonHeader from "@anu/pages/lesson/Header";
 import LessonSidebar from "@anu/pages/lesson/Sidebar";
-import LessonSidebarHide from "@anu/pages/lesson/SidebarHide";
+import LessonSidebarHide from "./SidebarHide";
 import LessonNavigationMobile from "@anu/pages/lesson/NavigationMobile";
 import ContentQuiz from "@anu/pages/lesson/ContentQuiz";
 import ContentLesson from "@anu/pages/lesson/ContentLesson";
 
-import useLocalStorage from "@anu/hooks/useLocalStorage";
+import useLocalStorage from "../../../../../sbs_application/js/src/hooks/useLocalStorage";
 import { coursePropTypes } from "@anu/utilities/transform.course";
 import { lessonPropTypes } from "@anu/utilities/transform.lesson";
 import { quizPropTypes } from "@anu/utilities/transform.quiz";

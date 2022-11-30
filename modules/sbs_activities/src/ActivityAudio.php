@@ -7,6 +7,8 @@ use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\File\FileUrlGenerator;
 use Drupal\Core\Session\AccountInterface;
 use Drupal\node\NodeInterface;
+use Drupal\anu_lms\Settings;
+use Drupal\Core\Config\ConfigFactoryInterface;
 
 /**
  * Handler for activity audio page.
@@ -35,6 +37,20 @@ class ActivityAudio {
   protected FileUrlGenerator $fileUrlGenerator;
 
   /**
+   * Anu LMS settings.
+   *
+   * @var \Drupal\anu_lms\Settings
+   */
+  private Settings $anulmsSettings;
+
+  /**
+   * The config factory.
+   *
+   * @var \Drupal\Core\Config\ConfigFactoryInterface
+   */
+  protected ConfigFactoryInterface $configFactory;
+
+  /**
    * Creates a new instance of activity checklist handler.
    *
    * @param \Drupal\Core\Entity\EntityTypeManagerInterface $entityTypeManager
@@ -43,11 +59,17 @@ class ActivityAudio {
    *   Current user account object.
    * @param \Drupal\Core\File\FileUrlGenerator $fileUrlGenerator
    *   File url generator object.
+   * @param \Drupal\anu_lms\Settings $settings
+   *   Anu LMS Settings service.
+   * @param \Drupal\Core\Config\ConfigFactoryInterface $configFactory
+   *   The config factory.
    */
-  public function __construct(EntityTypeManagerInterface $entityTypeManager, AccountInterface $currentUser, FileUrlGenerator $fileUrlGenerator) {
+  public function __construct(EntityTypeManagerInterface $entityTypeManager, AccountInterface $currentUser, FileUrlGenerator $fileUrlGenerator, Settings $anulmsSettings, ConfigFactoryInterface $configFactory) {
     $this->entityTypeManager = $entityTypeManager;
     $this->currentUser = $currentUser;
     $this->fileUrlGenerator = $fileUrlGenerator;
+    $this->anulmsSettings = $anulmsSettings;
+    $this->configFactory = $configFactory;
   }
 
   /**
@@ -78,6 +100,8 @@ class ActivityAudio {
       '#attributes' => [
         'id' => 'activities',
         'data-application' => Json::encode($data),
+        'data-permissions' => Json::encode($this->anulmsSettings->getPermissions()),
+        'data-entity_labels' => Json::encode($this->configFactory->get('anu_lms.entity_labels')->getOriginal()),
       ],
     ];
 

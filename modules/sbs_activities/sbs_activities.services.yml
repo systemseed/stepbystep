@@ -15,9 +15,9 @@ services:
   # Service for checklist activity handler.
   sbs_activities.checklist:
     class: Drupal\sbs_activities\ActivityChecklist
-    arguments: ['@entity_type.manager', '@current_user']
+    arguments: ['@entity_type.manager', '@current_user', '@anu_lms.settings', '@config.factory']
 
   # Service for audio activity handler.
   sbs_activities.audio:
     class: Drupal\sbs_activities\ActivityAudio
-    arguments: ['@entity_type.manager', '@current_user', '@file_url_generator']
+    arguments: ['@entity_type.manager', '@current_user', '@file_url_generator', '@anu_lms.settings', '@config.factory']

@@ -10,6 +10,7 @@ use Drupal\Core\Controller\ControllerBase;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Url;
 use Symfony\Component\DependencyInjection\ContainerInterface;
+use Drupal\anu_lms\Settings;
 
 /**
  * Handles toolbox page display.
@@ -38,6 +39,13 @@ class ToolboxController extends ControllerBase {
   protected $entityTypeManager;
 
   /**
+   * Anu LMS settings.
+   *
+   * @var \Drupal\anu_lms\Settings
+   */
+  private Settings $anulmsSettings;
+
+  /**
    * Config factory.
    *
    * @var \Drupal\Core\Config\ConfigFactoryInterface
@@ -47,9 +55,10 @@ class ToolboxController extends ControllerBase {
   /**
    * Constructs a new instance of this class.
    */
-  public function __construct(CoursesPage $coursesPage, Storyline $storyline, EntityTypeManagerInterface $entityTypeManager, ConfigFactoryInterface $configFactory) {
+  public function __construct(CoursesPage $coursesPage, Storyline $storyline, Settings $anulmsSettings, EntityTypeManagerInterface $entityTypeManager, ConfigFactoryInterface $configFactory) {
     $this->coursesPage = $coursesPage;
     $this->storyline = $storyline;
+    $this->anulmsSettings = $anulmsSettings;
     $this->entityTypeManager = $entityTypeManager;
     $this->configFactory = $configFactory;
   }
@@ -61,6 +70,7 @@ class ToolboxController extends ControllerBase {
     return new static(
       $container->get('anu_lms.courses_page'),
       $container->get('anu_lms_storyline.storyline'),
+      $container->get('anu_lms.settings'),
       $container->get('entity_type.manager'),
       $container->get('config.factory'),
     );
@@ -121,6 +131,8 @@ class ToolboxController extends ControllerBase {
         'id' => 'toolbox-activities',
         'class' => ['activities'],
         'data-application' => Json::encode($data),
+        'data-permissions' => Json::encode($this->anulmsSettings->getPermissions()),
+        'data-entity_labels' => Json::encode($this->configFactory->get('anu_lms.entity_labels')->getOriginal()),
       ],
     ];
 

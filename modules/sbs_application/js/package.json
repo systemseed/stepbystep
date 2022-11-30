@@ -27,6 +27,7 @@
     "@material-ui/icons": "^4.11.3",
     "@material-ui/lab": "^4.0.0-alpha.61",
     "clsx": "^1.1.1",
+    "fast-plural-rules": "^2.0.2",
     "he": "^1.2.0",
     "jss-rtl": "^0.3.0",
     "nanoid": "^3.3.4",

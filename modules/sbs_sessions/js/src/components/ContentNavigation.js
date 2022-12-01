@@ -98,22 +98,25 @@ const ContentNavigation = ({
         return (
           <LessonGrid mode={lessonGridMode}>
             <ButtonWrapper>
-              {prevLesson && noPrevLesson && !isFirstSection && (
-                <Button
-                  variant="outlined"
-                  color="primary"
-                  size="large"
-                  startIcon={<ChevronLeftIcon />}
-                  href={prevLesson.url}
-                  data-test="anu-lms-navigation-previous"
-                >
-                  {renderButtonLabel(
-                    Drupal.t("Previous", {}, { context: "ANU LMS" })
-                  )}
-                </Button>
-              )}
+              {prevLesson &&
+                noPrevLesson &&
+                !isFirstSection &&
+                !nextIsActivity && (
+                  <Button
+                    variant="outlined"
+                    color="primary"
+                    size="large"
+                    startIcon={<ChevronLeftIcon />}
+                    href={prevLesson.url}
+                    data-test="anu-lms-navigation-previous"
+                  >
+                    {renderButtonLabel(
+                      Drupal.t("Previous", {}, { context: "ANU LMS" })
+                    )}
+                  </Button>
+                )}
 
-              {!noPrevLesson && (
+              {!noPrevLesson && !nextIsActivity && (
                 <Button
                   variant="outlined"
                   color="primary"
@@ -130,7 +133,7 @@ const ContentNavigation = ({
                 </Button>
               )}
 
-              {isFirstSection && prevLesson && (
+              {isFirstSection && prevLesson && !nextIsActivity && (
                 <Button
                   variant="outlined"
                   color="primary"
@@ -162,6 +165,7 @@ const ContentNavigation = ({
 
               {noNextLesson &&
                 nextIsLesson &&
+                !nextIsActivity &&
                 renderButtonWithTooltip(
                   <Button
                     {...buttonProps}
@@ -177,6 +181,7 @@ const ContentNavigation = ({
               {noNextLesson &&
                 !nextIsLesson &&
                 !nextIsQuiz &&
+                !nextIsActivity &&
                 renderButtonWithTooltip(
                   <Button
                     {...buttonProps}
@@ -203,6 +208,7 @@ const ContentNavigation = ({
 
               {noNextLesson &&
                 nextIsQuiz &&
+                !nextIsActivity &&
                 renderButtonWithTooltip(
                   <Button
                     {...buttonProps}
@@ -214,6 +220,22 @@ const ContentNavigation = ({
                     )}
                   </Button>
                 )}
+
+              {noNextLesson && nextIsLesson && nextIsActivity && (
+                <Button {...buttonProps} onClick={updateProgressAndRedirect}>
+                  {disabled
+                    ? completeAnswer
+                    : Drupal.t("See Activity", {}, { context: "ANU LMS" })}
+                </Button>
+              )}
+
+              {noNextLesson && !nextIsLesson && !nextIsQuiz && nextIsActivity && (
+                <Button {...buttonProps} onClick={updateProgressAndRedirect}>
+                  {disabled
+                    ? completeAnswer
+                    : Drupal.t("See Activity", {}, { context: "ANU LMS" })}
+                </Button>
+              )}
             </ButtonWrapper>
           </LessonGrid>
         );

@@ -21,3 +21,9 @@ services:
   sbs_activities.audio:
     class: Drupal\sbs_activities\ActivityAudio
     arguments: ['@entity_type.manager', '@current_user', '@file_url_generator', '@anu_lms.settings', '@config.factory']
+
+  # Normalizer for Lesson node type.
+  sbs_activities.normalizer.course:
+    class: Drupal\sbs_activities\Normalizer\NodeNormalizer
+    tags:
+      - { name: normalizer, priority: 14 }

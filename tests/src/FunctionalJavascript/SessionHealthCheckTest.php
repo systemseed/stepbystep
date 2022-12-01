@@ -50,8 +50,6 @@ class SessionHealthCheckTest extends WebDriverTestBase {
   public function testSessions() {
     // Login as first user as it's already assigned to the demo storyline.
     $account = User::load(1);
-    $account->activate();
-    $account->save();
     $this->drupalLogin($account);
 
     $assert = $this->assertSession();
@@ -63,10 +61,6 @@ class SessionHealthCheckTest extends WebDriverTestBase {
     $lesson_heading = $assert->waitForElementVisible('css', 'h6.MuiTypography-root');
     $this->assertNotEmpty($lesson_heading);
     $this->assertEquals($lesson_heading->getText(), 'Welcome');
-
-    // Block the first user again.
-    $account->block();
-    $account->save();
   }
 
 }

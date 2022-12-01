@@ -9,7 +9,7 @@ import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import { Tooltip } from "@material-ui/core";
 
 import LessonGrid from "@anu/components/LessonGrid";
-import ButtonWrapper from '@anu/components/ButtonWrapper';
+import ButtonWrapper from "@anu/components/ButtonWrapper";
 
 // TODO - isIntro
 const ContentNavigation = ({
@@ -89,7 +89,7 @@ const ContentNavigation = ({
         const renderButtonWithTooltip = (button) => {
           // "span" is required to display tooltip for disabled buttons.
           return (
-            <Tooltip title={disabled ? completeAnswer : ''} arrow>
+            <Tooltip title={disabled ? completeAnswer : ""} arrow>
               <span>{button}</span>
             </Tooltip>
           );
@@ -107,7 +107,7 @@ const ContentNavigation = ({
                   href={prevLesson.url}
                   data-test="anu-lms-navigation-previous"
                 >
-                  {renderButtonLabel(Drupal.t('Previous', {}, { context: 'ANU LMS' }))}
+                  {renderButtonLabel(Drupal.t("Previous", {}, { context: "ANU LMS" }))}
                 </Button>
               )}
 
@@ -120,7 +120,7 @@ const ContentNavigation = ({
                   onClick={() => history.push({ pathname: `/page-${currentIndex}` })}
                   data-test="anu-lms-navigation-previous"
                 >
-                  {renderButtonLabel(Drupal.t('Previous', {}, { context: 'ANU LMS' }))}
+                  {renderButtonLabel(Drupal.t("Previous", {}, { context: "ANU LMS" }))}
                 </Button>
               )}
 
@@ -133,7 +133,7 @@ const ContentNavigation = ({
                   href={`${prevLesson.url}#back`}
                   data-test="anu-lms-navigation-previous"
                 >
-                  {renderButtonLabel(Drupal.t('Previous', {}, { context: 'ANU LMS' }))}
+                  {renderButtonLabel(Drupal.t("Previous", {}, { context: "ANU LMS" }))}
                 </Button>
               )}
 
@@ -144,7 +144,7 @@ const ContentNavigation = ({
                     onClick={() => history.push({ pathname: `/page-${currentIndex + 2}` })}
                     data-test="anu-lms-navigation-next"
                   >
-                    {renderButtonLabel(Drupal.t('Next', {}, { context: 'ANU LMS' }))}
+                    {renderButtonLabel(Drupal.t("Next", {}, { context: "ANU LMS" }))}
                   </Button>
                 )}
 
@@ -156,7 +156,7 @@ const ContentNavigation = ({
                     onClick={updateProgressAndRedirect}
                     data-test="anu-lms-navigation-next"
                   >
-                    {renderButtonLabel(Drupal.t('Next', {}, { context: 'ANU LMS' }))}
+                    {renderButtonLabel(Drupal.t("Next", {}, { context: "ANU LMS" }))}
                   </Button>
                 )}
 
@@ -169,7 +169,7 @@ const ContentNavigation = ({
                     onClick={updateProgressAndRedirect}
                     data-test="anu-lms-navigation-finish"
                   >
-                    {renderButtonLabel(Drupal.t('Finish', {}, { context: 'ANU LMS' }))}
+                    {renderButtonLabel(Drupal.t("Finish", {}, { context: "ANU LMS" }))}
                   </Button>
                 )}
 
@@ -179,7 +179,7 @@ const ContentNavigation = ({
                   onClick={updateProgressAndRedirect}
                   data-test="anu-lms-navigation-start"
                 >
-                  {renderButtonLabel(Drupal.t('Start', {}, { context: 'ANU LMS' }))}
+                  {renderButtonLabel(Drupal.t("Start", {}, { context: "ANU LMS" }))}
                 </Button>
               )}
 
@@ -191,7 +191,7 @@ const ContentNavigation = ({
                     onClick={updateProgressAndRedirect}
                     data-test="anu-lms-navigation-next"
                   >
-                    {renderButtonLabel(Drupal.t('Next', {}, { context: 'ANU LMS' }))}
+                    {renderButtonLabel(Drupal.t("Next", {}, { context: "ANU LMS" }))}
                   </Button>
                 )}
             </ButtonWrapper>

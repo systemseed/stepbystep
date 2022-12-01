@@ -28,8 +28,8 @@ class SessionHealthCheckTest extends WebDriverTestBase {
    * Make sure the first session can be opened in browser.
    */
   public function testSessions() {
-    // Login as "developer.test" as it's already assigned to the demo storyline.
-    $account = User::load(3);
+    // Login as 1st user as it's already assigned to the demo storyline.
+    $account = User::load(1);
     $this->container->get('current_user')->setAccount($account);
 
     $this->drupalGet('sessions');

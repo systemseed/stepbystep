@@ -18,20 +18,20 @@ import LoadingIndicator from "@anu/components/LoadingIndicator";
 
 const useStyles = makeStyles((theme) => ({
   wrapper: {
-    height: '100%',
-    display: 'flex',
-    flexDirection: 'column',
+    height: "100%",
+    display: "flex",
+    flexDirection: "column",
   },
   container: {
     flexGrow: 1,
-    display: 'flex',
-    flexDirection: 'column',
+    display: "flex",
+    flexDirection: "column",
   },
   contentArea: {
-    [theme.breakpoints.up('md')]: {
-      flexWrap: 'nowrap',
+    [theme.breakpoints.up("md")]: {
+      flexWrap: "nowrap",
       flexGrow: 1,
-      display: 'flex',
+      display: "flex",
     },
   },
   sidebar: {
@@ -53,8 +53,10 @@ const LessonPage = ({ lesson, quiz, course, width }) => {
     .filter((lesson) => !!lesson);
 
   const content = lesson || quiz;
-  const nextLesson = courseSequence[courseSequence.findIndex(({ id }) => id === content.id) + 1];
-  const prevLesson = courseSequence[courseSequence.findIndex(({ id }) => id === content.id) - 1];
+  const nextLesson =
+    courseSequence[courseSequence.findIndex(({ id }) => id === content.id) + 1];
+  const prevLesson =
+    courseSequence[courseSequence.findIndex(({ id }) => id === content.id) - 1];
 
   // TODO: get URL of the current lesson.
   const fallbackUrl = "/";
@@ -72,9 +74,9 @@ const LessonPage = ({ lesson, quiz, course, width }) => {
     <Box className={classes.wrapper}>
       {/* Header of the lesson page  */}
       {course && (
-          <Hidden smDown>
-            <LessonHeader lesson={content} course={course} />
-          </Hidden>
+        <Hidden smDown>
+          <LessonHeader lesson={content} course={course} />
+        </Hidden>
       )}
 
       <Box className={classes.container}>

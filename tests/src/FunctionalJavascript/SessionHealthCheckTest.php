@@ -32,7 +32,7 @@ class SessionHealthCheckTest extends WebDriverTestBase {
     $account = User::load(3);
     $this->container->get('current_user')->setAccount($account);
 
-    $this->drupalGet('/');
+    $this->drupalGet('sessions');
 
     $assert = $this->assertSession();
     // Check for the first session and open it.

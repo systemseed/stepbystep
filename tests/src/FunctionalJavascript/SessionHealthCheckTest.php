@@ -26,31 +26,12 @@ class SessionHealthCheckTest extends WebDriverTestBase {
   protected $strictConfigSchema = FALSE;
 
   /**
-   * {@inheritdoc}
-   */
-  protected function drupalLogin($account, $password = '') {
-    $pass = $password ? $password : $this->rootUser->pass_raw;
-    $this->drupalGet(Url::fromRoute('user.login'));
-    $this->submitForm([
-      'name' => $account->getEmail(),
-      'pass' => $pass,
-    ], 'Log in', 'user-login-form');
-
-    $account->sessionId = $this->getSession()->getCookie(\Drupal::service('session_configuration')->getOptions(\Drupal::request())['name']);
-
-    $this->assertTrue($this->drupalUserIsLoggedIn($account), "User developer.test is logged in.");
-
-    $this->loggedInUser = $account;
-    $this->container->get('current_user')->setAccount($account);
-  }
-
-  /**
    * Make sure the first session can be opened in browser.
    */
   public function testSessions() {
     // Login as "developer.test" as it's already assigned to the demo storyline.
-    $account = User::load(3);
-    $this->drupalLogin($account, 'sbs0321');
+    $account = User::load(1);
+    $this->container->get('current_user')->setAccount($account);
 
     $assert = $this->assertSession();
     // Check for the first session and open it.

@@ -4,6 +4,7 @@ namespace Drupal\sbs_activities\Normalizer;
 
 use Drupal\anu_lms\Normalizer\NodeNormalizerBase as AnuLmsNormalizer;
 use Drupal\Core\Url;
+use Drupal\anu_lms\Lesson;
 
 /**
  * Converts the Drupal node object structure to a JSON array structure.
@@ -14,9 +15,26 @@ use Drupal\Core\Url;
 class NodeNormalizer extends AnuLmsNormalizer {
 
   /**
+   * The Lesson handler.
+   *
+   * @var \Drupal\anu_lms\Lesson
+   */
+  protected Lesson $lesson;
+
+  /**
    * {@inheritdoc}
    */
   protected array $supportedBundles = ['module_lesson'];
+
+  /**
+   * Constructs normalizer.
+   *
+   * @param \Drupal\anu_lms\Lesson $lesson
+   *   The lesson service.
+   */
+  public function __construct(Lesson $lesson) {
+    $this->lesson = $lesson;
+  }
 
   /**
    * {@inheritdoc}
@@ -24,13 +42,7 @@ class NodeNormalizer extends AnuLmsNormalizer {
   public function normalize($entity, $format = NULL, array $context = []) {
     $normalized = parent::normalize($entity, $format, $context);
 
-    // @todo Injecting anu_lms.lesson would create a circular dependency.
-    // Move this method into an event listener when anu adds an
-    // event to modify lesson data.
-    /** @var \Drupal\anu_lms\Lesson $lessonHandler */
-    $lessonHandler = \Drupal::service('anu_lms.lesson');
-
-    $course = $lessonHandler->getLessonCourse($entity->id());
+    $course = $this->lesson->getLessonCourse($entity->id());
     foreach ($course->get('field_course_module')->referencedEntities() as $courseModule) {
       if ($courseModule->get('field_activity')->isEmpty()) {
         continue;

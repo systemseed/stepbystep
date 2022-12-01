@@ -25,5 +25,6 @@ services:
   # Normalizer for Lesson node type.
   sbs_activities.normalizer.course:
     class: Drupal\sbs_activities\Normalizer\NodeNormalizer
+    arguments: ['@anu_lms.lesson']
     tags:
       - { name: normalizer, priority: 14 }

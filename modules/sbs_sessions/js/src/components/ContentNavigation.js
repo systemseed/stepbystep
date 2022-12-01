@@ -35,7 +35,7 @@ const ContentNavigation = ({
   const noPrevLesson = !sections[currentIndex - 1];
 
   if (!currentLesson.finishButtonUrl.length) {
-    currentLesson.finishButtonUrl = '/sessions';
+    currentLesson.finishButtonUrl = "/sessions";
   }
 
   const updateProgressAndRedirect = async () => {

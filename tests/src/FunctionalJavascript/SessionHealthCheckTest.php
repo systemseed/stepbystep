@@ -2,7 +2,6 @@
 
 namespace Drupal\Tests\stepbystep\FunctionalJavascript;
 
-use Drupal\Core\Url;
 use Drupal\FunctionalJavascriptTests\WebDriverTestBase;
 use Drupal\user\Entity\User;
 

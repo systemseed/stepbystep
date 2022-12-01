@@ -121,7 +121,7 @@ class Profile {
         $partCount++;
         $lessons = $part->get('field_module_lessons')->referencedEntities();
         foreach ($lessons as $lesson) {
-          if (!$this->lesson->isCompletedByUser($lesson, $user->id())) {
+          if (!$this->lesson->isCompletedByUser($lesson->id(), $user->id())) {
             return $this->t('@label (Session @sessionCount - Part @partCount)', [
               '@label' => $session->label(),
               '@sessionCount' => $sessionCount,
@@ -279,7 +279,7 @@ class Profile {
       foreach ($lessons as $lesson) {
         // If at least one lesson in the module is not yet completed - the
         // activity can't be accessed.
-        if (!$this->lesson->isCompletedByUser($lesson, $userId)) {
+        if (!$this->lesson->isCompletedByUser($lesson->id(), $userId)) {
           return FALSE;
         }
       }

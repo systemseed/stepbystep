@@ -3,21 +3,13 @@ import PropTypes from "prop-types";
 import { Detector } from "react-detect-offline";
 import { useHistory } from "react-router-dom";
 
-import makeStyles from "@material-ui/core/styles/makeStyles";
 import Button from "@material-ui/core/Button";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
+import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
+import { Tooltip } from "@material-ui/core";
 
 import LessonGrid from "@anu/components/LessonGrid";
-
-const useStyles = makeStyles(() => ({
-  activityButton: {
-    height: "3rem !important",
-    letterSpacing: "normal !important",
-    width: "100%",
-    borderRadius: "4px",
-    fontSize: "1rem",
-  },
-}));
+import ButtonWrapper from '@anu/components/ButtonWrapper';
 
 // TODO - isIntro
 const ContentNavigation = ({
@@ -25,10 +17,11 @@ const ContentNavigation = ({
   sections,
   currentLesson,
   nextLesson,
+  prevLesson,
   currentIndex,
   isEnabled,
+  lessonGridMode,
 }) => {
-  const classes = useStyles();
   const history = useHistory();
   const completeAnswer = Drupal.t(
     "Complete all answers to proceed",
@@ -39,6 +32,7 @@ const ContentNavigation = ({
   const nextIsLesson = nextLesson && Boolean(nextLesson.sections);
   const nextIsActivity = Boolean(currentLesson.upcomingActivity);
   const noNextLesson = !sections[currentIndex + 1];
+  const noPrevLesson = !sections[currentIndex - 1];
 
   const updateProgressAndRedirect = async () => {
     // Marks lesson as completed if linear progress is enabled for its course.
@@ -70,10 +64,7 @@ const ContentNavigation = ({
     window.location.href = nextLesson.url;
   };
 
-  const finishButtonText = (currentLesson) =>
-    !currentLesson.finishButtonText
-      ? Drupal.t("Finish", {}, { context: "ANU LMS" })
-      : currentLesson.finishButtonText;
+  const isFirstSection = !currentIndex;
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -90,77 +81,120 @@ const ContentNavigation = ({
           endIcon: <ChevronRightIcon />,
           disabled,
         };
-        const activityButtonProps = {
-          variant: "contained",
-          color: "primary",
-          className: classes.activityButton,
-          disabled,
+
+        const renderButtonLabel = (label) => {
+          return label;
+        };
+
+        const renderButtonWithTooltip = (button) => {
+          // "span" is required to display tooltip for disabled buttons.
+          return (
+            <Tooltip title={disabled ? completeAnswer : ''} arrow>
+              <span>{button}</span>
+            </Tooltip>
+          );
         };
 
         return (
-          <LessonGrid>
-            {sections[currentIndex + 1] && (
-              <Button
-                {...buttonProps}
-                onClick={() =>
-                  history.push({ pathname: `/section-${currentIndex + 2}` })
-                }
-              >
-                {disabled
-                  ? completeAnswer
-                  : Drupal.t("Next", {}, { context: "ANU LMS" })}
-              </Button>
-            )}
+          <LessonGrid mode={lessonGridMode}>
+            <ButtonWrapper>
+              {prevLesson && noPrevLesson && !isFirstSection && (
+                <Button
+                  variant="outlined"
+                  color="primary"
+                  size="large"
+                  startIcon={<ChevronLeftIcon />}
+                  href={prevLesson.url}
+                  data-test="anu-lms-navigation-previous"
+                >
+                  {renderButtonLabel(Drupal.t('Previous', {}, { context: 'ANU LMS' }))}
+                </Button>
+              )}
 
-            {noNextLesson && nextIsLesson && nextIsActivity && (
-              <Button
-                {...activityButtonProps}
-                onClick={updateProgressAndRedirect}
-              >
-                {disabled
-                  ? completeAnswer
-                  : Drupal.t("See Activity", {}, { context: "ANU LMS" })}
-              </Button>
-            )}
+              {!noPrevLesson && (
+                <Button
+                  variant="outlined"
+                  color="primary"
+                  size="large"
+                  startIcon={<ChevronLeftIcon />}
+                  onClick={() => history.push({ pathname: `/page-${currentIndex}` })}
+                  data-test="anu-lms-navigation-previous"
+                >
+                  {renderButtonLabel(Drupal.t('Previous', {}, { context: 'ANU LMS' }))}
+                </Button>
+              )}
 
-            {noNextLesson && nextIsLesson && !nextIsActivity && (
-              <Button {...buttonProps} onClick={updateProgressAndRedirect}>
-                {disabled
-                  ? completeAnswer
-                  : Drupal.t("Next", {}, { context: "ANU LMS" })}
-              </Button>
-            )}
+              {isFirstSection && prevLesson && (
+                <Button
+                  variant="outlined"
+                  color="primary"
+                  size="large"
+                  startIcon={<ChevronLeftIcon />}
+                  href={`${prevLesson.url}#back`}
+                  data-test="anu-lms-navigation-previous"
+                >
+                  {renderButtonLabel(Drupal.t('Previous', {}, { context: 'ANU LMS' }))}
+                </Button>
+              )}
 
-            {noNextLesson && !nextIsLesson && !nextIsQuiz && nextIsActivity && (
-              <Button
-                {...activityButtonProps}
-                onClick={updateProgressAndRedirect}
-              >
-                {disabled
-                  ? completeAnswer
-                  : Drupal.t("See Activity", {}, { context: "ANU LMS" })}
-              </Button>
-            )}
+              {sections[currentIndex + 1] &&
+                renderButtonWithTooltip(
+                  <Button
+                    {...buttonProps}
+                    onClick={() => history.push({ pathname: `/page-${currentIndex + 2}` })}
+                    data-test="anu-lms-navigation-next"
+                  >
+                    {renderButtonLabel(Drupal.t('Next', {}, { context: 'ANU LMS' }))}
+                  </Button>
+                )}
 
-            {noNextLesson && !nextIsLesson && !nextIsQuiz && !nextIsActivity && (
-              <Button {...buttonProps} onClick={updateProgressAndRedirect}>
-                {disabled ? completeAnswer : finishButtonText(currentLesson)}
-              </Button>
-            )}
+              {noNextLesson &&
+                nextIsLesson &&
+                renderButtonWithTooltip(
+                  <Button
+                    {...buttonProps}
+                    onClick={updateProgressAndRedirect}
+                    data-test="anu-lms-navigation-next"
+                  >
+                    {renderButtonLabel(Drupal.t('Next', {}, { context: 'ANU LMS' }))}
+                  </Button>
+                )}
 
-            {noNextLesson && nextIsLesson && isIntro && (
-              <Button {...buttonProps} onClick={updateProgressAndRedirect}>
-                {Drupal.t("Start", {}, { context: "ANU LMS" })}
-              </Button>
-            )}
+              {noNextLesson &&
+                !nextIsLesson &&
+                !nextIsQuiz &&
+                renderButtonWithTooltip(
+                  <Button
+                    {...buttonProps}
+                    onClick={updateProgressAndRedirect}
+                    data-test="anu-lms-navigation-finish"
+                  >
+                    {renderButtonLabel(Drupal.t('Finish', {}, { context: 'ANU LMS' }))}
+                  </Button>
+                )}
 
-            {noNextLesson && nextIsQuiz && (
-              <Button {...buttonProps} onClick={updateProgressAndRedirect}>
-                {disabled
-                  ? completeAnswer
-                  : Drupal.t("Go to quiz", {}, { context: "ANU LMS" })}
-              </Button>
-            )}
+              {noNextLesson && nextIsLesson && isIntro && (
+                <Button
+                  {...buttonProps}
+                  onClick={updateProgressAndRedirect}
+                  data-test="anu-lms-navigation-start"
+                >
+                  {renderButtonLabel(Drupal.t('Start', {}, { context: 'ANU LMS' }))}
+                </Button>
+              )}
+
+              {noNextLesson &&
+                nextIsQuiz &&
+                renderButtonWithTooltip(
+                  <Button
+                    {...buttonProps}
+                    onClick={updateProgressAndRedirect}
+                    data-test="anu-lms-navigation-next"
+                  >
+                    {renderButtonLabel(Drupal.t('Next', {}, { context: 'ANU LMS' }))}
+                  </Button>
+                )}
+            </ButtonWrapper>
           </LessonGrid>
         );
       }}
@@ -173,8 +207,10 @@ ContentNavigation.propTypes = {
   sections: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.shape())),
   currentLesson: PropTypes.shape(),
   nextLesson: PropTypes.shape(),
+  prevLesson: PropTypes.shape(),
   currentIndex: PropTypes.number,
   isEnabled: PropTypes.bool,
+  lessonGridMode: PropTypes.string,
 };
 
 export default ContentNavigation;

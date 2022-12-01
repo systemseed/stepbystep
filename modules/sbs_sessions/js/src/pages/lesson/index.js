@@ -3,86 +3,58 @@ import PropTypes from "prop-types";
 
 import Box from "@material-ui/core/Box";
 import Hidden from "@material-ui/core/Hidden";
-import withWidth, { isWidthUp } from "@material-ui/core/withWidth";
+import withWidth from "@material-ui/core/withWidth";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 
 import LessonHeader from "@anu/pages/lesson/Header";
 import LessonSidebar from "@anu/pages/lesson/Sidebar";
-import LessonSidebarHide from "./SidebarHide";
-import LessonNavigationMobile from "@anu/pages/lesson/NavigationMobile";
 import ContentQuiz from "@anu/pages/lesson/ContentQuiz";
 import ContentLesson from "@anu/pages/lesson/ContentLesson";
 
-import useLocalStorage from "../../../../../sbs_application/js/src/hooks/useLocalStorage";
 import { coursePropTypes } from "@anu/utilities/transform.course";
 import { lessonPropTypes } from "@anu/utilities/transform.lesson";
 import { quizPropTypes } from "@anu/utilities/transform.quiz";
 import LoadingIndicator from "@anu/components/LoadingIndicator";
-import { getPwaSettings } from "@anu/utilities/settings";
-import DownloadCoursePopup from "@anu/components/DownloadCoursePopup";
 
 const useStyles = makeStyles((theme) => ({
   wrapper: {
-    height: "100%",
-    display: "flex",
-    flexDirection: "column",
+    height: '100%',
+    display: 'flex',
+    flexDirection: 'column',
   },
   container: {
     flexGrow: 1,
-    display: "flex",
-    flexDirection: "column",
+    display: 'flex',
+    flexDirection: 'column',
   },
   contentArea: {
-    position: "relative",
-    flexWrap: "nowrap",
-    flexGrow: 1,
-    overflow: "hidden",
-    [theme.breakpoints.up("md")]: {
-      paddingBottom: theme.spacing(8),
+    [theme.breakpoints.up('md')]: {
+      flexWrap: 'nowrap',
+      flexGrow: 1,
+      display: 'flex',
     },
   },
-  sidebar: ({ isSidebarVisible }) => ({
-    position: "absolute",
+  sidebar: {
     width: 300,
-    left: isSidebarVisible ? 0 : -300,
-    transition: ".3s left",
-    top: 0,
-    bottom: 0,
     flexShrink: 0,
     flexGrow: 0,
-  }),
-  contentWrapper: ({ isSidebarVisible }) => ({
-    transition: ".3s padding",
-    flexGrow: 1,
-    height: "100%",
-    paddingLeft: isSidebarVisible ? 300 : 0,
-  }),
+  },
   content: {
-    paddingTop: theme.spacing(2),
-    paddingBottom: theme.spacing(2),
-    margin: "0 auto",
-    maxWidth: 800, // 90 chars as per readability guidelines.
-    [theme.breakpoints.up("md")]: {
-      paddingTop: 0,
-      paddingBottom: 0,
-    },
+    flexGrow: 1,
+    paddingBottom: theme.spacing(8),
   },
 }));
 
 const LessonPage = ({ lesson, quiz, course, width }) => {
-  const [isSidebarVisible, toggleSidebarVisibility] = useLocalStorage(
-    "sidebarVisibility",
-    true
-  );
-  const classes = useStyles({ isSidebarVisible });
+  const classes = useStyles();
 
   const courseSequence = ((course || {}).content || [])
     .flatMap((module) => [...module.lessons, module.quiz])
     .filter((lesson) => !!lesson);
 
   const content = lesson || quiz;
-  const nextLesson =
-    courseSequence[courseSequence.findIndex(({ id }) => id === content.id) + 1];
+  const nextLesson = courseSequence[courseSequence.findIndex(({ id }) => id === content.id) + 1];
+  const prevLesson = courseSequence[courseSequence.findIndex(({ id }) => id === content.id) - 1];
 
   // TODO: get URL of the current lesson.
   const fallbackUrl = "/";
@@ -98,47 +70,14 @@ const LessonPage = ({ lesson, quiz, course, width }) => {
 
   return (
     <Box className={classes.wrapper}>
-      {/* Navigation drawer visible only on mobile */}
-      <Hidden mdUp>
-        <LessonNavigationMobile lesson={content} course={course} />
-      </Hidden>
-
       {/* Header of the lesson page  */}
       {course && (
-        <Hidden smDown>
-          <LessonHeader lesson={content} course={course} />
-        </Hidden>
-      )}
-      {course && getPwaSettings() && (
-        <>
           <Hidden smDown>
-            <Box mt={2} mb={1}>
-              <DownloadCoursePopup
-                course={course}
-                showButton={true}
-                openPopupAutomatically
-              />
-            </Box>
+            <LessonHeader lesson={content} course={course} />
           </Hidden>
-          <Hidden smUp>
-            <DownloadCoursePopup
-              course={course}
-              showButton={false}
-              openPopupAutomatically
-            />
-          </Hidden>
-        </>
       )}
 
       <Box className={classes.container}>
-        {/* CTA to hide / show desktop sidebar */}
-        <Hidden smDown>
-          <LessonSidebarHide
-            isSidebarVisible={isSidebarVisible}
-            toggleSidebarVisibility={toggleSidebarVisibility}
-          />
-        </Hidden>
-
         <Box className={classes.contentArea}>
           {/* Left sidebar visible on tablet + desktop devices only */}
           <Hidden smDown>
@@ -147,11 +86,23 @@ const LessonPage = ({ lesson, quiz, course, width }) => {
             </Box>
           </Hidden>
 
-          <Box className={isWidthUp("md", width) ? classes.contentWrapper : ""}>
-            {quiz && <ContentQuiz quiz={quiz} nextLesson={nextLesson} />}
+          <Box className={classes.content}>
+            {quiz && (
+              <ContentQuiz
+                quiz={quiz}
+                nextLesson={nextLesson}
+                prevLesson={prevLesson}
+                course={course}
+              />
+            )}
 
             {lesson && (
-              <ContentLesson lesson={lesson} nextLesson={nextLesson} />
+              <ContentLesson
+                lesson={lesson}
+                nextLesson={nextLesson}
+                prevLesson={prevLesson}
+                course={course}
+              />
             )}
           </Box>
         </Box>

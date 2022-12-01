@@ -45,7 +45,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const LessonPage = ({ lesson, quiz, course, width }) => {
+const LessonPage = ({ lesson, quiz, course }) => {
   const classes = useStyles();
 
   const courseSequence = ((course || {}).content || [])

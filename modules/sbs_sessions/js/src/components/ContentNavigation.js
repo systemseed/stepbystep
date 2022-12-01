@@ -107,7 +107,9 @@ const ContentNavigation = ({
                   href={prevLesson.url}
                   data-test="anu-lms-navigation-previous"
                 >
-                  {renderButtonLabel(Drupal.t("Previous", {}, { context: "ANU LMS" }))}
+                  {renderButtonLabel(
+                    Drupal.t("Previous", {}, { context: "ANU LMS" })
+                  )}
                 </Button>
               )}
 
@@ -117,10 +119,14 @@ const ContentNavigation = ({
                   color="primary"
                   size="large"
                   startIcon={<ChevronLeftIcon />}
-                  onClick={() => history.push({ pathname: `/page-${currentIndex}` })}
+                  onClick={() =>
+                    history.push({ pathname: `/page-${currentIndex}` })
+                  }
                   data-test="anu-lms-navigation-previous"
                 >
-                  {renderButtonLabel(Drupal.t("Previous", {}, { context: "ANU LMS" }))}
+                  {renderButtonLabel(
+                    Drupal.t("Previous", {}, { context: "ANU LMS" })
+                  )}
                 </Button>
               )}
 
@@ -133,7 +139,9 @@ const ContentNavigation = ({
                   href={`${prevLesson.url}#back`}
                   data-test="anu-lms-navigation-previous"
                 >
-                  {renderButtonLabel(Drupal.t("Previous", {}, { context: "ANU LMS" }))}
+                  {renderButtonLabel(
+                    Drupal.t("Previous", {}, { context: "ANU LMS" })
+                  )}
                 </Button>
               )}
 
@@ -141,10 +149,14 @@ const ContentNavigation = ({
                 renderButtonWithTooltip(
                   <Button
                     {...buttonProps}
-                    onClick={() => history.push({ pathname: `/page-${currentIndex + 2}` })}
+                    onClick={() =>
+                      history.push({ pathname: `/page-${currentIndex + 2}` })
+                    }
                     data-test="anu-lms-navigation-next"
                   >
-                    {renderButtonLabel(Drupal.t("Next", {}, { context: "ANU LMS" }))}
+                    {renderButtonLabel(
+                      Drupal.t("Next", {}, { context: "ANU LMS" })
+                    )}
                   </Button>
                 )}
 
@@ -156,7 +168,9 @@ const ContentNavigation = ({
                     onClick={updateProgressAndRedirect}
                     data-test="anu-lms-navigation-next"
                   >
-                    {renderButtonLabel(Drupal.t("Next", {}, { context: "ANU LMS" }))}
+                    {renderButtonLabel(
+                      Drupal.t("Next", {}, { context: "ANU LMS" })
+                    )}
                   </Button>
                 )}
 
@@ -169,7 +183,9 @@ const ContentNavigation = ({
                     onClick={updateProgressAndRedirect}
                     data-test="anu-lms-navigation-finish"
                   >
-                    {renderButtonLabel(Drupal.t("Finish", {}, { context: "ANU LMS" }))}
+                    {renderButtonLabel(
+                      Drupal.t("Finish", {}, { context: "ANU LMS" })
+                    )}
                   </Button>
                 )}
 
@@ -179,7 +195,9 @@ const ContentNavigation = ({
                   onClick={updateProgressAndRedirect}
                   data-test="anu-lms-navigation-start"
                 >
-                  {renderButtonLabel(Drupal.t("Start", {}, { context: "ANU LMS" }))}
+                  {renderButtonLabel(
+                    Drupal.t("Start", {}, { context: "ANU LMS" })
+                  )}
                 </Button>
               )}
 
@@ -191,7 +209,9 @@ const ContentNavigation = ({
                     onClick={updateProgressAndRedirect}
                     data-test="anu-lms-navigation-next"
                   >
-                    {renderButtonLabel(Drupal.t("Next", {}, { context: "ANU LMS" }))}
+                    {renderButtonLabel(
+                      Drupal.t("Next", {}, { context: "ANU LMS" })
+                    )}
                   </Button>
                 )}
             </ButtonWrapper>

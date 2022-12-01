@@ -32,12 +32,11 @@ class SessionHealthCheckTest extends WebDriverTestBase {
     $account = User::load(1);
     $this->container->get('current_user')->setAccount($account);
 
-    $this->drupalGet('sessions');
+    $this->drupalGet('lesson/welcome');
 
     $assert = $this->assertSession();
     // Check for the first session and open it.
     $assert->waitForText('Take the first step!');
-    $assert->waitForElementVisible('css', 'div.MuiPaper-root:nth-child(1) > a:nth-child(1)')->click();
 
     // Check for the heading of the first lesson.
     $lesson_heading = $assert->waitForElementVisible('css', 'h4.MuiTypography-root');

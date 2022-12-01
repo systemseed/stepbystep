@@ -34,6 +34,10 @@ const ContentNavigation = ({
   const noNextLesson = !sections[currentIndex + 1];
   const noPrevLesson = !sections[currentIndex - 1];
 
+  if (currentLesson.finishButtonUrl.length) {
+    currentLesson.finishButtonUrl = '/sessions';
+  }
+
   const updateProgressAndRedirect = async () => {
     // Marks lesson as completed if linear progress is enabled for its course.
     await currentLesson.complete();

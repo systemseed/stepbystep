@@ -34,7 +34,7 @@ const ContentNavigation = ({
   const noNextLesson = !sections[currentIndex + 1];
   const noPrevLesson = !sections[currentIndex - 1];
 
-  if (currentLesson.finishButtonUrl.length) {
+  if (!currentLesson.finishButtonUrl.length) {
     currentLesson.finishButtonUrl = '/sessions';
   }
 

@@ -46,12 +46,15 @@ class SessionHealthCheckTest extends WebDriverTestBase {
    * Make sure the first session can be opened in browser.
    */
   public function testSessions() {
-    // Login as "authenticated.test" user as it's already assigned to the demo
+    // Login as first user as it's already assigned to the demo.
     // storyline.
-    $account = User::load(2);
+    $account = User::load(1);
     $this->drupalLogin($account);
 
     $assert = $this->assertSession();
+
+    $this->createScreenshot('public://screenshot.jpg');
+
     // Check for the first session and open it.
     $assert->waitForText('Take the first step!');
     $assert->waitForElementVisible('css', 'div.MuiPaper-root:nth-child(1) > a:nth-child(1)')->click();

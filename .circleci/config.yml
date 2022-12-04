@@ -8,7 +8,6 @@ jobs:
     docker:
       - image: cimg/php:8.0-browsers
     environment:
-      TEST_USERS_PASSWORD: sbs0321
       SIMPLETEST_BASE_URL: http://localhost:8888
       SIMPLETEST_DB: sqlite://localhost/tmp/db.sqlite
       SYMFONY_DEPRECATIONS_HELPER: disabled

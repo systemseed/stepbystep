@@ -36,7 +36,7 @@ class SessionHealthCheckTest extends WebDriverTestBase {
       'pass' => $pass,
     ], 'Log in', 'user-login-form');
 
-    $this->assertSame('sbs0321', $pass);
+    $this->assertSame('dev+authenticated@systemseed.com', $account->getEmail());
 
     $account->sessionId = $this->getSession()->getCookie(\Drupal::service('session_configuration')->getOptions(\Drupal::request())['name']);
 

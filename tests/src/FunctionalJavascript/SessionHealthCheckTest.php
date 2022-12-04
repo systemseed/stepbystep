@@ -36,9 +36,11 @@ class SessionHealthCheckTest extends WebDriverTestBase {
       'pass' => $pass,
     ], 'Log in', 'user-login-form');
 
-    $this->assertSame('xx', $pass);
+    $this->assertSame('sbs0321', $pass);
 
     $account->sessionId = $this->getSession()->getCookie(\Drupal::service('session_configuration')->getOptions(\Drupal::request())['name']);
+
+    $this->assertTrue($this->drupalUserIsLoggedIn($account), "User 2 is logged in.");
 
     $this->loggedInUser = $account;
     $this->container->get('current_user')->setAccount($account);

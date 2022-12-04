@@ -35,7 +35,7 @@ class SessionHealthCheckTest extends WebDriverTestBase {
     $assert = $this->assertSession();
     $page = $this->getSession()->getPage();
 
-    $this->assertSame('text', $page->find('body')->getHtml());
+    $this->assertSame('text', $page->find('css', 'body')->getHtml());
 
     // Check for the first session and open it.
     $assert->waitForText('Take the first step!');

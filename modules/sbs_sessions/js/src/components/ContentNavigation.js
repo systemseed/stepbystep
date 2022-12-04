@@ -35,7 +35,9 @@ const ContentNavigation = ({
   const noPrevLesson = !sections[currentIndex - 1];
 
   if (!currentLesson.finishButtonUrl.length) {
-    currentLesson.finishButtonUrl = "/sessions";
+    const language = window.drupalSettings.path.currentLanguage;
+
+    currentLesson.finishButtonUrl = (language === "en" ? "" : "/" + language) + "/sessions";
   }
 
   const updateProgressAndRedirect = async () => {

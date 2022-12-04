@@ -2,7 +2,6 @@
 
 namespace Drupal\Tests\stepbystep\FunctionalJavascript;
 
-use Drupal\Core\Url;
 use Drupal\FunctionalJavascriptTests\WebDriverTestBase;
 use Drupal\user\Entity\User;
 
@@ -29,46 +28,11 @@ class SessionHealthCheckTest extends WebDriverTestBase {
    * Make sure the first session can be opened in browser.
    */
   public function testSessions() {
-    // Login as auth user.
-    $account = User::load(2);
+    // Login as 1st user.
+    $account = User::load(1);
     $this->container->get('current_user')->setAccount($account);
 
     $assert = $this->assertSession();
-    $page = $this->getSession()->getPage();
-
-    // Answer the questions.
-    $assert->waitForElementVisible('css', 'button.form-submit')->click();
-    $assert->waitForElementVisible('css', 'button.form-submit')->click();
-    $page->checkField('Male');
-    $assert->waitForElementVisible('css', 'button.form-submit')->click();
-    $page->find('css', '.sbs-text-field__input')->setValue(22);
-    $assert->waitForElementVisible('css', 'button.form-submit')->click();
-    $assert->waitForElementVisible('css', 'button.form-submit')->click();
-    $page->checkField('No education');
-    $assert->waitForElementVisible('css', 'button.form-submit')->click();
-    $assert->waitForElementVisible('css', 'button.form-submit')->click();
-    $page->checkField('Nearly every day');
-    $assert->waitForElementVisible('css', 'button.form-submit')->click();
-    $page->checkField('Nearly every day');
-    $assert->waitForElementVisible('css', 'button.form-submit')->click();
-    $page->checkField('Nearly every day');
-    $assert->waitForElementVisible('css', 'button.form-submit')->click();
-    $page->checkField('Nearly every day');
-    $assert->waitForElementVisible('css', 'button.form-submit')->click();
-    $page->checkField('Nearly every day');
-    $assert->waitForElementVisible('css', 'button.form-submit')->click();
-    $page->checkField('Nearly every day');
-    $assert->waitForElementVisible('css', 'button.form-submit')->click();
-    $page->checkField('Nearly every day');
-    $assert->waitForElementVisible('css', 'button.form-submit')->click();
-    $page->checkField('Nearly every day');
-    $assert->waitForElementVisible('css', 'button.form-submit')->click();
-    $page->checkField('Nearly every day');
-    $assert->waitForElementVisible('css', 'button.form-submit')->click();
-    $assert->waitForElementVisible('css', 'button.button')->click();
-    $assert->waitForElementVisible('css', 'input[value="3"]')->click();
-    $assert->waitForElementVisible('css', 'button.MuiButtonBase-root')->click();
-    $assert->waitForElementVisible('css', 'cancel.a')->click();
 
     // Check for the first session and open it.
     $assert->waitForText('Take the first step!');

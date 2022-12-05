@@ -43,7 +43,7 @@ class SessionHealthCheckTest extends WebDriverTestBase {
 
     $account->sessionId = $this->getSession()->getCookie(\Drupal::service('session_configuration')->getOptions(\Drupal::request())['name']);
 
-    $this->assertTrue($this->drupalUserIsLoggedIn($account), "User 14 is logged in.");
+    $this->assertTrue($this->drupalUserIsLoggedIn($account), "User 2 is logged in.");
 
     $this->loggedInUser = $account;
     $this->container->get('current_user')->setAccount($account);
@@ -53,8 +53,8 @@ class SessionHealthCheckTest extends WebDriverTestBase {
    * Make sure the first session can be opened in browser.
    */
   public function testSessions() {
-    // Login as 14 user as it's already assigned to the demo storyline.
-    $account = User::load(14);
+    // Login as 2 user as it's already assigned to the demo storyline.
+    $account = User::load(2);
     $this->drupalLogin($account);
 
     $assert = $this->assertSession();

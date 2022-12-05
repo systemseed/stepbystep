@@ -62,7 +62,7 @@ class SessionHealthCheckTest extends WebDriverTestBase {
     $assert->waitForElementVisible('css', 'div.MuiPaper-root:nth-child(1) > a:nth-child(1)')->click();
 
     // Check for the heading of the first lesson.
-    $lesson_heading = $assert->waitForElementVisible('css', 'h4.MuiTypography-root');
+    $lesson_heading = $assert->waitForElementVisible('css', 'h6.MuiTypography-root');
     $this->assertNotEmpty($lesson_heading);
     $this->assertEquals($lesson_heading->getText(), 'Welcome');
 

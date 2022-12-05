@@ -34,7 +34,7 @@ class SessionHealthCheckTest extends WebDriverTestBase {
 
     $assert = $this->assertSession();
     $page = $this->getSession()->getPage();
-    $assert->assertSame('test', $page->find('css', 'body')->getHtml());
+    $this->assertSame('test', $page->find('css', 'body')->getHtml());
 
     $this->submitForm([
       'name' => $account->getEmail(),

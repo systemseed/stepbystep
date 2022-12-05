@@ -32,14 +32,10 @@ class SessionHealthCheckTest extends WebDriverTestBase {
     $pass = $password ? $password : $this->rootUser->pass_raw;
     $this->drupalGet(Url::fromRoute('user.login'));
 
-    $page = $this->getSession()->getPage();
-
     $this->submitForm([
       'name' => $account->getEmail(),
       'pass' => $pass,
     ], 'Log in', 'user-login-form');
-
-    $this->assertSame('test', $page->find('css', 'body')->getHtml());
 
     $account->sessionId = $this->getSession()->getCookie(\Drupal::service('session_configuration')->getOptions(\Drupal::request())['name']);
 
@@ -69,6 +65,10 @@ class SessionHealthCheckTest extends WebDriverTestBase {
     $lesson_heading = $assert->waitForElementVisible('css', 'h4.MuiTypography-root');
     $this->assertNotEmpty($lesson_heading);
     $this->assertEquals($lesson_heading->getText(), 'Welcome');
+
+    // Block 1st user at the end.
+    $account->block();
+    $account->save();
   }
 
 }

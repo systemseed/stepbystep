@@ -29,7 +29,7 @@ class SessionHealthCheckTest extends WebDriverTestBase {
    * {@inheritdoc}
    */
   protected function drupalLogin($account, $password = '') {
-    $pass = $password ? $password : $this->rootUser->pass_raw;
+    $pass = $password ? $password : getenv('TEST_USERS_PASSWORD');
     $this->drupalGet(Url::fromRoute('user.login'));
 
     $page = $this->getSession()->getPage();

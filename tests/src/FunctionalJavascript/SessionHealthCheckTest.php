@@ -56,6 +56,7 @@ class SessionHealthCheckTest extends WebDriverTestBase {
     // Login as 1 user as it's already assigned to the demo storyline.
     $account = User::load(1);
     $account->activate();
+    $account->setPassword($this->rootUser->pass_raw);
     $account->save();
     $this->drupalLogin($account);
 

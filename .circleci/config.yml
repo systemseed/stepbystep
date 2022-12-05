@@ -89,4 +89,4 @@ jobs:
       - run:
           name: Run Drupal tests
           working_directory: drupal
-          command: php -S localhost:8888 -t web/ & chromedriver --whitelisted-ips & sleep 1 && vendor/bin/phpunit --testdox --verbose --bootstrap=/var/www/html/web/core/tests/bootstrap.php --configuration web/core/phpunit.xml.dist web/profiles/contrib/stepbystep/tests
+          command: php -S localhost:8888 -t web/ & chromedriver --whitelisted-ips & sleep 1 && vendor/bin/phpunit --testdox --verbose --bootstrap=web/core/tests/bootstrap.php --configuration=web/core/phpunit.xml.dist web/profiles/contrib/stepbystep/tests

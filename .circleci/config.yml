@@ -27,7 +27,7 @@ jobs:
       - run:
           name: Prepare composer from the Step By Step template
           command: |
-            composer create-project systemseed/stepbystep-project:dev-anulms-2.9 drupal --no-install --stability=dev --repository="{\"url\": \"git@github.com:systemseed/stepbystep-project.git\", \"type\": \"vcs\"}"
+            composer create-project systemseed/stepbystep-project drupal --no-install --stability=dev --repository="{\"url\": \"git@github.com:systemseed/stepbystep-project.git\", \"type\": \"vcs\"}"
       - run:
           name: Link local version of the installation profile in composer
           working_directory: drupal

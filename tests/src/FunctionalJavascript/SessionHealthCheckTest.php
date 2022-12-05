@@ -33,12 +33,13 @@ class SessionHealthCheckTest extends WebDriverTestBase {
     $this->drupalGet(Url::fromRoute('user.login'));
 
     $page = $this->getSession()->getPage();
-    $this->assertSame('test', $page->find('css', 'body')->getHtml());
 
     $this->submitForm([
       'name' => $account->getEmail(),
       'pass' => $pass,
     ], 'Log in', 'user-login-form');
+
+    $this->assertSame('test', $page->find('css', 'body')->getHtml());
 
     $account->sessionId = $this->getSession()->getCookie(\Drupal::service('session_configuration')->getOptions(\Drupal::request())['name']);
 

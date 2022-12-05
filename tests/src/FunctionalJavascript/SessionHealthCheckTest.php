@@ -32,7 +32,6 @@ class SessionHealthCheckTest extends WebDriverTestBase {
     $pass = $password ? $password : $this->rootUser->pass_raw;
     $this->drupalGet(Url::fromRoute('user.login'));
 
-    $assert = $this->assertSession();
     $page = $this->getSession()->getPage();
     $this->assertSame('test', $page->find('css', 'body')->getHtml());
 

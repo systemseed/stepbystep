@@ -7,30 +7,26 @@ dependencies:
     - paragraphs.paragraphs_type.lesson_audio
   module:
     - file
-    - maxlength
 id: paragraph.lesson_audio.default
 targetEntityType: paragraph
 bundle: lesson_audio
 mode: default
 content:
   field_audio_file:
-    type: file_generic
     weight: 0
-    region: content
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
-  field_audio_name:
-    type: string_textfield
-    weight: 1
+    type: file_generic
     region: content
+  field_audio_name:
+    weight: 1
     settings:
       size: 40
       placeholder: ''
-    third_party_settings:
-      maxlength:
-        maxlength_js: 30
-        maxlength_js_label: ' '
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
 hidden:
   created: true
   status: true

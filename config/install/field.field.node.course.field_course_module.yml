@@ -11,7 +11,7 @@ id: node.course.field_course_module
 field_name: field_course_module
 entity_type: node
 bundle: course
-label: Part
+label: Modules
 description: ''
 required: false
 translatable: false
@@ -20,22 +20,16 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
+    negate: 0
     target_bundles:
       course_modules: course_modules
-    negate: 0
     target_bundles_drag_drop:
-      checklist_item:
-        weight: 24
-        enabled: false
       course_category:
         weight: 22
         enabled: false
       course_modules:
-        weight: 23
         enabled: true
-      lesson_checklist:
-        weight: 27
-        enabled: false
+        weight: 23
       lesson_divider:
         weight: 24
         enabled: false

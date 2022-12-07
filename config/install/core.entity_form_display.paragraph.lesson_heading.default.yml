@@ -11,19 +11,19 @@ bundle: lesson_heading
 mode: default
 content:
   field_lesson_heading_size:
-    type: options_select
     weight: 1
-    region: content
     settings: {  }
     third_party_settings: {  }
-  field_lesson_heading_value:
-    type: string_textfield
-    weight: 0
+    type: options_select
     region: content
+  field_lesson_heading_value:
+    weight: 0
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+    type: string_textfield
+    region: content
 hidden:
   created: true
   status: true

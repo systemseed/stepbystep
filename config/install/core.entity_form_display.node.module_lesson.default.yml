@@ -28,7 +28,7 @@ content:
       default_paragraph_type: lesson_section
       features:
         add_above: '0'
-        collapse_edit_all: '0'
+        collapse_edit_all: collapse_edit_all
         duplicate: '0'
     third_party_settings: {  }
   path:
@@ -64,7 +64,6 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
-  langcode: true
   promote: true
   sticky: true
   uid: true

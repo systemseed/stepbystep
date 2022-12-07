@@ -9,9 +9,9 @@ field_name: field_audio_name
 entity_type: paragraph
 bundle: lesson_audio
 label: Name
-description: 'A helpful title for the audio, which should be different from the file name. 30 characters max.'
+description: 'A helpful title for the audio, which should be different from the file name.'
 required: true
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

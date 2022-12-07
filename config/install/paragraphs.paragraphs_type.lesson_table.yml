@@ -2,16 +2,19 @@ langcode: en
 status: true
 dependencies:
   module:
+    - paragraphs_browser
     - paragraphs_selection
 third_party_settings:
   paragraphs_selection:
     fields:
       -
         id: paragraph.lesson_section.field_lesson_section_content
-        weight: -39
+        weight: -50
+  paragraphs_browser:
+    image_path: 'anu-lms://assets/table.png'
 id: lesson_table
-label: 'Section: Table'
+label: 'Block: Table'
 icon_uuid: null
 icon_default: null
-description: ''
+description: 'Block designed for display of content in tables.'
 behavior_plugins: {  }

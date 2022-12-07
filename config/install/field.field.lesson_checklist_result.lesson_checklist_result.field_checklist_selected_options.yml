@@ -20,13 +20,13 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
+    negate: 0
     target_bundles:
       checklist_item: checklist_item
-    negate: 0
     target_bundles_drag_drop:
       checklist_item:
-        weight: 24
         enabled: true
+        weight: 24
       course_category:
         weight: 25
         enabled: false

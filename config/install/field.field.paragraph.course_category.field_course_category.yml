@@ -5,8 +5,6 @@ dependencies:
     - field.storage.paragraph.field_course_category
     - paragraphs.paragraphs_type.course_category
     - taxonomy.vocabulary.course_category
-  content:
-    - 'taxonomy_term:course_category:81fb3ffb-962a-49ee-81f5-6e94432140c8'
 id: paragraph.course_category.field_course_category
 field_name: field_course_category
 entity_type: paragraph
@@ -15,9 +13,7 @@ label: Category
 description: 'Courses from selected category will be presented on the page.'
 required: true
 translatable: false
-default_value:
-  -
-    target_uuid: 81fb3ffb-962a-49ee-81f5-6e94432140c8
+default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'

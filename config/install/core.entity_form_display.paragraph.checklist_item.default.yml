@@ -14,9 +14,7 @@ bundle: checklist_item
 mode: default
 content:
   field_checkbox_option:
-    type: text_textarea
     weight: 0
-    region: content
     settings:
       rows: 1
       placeholder: ''
@@ -24,10 +22,10 @@ content:
       allowed_formats:
         hide_help: '1'
         hide_guidelines: '1'
-  field_lesson_text_content:
     type: text_textarea
-    weight: 1
     region: content
+  field_lesson_text_content:
+    weight: 1
     settings:
       rows: 3
       placeholder: ''
@@ -35,6 +33,8 @@ content:
       allowed_formats:
         hide_help: '1'
         hide_guidelines: '1'
+    type: text_textarea
+    region: content
 hidden:
   created: true
   status: true

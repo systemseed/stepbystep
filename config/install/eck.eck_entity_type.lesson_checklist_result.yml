@@ -3,7 +3,7 @@ status: true
 dependencies: {  }
 id: lesson_checklist_result
 label: 'Checklist result'
-uid: true
 created: true
 changed: true
+uid: true
 title: false

@@ -52,6 +52,7 @@ class LessonNormalizer extends AnuLessonNormalizer {
     $normalized['content_urls'] = $this->course->getLessonsAndQuizzesUrls($entity);
 
     if ($this->course->isLinearProgressEnabled($entity)) {
+      // This is required to display storyline on the Sessions page.
       $normalized['progress'] = $this->courseProgress->getCourseProgress($entity);
 
       // If progress is enabled, we disable all REST Entity Recursive cache!

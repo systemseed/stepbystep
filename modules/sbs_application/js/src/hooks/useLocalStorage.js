@@ -1,3 +1,6 @@
+// This helper was a part of Anu LMS in the past, but newest version doesn't
+// contain it. That's the reason why it was added directly here.
+
 import { useState } from 'react';
 
 // https://usehooks.com/useLocalStorage/

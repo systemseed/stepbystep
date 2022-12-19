@@ -14,40 +14,39 @@ bundle: lesson_checklist_result
 mode: default
 content:
   created:
-    type: timestamp
     label: hidden
+    type: timestamp
+    weight: 0
+    region: content
     settings:
       date_format: medium
       custom_date_format: ''
       timezone: ''
     third_party_settings: {  }
-    weight: 0
-    region: content
   field_checklist_paragraph:
     type: entity_reference_revisions_entity_view
+    weight: 1
     label: above
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 1
     region: content
   field_checklist_selected_options:
     type: entity_reference_revisions_entity_view
+    weight: 2
     label: above
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 2
     region: content
   uid:
-    type: author
     label: hidden
-    settings: {  }
-    third_party_settings: {  }
+    type: author
     weight: 0
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   changed: true
-  langcode: true

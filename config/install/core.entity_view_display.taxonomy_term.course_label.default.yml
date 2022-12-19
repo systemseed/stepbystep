@@ -13,18 +13,17 @@ bundle: course_label
 mode: default
 content:
   description:
-    type: text_default
     label: hidden
-    settings: {  }
-    third_party_settings: {  }
+    type: text_default
     weight: 0
     region: content
+    settings: {  }
+    third_party_settings: {  }
   field_course_label_color:
-    type: list_default
+    weight: 1
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    type: list_default
     region: content
-hidden:
-  langcode: true
+hidden: {  }

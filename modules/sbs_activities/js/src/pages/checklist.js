@@ -14,7 +14,7 @@ import DeleteIcon from "@material-ui/icons/Delete";
 import BulbIcon from "@material-ui/icons/EmojiObjectsOutlined";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import LoadingIndicator from "@anu/components/LoadingIndicator";
-import useLocalStorage from "@anu/hooks/useLocalStorage";
+import useLocalStorage from "../../../../sbs_application/js/src/hooks/useLocalStorage";
 import { getUserId } from "@anu/utilities/settings";
 import PageWrapper from "../components/PageWrapper";
 import StickyButton from "../components/StickyButton";

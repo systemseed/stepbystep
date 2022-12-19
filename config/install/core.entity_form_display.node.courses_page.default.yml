@@ -2,28 +2,16 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.courses_page.body
     - field.field.node.courses_page.field_courses_content
     - node.type.courses_page
   module:
     - paragraphs
     - path
-    - text
 id: node.courses_page.default
 targetEntityType: node
 bundle: courses_page
 mode: default
 content:
-  body:
-    type: text_textarea_with_summary
-    weight: 1
-    region: content
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-      show_summary: false
-    third_party_settings: {  }
   created:
     type: datetime_timestamp
     weight: 4
@@ -31,9 +19,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_courses_content:
-    type: paragraphs
     weight: 2
-    region: content
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -49,6 +35,8 @@ content:
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
     third_party_settings: {  }
+    type: paragraphs
+    region: content
   path:
     type: path
     weight: 5
@@ -57,10 +45,10 @@ content:
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 6
-    region: content
     settings:
       display_label: true
+    weight: 6
+    region: content
     third_party_settings: {  }
   title:
     type: string_textfield
@@ -73,15 +61,14 @@ content:
   uid:
     type: entity_reference_autocomplete
     weight: 3
-    region: content
     settings:
       match_operator: CONTAINS
-      match_limit: 10
       size: 60
       placeholder: ''
+      match_limit: 10
+    region: content
     third_party_settings: {  }
 hidden:
-  langcode: true
   promote: true
   sticky: true
   translation: true

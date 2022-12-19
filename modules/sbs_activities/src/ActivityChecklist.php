@@ -6,6 +6,8 @@ use Drupal\Component\Serialization\Json;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Session\AccountInterface;
 use Drupal\node\NodeInterface;
+use Drupal\anu_lms\Settings;
+use Drupal\Core\Config\ConfigFactoryInterface;
 
 /**
  * Handler for activity checklist page.
@@ -27,16 +29,36 @@ class ActivityChecklist {
   protected AccountInterface $currentUser;
 
   /**
+   * Anu LMS settings.
+   *
+   * @var \Drupal\anu_lms\Settings
+   */
+  private Settings $anulmsSettings;
+
+  /**
+   * The config factory.
+   *
+   * @var \Drupal\Core\Config\ConfigFactoryInterface
+   */
+  protected ConfigFactoryInterface $configFactory;
+
+  /**
    * Creates a new instance of activity checklist handler.
    *
    * @param \Drupal\Core\Entity\EntityTypeManagerInterface $entityTypeManager
    *   Entity type manager handler.
    * @param \Drupal\Core\Session\AccountInterface $currentUser
    *   Current user account object.
+   * @param \Drupal\anu_lms\Settings $anulmsSettings
+   *   Anu LMS Settings service.
+   * @param \Drupal\Core\Config\ConfigFactoryInterface $configFactory
+   *   The config factory.
    */
-  public function __construct(EntityTypeManagerInterface $entityTypeManager, AccountInterface $currentUser) {
+  public function __construct(EntityTypeManagerInterface $entityTypeManager, AccountInterface $currentUser, Settings $anulmsSettings, ConfigFactoryInterface $configFactory) {
     $this->entityTypeManager = $entityTypeManager;
     $this->currentUser = $currentUser;
+    $this->anulmsSettings = $anulmsSettings;
+    $this->configFactory = $configFactory;
   }
 
   /**
@@ -94,6 +116,8 @@ class ActivityChecklist {
       '#attributes' => [
         'id' => 'activities',
         'data-application' => Json::encode($data),
+        'data-permissions' => Json::encode($this->anulmsSettings->getPermissions()),
+        'data-entity_labels' => Json::encode($this->configFactory->get('anu_lms.entity_labels')->getOriginal()),
       ],
     ];
 

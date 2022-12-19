@@ -3,7 +3,6 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.courses_page.body
     - field.field.node.courses_page.field_courses_content
     - node.type.courses_page
   module:
@@ -14,11 +13,9 @@ bundle: courses_page
 mode: teaser
 content:
   links:
+    weight: 100
     settings: {  }
     third_party_settings: {  }
-    weight: 100
     region: content
 hidden:
-  body: true
   field_courses_content: true
-  langcode: true

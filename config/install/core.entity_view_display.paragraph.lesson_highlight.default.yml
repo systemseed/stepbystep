@@ -15,7 +15,7 @@ mode: default
 content:
   field_lesson_highlight_heading:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -23,10 +23,11 @@ content:
     region: content
   field_lesson_highlight_text:
     type: text_default
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 1
     region: content
 hidden:
   field_lesson_highlight_color: true
+  search_api_excerpt: true

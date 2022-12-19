@@ -6,6 +6,7 @@ use Drupal\anu_lms\Settings;
 use Drupal\anu_lms_storyline\Normalizer;
 use Drupal\anu_lms_storyline\Storyline;
 use Drupal\Component\Serialization\Json;
+use Drupal\Core\Config\ConfigFactoryInterface;
 use Drupal\Core\Extension\ModuleHandlerInterface;
 use Drupal\Core\Url;
 use Drupal\taxonomy\Controller\TaxonomyController;
@@ -41,13 +42,21 @@ class StorylineController extends TaxonomyController {
   private Settings $anulmsSettings;
 
   /**
+   * The config factory.
+   *
+   * @var \Drupal\Core\Config\ConfigFactoryInterface
+   */
+  protected $configFactory;
+
+  /**
    * Creates the controller.
    */
-  public function __construct(Normalizer $normalizer, Storyline $storyline, Settings $anulmsSettings, ModuleHandlerInterface $moduleHandler) {
+  public function __construct(Normalizer $normalizer, Storyline $storyline, Settings $anulmsSettings, ModuleHandlerInterface $moduleHandler, ConfigFactoryInterface $configFactory) {
     $this->normalizer = $normalizer;
     $this->storyline = $storyline;
     $this->anulmsSettings = $anulmsSettings;
     $this->moduleHandler = $moduleHandler;
+    $this->configFactory = $configFactory;
   }
 
   /**
@@ -59,6 +68,7 @@ class StorylineController extends TaxonomyController {
       $container->get('anu_lms_storyline.storyline'),
       $container->get('anu_lms.settings'),
       $container->get('module_handler'),
+      $container->get('config.factory'),
     );
   }
 
@@ -99,6 +109,8 @@ class StorylineController extends TaxonomyController {
       '#attributes' => [
         'id' => 'anu-application',
         'data-application' => Json::encode($data),
+        'data-permissions' => Json::encode($this->anulmsSettings->getPermissions()),
+        'data-entity_labels' => Json::encode($this->configFactory->get('anu_lms.entity_labels')->getOriginal()),
       ],
     ];
 

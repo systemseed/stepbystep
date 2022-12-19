@@ -6,10 +6,6 @@
     "homepage": "https://systemseed.com",
     "repositories": [
         {
-            "type": "vcs",
-            "url": "git@github.com:systemseed/anu_lms.git"
-        },
-        {
             "type": "package",
             "package": {
                 "name": "drupal/chosen-library",
@@ -27,21 +23,23 @@
         }
     ],
     "require": {
-        "php": ">=7.4",
+        "php": ">=8.0",
         "composer/installers": "~1.0 || ~2.0",
         "cweagans/composer-patches": "^1.7",
-        "drupal/admin_toolbar": "^3.0",
+        "drupal/admin_toolbar": "^3.3",
         "drupal/administerusersbyrole": "^3.1",
         "drupal/checklistapi": "^1.9||^2.0",
+        "drupal/csv_serialization": "^2.1",
         "drupal/chosen": "^3.0",
         "drupal/chosen-library": "^1.8",
         "drupal/config_filter": "^2.2",
         "drupal/config_ignore": "^3@beta",
         "drupal/config_split": "^2",
+        "drupal/config_pages": "^2.10",
         "drupal/core-composer-scaffold": "^9",
-        "drupal/core": "~9.0",
+        "drupal/core": "~9.4",
         "drupal/default_content": "2.0.x-dev@dev",
-        "drupal/domino": "^2",
+        "drupal/domino": "^3",
         "drupal/dynamic_entity_reference": "^1",
         "drupal/features": "^3.12",
         "drupal/form_mode_control": "^2.0",
@@ -60,6 +58,7 @@
         "drupal/pathauto": "^1.8",
         "drupal/pfm": "^1.2",
         "drupal/pwa": "^1.5",
+        "drupal/range": "^1.4",
         "drupal/remove_username": "^1.1",
         "drupal/replicate_ui": "^1.0",
         "drupal/restui": "^1.20",
@@ -67,6 +66,7 @@
         "drupal/rollbar": "^2.0",
         "drupal/rpt": "^2.0",
         "drupal/simple_pass_reset": "^1.1",
+        "drupal/shs": "^2.0",
         "drupal/sms_simplegateway": "^1.2",
         "drupal/smsframework": "^2@alpha",
         "drupal/smtp": "^1.0",
@@ -74,8 +74,10 @@
         "drupal/update_helper": "^3.0.1",
         "drupal/view_password": "^6.0",
         "drupal/views_add_button": "^2.0",
+        "drupal/views_data_export": "^1.2",
         "drupal/webform": "^6.0",
-        "systemseed/anu_lms": "^2.5.7"
+        "drupal/xls_serialization": "^1.2",
+        "drupal/anu_lms": "2.x-dev"
     },
     "require-dev": {
         "drupal/core-dev": "^9.3",
@@ -86,6 +88,9 @@
         "phpspec/prophecy-phpunit": "^2",
         "phpstan/extension-installer": "^1.1",
         "phpstan/phpstan-deprecation-rules": "^1.0"
+    },
+    "replace": {
+        "drupal/telephone": "self.version"
     },
     "conflict": {
         "drupal/drupal": "*"

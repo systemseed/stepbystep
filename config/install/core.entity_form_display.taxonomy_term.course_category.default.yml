@@ -3,30 +3,12 @@ status: true
 dependencies:
   config:
     - field.field.taxonomy_term.course_category.field_enable_course_sequence
-    - field.field.taxonomy_term.course_category.field_is_storyline
-    - field.field.taxonomy_term.course_category.field_storyline_description
-    - field.field.taxonomy_term.course_category.field_storyline_image
     - taxonomy.vocabulary.course_category
 id: taxonomy_term.course_category.default
 targetEntityType: taxonomy_term
 bundle: course_category
 mode: default
 content:
-  field_is_storyline:
-    type: boolean_checkbox
-    weight: 1
-    region: content
-    settings:
-      display_label: true
-    third_party_settings: {  }
-  field_storyline_description:
-    type: string_textfield
-    weight: 3
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
   name:
     type: string_textfield
     weight: 0
@@ -38,8 +20,6 @@ content:
 hidden:
   description: true
   field_enable_course_sequence: true
-  field_storyline_image: true
-  langcode: true
   path: true
   status: true
   translation: true

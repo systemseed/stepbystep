@@ -10,20 +10,6 @@ targetEntityType: node
 bundle: module_lesson
 mode: embedded
 content:
-  langcode:
-    type: language_select
-    weight: 2
-    region: content
-    settings:
-      include_locked: true
-    third_party_settings: {  }
-  status:
-    type: boolean_checkbox
-    weight: 1
-    region: content
-    settings:
-      display_label: true
-    third_party_settings: {  }
   title:
     type: string_textfield
     weight: 0
@@ -37,6 +23,7 @@ hidden:
   field_module_lesson_content: true
   path: true
   promote: true
+  status: true
   sticky: true
   translation: true
   uid: true

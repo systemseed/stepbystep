@@ -15,7 +15,7 @@ mode: default
 content:
   field_lesson_image_caption:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -23,11 +23,14 @@ content:
     region: content
   field_lesson_image_image:
     type: image
-    label: above
+    label: hidden
     settings:
       image_link: ''
       image_style: medium
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: 0
     region: content
-hidden: {  }
+hidden:
+  search_api_excerpt: true

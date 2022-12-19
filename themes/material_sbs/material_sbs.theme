@@ -133,7 +133,7 @@ function material_sbs_preprocess_region(array &$variables) {
         // Link to edit course page from lesson or quiz page.
         /** @var \Drupal\anu_lms\Lesson $lesson */
         $lesson = Drupal::service('anu_lms.lesson');
-        $course = $lesson->getLessonCourse($node);
+        $course = $lesson->getLessonCourse($node->id());
         if (!empty($course)) {
           $route = $course->toUrl('edit-form');
           if (!empty($route) && $route->access()) {

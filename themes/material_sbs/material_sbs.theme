@@ -199,6 +199,11 @@ function material_sbs_preprocess_region(array &$variables) {
     $route_name = 'view.questionnaires.page_1';
     add_to_admin_menu($route_name, $title, $variables);
 
+    // Show link to manage sessions.
+    $route_name = 'view.sessions_overview.page_1';
+    $title = t('Manage sessions');
+    add_to_admin_menu($route_name, $title, $variables);
+
     // Show link to language switcher setings.
     $title = t('Edit language switcher');
     $route_name = 'config_pages.ss_translation_settings';

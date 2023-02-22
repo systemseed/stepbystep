@@ -93,6 +93,7 @@ dependencies:
   - view_password:view_password
   - views_add_button:views_add_button
   - views_data_export:views_data_export
+  - views_field_view:views_field_view
   - webform:webform_node
   - webform:webform_ui
   - webform_content:webform_content_score

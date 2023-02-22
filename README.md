@@ -1,5 +1,7 @@
 [![CircleCI](https://circleci.com/gh/systemseed/stepbystep/tree/9.x.svg?style=svg&circle-token=c158f3227fd5e1eb86612e1a36ce85c6f4362202)](https://circleci.com/gh/systemseed/stepbystep/tree/9.x)
 
+**The repository is moved to** https://github.com/WorldHealthOrganization/step-by-step-digital/tree/main
+
 # Step by step self help intervention
 
 Step By Step is a Drupal distribution for an evidence based support program

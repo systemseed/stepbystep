@@ -112,9 +112,6 @@
         "enable-patching": true,
         "composer-exit-on-patch-failure": true,
         "patches": {
-            "drupal/field_group": {
-                "HTML5 Validation Prevents Submission in Tabs": "https://www.drupal.org/files/issues/2021-07-22/2969051-37.patch"
-            },
             "drupal/otp_login": {
                 "Avoid warnings": "https://www.drupal.org/files/issues/2021-09-02/3231035-avoid-warnings-3.patch"
             },

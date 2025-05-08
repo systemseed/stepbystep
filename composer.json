@@ -119,9 +119,6 @@
                 "Unable to save translations": "https://www.drupal.org/files/issues/2021-12-03/3218426-7.patch",
                 "Supress translation warning [https://www.pivotaltracker.com/story/show/180875803]": "patches/translation-warning.patch",
                 "Routes fail to validate mthod if language the user has a language preference": "https://www.drupal.org/files/issues/2021-10-22/2706241-59.patch"
-            },
-            "drupal/administerusersbyrole": {
-                "Roles no longer visible on user_form since 3.1.0 release": "https://www.drupal.org/files/issues/2022-06-23/3292173-1.patch"
             }
         },
         "drupal-scaffold": {
